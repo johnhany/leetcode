@@ -7,3 +7,6 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions.
 
 2. [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/)
 * Linked list: [55ms](https://leetcode.com/submissions/detail/157793196/)
+
+3. [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
+* Hash table (map): [39ms](https://leetcode.com/submissions/detail/157940417/)
