@@ -6,6 +6,13 @@
  *     ListNode(int x) : val(x), next(NULL) {}
  * };
  */
+static auto x = [](){
+    // turn off sync
+    std::ios::sync_with_stdio(false);
+    // untie in/out streams
+    cin.tie(NULL);
+    return 0;
+}();
 class Solution {
 public:
     ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
