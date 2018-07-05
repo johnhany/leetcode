@@ -13,3 +13,6 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions.
 
 4. [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)
 * Recursion: [16 ms](https://leetcode.com/submissions/detail/162238879/) **(top 100.00%)**
+
+5. [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
+* Brutal force: [8ms](https://leetcode.com/submissions/detail/162245132/) (top 87.41%)
