@@ -16,3 +16,4 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions.
 
 5. [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
 * Brutal force: [8ms](https://leetcode.com/submissions/detail/162245132/) (top 87.41%)
+* Manacher's algorithm: [0ms](https://leetcode.com/submissions/detail/163268305/) **(top 100.00%)**
