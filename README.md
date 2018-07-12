@@ -24,3 +24,6 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions.
 
 7. [Reverse Integer](https://leetcode.com/problems/reverse-integer/)
 * Use `INT_MAX`: [4ms](https://leetcode.com/submissions/detail/163412779/) **(top 100.00%)**
+
+8. [String to Integer (atoi)](https://leetcode.com/submissions/detail/163418517/)
+* Use `INT_MAX`: [8ms](https://leetcode.com/submissions/detail/163418517/) (top 99.90%)
