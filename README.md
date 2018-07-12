@@ -27,3 +27,6 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions.
 
 8. [String to Integer (atoi)](https://leetcode.com/submissions/detail/163418517/)
 * Use `INT_MAX`: [8ms](https://leetcode.com/submissions/detail/163418517/) (top 99.90%)
+
+9. [Palindrome Number](https://leetcode.com/problems/palindrome-number/)
+* Lookup table: [52ms](https://leetcode.com/submissions/detail/163427855/) **(top 100.00%)**
