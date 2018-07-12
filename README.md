@@ -20,3 +20,4 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions.
 
 6. [ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/)
 * Brutal force: [40ms](https://leetcode.com/submissions/detail/163403986/) (top 55.26%)
+* Optimized for-loop: [8ms](https://leetcode.com/submissions/detail/163405430/) **(top 100.00%)**
