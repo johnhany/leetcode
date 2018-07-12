@@ -6,6 +6,11 @@ static auto x = [](){
     return 0;
 }();
 
+/*
+Copied from:
+https://leetcode.com/problems/regular-expression-matching/discuss/5684/9-lines-16ms-c-dp-solutions-with-explanations
+*/
+
 class Solution {
 public:
     bool isMatch(string s, string p) {
