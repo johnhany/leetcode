@@ -30,3 +30,6 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions.
 
 9. [Palindrome Number](https://leetcode.com/problems/palindrome-number/)
 * Lookup table: [52ms](https://leetcode.com/submissions/detail/163427855/) **(top 100.00%)**
+
+10. [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/)
+* Dynamic programming: [4ms](https://leetcode.com/submissions/detail/163443067/) **(top 100.00%)** [Source](https://leetcode.com/problems/regular-expression-matching/discuss/5684/9-lines-16ms-c-dp-solutions-with-explanations)
