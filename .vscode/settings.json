@@ -1,0 +1,11 @@
+{
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#2E2266",
+        "titleBar.activeBackground": "#402F8F",
+        "titleBar.activeForeground": "#FCFCFE"
+    },
+    "C_Cpp.intelliSenseEngineFallback": "Enabled",
+    "files.associations": {
+        "limits": "cpp"
+    }
+}
