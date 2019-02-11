@@ -50,6 +50,11 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 - Two pointers: [12ms](https://leetcode.com/submissions/detail/207126145/) **(top 100.00%)**
 
+12. [Integer to Roman](https://leetcode.com/problems/integer-to-roman/)
+
+- Brutal force: [28ms](https://leetcode.com/submissions/detail/207183826/) (top 99.20%)
+- Lookup table: [28ms](https://leetcode.com/submissions/detail/207184862/) (top 99.20%)
+
 ------
 
 ## Environment
@@ -80,7 +85,7 @@ Add following lines to your `settings.json` to configure the building and lintin
 
 **Steps to build a solution:**
 
-1. Change the line `set(PROBLEM_NAME {Problem_Folder})` in `CMakeLists.txt` to choose the problem you want to solve, in which `{Problem_Folder}` is the folder name of the problem. For example, `set(PROBLEM_NAME "001-001-Two-Sum")`.
+1. Change the line `set(PROBLEM_NAME {Problem_Folder})` in `CMakeLists.txt` to choose the problem you want to solve, in which `{Problem_Folder}` is the folder name of the problem. For example, `set(PROBLEM_NAME "001-Two-Sum")`.
 2. Press `Ctrl` + `Shift` + `P` to bring up the Command Palette of VSCode. Type in `CMake`, and look for a `CMake: Configure` command, select it. It will configure the cache files and makefile which are located in `build` folder by default.
 3. Type in or look for a `CMake: Build` command in the Command Palette and execute it. It will compile the source codes of the solution that you previously chose.
 4. (Debug) Press  `Ctrl` + `Shift` + `D` or click the bug icon on the left. The `.vscode/launch.json` for debugging is already set up for you, so you can freely set your break points and start debugging!
@@ -88,5 +93,5 @@ Add following lines to your `settings.json` to configure the building and lintin
 
 **Clear build folder:**
 
-​	Press `Ctrl` + `Shift` + `P` to bring up the Command Palette. Type in `Task: Run Task` and press `enter`. Choose `clean` will delete everything in the `build` folder. Bear in mind that you need to configure the project after cleaning the folder or switching to another solution, by either executing `Task: Run Task` -> `configure` or `CMake: Configure`.
+1. Press `Ctrl` + `Shift` + `P` to bring up the Command Palette. Type in `Task: Run Task` and press `enter`. Choose `clean` will delete everything in the `build` folder. Bear in mind that you need to configure the project after cleaning the folder or switching to another solution, by either executing `Task: Run Task` -> `configure` or `CMake: Configure`.
 
