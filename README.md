@@ -17,6 +17,7 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 4. [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)
 
+- Non-recursive: [28 ms](https://leetcode.com/submissions/detail/207084478/) (top 96.13%)
 - Recursion: [16 ms](https://leetcode.com/submissions/detail/162238879/) **(top 100.00%)**
 
 5. [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
@@ -43,7 +44,11 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 10. [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/)
 
-- Dynamic programming: [4ms](https://leetcode.com/submissions/detail/163443067/) **(top 100.00%)** [Source](
+- Dynamic programming: [4ms](https://leetcode.com/submissions/detail/163443067/) **(top 100.00%)**
+
+11. [Container With Most Water](https://leetcode.com/problems/container-with-most-water/)
+
+- Two pointers: [12ms](https://leetcode.com/submissions/detail/207126145/) **(top 100.00%)**
 
 ------
 
@@ -75,7 +80,7 @@ Add following lines to your `settings.json` to configure the building and lintin
 
 **Steps to build a solution:**
 
-1. Change the line `set(PROBLEM_NAME {Problem_Folder})` in `CMakeLists.txt` to choose the problem you want to solve, in which `{Problem_Folder}` is the folder name of the problem. For example, `set(PROBLEM_NAME "001-Two-Sum")`.
+1. Change the line `set(PROBLEM_NAME {Problem_Folder})` in `CMakeLists.txt` to choose the problem you want to solve, in which `{Problem_Folder}` is the folder name of the problem. For example, `set(PROBLEM_NAME "001-001-Two-Sum")`.
 2. Press `Ctrl` + `Shift` + `P` to bring up the Command Palette of VSCode. Type in `CMake`, and look for a `CMake: Configure` command, select it. It will configure the cache files and makefile which are located in `build` folder by default.
 3. Type in or look for a `CMake: Build` command in the Command Palette and execute it. It will compile the source codes of the solution that you previously chose.
 4. (Debug) Press  `Ctrl` + `Shift` + `D` or click the bug icon on the left. The `.vscode/launch.json` for debugging is already set up for you, so you can freely set your break points and start debugging!
@@ -83,5 +88,5 @@ Add following lines to your `settings.json` to configure the building and lintin
 
 **Clear build folder:**
 
-​Press `Ctrl` + `Shift` + `P` to bring up the Command Palette. Type in `Task: Run Task` and press `enter`. Choose `clean` will delete everything in the `build` folder. Bear in mind that you need to configure the project after cleaning the folder or switching to another solution, by either executing `Task: Run Task` -> `configure` or `CMake: Configure`.
+​	Press `Ctrl` + `Shift` + `P` to bring up the Command Palette. Type in `Task: Run Task` and press `enter`. Choose `clean` will delete everything in the `build` folder. Bear in mind that you need to configure the project after cleaning the folder or switching to another solution, by either executing `Task: Run Task` -> `configure` or `CMake: Configure`.
 

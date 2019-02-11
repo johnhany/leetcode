@@ -15,21 +15,21 @@ string Solution::longestPalindrome(string s) {
 		t += s[i];
 		t += "#";
 	}
-	//t += '^';
+	//t += '$';
 	vector<int> p(t.size(), 0);
-	int id = 0, mx = 0, maxCenter = 0, maxLength = 0;
-	for (int i=0; i<t.size(); i++) {
-		p[i] = mx > i ? min(p[2 * id - i], mx - i) : 1;
+	int R = 0, C = 0, maxLen = 0, maxC = 0;
+	for (int i=1; i<t.size(); i++) {
+		p[i] = R > i ? min(p[2 * C - i], R - i) : 1;
 		while (t[i + p[i]] == t[i - p[i]])
 			p[i]++;
-		if (mx < i + p[i]) {
-			mx = i + p[i];
-			id = i;
+		if (R < i + p[i]) {
+			R = i + p[i];
+			C = i;
 		}
-		if (maxLength < p[i]) {
-			maxLength = p[i];
-			maxCenter = i;
+		if (maxLen < p[i]) {
+			maxLen = p[i];
+			maxC = i;
 		}
 	}
-	return s.substr((maxCenter - maxLength) / 2, maxLength - 1);
+	return s.substr((maxC - maxLen) / 2, maxLen - 1);
 }
