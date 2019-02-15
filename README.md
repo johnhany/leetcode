@@ -52,8 +52,13 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 12. [Integer to Roman](https://leetcode.com/problems/integer-to-roman/)
 
-- Brutal force: [28ms](https://leetcode.com/submissions/detail/207183826/) (top 99.20%)
+- Two arrays: [28ms](https://leetcode.com/submissions/detail/207183826/) (top 99.20%)
 - Lookup table: [28ms](https://leetcode.com/submissions/detail/207184862/) (top 99.20%)
+
+13. [Roman to Integer](https://leetcode.com/problems/roman-to-integer/)
+
+- Two vectors: [36ms](https://leetcode.com/submissions/detail/208110036/) (top 98.41%)
+- Map: [44ms](https://leetcode.com/submissions/detail/208111358/) (top 97.72%)
 
 ------
 

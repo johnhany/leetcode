@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.5)
 project(leetcode)
 
-set(PROBLEM_NAME "012-Integer-to-Roman-lookup-table")
+set(PROBLEM_NAME "013-Roman-to-Integer-map")
 
 set(CMAKE_CXX_STANDARD 14)
 
