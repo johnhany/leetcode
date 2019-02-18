@@ -10,10 +10,24 @@ static auto x = []() {
 
 
 vector<vector<int>> Solution::threeSum(vector<int>& nums) {
-	vector<vector<int>> results;
-	set<int> unums;
-	for (vector<int>::iterator itr = nums.begin(); itr != nums.end(); itr++)
-		unums.insert(*itr);
-	int left = 0, right = unums.size() - 1;
-
+	// http://www.cnblogs.com/grandyang/p/4481576.html
+	vector<vector<int>> res;
+	sort(nums.begin(), nums.end());
+	if (nums.empty() || nums.back() < 0 || nums.front() > 0) return {};
+	for (int k = 0; k < nums.size(); ++k) {
+		if (nums[k] > 0) break;
+		if (k > 0 && nums[k] == nums[k - 1]) continue;
+		int target = 0 - nums[k];
+		int i = k + 1, j = nums.size() - 1;
+		while (i < j) {
+			if (nums[i] + nums[j] == target) {
+				res.push_back({nums[k], nums[i], nums[j]});
+				while (i < j && nums[i] == nums[i + 1]) ++i;
+				while (i < j && nums[j] == nums[j - 1]) --j;
+				++i; --j;
+			} else if (nums[i] + nums[j] < target) ++i;
+			else --j;
+		}
+	}
+	return res;
 }
