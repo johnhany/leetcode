@@ -81,6 +81,10 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 - Set: [40ms](https://leetcode.com/submissions/detail/208778417/) (top 82.57%)
 - Fast for-loop: [20ms](https://leetcode.com/submissions/detail/208780575/) (top 90.04%)
 
+19. [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)
+
+- One pass: [8ms](https://leetcode.com/submissions/detail/208784263/) **(top 100.00%)**
+
 ------
 
 ## Environment
