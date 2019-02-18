@@ -76,6 +76,11 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 - Deque: [4ms](https://leetcode.com/submissions/detail/208767129/) **(top 100.00%)**
 
+18. [4Sum](https://leetcode.com/problems/4sum/)
+
+- Set: [40ms](https://leetcode.com/submissions/detail/208778417/) (top 82.57%)
+- Fast for-loop: [20ms](https://leetcode.com/submissions/detail/208780575/) (top 90.04%)
+
 ------
 
 ## Environment

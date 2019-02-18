@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.5)
 project(leetcode)
 
-set(PROBLEM_NAME "017-Letter-Combinations-of-a-Phone-Number")
+set(PROBLEM_NAME "018-4Sum")
 
 set(CMAKE_CXX_STANDARD 14)
 
