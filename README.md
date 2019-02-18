@@ -85,6 +85,10 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 - One pass: [8ms](https://leetcode.com/submissions/detail/208784263/) **(top 100.00%)**
 
+20. [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)
+
+- Stack: [4ms](https://leetcode.com/submissions/detail/208788918/) **(top 100.00%)**
+
 ------
 
 ## Environment
