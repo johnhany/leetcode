@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.5)
 project(leetcode)
 
-set(PROBLEM_NAME "015-3Sum")
+set(PROBLEM_NAME "016-3Sum-Closest")
 
 set(CMAKE_CXX_STANDARD 14)
 

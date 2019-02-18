@@ -68,6 +68,10 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 - Two pointers: [112ms](https://leetcode.com/submissions/detail/208704228/) (top 99.88%)
 
+16. [3Sum Closest](https://leetcode.com/problems/3sum-closest/)
+
+- Two pointers: [8ms](https://leetcode.com/submissions/detail/208717787/) **(top 100.00%)**
+
 ------
 
 ## Environment
