@@ -72,6 +72,10 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 - Two pointers: [8ms](https://leetcode.com/submissions/detail/208717787/) **(top 100.00%)**
 
+17. [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)
+
+- Deque: [4ms](https://leetcode.com/submissions/detail/208767129/) **(top 100.00%)**
+
 ------
 
 ## Environment
