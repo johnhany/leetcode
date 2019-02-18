@@ -60,6 +60,10 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 - Two vectors: [36ms](https://leetcode.com/submissions/detail/208110036/) (top 98.41%)
 - Map: [44ms](https://leetcode.com/submissions/detail/208111358/) (top 97.72%)
 
+14. [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)
+
+- [4ms](https://leetcode.com/submissions/detail/208296888/) **(top 100.00%)**
+
 ------
 
 ## Environment
