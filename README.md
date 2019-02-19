@@ -89,6 +89,10 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 - Stack: [4ms](https://leetcode.com/submissions/detail/208788918/) **(top 100.00%)**
 
+21. [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)
+
+- Two swaps: [12ms](https://leetcode.com/submissions/detail/209094239/) **(top 100.00%)**
+
 ------
 
 ## Environment
