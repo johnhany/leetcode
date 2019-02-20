@@ -93,6 +93,10 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 - Two swaps: [12ms](https://leetcode.com/submissions/detail/209094239/) **(top 100.00%)**
 
+22. [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)
+
+- Deque: [8ms](https://leetcode.com/submissions/detail/209312997/) **(top 100.00%)**
+
 ------
 
 ## Environment
