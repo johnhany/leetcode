@@ -97,6 +97,11 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 - Deque: [8ms](https://leetcode.com/submissions/detail/209312997/) **(top 100.00%)**
 
+23. [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)
+
+- Use 021: [176ms](https://leetcode.com/submissions/detail/209596082/) (top 25.72%)
+- Priority queue: [32ms](https://leetcode.com/submissions/detail/209600116/) (top 98.10%)
+
 ------
 
 ## Environment
