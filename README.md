@@ -36,7 +36,7 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 8. [String to Integer (atoi)](https://leetcode.com/submissions/detail/163418517/)
 
-- Use `INT_MAX`: [8ms](https://leetcode.com/submissions/detail/163418517/) (top 99.90%)
+- Use `INT_MAX`: [8ms](https://leetcode.com/submissions/detail/163418517/) **(top 99.90%)**
 
 9. [Palindrome Number](https://leetcode.com/problems/palindrome-number/)
 
@@ -53,7 +53,7 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 12. [Integer to Roman](https://leetcode.com/problems/integer-to-roman/)
 
 - Two arrays: [28ms](https://leetcode.com/submissions/detail/207183826/) (top 99.20%)
-- Lookup table: [28ms](https://leetcode.com/submissions/detail/207184862/) (top 99.20%)
+- Lookup table: [28ms](https://leetcode.com/submissions/detail/207184862/) **(top 99.20%)**
 
 13. [Roman to Integer](https://leetcode.com/problems/roman-to-integer/)
 
@@ -66,7 +66,7 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 15. [3Sum](https://leetcode.com/problems/3sum/)
 
-- Two pointers: [112ms](https://leetcode.com/submissions/detail/208704228/) (top 99.88%)
+- Two pointers: [112ms](https://leetcode.com/submissions/detail/208704228/) **(top 99.88%)**
 
 16. [3Sum Closest](https://leetcode.com/problems/3sum-closest/)
 
@@ -101,6 +101,14 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 - Use 021: [176ms](https://leetcode.com/submissions/detail/209596082/) (top 25.72%)
 - Priority queue: [32ms](https://leetcode.com/submissions/detail/209600116/) (top 98.10%)
+
+26. [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
+
+- [20ms](https://leetcode.com/submissions/detail/213952893/) **(top 99.75%)**
+
+28. [Implement strStr()](https://leetcode.com/problems/implement-strstr/)
+
+- [8ms](https://leetcode.com/submissions/detail/213957985/) (top 98.99%)
 
 ------
 
