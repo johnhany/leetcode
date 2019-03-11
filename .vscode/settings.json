@@ -6,6 +6,8 @@
     },
     "C_Cpp.intelliSenseEngineFallback": "Enabled",
     "files.associations": {
-        "limits": "cpp"
+        "limits": "cpp",
+        "iostream": "cpp",
+        "ostream": "cpp"
     }
 }

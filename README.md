@@ -110,6 +110,10 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 - [8ms](https://leetcode.com/submissions/detail/213957985/) (top 98.99%)
 
+29. [Divide Two Integers](https://leetcode.com/problems/divide-two-integers/)
+
+- All `int` without `<limits.h>`: [8ms](https://leetcode.com/submissions/detail/214028878/) **(top 100.00%)**
+
 ------
 
 ## Environment
