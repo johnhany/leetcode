@@ -52,3 +52,135 @@
         mymap.insert(lb, map<AType, BType>::value_type(key, value));
     }
     ```
+
+7. Number of `1` in binary format of int `x`:
+
+    ```cpp
+    int count = 0;
+    while (x) {
+        x = x & (x-1);
+        count++;
+    }
+    ```
+
+8. Keyword `volatile`:
+
+    [https://stackoverflow.com/a/72617/3829845](https://stackoverflow.com/a/72617/3829845)
+
+9. Execution order of `printf` with `++` operators:
+
+    [https://www.geeksforgeeks.org/execution-printf-operators/](https://www.geeksforgeeks.org/execution-printf-operators/)
+
+10. Pointer-to-member operator `.*` and `->*`:
+
+    [https://stackoverflow.com/questions/2548555/dot-asterisk-operator-in-c](https://stackoverflow.com/questions/2548555/dot-asterisk-operator-in-c)
+
+11. Scope resolution operator `::a`:
+
+    [https://www.tutorialspoint.com/cplusplus-scope-resolution-operator](https://www.tutorialspoint.com/cplusplus-scope-resolution-operator)
+
+12. Check if `x` is `2^k`:
+
+    ```cpp
+    !(x & (x-1))
+    ```
+
+13. Bitwise average number of `int` `x` and `y`:
+
+    ```cpp
+    (x & y) + ((x ^ y) >> 1)
+    ```
+
+14. Copy blocks of memory:
+
+    ```cpp
+    memcpy(a, b, sizeof(a));
+    ```
+
+    is faster than
+
+    ```cpp
+    std::copy(&a[0], &a[3], &b[0]);
+    ```
+
+15. `memcpy` vs `memmove`:
+
+    Addresses of source and destination should not overlap when using `memcpy`.
+
+    `memmove` is always safer but slightly slower than `memcpy`.
+
+16. Assign a 2d array:
+
+    If `array` is declared with `T array[M][N]` and we are still in the same scope as the declaration:
+
+    ```cpp
+    memset(array, 0, sizeof array);
+    ```
+
+    Otherwise, use:
+
+    ```cpp
+    memset(array, 0, sizeof(array[0][0]) * M * N);
+    ```
+
+17. `malloc` vs `new`:
+
+    [https://stackoverflow.com/a/240308/3829845](https://stackoverflow.com/a/240308/3829845)
+    [https://stackoverflow.com/a/184540/3829845](https://stackoverflow.com/a/184540/3829845)
+
+18. The purpose of `extern "C"`:
+
+    Overloading of function names is not supported in C. A function `void func(int, int)` would generate a function-name like `_func` by C compiler, but would be `_func_int_int` by C++ compiler. `extern "C"` makes sure that client C codes can link to the correct function.
+
+19. Common undefined behaviours:
+
+    [https://stackoverflow.com/a/367662/3829845](https://stackoverflow.com/a/367662/3829845)
+
+20. Pass-by-reference vs pass-by-pointer:
+
+    [https://stackoverflow.com/a/334866/3829845](https://stackoverflow.com/a/334866/3829845)
+
+21. `mutable` keyword:
+
+    [https://stackoverflow.com/a/2384201/3829845](https://stackoverflow.com/a/2384201/3829845)
+
+22. `private` vs `protected`:
+
+    [https://stackoverflow.com/a/224977/3829845](https://stackoverflow.com/a/224977/3829845)
+
+23. Bitwise const vs logical const:
+
+    [https://stackoverflow.com/a/3830484/3829845](https://stackoverflow.com/a/3830484/3829845)
+
+24. Pointer and const - Clockwise/Spiral Rule:
+
+    [https://stackoverflow.com/a/1143272/3829845](https://stackoverflow.com/a/1143272/3829845)
+
+25. `friend` class and function:
+
+    [https://www.geeksforgeeks.org/friend-class-function-cpp/](https://www.geeksforgeeks.org/friend-class-function-cpp/)
+
+26. Lambda expression:
+
+    [https://docs.microsoft.com/en-us/cpp/cpp/lambda-expressions-in-cpp?view=vs-2017](https://docs.microsoft.com/en-us/cpp/cpp/lambda-expressions-in-cpp?view=vs-2017)
+    [https://stackoverflow.com/a/105061/3829845](https://stackoverflow.com/a/105061/3829845)
+    [https://docs.microsoft.com/en-us/cpp/cpp/examples-of-lambda-expressions?view=vs-2017](https://docs.microsoft.com/en-us/cpp/cpp/examples-of-lambda-expressions?view=vs-2017)
+
+27. `this` pointer:
+
+    [https://www.tutorialspoint.com/cplusplus/cpp_this_pointer.htm](https://www.tutorialspoint.com/cplusplus/cpp_this_pointer.htm)
+
+28. Stack memory vs heap memory:
+
+    [https://stackoverflow.com/a/80113/3829845](https://stackoverflow.com/a/80113/3829845)
+    [https://www.programmerinterview.com/index.php/data-structures/difference-between-stack-and-heap/](https://www.programmerinterview.com/index.php/data-structures/difference-between-stack-and-heap/)
+
+29. Smart pointer:
+
+    [https://www.programmerinterview.com/index.php/data-structures/difference-between-stack-and-heap/](https://www.programmerinterview.com/index.php/data-structures/difference-between-stack-and-heap/)
+    [https://docs.microsoft.com/en-us/cpp/cpp/smart-pointers-modern-cpp?view=vs-2017](https://docs.microsoft.com/en-us/cpp/cpp/smart-pointers-modern-cpp?view=vs-2017)
+
+30. Memory leak:
+
+    [https://www.geeksforgeeks.org/memory-leak-in-c-and-how-to-avoid-it/](https://www.geeksforgeeks.org/memory-leak-in-c-and-how-to-avoid-it/)
+
