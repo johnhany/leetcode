@@ -184,3 +184,19 @@
 
     [https://www.geeksforgeeks.org/memory-leak-in-c-and-how-to-avoid-it/](https://www.geeksforgeeks.org/memory-leak-in-c-and-how-to-avoid-it/)
 
+31. Header-only:
+
+    [https://stackoverflow.com/questions/12671383/benefits-of-header-only-libraries](https://stackoverflow.com/questions/12671383/benefits-of-header-only-libraries)
+
+32. Dangling pointer and wild pointer:
+
+    [https://www.geeksforgeeks.org/dangling-void-null-wild-pointers/](https://www.geeksforgeeks.org/dangling-void-null-wild-pointers/)
+
+33. Thread `join` vs `detach`:
+
+    [https://stackoverflow.com/questions/37015775/what-is-different-between-join-and-detach-for-multi-threading-in-c](https://stackoverflow.com/questions/37015775/what-is-different-between-join-and-detach-for-multi-threading-in-c)
+
+34. Iterator invalidation rule:
+
+    [https://stackoverflow.com/a/54004916/3829845](https://stackoverflow.com/a/54004916/3829845)
+
