@@ -200,3 +200,18 @@
 
     [https://stackoverflow.com/a/54004916/3829845](https://stackoverflow.com/a/54004916/3829845)
 
+35. `lvalue` and `rvalue`:
+
+    [https://eli.thegreenplace.net/2011/12/15/understanding-lvalues-and-rvalues-in-c-and-c/](https://eli.thegreenplace.net/2011/12/15/understanding-lvalues-and-rvalues-in-c-and-c/)
+
+36. Rule of three/five:
+
+    [https://cpppatterns.com/patterns/rule-of-five.html](https://cpppatterns.com/patterns/rule-of-five.html)
+    [https://en.cppreference.com/w/cpp/language/rule_of_three](https://en.cppreference.com/w/cpp/language/rule_of_three)
+    [http://www.modernescpp.com/index.php/c-core-guidelines-constructors-assignments-and-desctructors](http://www.modernescpp.com/index.php/c-core-guidelines-constructors-assignments-and-desctructors)
+
+37. Move constructor/assignment:
+
+    [https://stackoverflow.com/a/3109981/3829845](https://stackoverflow.com/a/3109981/3829845)
+    [https://stackoverflow.com/a/11540204/3829845](https://stackoverflow.com/a/11540204/3829845)
+
