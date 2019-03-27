@@ -215,3 +215,9 @@
     [https://stackoverflow.com/a/3109981/3829845](https://stackoverflow.com/a/3109981/3829845)
     [https://stackoverflow.com/a/11540204/3829845](https://stackoverflow.com/a/11540204/3829845)
 
+38. Avoid using `iterator`s when performing recursion in `vector`, they might not act as expected.
+
+39. `nullptr` vs `NULL`:
+
+    [https://stackoverflow.com/a/20509811/3829845](https://stackoverflow.com/a/20509811/3829845)
+
