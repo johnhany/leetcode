@@ -221,3 +221,39 @@
 
     [https://stackoverflow.com/a/20509811/3829845](https://stackoverflow.com/a/20509811/3829845)
 
+40. Concatenate two `list`s:
+
+    Copy:
+
+    ```cpp
+    a.insert(a.end(), b.begin(), b.end());
+    ```
+
+    Move:
+
+    ```cpp
+    a.splice(a.end(), b);
+    ```
+
+41. `List` to `vector`:
+
+    Copy:
+
+    ```cpp
+    std::vector<T> v{ std::begin(l), std::end(l) };
+    ```
+
+    Move:
+
+    ```cpp
+    std::vector<T> v{ std::make_move_iterator(std::begin(l)),
+                      std::make_move_iterator(std::end(l)) };
+    ```
+
+42. `INT_MIN` and `MIN_MAX`:
+
+    ```cpp
+    int int_max = (int)((~((unsigned int) 0)) >> 1);
+    int int_min = ~int_max;
+    ```
+
