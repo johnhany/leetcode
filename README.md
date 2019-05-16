@@ -1,5 +1,9 @@
 # leetcode
 
+![Progress](http://progressed.io/bar/85?title=TimingTop99+)
+![Progress](http://progressed.io/bar/15?title=TopInterviewed)
+![Progress](http://progressed.io/bar/2?title=All)
+
 Personal notes for [leetcode.com](https://leetcode.com) solutions with support for local building and unit testing.
 
 1. [Two Sum](https://leetcode.com/problems/two-sum/description/)
