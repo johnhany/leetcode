@@ -114,6 +114,10 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 - All `int` without `<limits.h>`: [8ms](https://leetcode.com/submissions/detail/214028878/) **(top 100.00%)**
 
+33. [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)
+
+- [0ms](https://leetcode.com/submissions/detail/229278082/) **(top 100.00%)**
+
 ------
 
 ## Environment

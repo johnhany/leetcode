@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.5)
 project(leetcode)
 
-set(PROBLEM_NAME "029-Divide-Two-Integers")
+set(PROBLEM_NAME "030-Search-in-Rotated-Sorted-Array")
 
 set(CMAKE_CXX_STANDARD 14)
 
