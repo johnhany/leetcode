@@ -1,7 +1,7 @@
 # leetcode
 
-![Progress](http://progressed.io/bar/85?title=TimingTop99+)
-![Progress](http://progressed.io/bar/15?title=TopInterviewed)
+![Progress](http://progressed.io/bar/82?title=TimingTop99+)
+![Progress](http://progressed.io/bar/16?title=TopInterviewed)
 ![Progress](http://progressed.io/bar/2?title=All)
 
 Personal notes for [leetcode.com](https://leetcode.com) solutions with support for local building and unit testing.
@@ -121,6 +121,10 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 33. [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)
 
 - [0ms](https://leetcode.com/submissions/detail/229278082/) **(top 100.00%)**
+
+34. [Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
+
+- [8ms](https://leetcode.com/submissions/detail/229284793/) (98.52%)
 
 ------
 
