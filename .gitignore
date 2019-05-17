@@ -32,4 +32,5 @@
 *.app
 
 build/*
+.vscode/settings.json
 .vscode/ipch/*

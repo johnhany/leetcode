@@ -1,7 +1,7 @@
 # leetcode
 
-![Progress](http://progressed.io/bar/82?title=TimingTop99+)
-![Progress](http://progressed.io/bar/16?title=TopInterviewed)
+![Progress](http://progressed.io/bar/80?title=TimingTop99+)
+![Progress](http://progressed.io/bar/17?title=TopInterviewed)
 ![Progress](http://progressed.io/bar/2?title=All)
 
 Personal notes for [leetcode.com](https://leetcode.com) solutions with support for local building and unit testing.
@@ -124,11 +124,15 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 34. [Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
 
-- [8ms](https://leetcode.com/submissions/detail/229284793/) (98.52%)
+- [8ms](https://leetcode.com/submissions/detail/229284793/) (top 98.52%)
 
 36. [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)
 
-- [8ms](https://leetcode.com/submissions/detail/229539524/) **(99.96%)**
+- [8ms](https://leetcode.com/submissions/detail/229539524/) **(top 99.96%)**
+
+38. [Count and Say](https://leetcode.com/problems/count-and-say/)
+
+- [4ms](https://leetcode.com/submissions/detail/229554165/) (top 97.84%)
 
 ------
 
