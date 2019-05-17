@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.5)
 project(leetcode)
 
-set(PROBLEM_NAME "034-Find-First-and-Last-Position-of-Element-in-Sorted-Array")
+set(PROBLEM_NAME "036-Valid-Sudoku")
 
 set(CMAKE_CXX_STANDARD 14)
 

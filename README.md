@@ -126,6 +126,10 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 - [8ms](https://leetcode.com/submissions/detail/229284793/) (98.52%)
 
+36. [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)
+
+- [8ms](https://leetcode.com/submissions/detail/229539524/) **(99.96%)**
+
 ------
 
 ## Environment

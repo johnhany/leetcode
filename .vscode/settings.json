@@ -4,10 +4,5 @@
         "titleBar.activeBackground": "#402F8F",
         "titleBar.activeForeground": "#FCFCFE"
     },
-    "C_Cpp.intelliSenseEngineFallback": "Enabled",
-    "files.associations": {
-        "limits": "cpp",
-        "iostream": "cpp",
-        "ostream": "cpp"
-    }
+    "C_Cpp.intelliSenseEngineFallback": "Enabled"
 }
