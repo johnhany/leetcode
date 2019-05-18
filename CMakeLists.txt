@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.5)
 project(leetcode)
 
-set(PROBLEM_NAME "042-Trapping-Rain-Water")
+set(PROBLEM_NAME "044-Wildcard-Matching")
 
 set(CMAKE_CXX_STANDARD 14)
 
