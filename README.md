@@ -1,8 +1,8 @@
 # leetcode
 
-![Progress](http://progressed.io/bar/80?title=TimingTop99+)
-![Progress](http://progressed.io/bar/17?title=TopInterviewed)
-![Progress](http://progressed.io/bar/2?title=All)
+![Progress](http://progressed.io/bar/76?title=TimingTop99+)
+![Progress](http://progressed.io/bar/20?title=TopInterviewed)
+![Progress](http://progressed.io/bar/3?title=All)
 
 Personal notes for [leetcode.com](https://leetcode.com) solutions with support for local building and unit testing.
 
@@ -145,6 +145,11 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 44. [Wildcard Matching](https://leetcode.com/problems/wildcard-matching/)
 
 - [4ms](https://leetcode.com/submissions/detail/229689968/) **(top 99.84%)**
+
+46. [Permutations](https://leetcode.com/problems/permutations/)
+
+- Recursive: [20ms](https://leetcode.com/submissions/detail/229700657/) (top 22.83%)
+- Better loop: [12ms](https://leetcode.com/submissions/detail/229703064/) (top 96.86%)
 
 ------
 
