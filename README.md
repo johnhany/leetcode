@@ -134,6 +134,10 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 - [4ms](https://leetcode.com/submissions/detail/229554165/) (top 97.84%)
 
+39. [First Missing Positive](https://leetcode.com/problems/first-missing-positive/)
+
+- [4ms](https://leetcode.com/submissions/detail/229675184/) (top 96.34%)
+
 ------
 
 ## Environment

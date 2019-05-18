@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.5)
 project(leetcode)
 
-set(PROBLEM_NAME "038-Count-and-Say")
+set(PROBLEM_NAME "041-First-Missing-Positive")
 
 set(CMAKE_CXX_STANDARD 14)
 
