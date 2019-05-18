@@ -151,6 +151,11 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 - Recursive: [20ms](https://leetcode.com/submissions/detail/229700657/) (top 22.83%)
 - Better loop: [12ms](https://leetcode.com/submissions/detail/229703064/) (top 96.86%)
 
+48. [Rotate Image](https://leetcode.com/problems/rotate-image/)
+
+- Direct rotation: [4ms](https://leetcode.com/submissions/detail/229728814/) (top 98.21%)
+- Flip & swap: [4ms](https://leetcode.com/submissions/detail/229729814/) (top 98.21%)
+
 ------
 
 ## Environment

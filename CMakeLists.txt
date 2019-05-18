@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.5)
 project(leetcode)
 
-set(PROBLEM_NAME "046-Permutations-better-loop")
+set(PROBLEM_NAME "048-Rotate-Image-swap")
 
 set(CMAKE_CXX_STANDARD 14)
 
