@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.5)
 project(leetcode)
 
-set(PROBLEM_NAME "048-Rotate-Image-swap")
+set(PROBLEM_NAME "049-Group-Anagrams")
 
 set(CMAKE_CXX_STANDARD 14)
 

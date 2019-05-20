@@ -156,6 +156,10 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 - Direct rotation: [4ms](https://leetcode.com/submissions/detail/229728814/) (top 98.21%)
 - Flip & swap: [4ms](https://leetcode.com/submissions/detail/229729814/) (top 98.21%)
 
+49. [Group Anagrams](https://leetcode.com/problems/group-anagrams/)
+
+- [40ms](https://leetcode.com/submissions/detail/230186536/) (top 95.50%)
+
 ------
 
 ## Environment
