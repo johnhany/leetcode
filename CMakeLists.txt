@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.5)
 project(leetcode)
 
-set(PROBLEM_NAME "049-Group-Anagrams")
+set(PROBLEM_NAME "050-Pow(x, n)")
 
 set(CMAKE_CXX_STANDARD 14)
 

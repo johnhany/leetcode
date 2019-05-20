@@ -1,8 +1,7 @@
 # leetcode
 
-![Progress](http://progressed.io/bar/76?title=TimingTop99+)
-![Progress](http://progressed.io/bar/20?title=TopInterviewed)
-![Progress](http://progressed.io/bar/3?title=All)
+![Progress](http://progressed.io/bar/22?title=TopInterviewed)
+![Progress](http://progressed.io/bar/3?title=OverallCompleted)
 
 Personal notes for [leetcode.com](https://leetcode.com) solutions with support for local building and unit testing.
 
@@ -159,6 +158,10 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 49. [Group Anagrams](https://leetcode.com/problems/group-anagrams/)
 
 - [40ms](https://leetcode.com/submissions/detail/230186536/) (top 95.50%)
+
+50. [Pow(x, n)](https://leetcode.com/problems/powx-n/)
+
+- [4ms](https://leetcode.com/submissions/detail/230192088/) (top 96.07%)
 
 ------
 
