@@ -172,6 +172,10 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 - [0ms](https://leetcode.com/submissions/detail/230362738/) **(top 100.00%)**
 
+55. [Jump Game](https://leetcode.com/problems/jump-game/)
+
+- [4ms](https://leetcode.com/submissions/detail/230366391/) **(top 99.99%)**
+
 ------
 
 ## Environment
