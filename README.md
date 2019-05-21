@@ -163,6 +163,11 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 - [4ms](https://leetcode.com/submissions/detail/230192088/) (top 96.07%)
 
+53. [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
+
+- Divide and conquer: [8ms](https://leetcode.com/submissions/detail/230357741/) (top 96.32%)
+- Kadane: [4ms](https://leetcode.com/submissions/detail/230359418/) **(top 99.88%)**
+
 ------
 
 ## Environment
