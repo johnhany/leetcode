@@ -176,6 +176,10 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 - [4ms](https://leetcode.com/submissions/detail/230366391/) **(top 99.99%)**
 
+56. [Merge Intervals](https://leetcode.com/problems/merge-intervals/)
+
+- [16ms](https://leetcode.com/submissions/detail/230370679/) (top 75.69%)
+
 ------
 
 ## Environment
