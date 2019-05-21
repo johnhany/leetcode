@@ -1,7 +1,7 @@
 # leetcode
 
-![Progress](http://progressed.io/bar/22?title=TopInterviewed)
-![Progress](http://progressed.io/bar/3?title=OverallCompleted)
+![Progress](http://progressed.io/bar/25?title=TopInterviewed)
+![Progress](http://progressed.io/bar/4?title=OverallCompleted)
 
 Personal notes for [leetcode.com](https://leetcode.com) solutions with support for local building and unit testing.
 
