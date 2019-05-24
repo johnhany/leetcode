@@ -180,6 +180,10 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 - [16ms](https://leetcode.com/submissions/detail/230370679/) (top 75.69%)
 
+62. [Unique Paths](https://leetcode.com/problems/unique-paths/)
+
+- [4ms](https://leetcode.com/submissions/detail/231087530/) (top 93.30%)
+
 ------
 
 ## Environment
