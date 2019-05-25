@@ -1,6 +1,6 @@
 # leetcode
 
-![Progress](http://progressed.io/bar/25?title=TopInterviewed)
+![Progress](http://progressed.io/bar/26?title=TopInterviewed)
 ![Progress](http://progressed.io/bar/4?title=OverallCompleted)
 
 Personal notes for [leetcode.com](https://leetcode.com) solutions with support for local building and unit testing.
@@ -183,6 +183,10 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 62. [Unique Paths](https://leetcode.com/problems/unique-paths/)
 
 - [4ms](https://leetcode.com/submissions/detail/231087530/) (top 93.30%)
+
+66. [Plus One](https://leetcode.com/problems/plus-one/)
+
+- [0ms](https://leetcode.com/submissions/detail/231259041/) **(top 100.00%)**
 
 ------
 
