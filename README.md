@@ -188,6 +188,10 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 - [0ms](https://leetcode.com/submissions/detail/231259041/) **(top 100.00%)**
 
+69. [Sqrt(x)](https://leetcode.com/problems/sqrtx/)
+
+- [0ms](https://leetcode.com/submissions/detail/231415498/) **(top 100.00%)**
+
 ------
 
 ## Environment
