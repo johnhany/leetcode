@@ -196,6 +196,10 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 - [4ms](https://leetcode.com/submissions/detail/231674096/) (top 90.67%)
 
+73. [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)
+
+- [44ms](https://leetcode.com/submissions/detail/231696419/) (top 98.55%)
+
 ------
 
 ## Environment
