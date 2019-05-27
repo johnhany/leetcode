@@ -192,6 +192,10 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 - [0ms](https://leetcode.com/submissions/detail/231415498/) **(top 100.00%)**
 
+70. [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)
+
+- [4ms](https://leetcode.com/submissions/detail/231674096/) (top 90.67%)
+
 ------
 
 ## Environment

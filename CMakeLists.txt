@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.5)
 project(leetcode)
 
-set(PROBLEM_NAME "069-Sqrt(x)")
+set(PROBLEM_NAME "070-Climbing-Stairs")
 
 set(CMAKE_CXX_STANDARD 14)
 
