@@ -200,6 +200,10 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 - [44ms](https://leetcode.com/submissions/detail/231696419/) (top 98.55%)
 
+75. [Sort Colors](https://leetcode.com/problems/sort-colors/)
+
+- [0ms](https://leetcode.com/submissions/detail/231976573/) **(top 100.00%)**
+
 ------
 
 ## Environment
