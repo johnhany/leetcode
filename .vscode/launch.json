@@ -22,6 +22,16 @@
                     "ignoreFailures": true
                 }
             ]
+        },
+        {
+            "name": "(lldb) Launch",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/test_main",
+            "args": [],
+            "initCommands": [
+                "command script import ${workspaceRoot}/debugvis.py"
+            ]
         }
     ]
 }

@@ -1,6 +1,6 @@
 # leetcode
 
-![Progress](http://progressed.io/bar/26?title=TopInterviewed)
+![Progress](http://progressed.io/bar/29?title=TopInterviewed)
 ![Progress](http://progressed.io/bar/4?title=OverallCompleted)
 
 Personal notes for [leetcode.com](https://leetcode.com) solutions with support for local building and unit testing.
@@ -208,15 +208,42 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 ## Environment
 
-- Ubuntu
+- Ubuntu 18.04
 - Visual Studio Code *with following extensions:*
-  - C/C++ (ms-vscode.cpptools)
-  - C/C++ Clang Command Adapter (mitaki28.vscode-clang)
-  - CMake (twxs.cmake)
-  - CMake Tools (vector-of-bool.cmake-tools)
-- clang (clang++ is used. You can use other tools as long as your `.vscode/c_cpp_properties.json` file is modified correctly) 
+  - C/C++ ([ms-vscode.cpptools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools))
+  - C/C++ Clang Command Adapter ([mitaki28.vscode-clang](https://marketplace.visualstudio.com/items?itemName=llvm-vs-code-extensions.vscode-clangd))
+  - CMake ([twxs.cmake](https://marketplace.visualstudio.com/items?itemName=twxs.cmake))
+  - CMake Tools ([vector-of-bool.cmake-tools](https://marketplace.visualstudio.com/items?itemName=vector-of-bool.cmake-tools))
+  - CodeLLDB ([vadimcn.vscode-lldb](https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb))
+
+```bash
+sudo snap install --classic code
+sudo apt-get install pylint
+```
+
+- clang (clang++-8 is used by default. You can use other tools as long as your `.vscode/c_cpp_properties.json` file is modified correctly)
+
+```bash
+wget -O - http://apt.llvm.org/llvm-snapshot.gpg.key|sudo apt-key add -
+sudo apt-get update
+sudo apt-get install clang-8 lldb-8
+```
+
 - CMake
 - Boost (for unit testing)
+
+```bash
+wget -O boost_1_70_0.tar.gz https://dl.bintray.com/boostorg/release/1.70.0/source/boost_1_70_0.tar.gz
+tar xzvf boost_1_70_0.tar.gz
+cd boost_1_70_0/
+
+sudo apt-get update
+sudo apt-get install build-essential g++ python-dev autotools-dev libicu-dev build-essential libbz2-dev libboost-all-dev
+
+./bootstrap.sh --prefix=/usr/
+./b2
+sudo ./b2 install
+```
 
 ## Usage
 
@@ -226,9 +253,10 @@ Add following lines to your `settings.json` to configure the building and lintin
 
 ```json
 {
-    "clang.executable": "clang++",
+    "clang.executable": "clang++-8",
     "clang.cflags": ["c11"],
-    "clang.cxxflags": ["-std=c++14"]
+    "clang.cxxflags": ["-std=c++14"],
+    "lldb.executable": "lldb-8"
 }
 ```
 
@@ -237,8 +265,13 @@ Add following lines to your `settings.json` to configure the building and lintin
 1. Change the line `set(PROBLEM_NAME {Problem_Folder})` in `CMakeLists.txt` to choose the problem you want to solve, in which `{Problem_Folder}` is the folder name of the problem. For example, `set(PROBLEM_NAME "001-Two-Sum")`.
 2. Press `Ctrl` + `Shift` + `P` to bring up the Command Palette of VSCode. Type in `CMake`, and look for a `CMake: Configure` command, select it. It will configure the cache files and makefile which are located in `build` folder by default.
 3. Type in or look for a `CMake: Build` command in the Command Palette and execute it. It will compile the source codes of the solution that you previously chose.
-4. (Debug) Press  `Ctrl` + `Shift` + `D` or click the bug icon on the left. The `.vscode/launch.json` for debugging is already set up for you, so you can freely set your break points and start debugging!
-5. (Unit testing) Type in or look for a `CMake: Run tests` command in the Command Palette and execute it. It will run all test cases in `solution_test.cpp`. Feel free to add your own test cases.
+4. **Debug** Press  `Ctrl` + `Shift` + `D` or click the bug icon on the left. The `.vscode/launch.json` for debugging is already set up for you, and both GDB and LLDB is supported.
+
+    **gdb**: Choose `(gdb) Launch` and you're good to go.
+
+    **lldb**: Choose `(lldb) Launch`. You may need to disable and re-enable `ms-vscode.cpptools` and `mitaki28.vscode-clang` extensions in case the variables won't properly display in "Watch" Panel. Data visualization is supported ([https://github.com/vadimcn/vscode-lldb/wiki/Data-visualization](https://github.com/vadimcn/vscode-lldb/wiki/Data-visualization)).
+
+5. **Unit testing** Type in or look for a `CMake: Run tests` command in the Command Palette and execute it. It will run all test cases in `solution_test.cpp`. Feel free to add your own test cases.
 
 **Clear build folder:**
 
