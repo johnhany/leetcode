@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.5)
 project(leetcode)
 
-set(PROBLEM_NAME "075-Sort-Colors")
+set(PROBLEM_NAME "076-Minimum-Window-Substring-hash")
 
 set(CMAKE_CXX_STANDARD 14)
 

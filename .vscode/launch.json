@@ -29,9 +29,9 @@
             "request": "launch",
             "program": "${workspaceFolder}/build/test_main",
             "args": [],
-            "initCommands": [
-                "command script import ${workspaceRoot}/debugvis.py"
-            ]
+            // "initCommands": [
+            //     "command script import ${workspaceRoot}/debugvis.py"
+            // ]
         }
     ]
 }

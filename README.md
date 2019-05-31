@@ -204,6 +204,12 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 - [0ms](https://leetcode.com/submissions/detail/231976573/) **(top 100.00%)**
 
+76. [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)
+
+- sliding window: [32ms](https://leetcode.com/submissions/detail/232627407/) (top 38.25%)
+- optimized sliding window: [44ms](https://leetcode.com/submissions/detail/232631706/) (top 19.33%)
+- hash: [4ms](https://leetcode.com/submissions/detail/232634035/) **(top 99.92%)**
+
 ------
 
 ## Environment
