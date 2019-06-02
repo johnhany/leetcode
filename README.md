@@ -214,6 +214,11 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 - [8ms](https://leetcode.com/submissions/detail/233101865/) (top 90.16%)
 
+79. [Word Search](https://leetcode.com/problems/word-search/)
+
+- [92ms](https://leetcode.com/submissions/detail/233113744/) (top 48.94%)
+- [72ms](https://leetcode.com/submissions/detail/233115782/) (top 52.02%)
+
 ------
 
 ## Environment

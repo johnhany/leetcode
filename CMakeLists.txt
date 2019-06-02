@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.5)
 project(leetcode)
 
-set(PROBLEM_NAME "078-Subsets")
+set(PROBLEM_NAME "079-Word-Search-inplace")
 
 set(CMAKE_CXX_STANDARD 14)
 
