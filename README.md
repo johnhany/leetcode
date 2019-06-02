@@ -210,6 +210,10 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 - optimized sliding window: [44ms](https://leetcode.com/submissions/detail/232631706/) (top 19.33%)
 - hash: [4ms](https://leetcode.com/submissions/detail/232634035/) **(top 99.92%)**
 
+78. [Subsets](https://leetcode.com/problems/subsets/)
+
+- [8ms](https://leetcode.com/submissions/detail/233101865/) (top 90.16%)
+
 ------
 
 ## Environment
