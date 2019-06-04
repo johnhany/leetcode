@@ -1,7 +1,7 @@
 # leetcode
 
-![Progress](http://progressed.io/bar/29?title=TopInterviewed)
-![Progress](http://progressed.io/bar/4?title=OverallCompleted)
+![Progress](http://progressed.io/bar/32?title=TopInterviewed)
+![Progress](http://progressed.io/bar/5?title=OverallCompleted)
 
 Personal notes for [leetcode.com](https://leetcode.com) solutions with support for local building and unit testing.
 
@@ -218,6 +218,11 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 - [92ms](https://leetcode.com/submissions/detail/233113744/) (top 48.94%)
 - [72ms](https://leetcode.com/submissions/detail/233115782/) (top 52.02%)
+
+84. [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/)
+
+- recursion: [32ms](https://leetcode.com/submissions/detail/233599788/) (top 14.84%)
+- non-recursion: [4ms](https://leetcode.com/submissions/detail/233606081/) **(top 100.00%)**
 
 ------
 
