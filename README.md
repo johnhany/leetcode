@@ -224,6 +224,11 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 - recursion: [32ms](https://leetcode.com/submissions/detail/233599788/) (top 14.84%)
 - non-recursion: [4ms](https://leetcode.com/submissions/detail/233606081/) **(top 100.00%)**
 
+88. [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)
+
+- additional space: [4ms](https://leetcode.com/submissions/detail/233801676/) (top 96.53%)
+- 3 pointers: [0ms](https://leetcode.com/submissions/detail/233802294/) **(top 100.00%)**
+
 ------
 
 ## Environment
