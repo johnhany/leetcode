@@ -229,6 +229,10 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 - additional space: [4ms](https://leetcode.com/submissions/detail/233801676/) (top 96.53%)
 - 3 pointers: [0ms](https://leetcode.com/submissions/detail/233802294/) **(top 100.00%)**
 
+91. [Decode Ways](https://leetcode.com/problems/decode-ways/)
+
+- [4ms](https://leetcode.com/submissions/detail/234483064/) (top 90.46%)
+
 ------
 
 ## Environment
