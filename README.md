@@ -1,6 +1,6 @@
 # leetcode
 
-![Progress](http://progressed.io/bar/32?title=TopInterviewed)
+![Progress](http://progressed.io/bar/34?title=TopInterviewed)
 ![Progress](http://progressed.io/bar/5?title=OverallCompleted)
 
 Personal notes for [leetcode.com](https://leetcode.com) solutions with support for local building and unit testing.
@@ -232,6 +232,11 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 91. [Decode Ways](https://leetcode.com/problems/decode-ways/)
 
 - [4ms](https://leetcode.com/submissions/detail/234483064/) (top 90.46%)
+
+94. [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)
+
+- [4ms](https://leetcode.com/submissions/detail/234690013/) (top 87.58%)
+- [0ms](https://leetcode.com/submissions/detail/234693349/) **(top 100.00%)**
 
 ------
 
