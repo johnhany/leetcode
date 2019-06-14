@@ -238,6 +238,10 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 - [4ms](https://leetcode.com/submissions/detail/234690013/) (top 87.58%)
 - [0ms](https://leetcode.com/submissions/detail/234693349/) **(top 100.00%)**
 
+98. [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)
+
+- [4ms](https://leetcode.com/submissions/detail/235902664/) **(top 99.99%)**
+
 ------
 
 ## Environment

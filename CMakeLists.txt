@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.5)
 project(leetcode)
 
-set(PROBLEM_NAME "094-Binary-Tree-Inorder-Traversal-iteration")
+set(PROBLEM_NAME "098-Validate-Binary-Search-Tree")
 
 set(CMAKE_CXX_STANDARD 14)
 
