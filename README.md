@@ -242,6 +242,10 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 - [4ms](https://leetcode.com/submissions/detail/235902664/) **(top 99.99%)**
 
+101. [Symmetric Tree](https://leetcode.com/problems/symmetric-tree/)
+
+- [0ms](https://leetcode.com/submissions/detail/236511384/) **(top 100.00%)**
+
 ------
 
 ## Environment
