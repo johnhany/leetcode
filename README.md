@@ -246,6 +246,11 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 - [0ms](https://leetcode.com/submissions/detail/236511384/) **(top 100.00%)**
 
+102. [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)
+
+- [12ms](https://leetcode.com/submissions/detail/237311985/) (top 25.64%)
+- one queue: [8ms](https://leetcode.com/submissions/detail/237313029/) (top 82.74%)
+
 ------
 
 ## Environment
