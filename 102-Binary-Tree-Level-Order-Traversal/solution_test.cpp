@@ -21,7 +21,7 @@ BOOST_AUTO_TEST_CASE(PlainTest1)
 
     BOOST_REQUIRE_EQUAL(result.size(), expected.size());
     for (int i = 0; i < result.size(); ++i)
-        BOOST_CHECK_EQUAL_COLLECTIONS(result.begin(), result.end(), expected.begin(), expected.end());
+        BOOST_CHECK_EQUAL_COLLECTIONS(result[i].begin(), result[i].end(), expected[i].begin(), expected[i].end());
 }
 
 BOOST_AUTO_TEST_SUITE_END()

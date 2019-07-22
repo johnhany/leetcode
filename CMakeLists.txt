@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.5)
 project(leetcode)
 
-set(PROBLEM_NAME "102-Binary-Tree-Level-Order-Traversal-1-queue")
+set(PROBLEM_NAME "103-Binary-Tree-Zigzag-Level-Order-Traversal")
 
 set(CMAKE_CXX_STANDARD 14)
 
