@@ -4,11 +4,11 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 ## Stats
 
-Top interviewed: 54 / 145
+Top interviewed: 55 / 145
 
 Appear in [nowcoder.com](https://www.nowcoder.com/ta/leetcode): 2 / 148
 
-In total: 60 / 1350
+In total: 61 / 1350
 
 Solutions that are **99.00%+** in running time: 39
 
@@ -264,13 +264,17 @@ Solutions that are **99.00%+** in running time: 39
 
 - [4ms](https://leetcode.com/submissions/detail/245350321/) (top 89.75%)
 
+104. [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
+
+- [12ms](https://leetcode.com/submissions/detail/303229301/) (top 61.51%)
+
 111. [Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/)
 
 - [4ms](https://leetcode.com/submissions/detail/303209807/) **(top 99.83%)**
 
 150. [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/)
 
-- [12ms](https://leetcode.com/submissions/detail/303228064/)  **(top 91.72%)**
+- [12ms](https://leetcode.com/submissions/detail/303228064/)  (top 91.72%)
 
 ------
 
@@ -344,4 +348,3 @@ Add following lines to your `settings.json` to configure the building and lintin
 **Clear build folder:**
 
 1. Press `Ctrl` + `Shift` + `P` to bring up the Command Palette. Type in `Task: Run Task` and press `enter`. Choose `clean` will delete everything in the `build` folder. Bear in mind that you need to configure the project after cleaning the folder or switching to another solution, by either executing `Task: Run Task` -> `configure` or `CMake: Configure`.
-

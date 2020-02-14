@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.5)
 project(leetcode)
 
-set(PROBLEM_NAME "150-Evaluate-Reverse-Polish-Notation")
+set(PROBLEM_NAME "104-Maximum-Depth-of-Binary-Tree")
 
 set(CMAKE_CXX_STANDARD 14)
 
