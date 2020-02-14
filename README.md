@@ -4,11 +4,11 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 ## Stats
 
-Top interviewed: 53 / 145
+Top interviewed: 54 / 145
 
-Appear in [nowcoder.com](https://www.nowcoder.com/ta/leetcode): 1 / 148
+Appear in [nowcoder.com](https://www.nowcoder.com/ta/leetcode): 2 / 148
 
-In total: 59 / 1350
+In total: 60 / 1350
 
 Solutions that are **99.00%+** in running time: 39
 
@@ -267,6 +267,10 @@ Solutions that are **99.00%+** in running time: 39
 111. [Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/)
 
 - [4ms](https://leetcode.com/submissions/detail/303209807/) **(top 99.83%)**
+
+150. [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/)
+
+- [12ms](https://leetcode.com/submissions/detail/303228064/)  **(top 91.72%)**
 
 ------
 
