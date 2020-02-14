@@ -1,9 +1,18 @@
 # leetcode
 
-![Progress](http://progressed.io/bar/38?title=TopInterviewed)
-![Progress](http://progressed.io/bar/5?title=OverallCompleted)
-
 Personal notes for [leetcode.com](https://leetcode.com) solutions with support for local building and unit testing.
+
+## Stats
+
+Top interviewed: 53 / 145
+
+Appear in [nowcoder.com](https://www.nowcoder.com/ta/leetcode): 1 / 148
+
+In total: 59 / 1350
+
+Solutions that are **99.00%+** in running time: 39
+
+## Solutions
 
 1. [Two Sum](https://leetcode.com/problems/two-sum/description/)
 
