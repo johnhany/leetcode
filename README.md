@@ -260,6 +260,10 @@ Solutions that are **99.00%+** in running time: 39
 - [12ms](https://leetcode.com/submissions/detail/237311985/) (top 25.64%)
 - one queue: [8ms](https://leetcode.com/submissions/detail/237313029/) (top 82.74%)
 
+103. [Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/)
+
+- [4ms](https://leetcode.com/submissions/detail/245350321/) (top 89.75%)
+
 111. [Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/)
 
 - [4ms](https://leetcode.com/submissions/detail/303209807/) **(top 99.83%)**

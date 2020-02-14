@@ -11,11 +11,11 @@ BOOST_AUTO_TEST_CASE(PlainTest1)
 {
     string line = "3,9,20,null,null,15,7";
     TreeNode* root = stringToTreeNode(line);
-    vector<vector<int>> result = Solution().levelOrder(root);
+    vector<vector<int>> result = Solution().zigzagLevelOrder(root);
 
     vector<vector<int>> expected{
         {3},
-        {9,20},
+        {20,9},
         {15,7}
     };
 
