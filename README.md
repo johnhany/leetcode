@@ -188,7 +188,7 @@ Solutions that are **99.00%+** in running time: 39
 
 56. [Merge Intervals](https://leetcode.com/problems/merge-intervals/)
 
-- [16ms](https://leetcode.com/submissions/detail/230370679/) (top 75.69%)
+- [8ms](https://leetcode.com/submissions/detail/303486504/) **(top 100.00%)**
 
 62. [Unique Paths](https://leetcode.com/problems/unique-paths/)
 
@@ -223,6 +223,7 @@ Solutions that are **99.00%+** in running time: 39
 78. [Subsets](https://leetcode.com/problems/subsets/)
 
 - [8ms](https://leetcode.com/submissions/detail/233101865/) (top 90.16%)
+- [4ms](https://leetcode.com/submissions/detail/303500829/) (top 98.41%)
 
 79. [Word Search](https://leetcode.com/problems/word-search/)
 

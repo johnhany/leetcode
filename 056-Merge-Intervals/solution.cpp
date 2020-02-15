@@ -19,9 +19,9 @@ vector<vector<int>> Solution::merge(vector<vector<int>>& arr) {
     });
     rst.emplace_back(arr[0]);
     for (int i = 1; i < arr.size(); ++i) {
-        auto tail = std::prev(rst.end());
-        if (arr[i][0] <= (*tail)[1])
-            (*tail)[1] = std::max(arr[i][1], (*tail)[1]);
+        int len = rst.size();
+        if (arr[i][0] <= rst[len-1][1])
+            rst[len-1][1] = std::max(arr[i][1], rst[len-1][1]);
         else
             rst.emplace_back(arr[i]);
     }

@@ -19,7 +19,7 @@ int Solution::trap(vector<int>& height) {
 		}
 		int ridx = i, rmax = 0;;
 		for (int j = i+1; j < height.size(); ++j) {
-			if (height[j] > rmax) {
+			if (height[j] >= rmax) {
 				ridx = j;
 				rmax = height[j];
 			}
