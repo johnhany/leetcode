@@ -121,6 +121,7 @@ Solutions that are **99.00%+** in running time: 39
 28. [Implement strStr()](https://leetcode.com/problems/implement-strstr/)
 
 - [8ms](https://leetcode.com/submissions/detail/213957985/) (top 98.99%)
+- KMP: [4ms](https://leetcode.com/submissions/detail/303449766/) (top 91.65%)
 
 29. [Divide Two Integers](https://leetcode.com/problems/divide-two-integers/)
 
