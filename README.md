@@ -270,6 +270,11 @@ Solutions that are **99.00%+** in running time: 39
 
 - [12ms](https://leetcode.com/submissions/detail/303229301/) (top 61.51%)
 
+105. [Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
+
+- [40ms](https://leetcode.com/submissions/detail/317112638/) (top 19.30%)
+- hash: [16ms](https://leetcode.com/submissions/detail/317142296/) (top 89.76%)
+
 111. [Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/)
 
 - [4ms](https://leetcode.com/submissions/detail/303209807/) **(top 99.83%)**

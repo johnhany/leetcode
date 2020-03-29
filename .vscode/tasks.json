@@ -14,8 +14,8 @@
             "command": "cmake",
             "args": [
                 "--no-warn-unused-cli",
-                "-DCMAKE_C_COMPILER=/usr/bin/clang-8",
-                "-DCMAKE_CXX_COMPILER=/usr/bin/clang++-8",
+                "-DCMAKE_C_COMPILER=/usr/bin/clang-9",
+                "-DCMAKE_CXX_COMPILER=/usr/bin/clang++-9",
                 "-DCMAKE_EXPORT_COMPILE_COMMANDS=TRUE",
                 "-DCMAKE_BUILD_TYPE=Debug",
                 "-H${workspaceFolder}",
