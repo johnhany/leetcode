@@ -4,13 +4,13 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 ## Stats
 
-Top interviewed: 58 / 145
+Top interviewed: 59 / 145
 
 Appear in [nowcoder.com](https://www.nowcoder.com/ta/leetcode): 2 / 148
 
-In total: 64 / 1350
+In total: 65 / 1350
 
-Solutions that are **99.00%+** in running time: 39
+Solutions that are **99.00%+** in running time: 40
 
 ## Solutions
 
@@ -286,6 +286,11 @@ Solutions that are **99.00%+** in running time: 39
 116. [Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/)
 
 - [16ms](https://leetcode.com/submissions/detail/317450715/) (top 95.40%)
+
+118. [Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/)
+
+- swap: [4ms](https://leetcode.com/submissions/detail/317454106/) (top 51.26%)
+- resize: [0ms](https://leetcode.com/submissions/detail/317455216/) **(top 100.00%)**
 
 150. [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/)
 
