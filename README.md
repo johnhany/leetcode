@@ -4,11 +4,11 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 ## Stats
 
-Top interviewed: 55 / 145
+Top interviewed: 57 / 145
 
 Appear in [nowcoder.com](https://www.nowcoder.com/ta/leetcode): 2 / 148
 
-In total: 61 / 1350
+In total: 63 / 1350
 
 Solutions that are **99.00%+** in running time: 39
 
@@ -274,6 +274,10 @@ Solutions that are **99.00%+** in running time: 39
 
 - [40ms](https://leetcode.com/submissions/detail/317112638/) (top 19.30%)
 - hash: [16ms](https://leetcode.com/submissions/detail/317142296/) (top 89.76%)
+
+108. [Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)
+
+- [24ms](https://leetcode.com/submissions/detail/317441664/) (top 80.31%)
 
 111. [Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/)
 

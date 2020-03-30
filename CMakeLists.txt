@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.5)
 project(leetcode)
 
-set(PROBLEM_NAME "105-Construct-Binary-Tree-from-Preorder-and-Inorder-Traversal-hashmap")
+set(PROBLEM_NAME "108-Convert-Sorted-Array-to-Binary-Search-Tree")
 
 set(CMAKE_CXX_STANDARD 14)
 
