@@ -4,13 +4,13 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 ## Stats
 
-Top interviewed: 62 / 145
+Top interviewed: 63 / 145
 
 Appear in [nowcoder.com](https://www.nowcoder.com/ta/leetcode): 2 / 148
 
-In total: 68 / 1350
+In total: 69 / 1350
 
-Solutions that are **99.00%+** in running time: 42
+Solutions that are **99.00%+** in running time: 43
 
 ## Solutions
 
@@ -304,6 +304,10 @@ Solutions that are **99.00%+** in running time: 42
 124. [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/)
 
 - [16ms](https://leetcode.com/submissions/detail/317484156/) **(top 99.85%)**
+
+125. [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)
+
+- [4ms](https://leetcode.com/submissions/detail/317490447/) **(top 99.16%)**
 
 150. [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/)
 

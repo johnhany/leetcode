@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.5)
 project(leetcode)
 
-set(PROBLEM_NAME "124-Binary-Tree-Maximum-Path-Sum")
+set(PROBLEM_NAME "125-Valid-Palindrome")
 
 set(CMAKE_CXX_STANDARD 14)
 
