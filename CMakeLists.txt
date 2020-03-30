@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.5)
 project(leetcode)
 
-set(PROBLEM_NAME "108-Convert-Sorted-Array-to-Binary-Search-Tree")
+set(PROBLEM_NAME "116-Populating-Next-Right-Pointers-in-Each-Node")
 
 set(CMAKE_CXX_STANDARD 14)
 
