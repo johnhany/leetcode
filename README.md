@@ -4,11 +4,11 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 ## Stats
 
-Top interviewed: 59 / 145
+Top interviewed: 60 / 145
 
 Appear in [nowcoder.com](https://www.nowcoder.com/ta/leetcode): 2 / 148
 
-In total: 65 / 1350
+In total: 66 / 1350
 
 Solutions that are **99.00%+** in running time: 40
 
@@ -291,6 +291,11 @@ Solutions that are **99.00%+** in running time: 40
 
 - swap: [4ms](https://leetcode.com/submissions/detail/317454106/) (top 51.26%)
 - resize: [0ms](https://leetcode.com/submissions/detail/317455216/) **(top 100.00%)**
+
+121. [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
+
+- priority queue: [12ms](https://leetcode.com/submissions/detail/317459138/) (top 17.37%)
+- [4ms](https://leetcode.com/submissions/detail/317461596/) (top 97.69%)
 
 150. [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/)
 
