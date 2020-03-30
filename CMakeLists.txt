@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.5)
 project(leetcode)
 
-set(PROBLEM_NAME "125-Valid-Palindrome")
+set(PROBLEM_NAME "127-Word-Ladder")
 
 set(CMAKE_CXX_STANDARD 14)
 
