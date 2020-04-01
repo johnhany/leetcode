@@ -4,11 +4,11 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 ## Stats
 
-Top interviewed: 64 / 145
+Top interviewed: 65 / 145
 
 Appear in [nowcoder.com](https://www.nowcoder.com/ta/leetcode): 2 / 148
 
-In total: 70 / 1350
+In total: 71 / 1350
 
 Solutions that are **99.00%+** in running time: 43
 
@@ -312,6 +312,11 @@ Solutions that are **99.00%+** in running time: 43
 127. [Word Ladder](https://leetcode.com/problems/word-ladder/)
 
 - [32ms](https://leetcode.com/submissions/detail/317510085/) (top 94.91%)
+
+128. [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)
+
+- hash: [12ms](https://leetcode.com/submissions/detail/318193962/) (top 68.65%)
+- vector::unique [8ms](https://leetcode.com/submissions/detail/318195705/) (top 94.78%)
 
 150. [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/)
 

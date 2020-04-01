@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.5)
 project(leetcode)
 
-set(PROBLEM_NAME "127-Word-Ladder")
+set(PROBLEM_NAME "128-Longest-Consecutive-Sequence-unique")
 
 set(CMAKE_CXX_STANDARD 14)
 
