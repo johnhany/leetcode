@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.5)
 project(leetcode)
 
-set(PROBLEM_NAME "134-Gas-Station")
+set(PROBLEM_NAME "136-Single-Number")
 
 set(CMAKE_CXX_STANDARD 14)
 
