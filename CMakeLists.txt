@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.5)
 project(leetcode)
 
-set(PROBLEM_NAME "131-Palindrome-Partitioning-shared_dp")
+set(PROBLEM_NAME "134-Gas-Station")
 
 set(CMAKE_CXX_STANDARD 14)
 

@@ -4,13 +4,13 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 ## Stats
 
-Top interviewed: 67 / 145
+Top interviewed: 68 / 145
 
 Appear in [nowcoder.com](https://www.nowcoder.com/ta/leetcode): 2 / 148
 
-In total: 73 / 1350
+In total: 74 / 1350
 
-Solutions that are **99.00%+** in running time: 43
+Solutions that are **99.00%+** in running time: 44
 
 ## Solutions
 
@@ -326,6 +326,10 @@ Solutions that are **99.00%+** in running time: 43
 
 - backtrack: [136ms](https://leetcode.com/submissions/detail/318546571/) (top 8.58%)
 - shared DP: [20ms](https://leetcode.com/submissions/detail/318556233/) (top 70.68%)
+
+134. [Gas Station](https://leetcode.com/problems/gas-station/)
+
+- [0ms](https://leetcode.com/submissions/detail/318700236/) **(top 100.00%)**
 
 150. [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/)
 
