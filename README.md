@@ -8,9 +8,9 @@ Top interviewed: 69 / 145
 
 Appear in [nowcoder.com](https://www.nowcoder.com/ta/leetcode): 2 / 148
 
-In total: 75 / 1350
+In total: 76 / 1350
 
-Solutions that are **99.00%+** in running time: 45
+Solutions that are **99.00%+** in running time: 46
 
 ## Solutions
 
@@ -113,6 +113,10 @@ Solutions that are **99.00%+** in running time: 45
 
 - Use 021: [176ms](https://leetcode.com/submissions/detail/209596082/) (top 25.72%)
 - Priority queue: [32ms](https://leetcode.com/submissions/detail/209600116/) (top 98.10%)
+
+24. [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/)
+
+- [0ms](https://leetcode.com/submissions/detail/318720097/) **(top 100.00%)**
 
 26. [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
 
