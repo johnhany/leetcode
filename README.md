@@ -8,9 +8,9 @@ Top interviewed: 69 / 145
 
 Appear in [nowcoder.com](https://www.nowcoder.com/ta/leetcode): 2 / 148
 
-In total: 77 / 1350
+In total: 78 / 1350
 
-Solutions that are **99.00%+** in running time: 46
+Solutions that are **99.00%+** in running time: 47
 
 ## Solutions
 
@@ -125,6 +125,10 @@ Solutions that are **99.00%+** in running time: 46
 26. [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
 
 - [20ms](https://leetcode.com/submissions/detail/213952893/) **(top 99.75%)**
+
+27. [Remove Element](https://leetcode.com/problems/remove-element/)
+
+- [0ms](https://leetcode.com/submissions/detail/318922754/) **(top 100.00%)**
 
 28. [Implement strStr()](https://leetcode.com/problems/implement-strstr/)
 
