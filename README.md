@@ -8,7 +8,7 @@ Top interviewed: 69 / 145
 
 Appear in [nowcoder.com](https://www.nowcoder.com/ta/leetcode): 2 / 148
 
-In total: 76 / 1350
+In total: 77 / 1350
 
 Solutions that are **99.00%+** in running time: 46
 
@@ -117,6 +117,10 @@ Solutions that are **99.00%+** in running time: 46
 24. [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/)
 
 - [0ms](https://leetcode.com/submissions/detail/318720097/) **(top 100.00%)**
+
+25. [Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/)
+
+- [20ms](https://leetcode.com/submissions/detail/318916507/) (top 95.79%)
 
 26. [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
 
