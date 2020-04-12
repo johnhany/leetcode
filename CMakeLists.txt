@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.5)
 project(leetcode)
 
-set(PROBLEM_NAME "198-House-Robber")
+set(PROBLEM_NAME "213-House-Robber-II")
 
 set(CMAKE_CXX_STANDARD 14)
 
