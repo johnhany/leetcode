@@ -8,9 +8,9 @@ Top interviewed: 69 / 145
 
 Appear in [nowcoder.com](https://www.nowcoder.com/ta/leetcode): 2 / 148
 
-In total: 80 / 1411
+In total: 81 / 1411
 
-Solutions that are **99.00%+** in running time: 48
+Solutions that are **99.00%+** in running time: 49
 
 ## Solutions
 
@@ -210,6 +210,10 @@ Solutions that are **99.00%+** in running time: 48
 62. [Unique Paths](https://leetcode.com/problems/unique-paths/)
 
 - [4ms](https://leetcode.com/submissions/detail/231087530/) (top 93.30%)
+
+63. [Unique Paths II](https://leetcode.com/problems/unique-paths-ii/)
+
+- [0ms](https://leetcode.com/submissions/detail/323676108/) **(top 100.00%)**
 
 66. [Plus One](https://leetcode.com/problems/plus-one/)
 
