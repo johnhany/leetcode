@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.5)
 project(leetcode)
 
-set(PROBLEM_NAME "120-Triangle")
+set(PROBLEM_NAME "053-Maximum-Subarray-Kadane-dp")
 
 set(CMAKE_CXX_STANDARD 14)
 

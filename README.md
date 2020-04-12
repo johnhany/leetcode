@@ -8,7 +8,7 @@ Top interviewed: 69 / 145
 
 Appear in [nowcoder.com](https://www.nowcoder.com/ta/leetcode): 2 / 148
 
-In total: 80 / 1350
+In total: 80 / 1411
 
 Solutions that are **99.00%+** in running time: 48
 
@@ -193,6 +193,7 @@ Solutions that are **99.00%+** in running time: 48
 
 - Divide and conquer: [8ms](https://leetcode.com/submissions/detail/230357741/) (top 96.32%)
 - Kadane: [4ms](https://leetcode.com/submissions/detail/230359418/) **(top 99.88%)**
+- DP: [0ms](https://leetcode.com/submissions/detail/323667238/) **(top 100.00%)**
 
 54. [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)
 
