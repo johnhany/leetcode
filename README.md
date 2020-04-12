@@ -8,9 +8,9 @@ Top interviewed: 69 / 145
 
 Appear in [nowcoder.com](https://www.nowcoder.com/ta/leetcode): 2 / 148
 
-In total: 82 / 1411
+In total: 83 / 1411
 
-Solutions that are **99.00%+** in running time: 50
+Solutions that are **99.00%+** in running time: 51
 
 ## Solutions
 
@@ -367,6 +367,10 @@ Solutions that are **99.00%+** in running time: 50
 150. [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/)
 
 - [12ms](https://leetcode.com/submissions/detail/303228064/) (top 91.72%)
+
+221. [Maximal Square](https://leetcode.com/problems/maximal-square/)
+
+- [8ms](https://leetcode.com/submissions/detail/323687156/) **(top 99.64%)**
 
 ------
 

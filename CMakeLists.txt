@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.5)
 project(leetcode)
 
-set(PROBLEM_NAME "064-Minimum-Path-Sum")
+set(PROBLEM_NAME "221-Maximal-Square")
 
 set(CMAKE_CXX_STANDARD 14)
 
