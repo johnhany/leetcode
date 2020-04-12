@@ -139,6 +139,10 @@ Solutions that are **99.00%+** in running time: 47
 
 - All `int` without `<limits.h>`: [8ms](https://leetcode.com/submissions/detail/214028878/) **(top 100.00%)**
 
+30. [Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/)
+
+- [40ms](https://leetcode.com/submissions/detail/323605364/) (top 88.85%)
+
 33. [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)
 
 - [0ms](https://leetcode.com/submissions/detail/229278082/) **(top 100.00%)**

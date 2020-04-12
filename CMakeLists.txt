@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.5)
 project(leetcode)
 
-set(PROBLEM_NAME "027-Remove-Element")
+set(PROBLEM_NAME "030-Substring-with-Concatenation-of-All-Words")
 
 set(CMAKE_CXX_STANDARD 14)
 
