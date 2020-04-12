@@ -8,9 +8,9 @@ Top interviewed: 69 / 145
 
 Appear in [nowcoder.com](https://www.nowcoder.com/ta/leetcode): 2 / 148
 
-In total: 78 / 1350
+In total: 80 / 1350
 
-Solutions that are **99.00%+** in running time: 47
+Solutions that are **99.00%+** in running time: 48
 
 ## Solutions
 
@@ -307,6 +307,10 @@ Solutions that are **99.00%+** in running time: 47
 
 - swap: [4ms](https://leetcode.com/submissions/detail/317454106/) (top 51.26%)
 - resize: [0ms](https://leetcode.com/submissions/detail/317455216/) **(top 100.00%)**
+
+120. [Triangle](https://leetcode.com/problems/triangle/)
+
+- [0ms](https://leetcode.com/submissions/detail/323662920/) **(top 100.00%)**
 
 121. [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
 
