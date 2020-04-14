@@ -4,13 +4,13 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 ## Stats
 
-Top interviewed: 71 / 145
+Top interviewed: 72 / 145
 
 Appear in [nowcoder.com](https://www.nowcoder.com/ta/leetcode): 2 / 148
 
-In total: 87 / 1411
+In total: 88 / 1411
 
-Solutions that are **99.00%+** in running time: 55
+Solutions that are **99.00%+** in running time: 56
 
 ## Solutions
 
@@ -383,6 +383,11 @@ Solutions that are **99.00%+** in running time: 55
 221. [Maximal Square](https://leetcode.com/problems/maximal-square/)
 
 - [8ms](https://leetcode.com/submissions/detail/323687156/) **(top 99.64%)**
+
+279. [Perfect Squares](https://leetcode.com/problems/perfect-squares/)
+
+- [0ms](https://leetcode.com/submissions/detail/324570540/) **(top 100.00%)**
+- Tree search: [92ms](https://leetcode.com/submissions/detail/324575850/) (top 79.03%)
 
 300. [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)
 
