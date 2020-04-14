@@ -8,7 +8,7 @@ Top interviewed: 72 / 145
 
 Appear in [nowcoder.com](https://www.nowcoder.com/ta/leetcode): 2 / 148
 
-In total: 88 / 1411
+In total: 89 / 1411
 
 Solutions that are **99.00%+** in running time: 56
 
@@ -392,6 +392,10 @@ Solutions that are **99.00%+** in running time: 56
 300. [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)
 
 - [0ms](https://leetcode.com/submissions/detail/323698359/) **(top 100.00%)**
+
+301. [Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses/)
+
+- [12ms](https://leetcode.com/submissions/detail/324615389/) (top 68.31%)
 
 ------
 

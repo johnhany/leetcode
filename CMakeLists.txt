@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.5)
 project(leetcode)
 
-set(PROBLEM_NAME "279-Perfect-Squares-tree-search")
+set(PROBLEM_NAME "301-Remove-Invalid-Parentheses")
 
 set(CMAKE_CXX_STANDARD 14)
 
