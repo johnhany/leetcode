@@ -8,9 +8,9 @@ Top interviewed: 72 / 145
 
 Appear in [nowcoder.com](https://www.nowcoder.com/ta/leetcode): 2 / 148
 
-In total: 89 / 1411
+In total: 90 / 1411
 
-Solutions that are **99.00%+** in running time: 56
+Solutions that are **99.00%+** in running time: 57
 
 ## Solutions
 
@@ -383,6 +383,10 @@ Solutions that are **99.00%+** in running time: 56
 221. [Maximal Square](https://leetcode.com/problems/maximal-square/)
 
 - [8ms](https://leetcode.com/submissions/detail/323687156/) **(top 99.64%)**
+
+278. [First Bad Version](https://leetcode.com/problems/first-bad-version/)
+
+- [0ms](https://leetcode.com/submissions/detail/324623560/) **(top 100.00%)**
 
 279. [Perfect Squares](https://leetcode.com/problems/perfect-squares/)
 
