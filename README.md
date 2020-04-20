@@ -4,11 +4,11 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 ## Stats
 
-Top interviewed: 72 / 145
+Top interviewed: 73 / 145
 
 Appear in [nowcoder.com](https://www.nowcoder.com/ta/leetcode): 2 / 148
 
-In total: 91 / 1411
+In total: 92 / 1411
 
 Solutions that are **99.00%+** in running time: 58
 
@@ -387,6 +387,10 @@ Solutions that are **99.00%+** in running time: 58
 221. [Maximal Square](https://leetcode.com/problems/maximal-square/)
 
 - [8ms](https://leetcode.com/submissions/detail/323687156/) **(top 99.64%)**
+
+240. [Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/)
+
+- [84ms](https://leetcode.com/submissions/detail/327597630/) (top 72.87%)
 
 278. [First Bad Version](https://leetcode.com/problems/first-bad-version/)
 

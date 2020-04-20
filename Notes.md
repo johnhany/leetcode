@@ -271,3 +271,5 @@
 
      using MySet = std::unordered_set<std::vector<int>, VectorHash>;
      ```
+
+44. `vector.size() == 0` is slightly faster than `vector.empty()`
