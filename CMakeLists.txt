@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.5)
 project(leetcode)
 
-set(PROBLEM_NAME "287-Find-the-Duplicate-Number-two-pointers")
+set(PROBLEM_NAME "187-Repeated-DNA-Sequences-2_bit_hash")
 
 set(CMAKE_CXX_STANDARD 14)
 

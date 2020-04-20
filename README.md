@@ -8,9 +8,9 @@ Top interviewed: 75 / 145
 
 Appear in [nowcoder.com](https://www.nowcoder.com/ta/leetcode): 2 / 148
 
-In total: 95 / 1411
+In total: 96 / 1411
 
-Solutions that are **99.00%+** in running time: 61
+Solutions that are **99.00%+** in running time: 62
 
 ## Solutions
 
@@ -380,6 +380,11 @@ Solutions that are **99.00%+** in running time: 61
 
 - [0ms](https://leetcode.com/submissions/detail/327603478/) **(top 100.00%)**
 
+187. [Repeated DNA Sequences](https://leetcode.com/problems/repeated-dna-sequences/)
+
+- 3-bit hash: [52ms](https://leetcode.com/submissions/detail/327702045/) (top 81.78%)
+- 2-bit hash: [4ms](https://leetcode.com/submissions/detail/327705672/) **(top 99.71%)**
+
 198. [House Robber](https://leetcode.com/problems/house-robber/)
 
 - [0ms](https://leetcode.com/submissions/detail/323703382/) **(top 100.00%)**
@@ -428,13 +433,13 @@ Solutions that are **99.00%+** in running time: 61
 
 | Category | Problems |
 | --- | --- |
-| Vector | 026, 036, 041, 048, 054, 055, 056, 073, 074, 075, 118, 121, 122, 123, 128, 134, 136, 153, 240, 278 |
+| Vector | 026, 036, 041, 048, 054, 055, 056, 073, 074, 075, 118, 121, 122, 123, 128, 134, 136, 153, 240, 278, 215 |
 | String | 005, 006, 008, 010, 014, 028, 038, 044, 127 |
 | Numerical | 007, 009, 029, 050, 066, 069, 279 |
-| Hash/Lookup | 001, 003, 012, 013, 020, 030, 049, 076 |
+| Hash/Lookup | 001, 003, 012, 013, 020, 030, 049, 076, 187 |
 | Stack/Queue/Deque | 023, 094, 102, 103, 116, 150 |
 | Linked list | 002, 019, 021, 024 |
-| Two pointers | 011, 015, 016, 018, 027, 042, 084, 088, 125 |
+| Two pointers | 011, 015, 016, 018, 027, 042, 084, 088, 125, 287 |
 | Recursion | 004, 025, 033, 034, 079, 098, 101, 104, 105, 108, 111, 124, 130, 301 |
 | Backtracking | 017, 022, 046, 078 |
 | DP | 053, 062, 063, 064, 070, 091, 120, 131, 198, 213, 221, 300 |
@@ -444,6 +449,9 @@ Solutions that are **99.00%+** in running time: 61
 ------
 
 ## Environment
+
+> [《Ubuntu计算机视觉开发环境配置（Python/C++）》](http://johnhany.net/2020/03/ubuntu-cv-environment/)
+> [《Manjaro计算机视觉开发环境配置（Python/C++）》](http://johnhany.net/2020/03/manjaro-cv-environment/)
 
 - Ubuntu 18.04
 - Visual Studio Code *with following extensions:*
