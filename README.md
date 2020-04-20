@@ -8,9 +8,9 @@ Top interviewed: 73 / 145
 
 Appear in [nowcoder.com](https://www.nowcoder.com/ta/leetcode): 2 / 148
 
-In total: 92 / 1411
+In total: 93 / 1411
 
-Solutions that are **99.00%+** in running time: 58
+Solutions that are **99.00%+** in running time: 59
 
 ## Solutions
 
@@ -375,6 +375,10 @@ Solutions that are **99.00%+** in running time: 58
 150. [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/)
 
 - [12ms](https://leetcode.com/submissions/detail/303228064/) (top 91.72%)
+
+153. [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)
+
+- [0ms](https://leetcode.com/submissions/detail/327603478/) **(top 100.00%)**
 
 198. [House Robber](https://leetcode.com/problems/house-robber/)
 

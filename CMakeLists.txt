@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.5)
 project(leetcode)
 
-set(PROBLEM_NAME "240-Search-a-2D-Matrix-II")
+set(PROBLEM_NAME "153-Find-Minimum-in-Rotated-Sorted-Array")
 
 set(CMAKE_CXX_STANDARD 14)
 
