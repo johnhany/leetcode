@@ -8,9 +8,9 @@ Top interviewed: 72 / 145
 
 Appear in [nowcoder.com](https://www.nowcoder.com/ta/leetcode): 2 / 148
 
-In total: 90 / 1411
+In total: 91 / 1411
 
-Solutions that are **99.00%+** in running time: 57
+Solutions that are **99.00%+** in running time: 58
 
 ## Solutions
 
@@ -234,6 +234,10 @@ Solutions that are **99.00%+** in running time: 57
 73. [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)
 
 - [44ms](https://leetcode.com/submissions/detail/231696419/) (top 98.55%)
+
+74. [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/)
+
+- [4ms](https://leetcode.com/submissions/detail/327576061/) **(top 99.56%)**
 
 75. [Sort Colors](https://leetcode.com/problems/sort-colors/)
 
