@@ -4,13 +4,13 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 ## Stats
 
-Top interviewed: 74 / 145
+Top interviewed: 75 / 145
 
 Appear in [nowcoder.com](https://www.nowcoder.com/ta/leetcode): 2 / 148
 
-In total: 94 / 1411
+In total: 95 / 1411
 
-Solutions that are **99.00%+** in running time: 60
+Solutions that are **99.00%+** in running time: 61
 
 ## Solutions
 
@@ -408,6 +408,11 @@ Solutions that are **99.00%+** in running time: 60
 
 - [0ms](https://leetcode.com/submissions/detail/324570540/) **(top 100.00%)**
 - Tree search: [92ms](https://leetcode.com/submissions/detail/324575850/) (top 79.03%)
+
+287. [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/)
+
+- Binary search: [8ms](https://leetcode.com/submissions/detail/327684807/) (top 94.55%)
+- Two pointers: [4ms](https://leetcode.com/submissions/detail/327690200/) **(top 99.76%)**
 
 300. [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)
 

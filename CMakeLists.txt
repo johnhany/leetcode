@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.5)
 project(leetcode)
 
-set(PROBLEM_NAME "215-Kth-Largest-Element-in-an-Array")
+set(PROBLEM_NAME "287-Find-the-Duplicate-Number-two-pointers")
 
 set(CMAKE_CXX_STANDARD 14)
 
