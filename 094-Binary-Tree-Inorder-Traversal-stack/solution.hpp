@@ -13,6 +13,7 @@
 #include <iterator>
 #include <unordered_map>
 #include <unordered_set>
+#include <stack>
 
 using namespace std;
 
@@ -68,7 +69,6 @@ inline TreeNode* stringToTreeNode(string input) {
 class Solution {
 public:
 	vector<int> inorderTraversal(TreeNode* root);
-	list<int> inorder(TreeNode* root);
 };
 
 #endif

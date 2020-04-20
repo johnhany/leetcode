@@ -9,18 +9,20 @@ static auto x = []() {
 }();
 
 vector<int> Solution::inorderTraversal(TreeNode* root) {
-	stack<TreeNode*> tmp;
-	vector<int> rst;
-	while (root || !tmp.empty()) {
-		if (root) {
-			tmp.emplace(root);
-			root = root->left;
-		} else {
-			root = tmp.top();
-			tmp.pop();
-			rst.emplace_back(root->val);
-			root = root->right;
-		}
+	if (root == nullptr) return vector<int>{};
+	list<int> tmp;
+	tmp = inorder(root);
+	return vector<int>(std::make_move_iterator(tmp.begin()), std::make_move_iterator(tmp.end()));
+}
+
+list<int> Solution::inorder(TreeNode* root) {
+	list<int> rst;
+	if (root->left != nullptr) {
+		rst.splice(rst.end(), inorder(root->left));
+	}
+	rst.emplace_back(root->val);
+	if (root->right != nullptr) {
+		rst.splice(rst.end(), inorder(root->right));
 	}
 	return rst;
 }

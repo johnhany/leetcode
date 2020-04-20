@@ -275,8 +275,8 @@ Solutions that are **99.00%+** in running time: 59
 
 94. [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)
 
-- [4ms](https://leetcode.com/submissions/detail/234690013/) (top 87.58%)
-- [0ms](https://leetcode.com/submissions/detail/234693349/) **(top 100.00%)**
+- Recursion: [4ms](https://leetcode.com/submissions/detail/234690013/) (top 87.58%)
+- Stack: [0ms](https://leetcode.com/submissions/detail/234693349/) **(top 100.00%)**
 
 98. [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)
 
@@ -412,6 +412,25 @@ Solutions that are **99.00%+** in running time: 59
 301. [Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses/)
 
 - [12ms](https://leetcode.com/submissions/detail/324615389/) (top 68.31%)
+
+------
+
+## Problem categories
+
+| Category | Problems |
+| --- | --- |
+| Vector | 026, 036, 041, 048, 054, 055, 056, 073, 074, 075, 118, 121, 122, 123, 128, 134, 136, 153, 240, 278 |
+| String | 005, 006, 008, 010, 014, 028, 038, 044, 127 |
+| Numerical | 007, 009, 029, 050, 066, 069, 279 |
+| Hash/Lookup | 001, 003, 012, 013, 020, 030, 049, 076 |
+| Stack/Queue/Deque | 023, 094, 102, 103, 116, 150 |
+| Linked list | 002, 019, 021, 024 |
+| Two pointers | 011, 015, 016, 018, 027, 042, 084, 088, 125 |
+| Recursion | 004, 025, 033, 034, 079, 098, 101, 104, 105, 108, 111, 124, 130, 301 |
+| Backtracking | 017, 022, 046, 078 |
+| DP | 053, 062, 063, 064, 070, 091, 120, 131, 198, 213, 221, 300 |
+
+> Note that sorting/searching problems on 1-D or 2-D data are also included in the `Vector` category. Binary tree problems are mostly included in the `Recursion` category.
 
 ------
 
