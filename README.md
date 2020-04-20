@@ -4,13 +4,13 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 ## Stats
 
-Top interviewed: 73 / 145
+Top interviewed: 74 / 145
 
 Appear in [nowcoder.com](https://www.nowcoder.com/ta/leetcode): 2 / 148
 
-In total: 93 / 1411
+In total: 94 / 1411
 
-Solutions that are **99.00%+** in running time: 59
+Solutions that are **99.00%+** in running time: 60
 
 ## Solutions
 
@@ -387,6 +387,10 @@ Solutions that are **99.00%+** in running time: 59
 213. [House Robber II](https://leetcode.com/problems/house-robber-ii/)
 
 - [0ms](https://leetcode.com/submissions/detail/323713347/) **(top 100.00%)**
+
+215. [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)
+
+- [4ms](https://leetcode.com/submissions/detail/327677238/) **(top 99.81%)**
 
 221. [Maximal Square](https://leetcode.com/problems/maximal-square/)
 
