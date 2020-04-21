@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.5)
 project(leetcode)
 
-set(PROBLEM_NAME "349-Intersection-of-Two-Arrays-map")
+set(PROBLEM_NAME "350-Intersection-of-Two-Arrays-II")
 
 set(CMAKE_CXX_STANDARD 14)
 

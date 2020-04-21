@@ -4,13 +4,13 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 ## Stats
 
-Top interviewed: 75 / 145
+Top interviewed: 76 / 145
 
 Appear in [nowcoder.com](https://www.nowcoder.com/ta/leetcode): 2 / 148
 
-In total: 97 / 1411
+In total: 98 / 1411
 
-Solutions that are **99.00%+** in running time: 63
+Solutions that are **99.00%+** in running time: 64
 
 ## Solutions
 
@@ -432,6 +432,10 @@ Solutions that are **99.00%+** in running time: 63
 - Set: [4ms](https://leetcode.com/submissions/detail/328020887/) **(top 99.21%)**
 - Map: [4ms](https://leetcode.com/submissions/detail/328024354/) **(top 99.21%)**
 
+350. [Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/)
+
+- [4ms](https://leetcode.com/submissions/detail/328027553/) **(top 99.54%)**
+
 ------
 
 ## Problem categories
@@ -441,7 +445,7 @@ Solutions that are **99.00%+** in running time: 63
 | Vector | 026, 036, 041, 048, 054, 055, 056, 073, 074, 075, 118, 121, 122, 123, 128, 134, 136, 153, 240, 278, 215 |
 | String | 005, 006, 008, 010, 014, 028, 038, 044, 127 |
 | Numerical | 007, 009, 029, 050, 066, 069, 279 |
-| Hash/Lookup | 001, 003, 012, 013, 020, 030, 049, 076, 187, 349 |
+| Hash/Lookup | 001, 003, 012, 013, 020, 030, 049, 076, 187, 349, 350 |
 | Stack/Queue/Deque | 023, 094, 102, 103, 116, 150 |
 | Linked list | 002, 019, 021, 024 |
 | Two pointers | 011, 015, 016, 018, 027, 042, 084, 088, 125, 287 |
