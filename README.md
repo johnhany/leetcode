@@ -8,9 +8,9 @@ Top interviewed: 75 / 145
 
 Appear in [nowcoder.com](https://www.nowcoder.com/ta/leetcode): 2 / 148
 
-In total: 96 / 1411
+In total: 97 / 1411
 
-Solutions that are **99.00%+** in running time: 62
+Solutions that are **99.00%+** in running time: 63
 
 ## Solutions
 
@@ -427,6 +427,11 @@ Solutions that are **99.00%+** in running time: 62
 
 - [12ms](https://leetcode.com/submissions/detail/324615389/) (top 68.31%)
 
+349. [Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/)
+
+- Set: [4ms](https://leetcode.com/submissions/detail/328020887/) **(top 99.21%)**
+- Map: [4ms](https://leetcode.com/submissions/detail/328024354/) **(top 99.21%)**
+
 ------
 
 ## Problem categories
@@ -436,7 +441,7 @@ Solutions that are **99.00%+** in running time: 62
 | Vector | 026, 036, 041, 048, 054, 055, 056, 073, 074, 075, 118, 121, 122, 123, 128, 134, 136, 153, 240, 278, 215 |
 | String | 005, 006, 008, 010, 014, 028, 038, 044, 127 |
 | Numerical | 007, 009, 029, 050, 066, 069, 279 |
-| Hash/Lookup | 001, 003, 012, 013, 020, 030, 049, 076, 187 |
+| Hash/Lookup | 001, 003, 012, 013, 020, 030, 049, 076, 187, 349 |
 | Stack/Queue/Deque | 023, 094, 102, 103, 116, 150 |
 | Linked list | 002, 019, 021, 024 |
 | Two pointers | 011, 015, 016, 018, 027, 042, 084, 088, 125, 287 |
