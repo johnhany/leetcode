@@ -462,20 +462,20 @@ Solutions that are **99.00%+** in running time: 64
 > [《Ubuntu计算机视觉开发环境配置（Python/C++）》](http://johnhany.net/2020/03/ubuntu-cv-environment/)
 > [《Manjaro计算机视觉开发环境配置（Python/C++）》](http://johnhany.net/2020/03/manjaro-cv-environment/)
 
-- Ubuntu 18.04
+- Ubuntu 18.04 / Manjaro 19.0 / Windows 10
 - Visual Studio Code *with following extensions:*
   - C/C++ ([ms-vscode.cpptools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools))
-  - C/C++ Clang Command Adapter ([mitaki28.vscode-clang](https://marketplace.visualstudio.com/items?itemName=llvm-vs-code-extensions.vscode-clangd))
+  - C/C++ Clang Command Adapter ([mitaki28.vscode-clang](https://marketplace.visualstudio.com/items?itemName=llvm-vs-code-extensions.vscode-clangd)) (optional)
   - CMake ([twxs.cmake](https://marketplace.visualstudio.com/items?itemName=twxs.cmake))
   - CMake Tools ([vector-of-bool.cmake-tools](https://marketplace.visualstudio.com/items?itemName=vector-of-bool.cmake-tools))
-  - CodeLLDB ([vadimcn.vscode-lldb](https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb))
+  - CodeLLDB ([vadimcn.vscode-lldb](https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb)) (optional)
 
 ```bash
 sudo snap install --classic code
 sudo apt-get install pylint
 ```
 
-- clang (clang++-8 is used by default. You can use other tools as long as your `.vscode/c_cpp_properties.json` file is modified correctly)
+- clang (used by default. You can use other tools as long as your `.vscode/c_cpp_properties.json` file is modified correctly)
 
 ```bash
 wget -O - http://apt.llvm.org/llvm-snapshot.gpg.key|sudo apt-key add -
@@ -507,10 +507,10 @@ Add following lines to your `settings.json` to configure the building and lintin
 
 ```json
 {
-    "clang.executable": "clang++-8",
+    "clang.executable": "clang++",
     "clang.cflags": ["c11"],
-    "clang.cxxflags": ["-std=c++14"],
-    "lldb.executable": "lldb-8"
+    "clang.cxxflags": ["-std=c++17"],
+    "lldb.executable": "lldb"
 }
 ```
 

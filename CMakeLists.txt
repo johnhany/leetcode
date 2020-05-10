@@ -6,23 +6,33 @@ set(PROBLEM_NAME "350-Intersection-of-Two-Arrays-II")
 set(CMAKE_CXX_STANDARD 14)
 
 set(SOLUTION_SOURCES ${PROJECT_SOURCE_DIR}/${PROBLEM_NAME}/solution.cpp)
-# set(SOURCES ${PROJECT_SOURCE_DIR}/${PROBLEM_NAME}/main.cpp ${SOLUTION_SOURCES})
-set(SOURCES ${SOLUTION_SOURCES})
-
 add_library(solution STATIC ${SOLUTION_SOURCES})
-# add_executable(leetcode ${SOURCES})
 
 enable_testing()
-
-find_package(Boost REQUIRED COMPONENTS unit_test_framework)
 
 set(TEST_SOURCES ${PROJECT_SOURCE_DIR}/${PROBLEM_NAME}/solution_test.cpp)
 set(TEST_LIBS solution)
 
-add_library(boost_unit_test_framework STATIC IMPORTED)
-set_target_properties(boost_unit_test_framework PROPERTIES
-    IMPORTED_LOCATION /usr/lib/libboost_unit_test_framework.a)
-
 add_executable(test_main ${TEST_SOURCES})
-target_link_libraries(test_main ${TEST_LIBS} boost_unit_test_framework)
+
+if(WIN32)
+    message(STATUS "Detected Windows platform")
+    set(BOOST_ROOT E:\\dev-lib\\boost_1_73_0)
+    set(BOOST_LIBRARYDIR E:\\dev-lib\\boost_1_73_0\\build\\lib)
+    set(Boost_USE_STATIC_LIBS ON)
+    find_package(Boost REQUIRED COMPONENTS unit_test_framework)
+
+    target_link_libraries(test_main PRIVATE ${TEST_LIBS} Boost::boost Boost::unit_test_framework)
+elseif(UNIX)
+    message(STATUS "Detected UNIX platform")
+    find_package(Boost REQUIRED COMPONENTS unit_test_framework)
+    add_library(boost_unit_test_framework STATIC IMPORTED)
+    set_target_properties(boost_unit_test_framework PROPERTIES
+        IMPORTED_LOCATION /usr/lib/libboost_unit_test_framework.a)
+
+    target_link_libraries(test_main ${TEST_LIBS} boost_unit_test_framework)
+else()
+    message(FATAL_ERROR "Unsupported platform")
+endif()
+
 add_test(solution_test test_main COMMAND test_main)
