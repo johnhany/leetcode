@@ -32,6 +32,17 @@
             // "initCommands": [
             //     "command script import ${workspaceRoot}/debugvis.py"
             // ]
+        },
+        {
+            "name": "(cl) Launch",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}\\build\\test_main.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
         }
     ]
 }
