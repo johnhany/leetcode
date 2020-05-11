@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.5)
 project(leetcode)
 
-set(PROBLEM_NAME "046-Permutations-backtracking")
+set(PROBLEM_NAME "060-Permutation-Sequence")
 
 set(CMAKE_CXX_STANDARD 14)
 

@@ -6,11 +6,9 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 Top interviewed: 76 / 145
 
-Appear in [nowcoder.com](https://www.nowcoder.com/ta/leetcode): 2 / 148
+In total: 101 / 1411
 
-In total: 100 / 1411
-
-Solutions that are **99.00%+** in running time: 64
+Solutions that are **99.00%+** in running time: 65
 
 ## Solutions
 
@@ -215,6 +213,10 @@ Solutions that are **99.00%+** in running time: 64
 56. [Merge Intervals](https://leetcode.com/problems/merge-intervals/)
 
 - [8ms](https://leetcode.com/submissions/detail/303486504/) **(top 100.00%)**
+
+60. [Permutation Sequence](https://leetcode.com/problems/permutation-sequence/)
+
+- [0ms](https://leetcode.com/submissions/detail/337796856/) **(top 100.00%)**
 
 62. [Unique Paths](https://leetcode.com/problems/unique-paths/)
 
@@ -459,7 +461,7 @@ Solutions that are **99.00%+** in running time: 64
 | Linked list | 002, 019, 021, 024 |
 | Two pointers | 011, 015, 016, 018, 027, 042, 084, 088, 125, 287 |
 | Recursion | 004, 025, 033, 034, 079, 098, 101, 104, 105, 108, 111, 124, 130, 301 |
-| Backtracking | 017, 022, 046, 078 |
+| Backtracking | 017, 022, 046, 047, 060, 078 |
 | DP | 053, 062, 063, 064, 070, 091, 120, 131, 198, 213, 221, 300 |
 
 > Note that sorting/searching problems on 1-D or 2-D data are also included in the `Vector` category. Binary tree problems are mostly included in the `Recursion` category.
@@ -470,6 +472,7 @@ Solutions that are **99.00%+** in running time: 64
 
 > [《Ubuntu计算机视觉开发环境配置（Python/C++）》](http://johnhany.net/2020/03/ubuntu-cv-environment/)
 > [《Manjaro计算机视觉开发环境配置（Python/C++）》](http://johnhany.net/2020/03/manjaro-cv-environment/)
+> [《Windows配置VSCode+CMake+Ninja+Boost.Test的C++开发环境》](http://johnhany.net/2020/05/vscode-cmake-ninja-boost-test-cpp-on-windows/)
 
 - Ubuntu 18.04 / Manjaro 19.0 / Windows 10
 - Visual Studio Code *with following extensions:*
