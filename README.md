@@ -8,7 +8,7 @@ Top interviewed: 76 / 145
 
 Appear in [nowcoder.com](https://www.nowcoder.com/ta/leetcode): 2 / 148
 
-In total: 99 / 1411
+In total: 100 / 1411
 
 Solutions that are **99.00%+** in running time: 64
 
@@ -179,6 +179,11 @@ Solutions that are **99.00%+** in running time: 64
 
 - Recursive: [20ms](https://leetcode.com/submissions/detail/229700657/) (top 22.83%)
 - Better loop: [12ms](https://leetcode.com/submissions/detail/229703064/) (top 96.86%)
+- Backtracking: [4ms](https://leetcode.com/submissions/detail/337776417/) (top 96.41%)
+
+47. [Permutations II](https://leetcode.com/problems/permutations-ii/)
+
+- [8ms](https://leetcode.com/submissions/detail/337786224/) (top 96.44%)
 
 48. [Rotate Image](https://leetcode.com/problems/rotate-image/)
 
