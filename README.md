@@ -6,7 +6,7 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 Top interviewed: 76 / 145
 
-In total: 101 / 1411
+In total: 102 / 1411
 
 Solutions that are **99.00%+** in running time: 65
 
@@ -144,6 +144,10 @@ Solutions that are **99.00%+** in running time: 65
 31. [Next Permutation](https://leetcode.com/problems/next-permutation/)
 
 - [4ms](https://leetcode.com/submissions/detail/337734158/) (top 96.34%)
+
+32. [Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/)
+
+- [4ms](https://leetcode.com/submissions/detail/337858387/) (top 96.65%)
 
 33. [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)
 
@@ -457,7 +461,7 @@ Solutions that are **99.00%+** in running time: 65
 | String | 005, 006, 008, 010, 014, 028, 038, 044, 127 |
 | Numerical | 007, 009, 029, 050, 066, 069, 279 |
 | Hash/Lookup | 001, 003, 012, 013, 020, 030, 049, 076, 187, 349, 350 |
-| Stack/Queue/Deque | 023, 094, 102, 103, 116, 150 |
+| Stack/Queue/Deque | 023, 032, 094, 102, 103, 116, 150 |
 | Linked list | 002, 019, 021, 024 |
 | Two pointers | 011, 015, 016, 018, 027, 042, 084, 088, 125, 287 |
 | Recursion | 004, 025, 033, 034, 079, 098, 101, 104, 105, 108, 111, 124, 130, 301 |
