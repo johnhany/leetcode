@@ -8,7 +8,7 @@ Top interviewed: 76 / 145
 
 Appear in [nowcoder.com](https://www.nowcoder.com/ta/leetcode): 2 / 148
 
-In total: 98 / 1411
+In total: 99 / 1411
 
 Solutions that are **99.00%+** in running time: 64
 
@@ -142,6 +142,10 @@ Solutions that are **99.00%+** in running time: 64
 30. [Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/)
 
 - [40ms](https://leetcode.com/submissions/detail/323605364/) (top 88.85%)
+
+31. [Next Permutation](https://leetcode.com/problems/next-permutation/)
+
+- [4ms](https://leetcode.com/submissions/detail/337734158/) (top 96.34%)
 
 33. [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)
 
@@ -442,7 +446,7 @@ Solutions that are **99.00%+** in running time: 64
 
 | Category | Problems |
 | --- | --- |
-| Vector | 026, 036, 041, 048, 054, 055, 056, 073, 074, 075, 118, 121, 122, 123, 128, 134, 136, 153, 240, 278, 215 |
+| Vector | 026, 031, 036, 041, 048, 054, 055, 056, 073, 074, 075, 118, 121, 122, 123, 128, 134, 136, 153, 240, 278, 215 |
 | String | 005, 006, 008, 010, 014, 028, 038, 044, 127 |
 | Numerical | 007, 009, 029, 050, 066, 069, 279 |
 | Hash/Lookup | 001, 003, 012, 013, 020, 030, 049, 076, 187, 349, 350 |
