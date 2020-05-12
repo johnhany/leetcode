@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.5)
 project(leetcode)
 
-set(PROBLEM_NAME "043-Multiply-Strings-c-version")
+set(PROBLEM_NAME "045-Jump-Game-II")
 
 set(CMAKE_CXX_STANDARD 14)
 

@@ -6,7 +6,7 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 Top interviewed: 76 / 145
 
-In total: 107 / 1411
+In total: 108 / 1411
 
 Solutions that are **99.00%+** in running time: 65
 
@@ -197,6 +197,10 @@ Solutions that are **99.00%+** in running time: 65
 44. [Wildcard Matching](https://leetcode.com/problems/wildcard-matching/)
 
 - [4ms](https://leetcode.com/submissions/detail/229689968/) **(top 99.84%)**
+
+45. [Jump Game II](https://leetcode.com/problems/jump-game-ii/)
+
+- [8ms](https://leetcode.com/submissions/detail/338330469/) (top 95.32%)
 
 46. [Permutations](https://leetcode.com/problems/permutations/)
 
@@ -485,7 +489,7 @@ Solutions that are **99.00%+** in running time: 65
 | Stack/Queue/Deque | 023, 032, 094, 102, 103, 116, 150 |
 | Linked list | 002, 019, 021, 024 |
 | Two pointers | 011, 015, 016, 018, 027, 042, 084, 088, 125, 287 |
-| Recursion | 004, 025, 033, 034, 035, 079, 098, 101, 104, 105, 108, 111, 124, 130, 301 |
+| Recursion | 004, 025, 033, 034, 035, 045, 079, 098, 101, 104, 105, 108, 111, 124, 130, 301 |
 | Backtracking | 017, 022, 037, 039, 040, 046, 047, 060, 078 |
 | DP | 053, 062, 063, 064, 070, 091, 120, 131, 198, 213, 221, 300 |
 
