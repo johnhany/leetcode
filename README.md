@@ -6,7 +6,7 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 Top interviewed: 76 / 145
 
-In total: 102 / 1411
+In total: 103 / 1411
 
 Solutions that are **99.00%+** in running time: 65
 
@@ -156,6 +156,10 @@ Solutions that are **99.00%+** in running time: 65
 34. [Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
 
 - [8ms](https://leetcode.com/submissions/detail/229284793/) (top 98.52%)
+
+35. [Search Insert Position](https://leetcode.com/problems/search-insert-position/)
+
+- [4ms](https://leetcode.com/submissions/detail/338222184/) (top 98.31%)
 
 36. [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)
 
@@ -457,18 +461,18 @@ Solutions that are **99.00%+** in running time: 65
 
 | Category | Problems |
 | --- | --- |
-| Vector | 026, 031, 036, 041, 048, 054, 055, 056, 073, 074, 075, 118, 121, 122, 123, 128, 134, 136, 153, 240, 278, 215 |
+| Sort/search | 026, 031, 036, 041, 048, 054, 055, 056, 073, 074, 075, 118, 121, 122, 123, 128, 134, 136, 153, 215, 240, 278 |
 | String | 005, 006, 008, 010, 014, 028, 038, 044, 127 |
 | Numerical | 007, 009, 029, 050, 066, 069, 279 |
 | Hash/Lookup | 001, 003, 012, 013, 020, 030, 049, 076, 187, 349, 350 |
 | Stack/Queue/Deque | 023, 032, 094, 102, 103, 116, 150 |
 | Linked list | 002, 019, 021, 024 |
 | Two pointers | 011, 015, 016, 018, 027, 042, 084, 088, 125, 287 |
-| Recursion | 004, 025, 033, 034, 079, 098, 101, 104, 105, 108, 111, 124, 130, 301 |
+| Recursion | 004, 025, 033, 034, 035, 079, 098, 101, 104, 105, 108, 111, 124, 130, 301 |
 | Backtracking | 017, 022, 046, 047, 060, 078 |
 | DP | 053, 062, 063, 064, 070, 091, 120, 131, 198, 213, 221, 300 |
 
-> Note that sorting/searching problems on 1-D or 2-D data are also included in the `Vector` category. Binary tree problems are mostly included in the `Recursion` category.
+> Note that binary tree problems are mostly included in the `Recursion` category.
 
 ------
 

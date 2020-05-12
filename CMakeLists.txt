@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.5)
 project(leetcode)
 
-set(PROBLEM_NAME "032-Longest-Valid-Parentheses")
+set(PROBLEM_NAME "035-Search-Insert-Position")
 
 set(CMAKE_CXX_STANDARD 14)
 
