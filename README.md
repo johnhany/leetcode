@@ -6,7 +6,7 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 Top interviewed: 76 / 145
 
-In total: 106 / 1411
+In total: 107 / 1411
 
 Solutions that are **99.00%+** in running time: 65
 
@@ -188,6 +188,11 @@ Solutions that are **99.00%+** in running time: 65
 42. [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)
 
 - [4ms](https://leetcode.com/submissions/detail/229679714/) **(top 99.71%)**
+
+43. [Multiply Strings](https://leetcode.com/problems/multiply-strings/)
+
+- C++ interface: [8ms](https://leetcode.com/submissions/detail/338314781/) (top 72.26%)
+- C interface: [4ms](https://leetcode.com/submissions/detail/338320543/) (top 97.53%)
 
 44. [Wildcard Matching](https://leetcode.com/problems/wildcard-matching/)
 
@@ -474,7 +479,7 @@ Solutions that are **99.00%+** in running time: 65
 | Category | Problems |
 | --- | --- |
 | Sort/search | 026, 031, 036, 041, 048, 054, 055, 056, 073, 074, 075, 118, 121, 122, 123, 128, 134, 136, 153, 215, 240, 278 |
-| String | 005, 006, 008, 010, 014, 028, 038, 044, 127 |
+| String | 005, 006, 008, 010, 014, 028, 038, 043, 044, 127 |
 | Numerical | 007, 009, 029, 050, 066, 069, 279 |
 | Hash/Lookup | 001, 003, 012, 013, 020, 030, 049, 076, 187, 349, 350 |
 | Stack/Queue/Deque | 023, 032, 094, 102, 103, 116, 150 |
