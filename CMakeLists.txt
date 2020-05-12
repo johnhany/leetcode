@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.5)
 project(leetcode)
 
-set(PROBLEM_NAME "035-Search-Insert-Position")
+set(PROBLEM_NAME "037-Sudoku-Solver")
 
 set(CMAKE_CXX_STANDARD 14)
 
