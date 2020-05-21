@@ -6,9 +6,9 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 Top interviewed: 76 / 145
 
-In total: 108 / 1411
+In total: 109 / 1411
 
-Solutions that are **99.00%+** in running time: 65
+Solutions that are **99.00%+** in running time: 66
 
 ## Solutions
 
@@ -224,6 +224,10 @@ Solutions that are **99.00%+** in running time: 65
 50. [Pow(x, n)](https://leetcode.com/problems/powx-n/)
 
 - [4ms](https://leetcode.com/submissions/detail/230192088/) (top 96.07%)
+
+51. [N-Queens](https://leetcode.com/problems/n-queens/)
+
+- [4ms](https://leetcode.com/submissions/detail/342609229/) **(top 99.62%)**
 
 53. [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
 
@@ -490,7 +494,7 @@ Solutions that are **99.00%+** in running time: 65
 | Linked list | 002, 019, 021, 024 |
 | Two pointers | 011, 015, 016, 018, 027, 042, 084, 088, 125, 287 |
 | Recursion | 004, 025, 033, 034, 035, 045, 079, 098, 101, 104, 105, 108, 111, 124, 130, 301 |
-| Backtracking | 017, 022, 037, 039, 040, 046, 047, 060, 078 |
+| Backtracking | 017, 022, 037, 039, 040, 046, 047, 051, 060, 078 |
 | DP | 053, 062, 063, 064, 070, 091, 120, 131, 198, 213, 221, 300 |
 
 > Note that binary tree problems are mostly included in the `Recursion` category.
