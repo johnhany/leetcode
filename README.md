@@ -507,7 +507,7 @@ Solutions that are **99.00%+** in running time: 66
 > [《Manjaro计算机视觉开发环境配置（Python/C++）》](http://johnhany.net/2020/03/manjaro-cv-environment/)
 > [《Windows配置VSCode+CMake+Ninja+Boost.Test的C++开发环境》](http://johnhany.net/2020/05/vscode-cmake-ninja-boost-test-cpp-on-windows/)
 
-- Ubuntu 18.04 / Manjaro 19.0 / Windows 10
+- Ubuntu 18.04 / Manjaro 19.0 / Windows 10 / macOS Catalina 10.15.3
 - Visual Studio Code *with following extensions:*
   - C/C++ ([ms-vscode.cpptools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools))
   - C/C++ Clang Command Adapter ([mitaki28.vscode-clang](https://marketplace.visualstudio.com/items?itemName=llvm-vs-code-extensions.vscode-clangd)) (optional)
