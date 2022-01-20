@@ -10,24 +10,24 @@ static auto x = []() {
 
 
 ListNode* Solution::addTwoNumbers(ListNode* l1, ListNode* l2) {
-	ListNode* out = new ListNode(0);
-	ListNode* res = out;
+	ListNode* rst = new ListNode(0);
+	ListNode* out = rst;
 	int var1, var2, value, sum;
 	int carry = 0;
-	while(1) {
-		if (l1 == NULL && l2 == NULL) {
+	while(true) {
+		if (l1 == nullptr && l2 == nullptr) {
 			if (carry > 0) {
-				out->next = new ListNode(1);
+				out->next = new ListNode(carry);
 			}
-			return res->next;
+			return rst->next;
 		}
-		if (l1 != NULL) {
+		if (l1 != nullptr) {
 			var1 = l1->val;
 			l1 = l1->next;
 		} else {
 			var1 = 0;
 		}
-		if (l2 != NULL) {
+		if (l2 != nullptr) {
 			var2 = l2->val;
 			l2 = l2->next;
 		} else {

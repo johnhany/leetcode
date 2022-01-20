@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.5)
 project(leetcode)
 
-set(PROBLEM_NAME "051-N-Queens")
+set(PROBLEM_NAME "003-Longest-Substring-Without-Repeating-Characters-hash")
 
 set(CMAKE_CXX_STANDARD 14)
 
@@ -35,11 +35,7 @@ elseif(APPLE)
 elseif(UNIX)
     message(STATUS "Detected UNIX platform")
     find_package(Boost REQUIRED COMPONENTS unit_test_framework)
-    add_library(boost_unit_test_framework STATIC IMPORTED)
-    set_target_properties(boost_unit_test_framework PROPERTIES
-        IMPORTED_LOCATION /usr/lib/libboost_unit_test_framework.a)
-
-    target_link_libraries(test_main ${TEST_LIBS} boost_unit_test_framework)
+    target_link_libraries(test_main PRIVATE ${TEST_LIBS} Boost::boost Boost::unit_test_framework)
 else()
     message(FATAL_ERROR "Unsupported platform")
 endif()

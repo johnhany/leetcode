@@ -6,7 +6,7 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 Top interviewed: 76 / 145
 
-In total: 109 / 1411
+In total: 109 / 2143
 
 Solutions that are **99.00%+** in running time: 66
 
@@ -14,8 +14,7 @@ Solutions that are **99.00%+** in running time: 66
 
 1. [Two Sum](https://leetcode.com/problems/two-sum/description/)
 
-- Brutal force: [72ms](https://leetcode.com/submissions/detail/162240348/) (top 43.79%)
-- Hash table (map): [4ms](https://leetcode.com/submissions/detail/162239318/) **(top 100.00%)**
+- Hash table (unorderd_map): [4ms](https://leetcode.com/submissions/detail/623954988/) **(top 99.54%)**
 
 2. [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/)
 
@@ -23,7 +22,7 @@ Solutions that are **99.00%+** in running time: 66
 
 3. [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
 
-- Hash table (map): [8ms](https://leetcode.com/submissions/detail/162239918/) **(top 100.00%)**
+- Hash table (vector): [0ms](https://leetcode.com/submissions/detail/624009196/) **(top 100.00%)**
 
 4. [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)
 

@@ -10,16 +10,18 @@ static auto x = []() {
 
 
 vector<int> Solution::twoSum(vector<int>& nums, int target) {
-	map<int, int> hash;
-	for (int idx=0; idx < nums.size(); idx++) {
-		int var = target - nums[idx];
-		auto search = hash.find(var);
-		if (search == hash.end()) {
-			hash.insert(pair<int, int>(nums[idx], idx));
+	unordered_map<int,int> hash;
+	vector<int> rst;
+	for (int i=0; i<nums.size(); i++) {
+		unordered_map<int, int>::iterator itr = hash.find(target - nums[i]);
+		if (itr == hash.end()) {
+			hash.insert(pair<int,int>(nums[i], i));
 		} else {
-			int res[] = {search->second, idx};
-			return vector<int>(res, res + sizeof(res) / sizeof(res[0]));
+			rst.push_back(itr->second);
+			rst.push_back(i);
+			return rst;
 		}
 	}
+	return rst;
 }
 
