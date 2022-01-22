@@ -12,19 +12,19 @@ static auto x = []() {
 
 int Solution::reverse(int x) {
 	int y = 0;
-	int sign = x > 0 ? 1 : -1;
+	int sign = (x>0) ? +1 : -1;
+	int int_max = int((~(unsigned int)0) >> 1);
+	int int_min = int(~int_max);
+	if (x == int_min)
+		return 0;
 	x *= sign;
-	int tmp, new_y;
 	while (x) {
-		tmp = x / 10;
-		if (y > INT_MAX / 10)
+		int v = x % 10;
+		if ((int_max-v)/10 < y) {
 			return 0;
-		y *= 10;
-		new_y = x - tmp * 10;
-		if (y > INT_MAX - new_y)
-			return 0;
-		y += new_y;
-		x = tmp;
+		}
+		y = y*10 + v;
+		x = x/10;
 	}
-	return y * sign;
+	return sign*y;
 }

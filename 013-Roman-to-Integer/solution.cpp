@@ -9,21 +9,25 @@ static auto x = []() {
 }();
 
 
-int Solution::romanToInt(string s) {
-	vector<char> symbols{'I', 'V', 'X', 'L', 'C', 'D', 'M'};
-	vector<int> values{1, 5, 10, 50, 100, 500, 1000};
+int Solution::tableFunc(char str){
+        if(str=='I') return 1;
+        else if(str=='V') return 5;
+        else if(str=='X') return 10;
+        else if(str=='L') return 50;
+        else if(str=='C') return 100;
+        else if(str=='D') return 500;
+		else if(str=='M') return 1000;
+        else return 0;
+    }
 
-	int result = 0;
-	std::vector<char>::iterator itr;
-	for (int i = 0; i < s.size(); i++) {
-		itr = find(symbols.begin(), symbols.end(), s[i]);
-		if (itr != symbols.end()) {
-			int idx = std::distance(symbols.begin(), itr);
-			if (i < s.size()-1 && idx < 5 && (s[i+1] == symbols[idx+1] || s[i+1] == symbols[idx+2]))
-				result -= values[idx];
-			else
-				result += values[idx];
+int Solution::romanToInt(string s) {
+	int rst = tableFunc(s.back());
+	for (int i=s.length()-2; i>=0; i--) {
+		if (tableFunc(s[i]) < tableFunc(s[i+1])) {
+			rst -= tableFunc(s[i]);
+		} else {
+			rst += tableFunc(s[i]);
 		}
 	}
-	return result;
+	return rst;
 }

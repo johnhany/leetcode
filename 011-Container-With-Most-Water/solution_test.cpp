@@ -16,4 +16,13 @@ BOOST_AUTO_TEST_CASE(PlainTest1)
     BOOST_CHECK_EQUAL(results, expected);
 }
 
+BOOST_AUTO_TEST_CASE(PlainTest2)
+{
+    vector<int> height{1,2,4,3};
+    int results = Solution().maxArea(height);
+
+    int expected = 4;
+    BOOST_CHECK_EQUAL(results, expected);
+}
+
 BOOST_AUTO_TEST_SUITE_END()

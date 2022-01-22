@@ -8,22 +8,6 @@ static auto x = []() {
 	return 0;
 }();
 
-/*
-// Brutal force
-int Solution::maxArea(vector<int>& height) {
-	size_t tmp, area = 0;
-	for (size_t i = 1; i < height.size(); i++) {
-		for (size_t j = 0; j < i; j++) {
-			tmp = (i - j) * min(height[i], height[j]);
-			if (area < tmp) {
-				area = tmp;
-			}
-		}
-	}
-	return (int)area;
-}
-*/
-
 int Solution::maxArea(vector<int>& height) {
 	int i = 0, j = height.size()-1;
 	int tmp, h, area = 0;

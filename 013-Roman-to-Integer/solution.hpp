@@ -14,6 +14,7 @@ using namespace std;
 class Solution {
 public:
 	int romanToInt(string);
+	int tableFunc(char);
 };
 
 #endif

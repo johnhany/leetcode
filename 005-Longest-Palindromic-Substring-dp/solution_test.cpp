@@ -11,6 +11,7 @@ BOOST_AUTO_TEST_CASE(PlainTest1)
 {
     string input = "babad";
     string results = Solution().longestPalindrome(input);
+    cout << results << endl;
 
     string expected1 = "bab";
     string expected2 = "aba";
@@ -21,6 +22,7 @@ BOOST_AUTO_TEST_CASE(PlainTest2)
 {
     string input = "cbbd";
     string results = Solution().longestPalindrome(input);
+    cout << results << endl;
 
     string expected1 = "bb";
     BOOST_CHECK(results.compare(expected1) == 0);

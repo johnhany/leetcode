@@ -43,4 +43,31 @@ BOOST_AUTO_TEST_CASE(PlainTest4)
     BOOST_CHECK_EQUAL(results, expected);
 }
 
+BOOST_AUTO_TEST_CASE(PlainTest5)
+{
+    string input = "   -42";
+    int results = Solution().myAtoi(input);
+
+    int expected = -42;
+    BOOST_CHECK_EQUAL(results, expected);
+}
+
+BOOST_AUTO_TEST_CASE(PlainTest6)
+{
+    string input = "+-12";
+    int results = Solution().myAtoi(input);
+
+    int expected = 0;
+    BOOST_CHECK_EQUAL(results, expected);
+}
+
+BOOST_AUTO_TEST_CASE(PlainTest7)
+{
+    string input = "  +  413";
+    int results = Solution().myAtoi(input);
+
+    int expected = 0;
+    BOOST_CHECK_EQUAL(results, expected);
+}
+
 BOOST_AUTO_TEST_SUITE_END()

@@ -26,12 +26,12 @@ Solutions that are **99.00%+** in running time: 66
 
 4. [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)
 
-- Non-recursive: [28 ms](https://leetcode.com/submissions/detail/207084478/) (top 96.13%)
+- Non-recursive: [35 ms](https://leetcode.com/submissions/detail/625257120/) (top 63.25%)
 - Recursion: [16 ms](https://leetcode.com/submissions/detail/162238879/) **(top 100.00%)**
 
 5. [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
 
-- Brutal force: [8ms](https://leetcode.com/submissions/detail/162245132/) (top 87.41%)
+- Brutal force: [9ms](https://leetcode.com/submissions/detail/625311843/) (top 94.73%)
 - Manacher's algorithm: [0ms](https://leetcode.com/submissions/detail/163268305/) **(top 100.00%)**
 
 6. [ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/)
@@ -41,11 +41,11 @@ Solutions that are **99.00%+** in running time: 66
 
 7. [Reverse Integer](https://leetcode.com/problems/reverse-integer/)
 
-- Use `INT_MAX`: [4ms](https://leetcode.com/submissions/detail/163412779/) **(top 100.00%)**
+- [0ms](https://leetcode.com/submissions/detail/625325000/) **(top 100.00%)**
 
 8. [String to Integer (atoi)](https://leetcode.com/submissions/detail/163418517/)
 
-- Use `INT_MAX`: [8ms](https://leetcode.com/submissions/detail/163418517/) **(top 99.90%)**
+- [0ms](https://leetcode.com/submissions/detail/625369303/) **(top 100.00%)**
 
 9. [Palindrome Number](https://leetcode.com/problems/palindrome-number/)
 
@@ -66,10 +66,10 @@ Solutions that are **99.00%+** in running time: 66
 
 13. [Roman to Integer](https://leetcode.com/problems/roman-to-integer/)
 
-- Two vectors: [36ms](https://leetcode.com/submissions/detail/208110036/) (top 98.41%)
+- [10ms](https://leetcode.com/submissions/detail/625403716/) (top 67.12%)
 - Map: [44ms](https://leetcode.com/submissions/detail/208111358/) (top 97.72%)
 
-14. [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)
+1.  [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)
 
 - [4ms](https://leetcode.com/submissions/detail/208296888/) **(top 100.00%)**
 
@@ -502,11 +502,7 @@ Solutions that are **99.00%+** in running time: 66
 
 ## Environment
 
-> [《Ubuntu计算机视觉开发环境配置（Python/C++）》](http://johnhany.net/2020/03/ubuntu-cv-environment/)
-> [《Manjaro计算机视觉开发环境配置（Python/C++）》](http://johnhany.net/2020/03/manjaro-cv-environment/)
-> [《Windows配置VSCode+CMake+Ninja+Boost.Test的C++开发环境》](http://johnhany.net/2020/05/vscode-cmake-ninja-boost-test-cpp-on-windows/)
-
-- Ubuntu 18.04 / Manjaro 19.0 / Windows 10 / macOS Catalina 10.15.3
+- Ubuntu 21.10 / Manjaro 19.0 / Windows 10 / macOS Catalina 10.15.3
 - Visual Studio Code *with following extensions:*
   - C/C++ ([ms-vscode.cpptools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools))
   - C/C++ Clang Command Adapter ([mitaki28.vscode-clang](https://marketplace.visualstudio.com/items?itemName=llvm-vs-code-extensions.vscode-clangd)) (optional)

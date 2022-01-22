@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.5)
 project(leetcode)
 
-set(PROBLEM_NAME "003-Longest-Substring-Without-Repeating-Characters-hash")
+set(PROBLEM_NAME "013-Roman-to-Integer")
 
 set(CMAKE_CXX_STANDARD 14)
 
