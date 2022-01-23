@@ -87,3 +87,87 @@ while (!from.empty()) {
     from.pop_front();
 }
 ```
+
+## iterator invalidation rule
+
+[https://stackoverflow.com/questions/6438086/iterator-invalidation-rules-for-c-containers](https://stackoverflow.com/questions/6438086/iterator-invalidation-rules-for-c-containers)
+
+**Insertion**
+
+Sequence Containers
+
+* `vector`: The functions insert, emplace_back, emplace, push_back cause reallocation if the new size is greater than the old capacity. Reallocation invalidates all the references, pointers, and iterators referring to the elements in the sequence. If no reallocation happens, all the iterators and references before the insertion point remain valid. [26.3.11.5/1]
+With respect to the reserve function, reallocation invalidates all the references, pointers, and iterators referring to the elements in the sequence. No reallocation shall take place during insertions that happen after a call to reserve() until the time when an insertion would make the size of the vector greater than the value of capacity(). [26.3.11.3/6]
+
+* `deque`: An insertion in the middle of the deque invalidates all the iterators and references to elements of the deque. An insertion at either end of the deque invalidates all the iterators to the deque, but has no effect on the validity of references to elements of the deque. [26.3.8.4/1]
+
+* `list`: Does not affect the validity of iterators and references. If an exception is thrown there are no effects. [26.3.10.4/1].
+The insert, emplace_front, emplace_back, emplace, push_front, push_back functions are covered under this rule.
+
+* `forward_list`: None of the overloads of insert_after shall affect the validity of iterators and references [26.3.9.5/1]
+
+* `array`: As a rule, iterators to an array are never invalidated throughout the lifetime of the array. One should take note, however, that during swap, the iterator will continue to point to the same array element, and will thus change its value.
+
+Associative Containers
+
+* All Associative Containers: The insert and emplace members shall not affect the validity of iterators and references to the container [26.2.6/9]
+
+Unordered Associative Containers
+
+* All Unordered Associative Containers: Rehashing invalidates iterators, changes ordering between elements, and changes which buckets elements appear in, but does not invalidate pointers or references to elements. [26.2.7/9]
+The insert and emplace members shall not affect the validity of references to container elements, but may invalidate all iterators to the container. [26.2.7/14]
+The insert and emplace members shall not affect the validity of iterators if (N+n) <= z * B, where N is the number of elements in the container prior to the insert operation, n is the number of elements inserted, B is the container’s bucket count, and z is the container’s maximum load factor. [26.2.7/15]
+
+* All Unordered Associative Containers: In case of a merge operation (e.g., a.merge(a2)), iterators referring to the transferred elements and all iterators referring to a will be invalidated, but iterators to elements remaining in a2 will remain valid. (Table 91 — Unordered associative container requirements)
+
+Container Adaptors
+
+* `stack`: inherited from underlying container
+* `queue`: inherited from underlying container
+* `priority_queue`: inherited from underlying container
+
+**Erasure**
+
+Sequence Containers
+
+* `vector`: The functions erase and pop_back invalidate iterators and references at or after the point of the erase. [26.3.11.5/3]
+
+* `deque`: An erase operation that erases the last element of a deque invalidates only the past-the-end iterator and all iterators and references to the erased elements. An erase operation that erases the first element of a deque but not the last element invalidates only iterators and references to the erased elements. An erase operation that erases neither the first element nor the last element of a deque invalidates the past-the-end iterator and all iterators and references to all the elements of the deque. [ Note: pop_front and pop_back are erase operations. —end note ] [26.3.8.4/4]
+
+* `list`: Invalidates only the iterators and references to the erased elements. [26.3.10.4/3]. This applies to erase, pop_front, pop_back, clear functions.
+remove and remove_if member functions: Erases all the elements in the list referred by a list iterator i for which the following conditions hold: *i == value, pred(*i) != false. Invalidates only the iterators and references to the erased elements [26.3.10.5/15].
+unique member function - Erases all but the first element from every consecutive group of equal elements referred to by the iterator i in the range [first + 1, last) for which *i == *(i-1) (for the version of unique with no arguments) or pred(*i, *(i - 1)) (for the version of unique with a predicate argument) holds. Invalidates only the iterators and references to the erased elements. [26.3.10.5/19]
+
+* `forward_list`: erase_after shall invalidate only iterators and references to the erased elements. [26.3.9.5/1].
+remove and remove_if member functions - Erases all the elements in the list referred by a list iterator i for which the following conditions hold: *i == value (for remove()), pred(*i) is true (for remove_if()). Invalidates only the iterators and references to the erased elements. [26.3.9.6/12].
+unique member function - Erases all but the first element from every consecutive group of equal elements referred to by the iterator i in the range [first + 1, last) for which *i == *(i-1) (for the version with no arguments) or pred(*i, *(i - 1)) (for the version with a predicate argument) holds. Invalidates only the iterators and references to the erased elements. [26.3.9.6/16]
+
+* All Sequence Containers: clear invalidates all references, pointers, and iterators referring to the elements of a and may invalidate the past-the-end iterator (Table 87 — Sequence container requirements). But for forward_list, clear does not invalidate past-the-end iterators. [26.3.9.5/32]
+
+* All Sequence Containers: assign invalidates all references, pointers and iterators referring to the elements of the container. For vector and deque, also invalidates the past-the-end iterator. (Table 87 — Sequence container requirements)
+
+Associative Containers
+
+* All Associative Containers: The erase members shall invalidate only iterators and references to the erased elements [26.2.6/9]
+
+* All Associative Containers: The extract members invalidate only iterators to the removed element; pointers and references to the removed element remain valid [26.2.6/10]
+
+Container Adaptors
+
+* `stack`: inherited from underlying container
+* `queue`: inherited from underlying container
+* `priority_queue`: inherited from underlying container
+
+General container requirements relating to iterator invalidation:
+
+* Unless otherwise specified (either explicitly or by defining a function in terms of other functions), invoking a container member function or passing a container as an argument to a library function shall not invalidate iterators to, or change the values of, objects within that container. [26.2.1/12]
+
+* no swap() function invalidates any references, pointers, or iterators referring to the elements of the containers being swapped. [ Note: The end() iterator does not refer to any element, so it may be invalidated. —end note ] [26.2.1/(11.6)]
+
+As examples of the above requirements:
+
+* `transform` algorithm: The op and binary_op functions shall not invalidate iterators or subranges, or modify elements in the ranges [28.6.4/1]
+
+* `accumulate` algorithm: In the range [first, last], binary_op shall neither modify elements nor invalidate iterators or subranges [29.8.2/1]
+
+* `reduce` algorithm: binary_op shall neither invalidate iterators or subranges, nor modify elements in the range [first, last]. [29.8.3/5]
