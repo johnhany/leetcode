@@ -69,7 +69,7 @@ Solutions that are **99.00%+** in running time: 66
 - [10ms](https://leetcode.com/submissions/detail/625403716/) (top 67.12%)
 - Map: [44ms](https://leetcode.com/submissions/detail/208111358/) (top 97.72%)
 
-1.  [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)
+14.  [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)
 
 - [4ms](https://leetcode.com/submissions/detail/208296888/) **(top 100.00%)**
 
@@ -84,6 +84,7 @@ Solutions that are **99.00%+** in running time: 66
 17. [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)
 
 - Deque: [4ms](https://leetcode.com/submissions/detail/208767129/) **(top 100.00%)**
+- DFS: [0ms](https://leetcode.com/submissions/detail/625909390/) **(top 100.00%)**
 
 18. [4Sum](https://leetcode.com/problems/4sum/)
 
@@ -92,7 +93,7 @@ Solutions that are **99.00%+** in running time: 66
 
 19. [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)
 
-- One pass: [8ms](https://leetcode.com/submissions/detail/208784263/) **(top 100.00%)**
+- [0ms](https://leetcode.com/submissions/detail/625919082/) **(top 100.00%)**
 
 20. [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)
 
@@ -104,11 +105,12 @@ Solutions that are **99.00%+** in running time: 66
 
 22. [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)
 
-- Deque: [8ms](https://leetcode.com/submissions/detail/209312997/) **(top 100.00%)**
+- [0ms](https://leetcode.com/submissions/detail/626012181/) **(top 100.00%)**
+- Deque: [11ms](https://leetcode.com/submissions/detail/626009102/)
 
 23. [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)
 
-- Use 021: [176ms](https://leetcode.com/submissions/detail/209596082/) (top 25.72%)
+- Use 021: [16ms](https://leetcode.com/submissions/detail/626027420/) (top 98.02%)
 - Priority queue: [32ms](https://leetcode.com/submissions/detail/209600116/) (top 98.10%)
 
 24. [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/)

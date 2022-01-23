@@ -43,4 +43,13 @@ BOOST_AUTO_TEST_CASE(PlainTest4)
     BOOST_CHECK_EQUAL(results, expected);
 }
 
+BOOST_AUTO_TEST_CASE(PlainTest5)
+{
+    vector<string> strs{"abb","abc"};
+    string results = Solution().longestCommonPrefix(strs);
+
+    string expected = "ab";
+    BOOST_CHECK_EQUAL(results, expected);
+}
+
 BOOST_AUTO_TEST_SUITE_END()

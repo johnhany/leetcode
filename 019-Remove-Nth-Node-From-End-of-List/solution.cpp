@@ -9,21 +9,21 @@ static auto x = []() {
 }();
 
 ListNode* Solution::removeNthFromEnd(ListNode* head, int n) {
-	if (!head) return NULL;
-	vector<ListNode*> tmp;
-	ListNode* curr = head;
-	while(curr) {
-		tmp.emplace_back(curr);
-		curr = curr->next;
+	vector<ListNode*> table;
+	ListNode* root = head;
+	while (head != nullptr) {
+		table.emplace_back(head);
+		head = head->next;
 	}
-	if (n == tmp.size())
-		return head->next;
-	else {
-		delete tmp[tmp.size()-n];
-		if (n == 1)
-			tmp[tmp.size()-n-1]->next = NULL;
-		else
-			tmp[tmp.size()-n-1]->next = tmp[tmp.size()-n+1];
+	int len = table.size();
+	if (n == len) {
+		return root->next;
 	}
-	return head;
+	delete table[len-n];
+	if (n == 1) {
+		table[len-n-1]->next = nullptr;
+	} else {
+		table[len-n-1]->next = table[len-n+1];
+	}
+	return root;
 }

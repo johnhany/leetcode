@@ -11,14 +11,15 @@ static auto x = []() {
 
 bool Solution::isValid(string s) {
 	std::stack<char> q;
+	std::map<char,char> lut{{'(',')'}, {'{','}'}, {'[',']'}};
 	for (char c: s) {
-		if (c == '(' || c == '[' || c == '{') {
+		if (lut.count(c) > 0) {
 			q.push(c);
 			continue;
 		}
 		if (!q.empty()) {
-			char t = q.top();
-			if ((c == ')' && t == '(') || (c == ']' && t == '[') || (c == '}' && t == '{')) {
+			auto itr = lut.find(q.top());
+			if (itr != lut.end() && itr->second == c) {
 				q.pop();
 				continue;
 			} else {

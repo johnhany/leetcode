@@ -24,3 +24,7 @@ while (x) {
 }
 cout << count << endl;
 ```
+
+## nullptr vs NULL
+
+`nullptr` is pointer type. `NULL` (which equals to `0`) can be ambiguous (i.e. `f(int)` vs `f(foo*)`)

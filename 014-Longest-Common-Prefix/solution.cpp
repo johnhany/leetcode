@@ -10,26 +10,14 @@ static auto x = []() {
 
 
 string Solution::longestCommonPrefix(vector<string>& strs) {
-	if (strs.size() == 0)
+	if (strs.empty())
 		return "";
 	else if (strs.size() == 1)
 		return strs[0];
-	else {
-		string prefix = "";
-		string base = strs[0];
-		int len = base.size();
-		for (vector<string>::iterator itr = strs.begin()+1; itr != strs.end(); itr++) {
-			if (base.compare(itr->substr(0, len)) == 0)
-				continue;
-			else {
-				do {
-					len -= 1;
-					base = base.substr(0, len);
-				} while (base.compare(itr->substr(0, len)) != 0);
-				if (len == 0)
-					return "";
-			}
-		}
-		return base;
+	for (int i=0; i<strs[0].length(); i++) {
+		for (int j=1; j<strs.size(); j++)
+			if (i == strs[j].length() || strs[0][i] != strs[j][i])
+				return strs[0].substr(0, i);
 	}
+	return strs[0];
 }

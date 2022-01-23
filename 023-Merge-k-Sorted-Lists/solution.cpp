@@ -15,23 +15,21 @@ struct compare {
 };
 
 ListNode* Solution::mergeKLists(vector<ListNode*>& lists) {
-	if (lists.size() == 0)
-		return NULL;
-	else if (lists.size() == 1)
-		return lists[0];
-	priority_queue<ListNode*, vector<ListNode*>, compare> pq;
-	for (vector<ListNode*>::iterator itr = lists.begin(); itr != lists.end(); itr++) {
-		if (*itr)
-			pq.push(*itr);
+	if (lists.empty())
+		return nullptr;
+	ListNode* head = new ListNode();
+	ListNode* cur = head;
+	std::priority_queue<ListNode*, vector<ListNode*>, compare> q;
+	for (ListNode* itr: lists) {
+		if (itr)
+			q.push(itr);
 	}
-	ListNode* res = new ListNode(0);
-	ListNode* cur = res;
-	while (!pq.empty()) {
-		cur->next = pq.top();
-		pq.pop();
+	while (!q.empty()) {
+		cur->next = q.top();
+		q.pop();
 		cur = cur->next;
 		if (cur->next)
-			pq.push(cur->next);
+			q.push(cur->next);
 	}
-	return res->next;
+	return head->next;
 }
