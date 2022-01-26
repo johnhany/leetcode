@@ -8,6 +8,7 @@ static auto x = []() {
 	return 0;
 }();
 
+// https://www.cnblogs.com/cherryg/p/14474463.html
 
 vector<int> Solution::partialMatchTable(string needle) {
 	vector<int> table(needle.size(), 0);

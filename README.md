@@ -136,7 +136,7 @@ Solutions that are **99.00%+** in running time: 66
 
 29. [Divide Two Integers](https://leetcode.com/problems/divide-two-integers/)
 
-- All `int` without `<limits.h>`: [8ms](https://leetcode.com/submissions/detail/214028878/) **(top 100.00%)**
+- [0ms](https://leetcode.com/submissions/detail/214028878/) **(top 100.00%)**
 
 30. [Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/)
 

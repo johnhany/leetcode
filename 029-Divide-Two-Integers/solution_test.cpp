@@ -124,4 +124,13 @@ BOOST_AUTO_TEST_CASE(PlainTest13)
     BOOST_CHECK_EQUAL(result, expected);
 }
 
+BOOST_AUTO_TEST_CASE(PlainTest14)
+{
+    int dividend = -2147483648, divisor = 2;
+    int result = Solution().divide(dividend, divisor);
+
+    int expected = -1073741824;
+    BOOST_CHECK_EQUAL(result, expected);
+}
+
 BOOST_AUTO_TEST_SUITE_END()

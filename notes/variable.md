@@ -58,3 +58,13 @@ int main() {
 "Physical" constness comes from declaring an object const, and could, in principle, be enforced by placing the object in read-only memory, so it cannot change. Attempting to change it will cause undefined behaviour.
 
 "Logical" constness comes from declaring a reference or pointer const, and is enforced by the compiler. The object itself may or may not be "physically" const, but the reference cannot be used to modify it without a cast. If the object is not "physically" const, then C++ allows you to modify it, using const_cast to circumvent the protection.
+
+## abs of int
+
+clang implementation
+
+```
+int a = -2147483648;
+int sign = a >> (sizeof(int) * 8 - 1);
+unsigned int b = (a ^ sign) - sign;
+```

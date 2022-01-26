@@ -61,4 +61,13 @@ BOOST_AUTO_TEST_CASE(PlainTest6)
     BOOST_CHECK_EQUAL(result, expected);
 }
 
+BOOST_AUTO_TEST_CASE(PlainTest7)
+{
+    string haystack = "aaa", needle = "aaa";
+    int result = Solution().strStr(haystack, needle);
+
+    int expected = 0;
+    BOOST_CHECK_EQUAL(result, expected);
+}
+
 BOOST_AUTO_TEST_SUITE_END()

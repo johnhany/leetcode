@@ -9,36 +9,24 @@ static auto x = []() {
 }();
 
 int Solution::search(vector<int>& nums, int target) {
-	if (nums.empty()) return -1;
-	return subsearch(nums, target, 0, nums.size()-1);
+	return subSearch(nums, 0, nums.size()-1, target);
 }
 
-int Solution::subsearch(vector<int>& nums, int target, int start, int end) {
-	if (start >= 0 && target == nums[start]) return start;
-	else if (end < nums.size() && target == nums[end]) return end;
-	if (start >= end) return -1;
-	int rst = -1;
-	if (nums[end] < nums[start]) {
-		// with rotation
-		if (target > nums[start] && target < nums[end])
-			return -1;
-		int k = (start + end) / 2;
-		if (nums[k] == target)
-			return k;
-		rst = subsearch(nums, target, start, k-1);
-		if (rst < 0 && (nums[k] > nums[end] || nums[k] < target))
-			rst = subsearch(nums, target, k+1, end);
+int Solution::subSearch(vector<int>& nums, int left, int right, int target) {
+	if (left > right)
+		return -1;
+	int mid = (left + right) / 2;
+	if (nums[mid]==target)
+		return mid;
+	if (nums[left] <= nums[mid]) {
+		if (target >= nums[left] && target < nums[mid])
+			return subSearch(nums, left, mid-1, target);
+		else
+			return subSearch(nums, mid+1, right, target);
 	} else {
-		// without rotation
-		if (target < nums[start] || target > nums[end])
-			return -1;
-		int k = (start + end) / 2;
-		if (nums[k] == target)
-			return k;
-		else if (nums[k] > target)
-			rst = subsearch(nums, target, start, k-1);
-		else  if (nums[k] < target)
-			rst = subsearch(nums, target, k+1, end);
+		if (target > nums[mid] && target <= nums[right])
+			return subSearch(nums, mid+1, right, target);
+		else
+			return subSearch(nums, left, mid-1, target);
 	}
-	return rst;
 }

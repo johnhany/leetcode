@@ -17,7 +17,7 @@ using namespace std;
 class Solution {
 public:
 	int search(vector<int>&, int);
-	int subsearch(vector<int>&, int, int, int);
+	int subSearch(vector<int>&, int, int, int);
 };
 
 #endif

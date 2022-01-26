@@ -10,6 +10,7 @@
 #include <algorithm>
 #include <list>
 #include <iterator>
+#include <limits.h>
 
 using namespace std;
 
