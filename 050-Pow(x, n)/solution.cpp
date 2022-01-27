@@ -8,29 +8,32 @@ static auto x = []() {
 	return 0;
 }();
 
+double Solution::subPow(double x, int n) {
+	if(x==1.0)
+		return 1;
+	if(n==0)
+		return 1;
+	if(n==1)
+		return x;
+	if(n&1)
+		return (x*subPow(x*x,n>>1));
+	else
+		return subPow(x*x,n>>1);
+}
+
 double Solution::myPow(double x, int n) {
-	if (n == 0 || x == 1.0) return 1.0;
-	bool negative = (n < 0);
-	bool overflow = false;
-	int int_max = (int)((~((unsigned int) 0)) >> 1);
-    int int_min = ~int_max;
-	if (negative) {
-		if (n == int_min) {
-			overflow = true;
-			++n;
-		}
-		n = -n;
+	int s=0;
+	if(n<0){
+		s=1;
+		n=abs(n);
 	}
-	double cur = x, res = 1.0;
-	while (n > 1) {
-		int times = n / 2;
-		int mod = n - 2 * times;
-		if (mod) res *= cur;
-		cur *= cur;
-		n = times;
-	}
-	res *= cur;
-	if (negative && overflow) return 1.0 / res / x;
-	else if (negative) return 1.0 / res;
-	else return res;
+	double ans;
+	if(n%2==0)
+		ans=subPow(x,n/2)*subPow(x,n/2);
+	else
+		ans=subPow(x,n/2)*subPow(x,n/2)*x;
+	if(s==1)
+		return (1/ans);
+	else
+		return ans;
 }

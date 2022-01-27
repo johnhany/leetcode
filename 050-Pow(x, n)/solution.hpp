@@ -18,6 +18,7 @@ using namespace std;
 class Solution {
 public:
 	double myPow(double, int);
+	double subPow(double, int);
 };
 
 #endif

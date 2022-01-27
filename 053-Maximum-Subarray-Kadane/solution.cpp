@@ -11,15 +11,12 @@ static auto x = []() {
 // https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/
 
 int Solution::maxSubArray(vector<int>& nums) {
-	int int_max = (int)((~((unsigned int) 0)) >> 1);
-    int int_min = ~int_max;
-    int max_end = 0, max_sum = int_min;
-    for (int i : nums) {
-        max_end += i;
-        if (max_sum < max_end)
-            max_sum = max_end;
-        if (max_end < 0)
-            max_end = 0;
+	int n = nums.size();
+    int rst = nums[0], sum = 0;
+    for (int i=0; i<n; i++) {
+        sum += nums[i];
+        rst = sum>rst ? sum : rst;
+        sum = sum>0 ? sum : 0;
     }
-    return max_sum;
+    return rst;
 }

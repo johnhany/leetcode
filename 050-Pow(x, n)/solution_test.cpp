@@ -53,4 +53,15 @@ BOOST_AUTO_TEST_CASE(PlainTest4)
     BOOST_TEST(result == expected, tt::tolerance(0.0000001));
 }
 
+BOOST_AUTO_TEST_CASE(PlainTest5)
+{
+    double x = 2;
+    int n = 5;
+    double result = Solution().myPow(x, n);
+
+    double expected = 32.0;
+
+    BOOST_TEST(result == expected, tt::tolerance(0.0000001));
+}
+
 BOOST_AUTO_TEST_SUITE_END()

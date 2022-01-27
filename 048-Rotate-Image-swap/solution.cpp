@@ -9,16 +9,15 @@ static auto x = []() {
 }();
 
 void Solution::rotate(vector<vector<int>>& matrix) {
-	int dim = matrix.size();
-	if (dim == 1) return;
-	for (int i = 0; i < dim-1; ++i) {
-		for (int j = 0; j < dim-1-i; ++j) {
-			swap(matrix[i][j], matrix[dim-1-j][dim-1-i]);
+	int n = matrix.size();
+	for (int i=0; i<n/2; i++) {
+		for (int j=0; j<n; j++) {
+			swap(matrix[i][j], matrix[n-i-1][j]);
 		}
 	}
-	for (int i = 0; i < dim/2; ++i) {
-		for (int j = 0; j < dim; ++j) {
-			swap(matrix[i][j], matrix[dim-1-i][j]);
+	for (int i=0; i<n; i++) {
+		for (int j=0; j<i; j++) {
+			swap(matrix[i][j], matrix[j][i]);
 		}
 	}
 	return;
