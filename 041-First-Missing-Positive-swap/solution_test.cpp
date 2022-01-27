@@ -9,37 +9,37 @@ BOOST_AUTO_TEST_SUITE(SolutionSuite)
 
 BOOST_AUTO_TEST_CASE(PlainTest1)
 {
-    vector<int> height{0,1,0,2,1,0,1,3,2,1,2,1};
-    int result = Solution().trap(height);
-
-    int expected = 6;
-    BOOST_CHECK_EQUAL(result, expected);
-}
-
-BOOST_AUTO_TEST_CASE(PlainTest2)
-{
-    vector<int> height{3,1,2,1,4,0};
-    int result = Solution().trap(height);
-
-    int expected = 5;
-    BOOST_CHECK_EQUAL(result, expected);
-}
-
-BOOST_AUTO_TEST_CASE(PlainTest3)
-{
-    vector<int> height{4,1,3,1,2,1};
-    int result = Solution().trap(height);
+    vector<int> nums{1,2,0};
+    int result = Solution().firstMissingPositive(nums);
 
     int expected = 3;
     BOOST_CHECK_EQUAL(result, expected);
 }
 
-BOOST_AUTO_TEST_CASE(PlainTest4)
+BOOST_AUTO_TEST_CASE(PlainTest2)
 {
-    vector<int> height{5,4,1,2};
-    int result = Solution().trap(height);
+    vector<int> nums{3,4,-1,1};
+    int result = Solution().firstMissingPositive(nums);
+
+    int expected = 2;
+    BOOST_CHECK_EQUAL(result, expected);
+}
+
+BOOST_AUTO_TEST_CASE(PlainTest3)
+{
+    vector<int> nums{7,8,9,11,12};
+    int result = Solution().firstMissingPositive(nums);
 
     int expected = 1;
+    BOOST_CHECK_EQUAL(result, expected);
+}
+
+BOOST_AUTO_TEST_CASE(PlainTest4)
+{
+    vector<int> nums{-1,4,2,1,9,10};
+    int result = Solution().firstMissingPositive(nums);
+
+    int expected = 3;
     BOOST_CHECK_EQUAL(result, expected);
 }
 

@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.5)
 project(leetcode)
 
-set(PROBLEM_NAME "029-Divide-Two-Integers")
+set(PROBLEM_NAME "042-Trapping-Rain-Water")
 
 set(CMAKE_CXX_STANDARD 14)
 
