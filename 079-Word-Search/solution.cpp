@@ -31,7 +31,6 @@ bool Solution::findWord(vector<vector<char>>& board, vector<vector<bool>>& flag,
 	if (board[x][y] == word[i]) {
 		if (i == word.size()-1)
 			return true;
-		bool found = false;
 		flag[x][y] = true;
 		if (x > 0 && !flag[x-1][y])
 			if (findWord(board, flag, x-1, y, word, i+1))

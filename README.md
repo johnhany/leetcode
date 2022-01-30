@@ -4,11 +4,11 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 ## Stats
 
-Top interviewed: 76 / 145
+Top interviewed: 76 / 145 ![52%](https://progress-bar.dev/52/?title=top)
 
-In total: 109 / 2143
+In total: 109 / 2143 ![5%](https://progress-bar.dev/5/?title=total)
 
-Solutions that are **99.00%+** in running time: 66
+**99.00%+** in running time: 71 / 109 ![65%](https://progress-bar.dev/65/?title=99%)
 
 ## Solutions
 
@@ -242,7 +242,7 @@ Solutions that are **99.00%+** in running time: 66
 
 55. [Jump Game](https://leetcode.com/problems/jump-game/)
 
-- [4ms](https://leetcode.com/submissions/detail/230366391/) **(top 99.99%)**
+- [28ms](https://leetcode.com/submissions/detail/630825210/) **(top 99.98%)**
 
 56. [Merge Intervals](https://leetcode.com/problems/merge-intervals/)
 
@@ -254,7 +254,7 @@ Solutions that are **99.00%+** in running time: 66
 
 62. [Unique Paths](https://leetcode.com/problems/unique-paths/)
 
-- [4ms](https://leetcode.com/submissions/detail/231087530/) (top 93.30%)
+- [0ms](https://leetcode.com/submissions/detail/630836580/) **(top 100.00%)**
 
 63. [Unique Paths II](https://leetcode.com/problems/unique-paths-ii/)
 
@@ -274,7 +274,7 @@ Solutions that are **99.00%+** in running time: 66
 
 70. [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)
 
-- [4ms](https://leetcode.com/submissions/detail/231674096/) (top 90.67%)
+- [0ms](https://leetcode.com/submissions/detail/630859356/) **(top 100.00%)**
 
 73. [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)
 
@@ -286,7 +286,8 @@ Solutions that are **99.00%+** in running time: 66
 
 75. [Sort Colors](https://leetcode.com/problems/sort-colors/)
 
-- [0ms](https://leetcode.com/submissions/detail/231976573/) **(top 100.00%)**
+- [0ms](https://leetcode.com/submissions/detail/630908376/) **(top 100.00%)**
+- three pointer: [0ms](https://leetcode.com/submissions/detail/231976573/) **(top 100.00%)**
 
 76. [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)
 
@@ -297,17 +298,19 @@ Solutions that are **99.00%+** in running time: 66
 78. [Subsets](https://leetcode.com/problems/subsets/)
 
 - [8ms](https://leetcode.com/submissions/detail/233101865/) (top 90.16%)
-- [4ms](https://leetcode.com/submissions/detail/303500829/) (top 98.41%)
+- backtrack: [4ms](https://leetcode.com/submissions/detail/303500829/) (top 98.41%)
+- bitwise: [0ms](https://leetcode.com/submissions/detail/630925819/) **(top 100.00%)**
 
 79. [Word Search](https://leetcode.com/problems/word-search/)
 
-- [92ms](https://leetcode.com/submissions/detail/233113744/) (top 48.94%)
-- [72ms](https://leetcode.com/submissions/detail/233115782/) (top 52.02%)
+- [92ms](https://leetcode.com/submissions/detail/233113744/) (top 98.72%)
+- [72ms](https://leetcode.com/submissions/detail/233115782/) (top 98.84%)
 
 84. [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/)
 
 - recursion: [32ms](https://leetcode.com/submissions/detail/233599788/) (top 14.84%)
-- non-recursion: [4ms](https://leetcode.com/submissions/detail/233606081/) **(top 100.00%)**
+- two vector: [4ms](https://leetcode.com/submissions/detail/233606081/) **(top 100.00%)**
+- one vector: [122ms](https://leetcode.com/submissions/detail/630955175/) (top 75.97%)
 
 88. [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)
 
@@ -316,7 +319,7 @@ Solutions that are **99.00%+** in running time: 66
 
 91. [Decode Ways](https://leetcode.com/problems/decode-ways/)
 
-- [4ms](https://leetcode.com/submissions/detail/234483064/) (top 90.46%)
+- [0ms](https://leetcode.com/submissions/detail/630967074/) **(top 100.00%)**
 
 94. [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)
 

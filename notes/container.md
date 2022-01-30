@@ -72,7 +72,7 @@ size() can only provide O(n) implementations for some containers
 [https://stackoverflow.com/questions/20391632/how-to-use-stdvectoremplace-back-for-vectorvectorint](https://stackoverflow.com/questions/20391632/how-to-use-stdvectoremplace-back-for-vectorvectorint)
 
 ```
-vector<int> res;
+vector<vector<int>> res;
 res.emplace_back(std::initializer_list<int>{1,2});
 ```
 

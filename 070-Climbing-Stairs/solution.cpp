@@ -9,12 +9,16 @@ static auto x = []() {
 }();
 
 int Solution::climbStairs(int n) {
-    int a[2] = {1, 2};
-    int tmp = 2;
-    while (tmp < n) {
-        int i = tmp % 2;
-        a[i] += a[1 - i];
-        ++tmp;
+    if (n==1)
+        return 1;
+    int first = 1, last = 1;
+    int rst;
+    n--;
+    while (n) {
+        rst = first + last;
+        first = last;
+        last = rst;
+        n--;
     }
-    return a[1 - n % 2];
+    return rst;
 }

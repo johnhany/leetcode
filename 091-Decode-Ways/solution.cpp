@@ -1,24 +1,18 @@
 #include "solution.hpp"
 
-static auto x = []() {
-	// turn off sync
-	std::ios::sync_with_stdio(false);
-	// untie in/out streams
-	cin.tie(NULL);
-	return 0;
-}();
-
 int Solution::numDecodings(string s) {
+	std::ios::sync_with_stdio(false);
+	cin.tie(NULL);
+
 	if (s[0] == '0') return 0;
-	vector<int> dp(s.size()+1, 0);
+	int n=s.size();
+	vector<int> dp(n+1, 0);
 	dp[0] = dp[1] = 1;
-	for (int i = 2; i <= s.size(); i++) {
-		if (s[i-1] > '0' && s[i-1] <= '9') {
+	for (int i=2; i<=n; i++) {
+		if (s[i-1] > '0' && s[i-1] <= '9')
 			dp[i] += dp[i-1];
-		}
-		if (s[i-2] == '1' || (s[i-2] == '2' && s[i-1] <= '6')) {
+		if (s[i-2] == '1' || s[i-2] == '2' && s[i-1] <= '6')
 			dp[i] += dp[i-2];
-		}
 	}
-	return dp[s.size()];
+	return dp[n];
 }

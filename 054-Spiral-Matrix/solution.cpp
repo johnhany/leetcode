@@ -9,25 +9,27 @@ static auto x = []() {
 }();
 
 vector<int> Solution::spiralOrder(vector<vector<int>>& matrix) {
-	vector<int> rst;
-    if (matrix.empty()) return rst;
-    int rows = matrix.size(), cols = matrix[0].size();
-    int round = (min(rows, cols) + 1) / 2;
-    int height = rows, width = cols;
-    for (int r = 0; r < round; ++r) {
-        for (int i = 0; i < width; ++i)
-            rst.emplace_back(matrix[r][r+i]);
-        if (height >= 3)
-            for (int i = 1; i < height-1; ++i)
-                rst.emplace_back(matrix[r+i][r+width-1]);
-        if (height >= 2)
-            for (int i = width-1; i >= 0; --i)
-                rst.emplace_back(matrix[r+height-1][r+i]);
-        if (height >= 3 && width >= 2)
-            for (int i = height-2; i >= 1; --i)
-                rst.emplace_back(matrix[r+i][r]);
-        height -= 2;
-        width -= 2;
+	int rows = matrix.size(), cols = matrix[0].size();
+    int n = (rows+1)/2, m = (cols+1)/2;
+    int k = min(n, m);
+    vector<int> rst;
+    for (int i = 0; i < k; i++) {
+        int x = i, y = i;
+        int width = cols - i*2, height = rows - i*2;
+        for (int j=y; j<y+width; j++)
+            rst.emplace_back(matrix[x][j]);
+        if (height >= 3) {
+            for (int j=x+1; j<x+height-1; j++)
+                rst.emplace_back(matrix[j][y+width-1]);
+        }
+        if (height >= 2) {
+            for (int j=y+width-1; j>=y; j--)
+                rst.emplace_back(matrix[x+height-1][j]);
+        }
+        if (height >=3 && width >= 2) {
+            for (int j=x+height-2; j>=x+1; j--)
+                rst.emplace_back(matrix[j][y]);
+        }
     }
     return rst;
 }

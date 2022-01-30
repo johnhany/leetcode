@@ -9,25 +9,18 @@ static auto x = []() {
 }();
 
 int Solution::largestRectangleArea(vector<int>& heights) {
-	if (heights.empty()) return 0;
-	int len = heights.size();
-	vector<int> left(len), right(len);
-	left[0] = -1;
-	right[len - 1] = len;
-	for (int i = 1; i < len; ++i) {
-		int p = i - 1;
-		while (p >= 0 && heights[p] >= heights[i])
-			p = left[p];
-		left[i] = p;
+	heights.push_back(0);
+	int n = heights.size();
+	vector<int> index;
+	int rst = 0;
+	for (int i=0; i<n; i++) {
+		while (!index.empty() && heights[index.back()] >= heights[i]) {
+			int h = heights[index.back()];
+			index.pop_back();
+			int left = !index.empty() ? index.back() : -1;
+			rst = max(rst, h * (i - left - 1));
+		}
+		index.push_back(i);
 	}
-	for (int i = len - 2; i >= 0; --i) {
-		int p = i + 1;
-		while (p < len && heights[p] >= heights[i])
-			p = right[p];
-		right[i] = p;
-	}
-	int largest = 0;
-	for (int i = 0; i < len; ++i)
-		largest = std::max(largest, heights[i] * (right[i] - left[i] - 1));
-	return largest;
+	return rst;
 }

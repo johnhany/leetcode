@@ -9,33 +9,29 @@ static auto x = []() {
 }();
 
 void Solution::sortColors(vector<int>& nums) {
-    if (nums.empty() || nums.size() == 1) return;
-    else if (nums.size() == 2 && nums[0] > nums[1]) {
-        std::swap(nums[0], nums[1]);
-        return;
+    int a=0,b=0,c=0,i;
+    int n=nums.size();
+    for(i=0;i<n;i++)
+    {
+        if(nums[i]==0)
+            a+=1;
+        else if(nums[i]==1)
+            b+=1;
+        else
+            c+=1;
     }
-    int head = 0, mid = 1, tail = nums.size()-1;
-    while (true) {
-        while (head < nums.size() && nums[head] == 0) ++head;
-        while (tail >= 0 && nums[tail] == 2) --tail;
-        if (head >= mid)
-            mid = head + 1;
-        if (head >= tail)
-            break;
-        if (nums[tail] == 0 || nums[head] == 2) {
-            std::swap(nums[head], nums[tail]);
-        } else {
-            if (mid >= tail)
-                break;
-            while (mid < tail && nums[mid] != 0 && nums[mid] != 2)
-                ++mid;
-            if (mid < tail && nums[mid] == 0) {
-                std::swap(nums[head], nums[mid]);
-            }
-            if (mid < tail && nums[mid] == 2) {
-                std::swap(nums[tail], nums[mid]);
-            }
-        }
+    int k=0;
+    for(i=0;i<a;i++){
+        nums[k]=0;
+        k++;
+    }
+    for(i=0;i<b;i++){
+        nums[k]=1;
+        k++;
+    }
+    for(i=0;i<c;i++){
+        nums[k]=2;
+        k++;
     }
     return;
 }

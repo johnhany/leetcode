@@ -9,20 +9,20 @@ static auto x = []() {
 }();
 
 vector<int> Solution::plusOne(vector<int>& digits) {
-	vector<int> tmp;
+	vector<int> rst;
     int carry = 1;
-    for (int i = digits.size()-1; i >= 0; --i) {
-        if (carry && digits[i] + carry > 9) {
-            tmp.emplace_back(0);
-        } else if (carry) {
-            tmp.emplace_back(digits[i]+carry);
-            carry = 0;
+    for (int i=digits.size()-1; i>=0; i--) {
+        int a = digits[i] + carry;
+        if (a>9) {
+            rst.push_back(a%10);
+            carry = a/10;
         } else {
-            tmp.emplace_back(digits[i]);
+            rst.push_back(a);
+            carry = 0;
         }
     }
     if (carry)
-        tmp.emplace_back(1);
-    std::reverse(tmp.begin(), tmp.end());
-    return tmp;
+        rst.push_back(carry);
+    reverse(rst.begin(), rst.end());
+    return rst;
 }

@@ -9,11 +9,14 @@ static auto x = []() {
 }();
 
 int Solution::uniquePaths(int m, int n) {
-	vector<vector<int>> table(n, vector<int>(m, 1));
-    for (int i = 1; i < n; ++i) {
-        for (int j = 1; j < m; ++j) {
-            table[i][j] = table[i-1][j] + table[i][j-1];
+	vector<vector<int>> grid(m, vector<int>(n, 0));
+    for (int i=0; i<m; i++) {
+        for (int j=0; j<n; j++) {
+            if (i==0 || j==0)
+                grid[i][j] = 1;
+            else
+                grid[i][j] = grid[i-1][j] + grid[i][j-1];
         }
     }
-    return table[n-1][m-1];
+    return grid[m-1][n-1];
 }

@@ -9,23 +9,11 @@ static auto x = []() {
 }();
 
 bool Solution::canJump(vector<int>& nums) {
-	if (nums.empty()) return false;
-    else if (nums.size() == 1) return true;
-    if (nums[0] == 0) return false;
-    int i = 0;
-    while (i < nums.size()) {
-        if (nums[i] > 0) {
-            ++i;
-            continue;
-        }
-        bool skip = false;
-        for (int j = i-1; j >=0; --j)
-            if (nums[j] > i-j || (i == nums.size()-1 && nums[j] >= i-j))
-                skip = true;
-        if (skip)
-            ++i;
-        else
-            return false;
+	int n=nums.size();
+    int goal = n-1;
+    for (int i=n-1; i>=0; i--) {
+        if (nums[i]+i >= goal)
+            goal = i;
     }
-    return true;
+    return goal == 0;
 }
