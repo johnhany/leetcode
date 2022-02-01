@@ -323,8 +323,10 @@ In total: 109 / 2143 ![5%](https://progress-bar.dev/5/?title=total)
 
 94. [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)
 
-- Recursion: [4ms](https://leetcode.com/submissions/detail/234690013/) (top 87.58%)
+- Recursion - list: [4ms](https://leetcode.com/submissions/detail/234690013/) (top 87.58%)
+- Recursion - vector: [4ms](https://leetcode.com/submissions/detail/632078983/) (top 43.93%)
 - Stack: [0ms](https://leetcode.com/submissions/detail/234693349/) **(top 100.00%)**
+- Stack: [0ms](https://leetcode.com/submissions/detail/632069693/) **(top 100.00%)**
 
 98. [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)
 

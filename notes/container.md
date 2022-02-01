@@ -1,3 +1,47 @@
+# VECTOR
+
+## emplace_back vs push_back
+
+[http://c.biancheng.net/view/6826.html](http://c.biancheng.net/view/6826.html)
+
+[https://stackoverflow.com/questions/20391632/how-to-use-stdvectoremplace-back-for-vectorvectorint](https://stackoverflow.com/questions/20391632/how-to-use-stdvectoremplace-back-for-vectorvectorint)
+
+```
+vector<vector<int>> res;
+res.emplace_back(std::initializer_list<int>{1,2});
+```
+
+## move deque to vector
+
+```
+deque<string> from;
+vector<string> to;
+
+while (!from.empty()) {
+    to.emplace_back(std::move(from.front()));
+    from.pop_front();
+}
+```
+
+## move list to vector
+
+```
+list<int> from;
+vector<int> to(std::make_move_iterator(from.begin()), std::make_move_iterator(from.end()));
+```
+
+# LIST
+
+## concat list
+
+```
+list<int> rst;
+list<int> tmp;
+rst.splice(rst.end(), tmp);
+```
+
+# MAP
+
 ## map vs unordered_map
 
 [https://zhuanlan.zhihu.com/p/48066839](https://zhuanlan.zhihu.com/p/48066839)
@@ -57,6 +101,8 @@ map.insert_or_assign(key, value);
 
 It will work even for key and value types that are not default constructible or not copyable.
 
+# COMMON
+
 ## empty() vs size()
 
 [https://stackoverflow.com/questions/743197/size-vs-empty-in-vector-why-empty-is-preferred](https://stackoverflow.com/questions/743197/size-vs-empty-in-vector-why-empty-is-preferred)
@@ -64,29 +110,6 @@ It will work even for key and value types that are not default constructible or 
 empty() has O(1) implementations for ALL container classes.
 
 size() can only provide O(n) implementations for some containers
-
-## emplace_back vs push_back
-
-[http://c.biancheng.net/view/6826.html](http://c.biancheng.net/view/6826.html)
-
-[https://stackoverflow.com/questions/20391632/how-to-use-stdvectoremplace-back-for-vectorvectorint](https://stackoverflow.com/questions/20391632/how-to-use-stdvectoremplace-back-for-vectorvectorint)
-
-```
-vector<vector<int>> res;
-res.emplace_back(std::initializer_list<int>{1,2});
-```
-
-## move deque to vector
-
-```
-deque<string> from;
-vector<string> to;
-
-while (!from.empty()) {
-    to.emplace_back(std::move(from.front()));
-    from.pop_front();
-}
-```
 
 ## iterator invalidation rule
 
