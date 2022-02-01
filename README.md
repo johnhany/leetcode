@@ -8,7 +8,7 @@ Top interviewed: 76 / 145 ![52%](https://progress-bar.dev/52/?title=top)
 
 In total: 111 / 2143 ![5%](https://progress-bar.dev/5/?title=total)
 
-**99.00%+** in running time: 73 / 111 ![66%](https://progress-bar.dev/66/?title=99%)
+**99.00%+** in running time: 75 / 111 ![68%](https://progress-bar.dev/68/?title=99%)
 
 ## Solutions
 
@@ -330,33 +330,35 @@ In total: 111 / 2143 ![5%](https://progress-bar.dev/5/?title=total)
 
 98. [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)
 
-- [4ms](https://leetcode.com/submissions/detail/235902664/) **(top 99.99%)**
+- Two pointers: [4ms](https://leetcode.com/submissions/detail/235902664/) **(top 99.99%)**
+- [12ms](https://leetcode.com/submissions/detail/632116694/) (top 74.23%)
 
 101. [Symmetric Tree](https://leetcode.com/problems/symmetric-tree/)
 
-- [0ms](https://leetcode.com/submissions/detail/236511384/) **(top 100.00%)**
+- Recursive: [0ms](https://leetcode.com/submissions/detail/236511384/) **(top 100.00%)**
+- Queue: [4ms](https://leetcode.com/submissions/detail/632127799/) (top 81.64%)
 
 102. [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)
 
-- [12ms](https://leetcode.com/submissions/detail/237311985/) (top 25.64%)
-- one queue: [8ms](https://leetcode.com/submissions/detail/237313029/) (top 82.74%)
+- [4ms](https://leetcode.com/submissions/detail/632149394/) (top 76.73%)
 
 103. [Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/)
 
-- [4ms](https://leetcode.com/submissions/detail/245350321/) (top 89.75%)
+- [4ms](https://leetcode.com/submissions/detail/632153033/) (top 63.24%)
 
 104. [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
 
-- [12ms](https://leetcode.com/submissions/detail/303229301/) (top 61.51%)
+- [8ms](https://leetcode.com/submissions/detail/632156409/) (top 75.97%)
 
 105. [Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
 
 - [40ms](https://leetcode.com/submissions/detail/317112638/) (top 19.30%)
 - hash: [16ms](https://leetcode.com/submissions/detail/317142296/) (top 89.76%)
+- Stack: [11ms](https://leetcode.com/submissions/detail/632237731/) (top 94.01%)
 
 108. [Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)
 
-- [24ms](https://leetcode.com/submissions/detail/317441664/) (top 80.31%)
+- [4ms](https://leetcode.com/submissions/detail/632241166/) **(top 99.83%)**
 
 111. [Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/)
 
@@ -370,6 +372,7 @@ In total: 111 / 2143 ![5%](https://progress-bar.dev/5/?title=total)
 
 - swap: [4ms](https://leetcode.com/submissions/detail/317454106/) (top 51.26%)
 - resize: [0ms](https://leetcode.com/submissions/detail/317455216/) **(top 100.00%)**
+- [0ms](https://leetcode.com/submissions/detail/632260948/) **(top 100.00%)**
 
 120. [Triangle](https://leetcode.com/problems/triangle/)
 
@@ -379,6 +382,7 @@ In total: 111 / 2143 ![5%](https://progress-bar.dev/5/?title=total)
 
 - priority queue: [12ms](https://leetcode.com/submissions/detail/317459138/) (top 17.37%)
 - [4ms](https://leetcode.com/submissions/detail/317461596/) (top 97.69%)
+- [76ms](https://leetcode.com/submissions/detail/632270517/) **(top 99.79%)**
 
 122. [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)
 
@@ -386,7 +390,7 @@ In total: 111 / 2143 ![5%](https://progress-bar.dev/5/?title=total)
 
 123. [Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/)
 
-- [0ms](https://leetcode.com/submissions/detail/324560846/) **(top 100.00%)**
+- [68ms](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/submissions/) **(top 99.95%)**
 
 124. [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/)
 
@@ -509,7 +513,7 @@ In total: 111 / 2143 ![5%](https://progress-bar.dev/5/?title=total)
 | Stack/Queue/Deque | 023, 032, 094, 102, 103, 116, 150 |
 | Linked list | 002, 019, 021, 024 |
 | Two pointers | 011, 015, 016, 018, 027, 042, 084, 088, 125, 287 |
-| Recursion | 004, 025, 033, 034, 035, 045, 079, 098, 101, 104, 105, 108, 111, 124, 130, 144, 301 |
+| Recursion | 004, 025, 033, 034, 035, 045, 079, 098, 101, 104, 105, 108, 111, 124, 130, 144, 145, 301 |
 | Backtracking | 017, 022, 037, 039, 040, 046, 047, 051, 060, 078 |
 | DP | 053, 062, 063, 064, 070, 091, 120, 131, 198, 213, 221, 300 |
 

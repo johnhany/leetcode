@@ -9,12 +9,13 @@ static auto x = []() {
 }();
 
 bool Solution::isValidBST(TreeNode* root) {
-	return isValidBST(root, NULL, NULL);
+	return isValid(root, LONG_MIN, LONG_MAX);
 }
 
-bool Solution::isValidBST(TreeNode* root, TreeNode* minNode, TreeNode* maxNode) {
-	if(!root) return true;
-	if((minNode && root->val <= minNode->val) || (maxNode && root->val >= maxNode->val))
+bool Solution::isValid(TreeNode* root, long left, long right) {
+	if (root==nullptr)
+		return true;
+	if (left >= root->val || right <= root->val)
 		return false;
-	return isValidBST(root->left, minNode, root) && isValidBST(root->right, root, maxNode);
+	return isValid(root->left, left, root->val) && isValid(root->right, root->val, right);
 }

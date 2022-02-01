@@ -9,28 +9,26 @@ static auto x = []() {
 }();
 
 
-TreeNode* Solution::builder(vector<int>& preorder, vector<int>& inorder, int pstart, int istart, int treeSize, unordered_map<int, int>& iIndexMap) {
-	int rootVal = preorder[pstart];
-	TreeNode* root = new TreeNode(rootVal);
-	if (treeSize == 1) return root;
+TreeNode* Solution::builder(vector<int>& preorder, int pstart, int istart, int treesize, unordered_map<int,int>& hash) {
+	int val = preorder[pstart];
+	TreeNode* root = new TreeNode(val);
+	if (treesize == 1)
+		return root;
+	int idx = hash[val];
+	int leftsize = idx - istart;
+	int rightsize = treesize - leftsize - 1;
 
-	int iIndex = iIndexMap[rootVal];
-	int leftSize = iIndex - istart;
-	int rightSize = treeSize - leftSize - 1;
-	if (leftSize > 0)
-		root->left = builder(preorder, inorder, pstart + 1, istart, leftSize, iIndexMap);
-	if (rightSize > 0)
-		root->right = builder(preorder, inorder, pstart + 1 + leftSize, iIndex + 1, rightSize, iIndexMap);
+	if (leftsize>0)
+		root->left = builder(preorder, pstart+1, istart, leftsize, hash);
+	if (rightsize>0)
+		root->right = builder(preorder, pstart+leftsize+1, idx+1, rightsize, hash);
 	return root;
 }
 
 TreeNode* Solution::buildTree(vector<int>& preorder, vector<int>& inorder) {
-	int treeSize = preorder.size();
-	if (treeSize == 0) return nullptr;
-	unordered_map<int, int> iIndexMap;
-	for (int i = 0; i < treeSize; i++) {
-		iIndexMap[inorder[i]] = i;
-	}
-
-	return builder(preorder, inorder, 0, 0, treeSize, iIndexMap);
+	int n = preorder.size();
+	unordered_map<int,int> hash;
+	for (int i=0; i<n; i++)
+		hash[inorder[i]] = i;
+	return builder(preorder, 0, 0, n, hash);
 }

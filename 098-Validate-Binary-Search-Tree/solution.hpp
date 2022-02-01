@@ -14,6 +14,7 @@
 #include <unordered_map>
 #include <unordered_set>
 #include <stack>
+#include <limits.h>
 
 using namespace std;
 
@@ -69,7 +70,7 @@ inline TreeNode* stringToTreeNode(string input) {
 class Solution {
 public:
 	bool isValidBST(TreeNode* root);
-    bool isValidBST(TreeNode* root, TreeNode* minNode, TreeNode* maxNode);
+    bool isValid(TreeNode* root, long left, long right);
 };
 
 #endif

@@ -9,50 +9,47 @@ static auto x = []() {
 }();
 
 vector<vector<int>> Solution::zigzagLevelOrder(TreeNode* root) {
-	vector<vector<int>> rst;
-	if (root == nullptr) return rst;
-	vector<int> level;
-	deque<TreeNode*> q;
+	if (root==nullptr)
+		return {};
+	TreeNode* flag = new TreeNode(0);
 	TreeNode* cur;
-	q.emplace_back(root);
-	q.emplace_back(nullptr);
-	bool goRight = true;
-	while (!q.empty()) {
-		if (goRight) {
-			cur = q.front();
+	deque<TreeNode*> q;
+	vector<vector<int>> rst;
+	q.push_back(root);
+	q.push_back(flag);
+	int direction = 0;
+	while (q.size()>1) {
+		vector<int> tmp;
+		if (direction == 0) {
+			while (q.front()!=flag) {
+				cur = q.front();
+				tmp.push_back(cur->val);
+				q.pop_front();
+				if (cur->left)
+					q.push_back(cur->left);
+				if (cur->right)
+					q.push_back(cur->right);
+			}
 			q.pop_front();
-			if (cur == nullptr) {
-				rst.push_back(level);
-				level.clear();
-				if (!q.empty()) {
-					q.emplace_front(nullptr);
-					goRight = !goRight;
-				}
-			} else {
-				level.emplace_back(cur->val);
-				if (cur->left != nullptr)
-					q.emplace_back(cur->left);
-				if (cur->right != nullptr)
-					q.emplace_back(cur->right);
-			}
+			q.push_front(flag);
+
+			direction = 1;
 		} else {
-			cur = q.back();
-			q.pop_back();
-			if (cur == nullptr) {
-				rst.push_back(level);
-				level.clear();
-				if (!q.empty()) {
-					q.emplace_back(nullptr);
-					goRight = !goRight;
-				}
-			} else {
-				level.emplace_back(cur->val);
-				if (cur->right != nullptr)
-					q.emplace_front(cur->right);
-				if (cur->left != nullptr)
-					q.emplace_front(cur->left);
+			while (q.back()!=flag) {
+				cur = q.back();
+				tmp.push_back(cur->val);
+				q.pop_back();
+				if (cur->right)
+					q.push_front(cur->right);
+				if (cur->left)
+					q.push_front(cur->left);
 			}
+			q.pop_back();
+			q.push_back(flag);
+
+			direction = 0;
 		}
+		rst.push_back(tmp);
 	}
 	return rst;
 }

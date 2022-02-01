@@ -9,22 +9,30 @@ static auto x = []() {
 }();
 
 vector<vector<int>> Solution::levelOrder(TreeNode* root) {
+	if (root==nullptr)
+		return {};
+	TreeNode* flag = new TreeNode(0);
+	TreeNode* cur;
+	queue<TreeNode*> q;
 	vector<vector<int>> rst;
-	if (root == nullptr) return rst;
-	list<TreeNode*> q;
-	q.emplace_back(root);
+	q.push(root);
+	q.push(flag);
 	while (!q.empty()) {
-		list<TreeNode*> tmp;
-		vector<int> level;
-		for (auto i : q) {
-			if (i->left != nullptr)
-				tmp.emplace_back(i->left);
-			if (i->right != nullptr)
-				tmp.emplace_back(i->right);
-			level.emplace_back(i->val);
+		if (q.front() == flag)
+			break;
+		vector<int> tmp;
+		while (q.front()!=flag) {
+			cur = q.front();
+			tmp.push_back(cur->val);
+			q.pop();
+			if (cur->left)
+				q.push(cur->left);
+			if (cur->right)
+				q.push(cur->right);
 		}
-		q = tmp;
-		rst.emplace_back(level);
+		q.pop();
+		q.push(flag);
+		rst.push_back(tmp);
 	}
 	return rst;
 }

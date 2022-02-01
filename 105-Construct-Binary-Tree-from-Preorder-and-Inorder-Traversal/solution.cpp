@@ -9,6 +9,8 @@ static auto x = []() {
 }();
 
 
+// https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/solution/xiang-xi-tong-su-de-si-lu-fen-xi-duo-jie-fa-by--22/
+
 TreeNode* Solution::builder(vector<int>& preorder, vector<int>& inorder, int pstart, int pend, int istart, int iend) {
 	if (istart > iend) return nullptr;
 	TreeNode* root = new TreeNode(preorder[pstart]);

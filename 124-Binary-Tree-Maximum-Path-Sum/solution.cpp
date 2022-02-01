@@ -8,6 +8,8 @@ static auto x = []() {
 	return 0;
 }();
 
+// https://leetcode-cn.com/problems/binary-tree-maximum-path-sum/solution/er-cha-shu-zhong-de-zui-da-lu-jing-he-by-leetcode-/
+
 int Solution::helper(TreeNode* root, int& rst) {
 	if (root == nullptr) return 0;
 	int left = helper(root->left, rst);
