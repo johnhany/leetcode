@@ -8,18 +8,23 @@ static auto x = []() {
 	return 0;
 }();
 
-vector<int> Solution::inorderTraversal(TreeNode* root) {
+vector<int> Solution::postorderTraversal(TreeNode* root) {
 	stack<TreeNode*> q;
+	TreeNode* prev = nullptr;
 	vector<int> rst;
 	while (root || !q.empty()) {
 		while (root) {
 			q.push(root);
 			root = root->left;
 		}
-		root = q.top();
-		q.pop();
-		rst.push_back(root->val);
-		root = root->right;
+		TreeNode* tmp = q.top();
+		if (tmp->right==nullptr || tmp->right==prev) {
+			q.pop();
+			rst.push_back(tmp->val);
+			prev = tmp;
+		} else {
+			root = tmp->right;
+		}
 	}
 	return rst;
 }

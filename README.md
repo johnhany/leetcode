@@ -6,9 +6,9 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 Top interviewed: 76 / 145 ![52%](https://progress-bar.dev/52/?title=top)
 
-In total: 109 / 2143 ![5%](https://progress-bar.dev/5/?title=total)
+In total: 111 / 2143 ![5%](https://progress-bar.dev/5/?title=total)
 
-**99.00%+** in running time: 71 / 109 ![65%](https://progress-bar.dev/65/?title=99%)
+**99.00%+** in running time: 73 / 111 ![66%](https://progress-bar.dev/66/?title=99%)
 
 ## Solutions
 
@@ -422,6 +422,16 @@ In total: 109 / 2143 ![5%](https://progress-bar.dev/5/?title=total)
 
 - [4ms](https://leetcode.com/submissions/detail/318707842/) **(top 99.88%)**
 
+144. [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/)
+
+- Recursion: [4ms](https://leetcode.com/submissions/detail/632089390/) (top 43.36%)
+- Stack: [0ms](https://leetcode.com/submissions/detail/632085399/) **(top 100.00%)**
+
+145. [Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/)
+
+- Recursion: [4ms](https://leetcode.com/submissions/detail/632099108/) (top 44.24%)
+- Stack: [0ms](https://leetcode.com/submissions/detail/632096936/) **(top 100.00%)**
+
 150. [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/)
 
 - [12ms](https://leetcode.com/submissions/detail/303228064/) (top 91.72%)
@@ -499,7 +509,7 @@ In total: 109 / 2143 ![5%](https://progress-bar.dev/5/?title=total)
 | Stack/Queue/Deque | 023, 032, 094, 102, 103, 116, 150 |
 | Linked list | 002, 019, 021, 024 |
 | Two pointers | 011, 015, 016, 018, 027, 042, 084, 088, 125, 287 |
-| Recursion | 004, 025, 033, 034, 035, 045, 079, 098, 101, 104, 105, 108, 111, 124, 130, 301 |
+| Recursion | 004, 025, 033, 034, 035, 045, 079, 098, 101, 104, 105, 108, 111, 124, 130, 144, 301 |
 | Backtracking | 017, 022, 037, 039, 040, 046, 047, 051, 060, 078 |
 | DP | 053, 062, 063, 064, 070, 091, 120, 131, 198, 213, 221, 300 |
 
