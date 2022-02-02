@@ -21,7 +21,7 @@ using namespace std;
 class Solution {
 public:
     bool checkPalindrome(string s, int start, int end);
-    void subPartition(vector<vector<string>>& q, string s, int start, vector<string> cur);
+    void subPartition(vector<vector<string>>& q, string s, int start, vector<string>& cur);
     vector<vector<string>> partition(string s);
 };
 

@@ -8,7 +8,7 @@ Top interviewed: 76 / 145 ![52%](https://progress-bar.dev/52/?title=top)
 
 In total: 111 / 2143 ![5%](https://progress-bar.dev/5/?title=total)
 
-**99.00%+** in running time: 75 / 111 ![68%](https://progress-bar.dev/68/?title=99%)
+**99.00%+** in running time: 77 / 111 ![69%](https://progress-bar.dev/69/?title=99%)
 
 ## Solutions
 
@@ -402,21 +402,25 @@ In total: 111 / 2143 ![5%](https://progress-bar.dev/5/?title=total)
 
 127. [Word Ladder](https://leetcode.com/problems/word-ladder/)
 
-- [32ms](https://leetcode.com/submissions/detail/317510085/) (top 94.91%)
+- [28ms](https://leetcode.com/submissions/detail/632915025/) **(top 99.56%)**
+- Graph + BFS: [138ms](https://leetcode.com/submissions/detail/632851048/) (top 67.54%)
+- Graph + BiDir BFS: [131ms](https://leetcode.com/submissions/detail/632860437/) (top 69.50%)
+- BiDir BFS: [560ms](https://leetcode.com/submissions/detail/632905123/) (top 34.48%)
 
 128. [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)
 
-- hash: [12ms](https://leetcode.com/submissions/detail/318193962/) (top 68.65%)
-- vector::unique [8ms](https://leetcode.com/submissions/detail/318195705/) (top 94.78%)
+- hash: [97ms](https://leetcode.com/submissions/detail/632922184/) (top 63.61%)
+- sort: [34ms](https://leetcode.com/submissions/detail/632926329/) (top 96.44%)
+- dp: [87ms](https://leetcode.com/submissions/detail/632934825/) (top 67.80%)
 
 130. [Surrounded Regions](https://leetcode.com/problems/surrounded-regions/)
 
-- [28ms](https://leetcode.com/submissions/detail/318235677/) (top 89.32%)
+- [4ms](https://leetcode.com/submissions/detail/632941565/) **(top 99.88%)**
 
 131. [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/)
 
-- backtrack: [136ms](https://leetcode.com/submissions/detail/318546571/) (top 8.58%)
-- shared DP: [20ms](https://leetcode.com/submissions/detail/318556233/) (top 70.68%)
+- backtrack: [159ms](https://leetcode.com/submissions/detail/632960985/) (top 63.39%)
+- backtrack + DP: [150ms](https://leetcode.com/submissions/detail/632959468/) (top 67.07%)
 
 134. [Gas Station](https://leetcode.com/problems/gas-station/)
 

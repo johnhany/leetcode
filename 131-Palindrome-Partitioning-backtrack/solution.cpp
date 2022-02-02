@@ -16,7 +16,7 @@ bool Solution::checkPalindrome(string s, int start, int end) {
 	return true;
 }
 
-void Solution::subPartition(vector<vector<string>>& q, string s, int start, vector<string> cur) {
+void Solution::subPartition(vector<vector<string>>& q, string s, int start, vector<string>& cur) {
 	if (start >= s.size()) {
 		q.push_back(cur);
 		return;
@@ -33,6 +33,7 @@ void Solution::subPartition(vector<vector<string>>& q, string s, int start, vect
 vector<vector<string>> Solution::partition(string s) {
 	if (s.empty()) return {};
 	vector<vector<string>> rst;
-	subPartition(rst, s, 0, vector<string>());
+	vector<string> cur;
+	subPartition(rst, s, 0, cur);
 	return rst;
 }

@@ -20,7 +20,6 @@ using namespace std;
 
 class Solution {
 public:
-    char toLetter(char c);
     bool isPalindrome(string s);
 };
 

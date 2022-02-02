@@ -30,6 +30,17 @@ list<int> from;
 vector<int> to(std::make_move_iterator(from.begin()), std::make_move_iterator(from.end()));
 ```
 
+## remove duplicates in vector
+
+[https://stackoverflow.com/questions/1041620/whats-the-most-efficient-way-to-erase-duplicates-and-sort-a-vector](https://stackoverflow.com/questions/1041620/whats-the-most-efficient-way-to-erase-duplicates-and-sort-a-vector)
+
+```
+sort(vec.begin(), vec.end());
+vec.erase(unique(vec.begin(), vec.end()), vec.end());
+```
+
+convert to `set` and convert back to `vector` is faster if there are too many duplicates
+
 # LIST
 
 ## concat list

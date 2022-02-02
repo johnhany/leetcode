@@ -9,37 +9,41 @@ static auto x = []() {
 }();
 
 
-void Solution::flood(vector<vector<char>>& board, int i, int j) {
-	if (i < 0 || i >= board.size() || j < 0 || j >= board[0].size() || board[i][j] != 'O')
+void Solution::flood(vector<vector<char>>& board, int x, int y, int rows, int cols) {
+	if (x<0 || x>=rows || y<0 || y>=cols || board[x][y] != 'O')
 		return;
-	board[i][j] = 't';
-	flood(board, i-1, j);
-	flood(board, i+1, j);
-	flood(board, i, j-1);
-	flood(board, i, j+1);
+	board[x][y] = '-';
+	flood(board, x-1, y, rows, cols);
+	flood(board, x+1, y, rows, cols);
+	flood(board, x, y-1, rows, cols);
+	flood(board, x, y+1, rows, cols);
 	return;
 }
 
 void Solution::solve(vector<vector<char>>& board) {
-	if (board.size() <= 2 || board[0].size() <= 2) return;
-	int rows = board.size(), cols = board[0].size();
-	for (int i = 0; i < rows; i++) {
+	int rows = board.size();
+	int cols = board[0].size();
+	if (rows<=2 || cols<=2)
+		return;
+
+	for (int i=0; i<rows; i++) {
 		if (board[i][0] == 'O')
-			flood(board, i, 0);
+			flood(board, i, 0, rows, cols);
 		if (board[i][cols-1] == 'O')
-			flood(board, i, cols-1);
+			flood(board, i, cols-1, rows, cols);
 	}
-	for (int j = 1; j < cols-1; j++) {
+	for (int j=1; j<cols-1; j++) {
 		if (board[0][j] == 'O')
-			flood(board, 0, j);
+			flood(board, 0, j, rows, cols);
 		if (board[rows-1][j] == 'O')
-			flood(board, rows-1, j);
+			flood(board, rows-1, j, rows, cols);
 	}
-	for (int i = 0; i < rows; i++) {
-		for (int j = 0; j< cols; j++) {
+
+	for (int i=0; i<rows; i++) {
+		for (int j=0; j<cols; j++) {
 			if (board[i][j] == 'O')
 				board[i][j] = 'X';
-			if (board[i][j] == 't')
+			if (board[i][j] == '-')
 				board[i][j] = 'O';
 		}
 	}

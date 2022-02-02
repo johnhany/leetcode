@@ -9,26 +9,19 @@ static auto x = []() {
 }();
 
 
+// https://leetcode-cn.com/problems/longest-consecutive-sequence/solution/xiao-bai-lang-ha-xi-ji-he-ha-xi-biao-don-j5a2/
+
 int Solution::longestConsecutive(vector<int>& nums) {
-	if (!nums.size()) return 0;
-	map<int, int> mapObj;
-
-	for (int i{}; i < nums.size(); i++) {
-		mapObj[nums[i]];
-	}
-	int maxNum{1}, cnt{1};
-
-	auto itr = mapObj.begin();
-	auto itr2 = mapObj.begin();
-	advance(itr2, 1);
-
-	for (; itr2 != mapObj.end(); itr++, itr2++) {
-		if (itr2->first == itr->first + 1) {
-			cnt++;
-			maxNum = max(maxNum, cnt);
-		} else {
-			cnt = 1;
+	unordered_set<int> hash{nums.begin(), nums.end()};
+	int rst = 0;
+	for (int i: hash) {
+		if (hash.find(i-1) == hash.end()) {
+			int tmp = i+1;
+			while (hash.find(tmp) != hash.end()) {
+				tmp++;
+			}
+			rst = max(rst, tmp-i);
 		}
 	}
-	return maxNum;
+	return rst;
 }

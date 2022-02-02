@@ -9,6 +9,8 @@ static auto x = []() {
 }();
 
 
+// https://leetcode-cn.com/problems/house-robber-ii/solution/da-jia-jie-she-ii-by-leetcode-solution-bwja/
+
 int Solution::subRob(vector<int>& nums) {
 	if (nums.empty()) return 0;
 	int n = nums.size();

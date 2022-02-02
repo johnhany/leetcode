@@ -10,39 +10,40 @@ static auto x = []() {
 
 
 int Solution::ladderLength(string beginWord, string endWord, vector<string>& wordList) {
-	unordered_set<string> all(wordList.begin(), wordList.end());
-	unordered_set<string> startSet, endSet, *forward, *backward;
-	if (all.count(endWord) == 0)
+	unordered_set<string> dict{wordList.begin(), wordList.end()};
+	if (dict.find(endWord) == dict.end())
 		return 0;
-	startSet.insert(beginWord);
+	unordered_set<string> beginSet, endSet;
+	beginSet.insert(beginWord);
 	endSet.insert(endWord);
-	int rst = 1;
-	while (!startSet.empty() && !endSet.empty()) {
-		rst ++;
-		if (startSet.size() <= endSet.size()) {
-			forward = &startSet;
-			backward = &endSet;
-		} else {
-			forward = &endSet;
-			backward = &startSet;
-		}
+
+	int dist=1;
+	while (!beginSet.empty() && !endSet.empty()) {
+		dist++;
 		unordered_set<string> tmpSet;
-		for (string cur : *forward) {
-			for (int i = 0; i < cur.size(); i++) {
-				char tmp = cur[i];
-				for (char c = 'a'; c <= 'z'; c++) {
-					cur[i] = c;
-					if (backward->count(cur) != 0)
-						return rst;
-					if (all.count(cur) != 0) {
-						tmpSet.insert(cur);
-						all.erase(cur);
+		for (string word: beginSet) {
+			for (char& c: word) {
+				char tmp = c;
+				for (char t='a'; t<='z'; t++) {
+					c = t;
+					if (endSet.find(word) != endSet.end())
+						return dist;
+
+					unordered_set<string>::iterator itr = dict.find(word);
+					if (itr != dict.end()) {
+						dict.erase(itr);
+						tmpSet.insert(word);
 					}
 				}
-				cur[i] = tmp;
+				c = tmp;
 			}
 		}
-		std::swap(*forward, tmpSet);
+		if (tmpSet.size() < endSet.size()) {
+			beginSet = tmpSet;
+		} else {
+			beginSet = endSet;
+			endSet = tmpSet;
+		}
 	}
 	return 0;
 }

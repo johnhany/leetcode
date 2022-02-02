@@ -20,7 +20,7 @@ using namespace std;
 
 class Solution {
 public:
-    void flood(vector<vector<char>>& board, int i, int j);
+    void flood(vector<vector<char>>& board, int x, int y, int rows, int cols);
     void solve(vector<vector<char>>& board);
 };
 

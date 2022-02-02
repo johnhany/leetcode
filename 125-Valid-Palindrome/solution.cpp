@@ -9,32 +9,18 @@ static auto x = []() {
 }();
 
 
-char Solution::toLetter(char c) {
-	if ((c >= 'a' && c <= 'z') || (c >= '0' && c <= '9')) {
-		return c;
-	} else if (c >= 'A' && c <= 'Z') {
-		return c + 'a' - 'A';
-	} else
-		return '\0';
-}
-
-
 bool Solution::isPalindrome(string s) {
-	if (s.empty()) return true;
-	int left = 0, right = s.size()-1;
-	while (left < right && !toLetter(s[left]))
-		left++;
-	while (left < right && !toLetter(s[right]))
-		right--;
-	while (left < right) {
-		if (toLetter(s[left]) != toLetter(s[right]))
-			return false;
-		left++;
-		right--;
-		while (left < right && !toLetter(s[left]))
-			left++;
-		while (left < right && !toLetter(s[right]))
-			right--;
+	string t;
+	for (char c: s) {
+		if (c>='a' && c<='z' || c>='0' && c<='9')
+			t.push_back(c);
+		else if (c>='A' && c<='Z')
+			t.push_back(c-'A'+'a');
 	}
-	return true;
+	int i=0, j=t.size()-1;
+	while (i<j && t[i]==t[j]) {
+		i++;
+		j--;
+	}
+	return i>=j;
 }
