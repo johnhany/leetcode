@@ -6,9 +6,9 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 Top interviewed: 76 / 145 ![52%](https://progress-bar.dev/52/?title=top)
 
-In total: 111 / 2143 ![5%](https://progress-bar.dev/5/?title=total)
+In total: 112 / 2143 ![5%](https://progress-bar.dev/5/?title=total)
 
-**99.00%+** in running time: 77 / 111 ![69%](https://progress-bar.dev/69/?title=99%)
+**99.00%+** in running time: 78 / 112 ![70%](https://progress-bar.dev/70/?title=99%)
 
 ## Solutions
 
@@ -503,6 +503,11 @@ In total: 111 / 2143 ![5%](https://progress-bar.dev/5/?title=total)
 350. [Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/)
 
 - [4ms](https://leetcode.com/submissions/detail/328027553/) **(top 99.54%)**
+
+540. [Single Element in a Sorted Array](https://leetcode.com/problems/single-element-in-a-sorted-array/)
+
+- recursion: [19ms](https://leetcode.com/submissions/detail/633039574/) (top 96.25%)
+- iteration: [12ms](https://leetcode.com/submissions/detail/633040407/) **(top 99.87%)**
 
 ------
 

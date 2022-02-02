@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.5)
 project(leetcode)
 
-set(PROBLEM_NAME "127-Word-Ladder-graph")
+set(PROBLEM_NAME "540-Single-Element-in-a-Sorted-Array-recursion")
 
 set(CMAKE_CXX_STANDARD 14)
 
