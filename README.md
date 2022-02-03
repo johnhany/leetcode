@@ -6,9 +6,9 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 Top interviewed: 76 / 145 ![52%](https://progress-bar.dev/52/?title=top)
 
-In total: 113 / 2143 ![5%](https://progress-bar.dev/5/?title=total)
+In total: 114 / 2143 ![5%](https://progress-bar.dev/5/?title=total)
 
-**99.00%+** in running time: 79 / 113 ![70%](https://progress-bar.dev/70/?title=99%)
+**99.00%+** in running time: 79 / 114 ![69%](https://progress-bar.dev/69/?title=99%)
 
 ## Solutions
 
@@ -513,6 +513,10 @@ In total: 113 / 2143 ![5%](https://progress-bar.dev/5/?title=total)
 
 - [0ms](https://leetcode.com/submissions/detail/633536384/) **(top 100.00%)**
 
+864. [Shortest Path to Get All Keys](https://leetcode.com/problems/shortest-path-to-get-all-keys/)
+
+- [24ms](https://leetcode.com/submissions/detail/633564194/) (top 96.91%)
+
 ------
 
 ## Problem categories
@@ -528,7 +532,7 @@ In total: 113 / 2143 ![5%](https://progress-bar.dev/5/?title=total)
 | Two pointers | 011, 015, 016, 018, 027, 042, 084, 088, 125, 287 |
 | Recursion | 004, 025, 033, 034, 035, 045, 079, 098, 101, 104, 105, 108, 111, 124, 130, 144, 145, 301, 540 |
 | Backtracking | 017, 022, 037, 039, 040, 046, 047, 051, 060, 078 |
-| DP | 053, 062, 063, 064, 070, 091, 120, 131, 198, 213, 221, 300 |
+| DP | 053, 062, 063, 064, 070, 091, 120, 131, 198, 213, 221, 300, 864 |
 
 > Note that binary tree problems are mostly included in the `Recursion` category.
 
