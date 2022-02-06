@@ -6,9 +6,9 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 Top interviewed: 76 / 145 ![52%](https://progress-bar.dev/52/?title=top)
 
-In total: 114 / 2143 ![5%](https://progress-bar.dev/5/?title=total)
+In total: 115 / 2143 ![5%](https://progress-bar.dev/5/?title=total)
 
-**99.00%+** in running time: 79 / 114 ![69%](https://progress-bar.dev/69/?title=99%)
+**99.00%+** in running time: 79 / 115 ![69%](https://progress-bar.dev/69/?title=99%)
 
 ## Solutions
 
@@ -306,6 +306,10 @@ In total: 114 / 2143 ![5%](https://progress-bar.dev/5/?title=total)
 - [92ms](https://leetcode.com/submissions/detail/233113744/) (top 98.72%)
 - [72ms](https://leetcode.com/submissions/detail/233115782/) (top 98.84%)
 
+80. [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/)
+
+- [3ms](https://leetcode.com/submissions/detail/635412822/) (top 92.82%)
+
 84. [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/)
 
 - recursion: [32ms](https://leetcode.com/submissions/detail/233599788/) (top 14.84%)
@@ -523,7 +527,7 @@ In total: 114 / 2143 ![5%](https://progress-bar.dev/5/?title=total)
 
 | Category | Problems |
 | --- | --- |
-| Sort/search | 026, 031, 036, 041, 048, 054, 055, 056, 073, 074, 075, 118, 121, 122, 123, 128, 134, 136, 153, 215, 240, 278 |
+| Sort/search | 026, 031, 036, 041, 048, 054, 055, 056, 073, 074, 075, 080, 118, 121, 122, 123, 128, 134, 136, 153, 215, 240, 278 |
 | String | 005, 006, 008, 010, 014, 028, 038, 043, 044, 127 |
 | Numerical | 007, 009, 029, 050, 066, 069, 279, 564 |
 | Hash/Lookup | 001, 003, 012, 013, 020, 030, 049, 076, 187, 349, 350 |
