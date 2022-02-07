@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.5)
 project(leetcode)
 
-set(PROBLEM_NAME "864-Shortest-Path-to-Get-All-Keys")
+set(PROBLEM_NAME "239-Sliding-Window-Maximum")
 
 set(CMAKE_CXX_STANDARD 14)
 
