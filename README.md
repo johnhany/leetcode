@@ -6,9 +6,9 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 Top interviewed: 77 / 145 ![53%](https://progress-bar.dev/53/?title=top)
 
-In total: 116 / 2143 ![5%](https://progress-bar.dev/5/?title=total)
+In total: 117 / 2143 ![5%](https://progress-bar.dev/5/?title=total)
 
-**99.00%+** in running time: 80 / 116 ![69%](https://progress-bar.dev/69/?title=99%)
+**99.00%+** in running time: 81 / 117 ![69%](https://progress-bar.dev/69/?title=99%)
 
 ## Solutions
 
@@ -525,13 +525,17 @@ In total: 116 / 2143 ![5%](https://progress-bar.dev/5/?title=total)
 
 - [24ms](https://leetcode.com/submissions/detail/633564194/) (top 96.91%)
 
+1838. [Frequency of the Most Frequent Element](https://leetcode.com/problems/frequency-of-the-most-frequent-element/)
+
+- [136ms](https://leetcode.com/submissions/detail/636124130/) **(top 99.88%)**
+
 ------
 
 ## Problem categories
 
 | Category | Problems |
 | --- | --- |
-| Sort/search | 026, 031, 036, 041, 048, 054, 055, 056, 073, 074, 075, 080, 118, 121, 122, 123, 128, 134, 136, 153, 215, 239, 240, 278 |
+| Sort/search | 026, 031, 036, 041, 048, 054, 055, 056, 073, 074, 075, 080, 118, 121, 122, 123, 128, 134, 136, 153, 215, 239, 240, 278, 1838 |
 | String | 005, 006, 008, 010, 014, 028, 038, 043, 044, 127 |
 | Numerical | 007, 009, 029, 050, 066, 069, 279, 564 |
 | Hash/Lookup | 001, 003, 012, 013, 020, 030, 049, 076, 187, 349, 350 |

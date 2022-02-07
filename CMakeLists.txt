@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.5)
 project(leetcode)
 
-set(PROBLEM_NAME "239-Sliding-Window-Maximum")
+set(PROBLEM_NAME "1838-Frequency-of-the-Most-Frequent-Element")
 
 set(CMAKE_CXX_STANDARD 14)
 

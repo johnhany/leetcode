@@ -10,6 +10,8 @@ static auto x = []() {
 }();
 
 
+// https://leetcode-cn.com/problems/sliding-window-maximum/solution/dan-diao-dui-lie-by-labuladong/
+
 vector<int> Solution::maxSlidingWindow(vector<int>& nums, int k) {
 	int n = nums.size();
 	deque<int> q;
