@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.5)
 project(leetcode)
 
-set(PROBLEM_NAME "1838-Frequency-of-the-Most-Frequent-Element")
+set(PROBLEM_NAME "832-Flipping-an-Image")
 
 set(CMAKE_CXX_STANDARD 14)
 
