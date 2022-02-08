@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.5)
 project(leetcode)
 
-set(PROBLEM_NAME "235-Lowest-Common-Ancestor-of-a-Binary-Search-Tree")
+set(PROBLEM_NAME "236-Lowest-Common-Ancestor-of-a-Binary-Tree")
 
 set(CMAKE_CXX_STANDARD 14)
 

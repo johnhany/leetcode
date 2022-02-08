@@ -6,9 +6,9 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 Top interviewed: 77 / 145 ![53%](https://progress-bar.dev/53/?title=top)
 
-In total: 121 / 2143 ![6%](https://progress-bar.dev/6/?title=total)
+In total: 122 / 2143 ![6%](https://progress-bar.dev/6/?title=total)
 
-**99.00%+** in running time: 82 / 121 ![68%](https://progress-bar.dev/68/?title=99%)
+**99.00%+** in running time: 83 / 122 ![68%](https://progress-bar.dev/68/?title=99%)
 
 ## Solutions
 
@@ -482,6 +482,10 @@ In total: 121 / 2143 ![6%](https://progress-bar.dev/6/?title=total)
 
 - [24ms](https://leetcode.com/submissions/detail/637241828/) (top 97.70%)
 
+236. [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)
+
+- [7ms](https://leetcode.com/submissions/detail/637252584/) **(top 99.85%)**
+
 239. [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)
 
 - [168ms](https://leetcode.com/submissions/detail/636104845/) **(top 99.89%)**
@@ -559,7 +563,7 @@ In total: 121 / 2143 ![6%](https://progress-bar.dev/6/?title=total)
 | Stack/Queue/Deque | 023, 032, 094, 102, 103, 116, 150 |
 | Linked list | 002, 019, 021, 024 |
 | Two pointers | 011, 015, 016, 018, 027, 042, 084, 088, 125, 287 |
-| Recursion | 004, 025, 033, 034, 035, 045, 079, 098, 101, 104, 105, 108, 111, 124, 130, 144, 145, 235, 301, 540 |
+| Recursion | 004, 025, 033, 034, 035, 045, 079, 098, 101, 104, 105, 108, 111, 124, 130, 144, 145, 235, 236, 301, 540 |
 | Backtracking | 017, 022, 037, 039, 040, 046, 047, 051, 060, 078 |
 | DP | 053, 062, 063, 064, 070, 091, 120, 131, 198, 213, 221, 300, 864 |
 
