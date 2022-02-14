@@ -4,11 +4,11 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 ## Stats
 
-Top interviewed: 79 / 145 ![54%](https://progress-bar.dev/54/?title=top)
+Top interviewed: 80 / 145 ![54%](https://progress-bar.dev/54/?title=top)
 
-In total: 123 / 2143 ![6%](https://progress-bar.dev/6/?title=total)
+In total: 124 / 2143 ![6%](https://progress-bar.dev/6/?title=total)
 
-**99.00%+** in running time: 84 / 123 ![68%](https://progress-bar.dev/68/?title=99%)
+**99.00%+** in running time: 85 / 124 ![68%](https://progress-bar.dev/68/?title=99%)
 
 ## Solutions
 
@@ -457,6 +457,10 @@ In total: 123 / 2143 ![6%](https://progress-bar.dev/6/?title=total)
 
 - [0ms](https://leetcode.com/submissions/detail/327603478/) **(top 100.00%)**
 
+160. [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/)
+
+- [28ms](https://leetcode.com/submissions/detail/641300625/) **(top 99.98%)**
+
 187. [Repeated DNA Sequences](https://leetcode.com/problems/repeated-dna-sequences/)
 
 - 3-bit hash: [52ms](https://leetcode.com/submissions/detail/327702045/) (top 81.78%)
@@ -565,7 +569,7 @@ In total: 123 / 2143 ![6%](https://progress-bar.dev/6/?title=total)
 | Numerical | 007, 009, 029, 050, 066, 069, 279, 564 |
 | Hash/Lookup | 001, 003, 012, 013, 020, 030, 049, 076, 146, 187, 349, 350, 460 |
 | Stack/Queue/Deque | 023, 032, 094, 102, 103, 116, 150 |
-| Linked list | 002, 019, 021, 024, 876 |
+| Linked list | 002, 019, 021, 024, 160, 876 |
 | Two pointers | 011, 015, 016, 018, 027, 042, 084, 088, 125, 287 |
 | Recursion | 004, 025, 033, 034, 035, 045, 079, 098, 101, 104, 105, 108, 111, 124, 130, 144, 145, 235, 236, 301, 540 |
 | Backtracking | 017, 022, 037, 039, 040, 046, 047, 051, 060, 078 |
