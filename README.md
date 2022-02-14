@@ -4,11 +4,11 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 ## Stats
 
-Top interviewed: 77 / 145 ![53%](https://progress-bar.dev/53/?title=top)
+Top interviewed: 79 / 145 ![54%](https://progress-bar.dev/54/?title=top)
 
-In total: 122 / 2143 ![6%](https://progress-bar.dev/6/?title=total)
+In total: 123 / 2143 ![6%](https://progress-bar.dev/6/?title=total)
 
-**99.00%+** in running time: 83 / 122 ![68%](https://progress-bar.dev/68/?title=99%)
+**99.00%+** in running time: 84 / 123 ![68%](https://progress-bar.dev/68/?title=99%)
 
 ## Solutions
 
@@ -546,6 +546,10 @@ In total: 122 / 2143 ![6%](https://progress-bar.dev/6/?title=total)
 
 - [24ms](https://leetcode.com/submissions/detail/633564194/) (top 96.91%)
 
+876. [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)
+
+- [0ms](https://leetcode.com/submissions/detail/641286453/) **(top 100.00%)**
+
 1838. [Frequency of the Most Frequent Element](https://leetcode.com/problems/frequency-of-the-most-frequent-element/)
 
 - [136ms](https://leetcode.com/submissions/detail/636124130/) **(top 99.88%)**
@@ -561,7 +565,7 @@ In total: 122 / 2143 ![6%](https://progress-bar.dev/6/?title=total)
 | Numerical | 007, 009, 029, 050, 066, 069, 279, 564 |
 | Hash/Lookup | 001, 003, 012, 013, 020, 030, 049, 076, 146, 187, 349, 350, 460 |
 | Stack/Queue/Deque | 023, 032, 094, 102, 103, 116, 150 |
-| Linked list | 002, 019, 021, 024 |
+| Linked list | 002, 019, 021, 024, 876 |
 | Two pointers | 011, 015, 016, 018, 027, 042, 084, 088, 125, 287 |
 | Recursion | 004, 025, 033, 034, 035, 045, 079, 098, 101, 104, 105, 108, 111, 124, 130, 144, 145, 235, 236, 301, 540 |
 | Backtracking | 017, 022, 037, 039, 040, 046, 047, 051, 060, 078 |
