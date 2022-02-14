@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.5)
 project(leetcode)
 
-set(PROBLEM_NAME "092-Reverse-Linked-List-II")
+set(PROBLEM_NAME "234-Palindrome-Linked-List")
 
 set(CMAKE_CXX_STANDARD 14)
 
