@@ -6,9 +6,9 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 Top interviewed: 82 / 145 ![54%](https://progress-bar.dev/54/?title=top)
 
-In total: 130 / 2143 ![6%](https://progress-bar.dev/6/?title=total)
+In total: 131 / 2143 ![6%](https://progress-bar.dev/6/?title=total)
 
-**99.00%+** in running time: 87 / 130 ![67%](https://progress-bar.dev/67/?title=99%)
+**99.00%+** in running time: 87 / 131 ![67%](https://progress-bar.dev/67/?title=99%)
 
 ## Solutions
 
@@ -529,6 +529,11 @@ In total: 130 / 2143 ![6%](https://progress-bar.dev/6/?title=total)
 - [0ms](https://leetcode.com/submissions/detail/324570540/) **(top 100.00%)**
 - Tree search: [92ms](https://leetcode.com/submissions/detail/324575850/) (top 79.03%)
 
+283. [Move Zeroes](https://leetcode.com/problems/move-zeroes/)
+
+- two pointers: [33ms](https://leetcode.com/submissions/detail/643338705/) (top 50.97%)
+- faster two pointers: [16ms](https://leetcode.com/submissions/detail/643344367/) (top 97.08%)
+
 287. [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/)
 
 - Binary search: [8ms](https://leetcode.com/submissions/detail/327684807/) (top 94.55%)
@@ -590,7 +595,7 @@ In total: 130 / 2143 ![6%](https://progress-bar.dev/6/?title=total)
 
 | Category | Problems |
 | --- | --- |
-| Sort/search | 026, 031, 036, 041, 048, 054, 055, 056, 073, 074, 075, 080, 118, 121, 122, 123, 128, 134, 136, 153, 215, 239, 240, 278, 670, 832, 1838 |
+| Sort/search | 026, 031, 036, 041, 048, 054, 055, 056, 073, 074, 075, 080, 118, 121, 122, 123, 128, 134, 136, 153, 215, 239, 240, 278, 283, 670, 832, 1838 |
 | String | 005, 006, 008, 010, 014, 028, 038, 043, 044, 127 |
 | Numerical | 007, 009, 029, 050, 066, 069, 279, 564 |
 | Hash/Lookup | 001, 003, 012, 013, 020, 030, 049, 076, 146, 187, 349, 350, 460 |
