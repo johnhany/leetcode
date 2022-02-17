@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.5)
 project(leetcode)
 
-set(PROBLEM_NAME "086-Partition-List")
+set(PROBLEM_NAME "670-Maximum-Swap")
 
 set(CMAKE_CXX_STANDARD 14)
 

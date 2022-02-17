@@ -6,9 +6,9 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 Top interviewed: 82 / 145 ![54%](https://progress-bar.dev/54/?title=top)
 
-In total: 129 / 2143 ![6%](https://progress-bar.dev/6/?title=total)
+In total: 130 / 2143 ![6%](https://progress-bar.dev/6/?title=total)
 
-**99.00%+** in running time: 86 / 129 ![67%](https://progress-bar.dev/67/?title=99%)
+**99.00%+** in running time: 87 / 130 ![67%](https://progress-bar.dev/67/?title=99%)
 
 ## Solutions
 
@@ -564,6 +564,10 @@ In total: 129 / 2143 ![6%](https://progress-bar.dev/6/?title=total)
 
 - [0ms](https://leetcode.com/submissions/detail/633536384/) **(top 100.00%)**
 
+670. [Maximum Swap](https://leetcode.com/problems/maximum-swap/)
+
+- [0ms](https://leetcode.com/submissions/detail/643329094/) **(top 100.00%)**
+
 832. [Flipping an Image](https://leetcode.com/problems/flipping-an-image/)
 
 - [4ms](https://leetcode.com/submissions/detail/637229430/) (top 88.29%)
@@ -586,7 +590,7 @@ In total: 129 / 2143 ![6%](https://progress-bar.dev/6/?title=total)
 
 | Category | Problems |
 | --- | --- |
-| Sort/search | 026, 031, 036, 041, 048, 054, 055, 056, 073, 074, 075, 080, 118, 121, 122, 123, 128, 134, 136, 153, 215, 239, 240, 278, 832, 1838 |
+| Sort/search | 026, 031, 036, 041, 048, 054, 055, 056, 073, 074, 075, 080, 118, 121, 122, 123, 128, 134, 136, 153, 215, 239, 240, 278, 670, 832, 1838 |
 | String | 005, 006, 008, 010, 014, 028, 038, 043, 044, 127 |
 | Numerical | 007, 009, 029, 050, 066, 069, 279, 564 |
 | Hash/Lookup | 001, 003, 012, 013, 020, 030, 049, 076, 146, 187, 349, 350, 460 |
