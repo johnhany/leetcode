@@ -6,9 +6,9 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 Top interviewed: 82 / 145 ![54%](https://progress-bar.dev/54/?title=top)
 
-In total: 132 / 2143 ![6%](https://progress-bar.dev/6/?title=total)
+In total: 133 / 2143 ![6%](https://progress-bar.dev/6/?title=total)
 
-**99.00%+** in running time: 87 / 132 ![67%](https://progress-bar.dev/67/?title=99%)
+**99.00%+** in running time: 88 / 133 ![67%](https://progress-bar.dev/67/?title=99%)
 
 ## Solutions
 
@@ -560,6 +560,10 @@ In total: 132 / 2143 ![6%](https://progress-bar.dev/6/?title=total)
 
 - [853ms](https://leetcode.com/submissions/detail/637217647/) (top 36.82%)
 
+509. [Fibonacci Number](https://leetcode.com/problems/fibonacci-number/)
+
+- [0ms](https://leetcode.com/submissions/detail/643918215/) **(top 100.00%)**
+
 540. [Single Element in a Sorted Array](https://leetcode.com/problems/single-element-in-a-sorted-array/)
 
 - recursion: [19ms](https://leetcode.com/submissions/detail/633039574/) (top 96.25%)
@@ -608,7 +612,7 @@ In total: 132 / 2143 ![6%](https://progress-bar.dev/6/?title=total)
 | Two pointers | 011, 015, 016, 018, 027, 042, 084, 088, 125, 287 |
 | Recursion | 004, 025, 033, 034, 035, 045, 079, 098, 101, 104, 105, 108, 111, 124, 130, 144, 145, 235, 236, 301, 540, 543 |
 | Backtracking | 017, 022, 037, 039, 040, 046, 047, 051, 060, 078 |
-| DP | 053, 062, 063, 064, 070, 091, 120, 131, 198, 213, 221, 300, 864 |
+| DP | 053, 062, 063, 064, 070, 091, 120, 131, 198, 213, 221, 300, 509, 864 |
 
 > Note that binary tree problems are mostly included in the `Recursion` category.
 
