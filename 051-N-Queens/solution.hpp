@@ -15,10 +15,12 @@ using namespace std;
 
 
 class Solution {
+private:
+	vector<vector<string>> res;
 public:
+	bool isValid(vector<string>& board, int row, int col);
+	void backtrack(vector<string>& board, int row);
 	vector<vector<string>> solveNQueens(int n);
-	void search(vector<vector<string>>& answer, vector<string>& board, vector<int>& cols,
-        vector<int>& up_diagonals, vector<int>& down_diagonals, int row_index, int n);
 };
 
 #endif

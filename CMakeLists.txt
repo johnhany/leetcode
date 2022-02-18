@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.5)
 project(leetcode)
 
-set(PROBLEM_NAME "322-Coin-Change")
+set(PROBLEM_NAME "752-Open-the-Lock")
 
 set(CMAKE_CXX_STANDARD 14)
 

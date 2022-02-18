@@ -8,18 +8,24 @@ static auto x = []() {
 	return 0;
 }();
 
+// https://leetcode-cn.com/problems/next-permutation/solution/xia-yi-ge-pai-lie-suan-fa-xiang-jie-si-lu-tui-dao-/
+
+// 逆问题：上一个排列 https://www.cnblogs.com/Tang-tangt/p/9105987.html
+// https://www.lintcode.com/submission/27977814/
+
 void Solution::nextPermutation(vector<int>& nums) {
-	int len = nums.size();
-	if (len <= 1) return;
-	int k = len-2;
-	while (k >= 0 && nums[k] >= nums[k+1]) {
-		k--;
+	int n = nums.size();
+	if (n <= 1)
+		return;
+	int i = n-2, j = n-1, k = n-1;
+	while (i>=0 && nums[i]>=nums[j]) {
+		i--;
+		j--;
 	}
-	if (k >= 0) {
-		int p = k+1;
-		while (p < len && nums[p] > nums[k])
-			p++;
-		swap(nums[k], nums[p-1]);
+	if (i>=0) {
+		while (nums[i]>=nums[k])
+			k--;
+		swap(nums[i], nums[k]);
 	}
-	reverse(nums.begin()+(k+1), nums.end());
+	reverse(nums.begin()+j, nums.end());
 }

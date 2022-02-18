@@ -51,6 +51,18 @@ list<int> tmp;
 rst.splice(rst.end(), tmp);
 ```
 
+# SET
+
+## set vs unordered_set
+
+[https://stackoverflow.com/questions/1349734/why-would-anyone-use-set-instead-of-unordered-set](https://stackoverflow.com/questions/1349734/why-would-anyone-use-set-instead-of-unordered-set)
+
+* set uses less memory than unordered_set to store the same number of elements.
+* For a small number of elements, lookups in a set might be faster than lookups in an unordered_set.
+* Even though many operations are faster in the average case for unordered_set, they are often guaranteed to have better worst case complexities for set (for example insert).
+* That set sorts the elements is useful if you want to access them in order.
+* You can lexicographically compare different sets with <, <=, > and >=. unordered_sets are not required to support these operations.
+
 # MAP
 
 ## map vs unordered_map
