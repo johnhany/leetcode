@@ -6,9 +6,9 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 Top interviewed: 82 / 145 ![54%](https://progress-bar.dev/54/?title=top)
 
-In total: 133 / 2143 ![6%](https://progress-bar.dev/6/?title=total)
+In total: 134 / 2143 ![6%](https://progress-bar.dev/6/?title=total)
 
-**99.00%+** in running time: 88 / 133 ![67%](https://progress-bar.dev/67/?title=99%)
+**99.00%+** in running time: 88 / 134 ![66%](https://progress-bar.dev/66/?title=99%)
 
 ## Solutions
 
@@ -547,6 +547,10 @@ In total: 133 / 2143 ![6%](https://progress-bar.dev/6/?title=total)
 
 - [12ms](https://leetcode.com/submissions/detail/324615389/) (top 68.31%)
 
+322. [Coin Change](https://leetcode.com/problems/coin-change/)
+
+- [64ms](https://leetcode.com/submissions/detail/643922874/) (top 86.51%)
+
 349. [Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/)
 
 - Set: [4ms](https://leetcode.com/submissions/detail/328020887/) **(top 99.21%)**
@@ -612,7 +616,7 @@ In total: 133 / 2143 ![6%](https://progress-bar.dev/6/?title=total)
 | Two pointers | 011, 015, 016, 018, 027, 042, 084, 088, 125, 287 |
 | Recursion | 004, 025, 033, 034, 035, 045, 079, 098, 101, 104, 105, 108, 111, 124, 130, 144, 145, 235, 236, 301, 540, 543 |
 | Backtracking | 017, 022, 037, 039, 040, 046, 047, 051, 060, 078 |
-| DP | 053, 062, 063, 064, 070, 091, 120, 131, 198, 213, 221, 300, 509, 864 |
+| DP | 053, 062, 063, 064, 070, 091, 120, 131, 198, 213, 221, 300, 322, 509, 864 |
 
 > Note that binary tree problems are mostly included in the `Recursion` category.
 
