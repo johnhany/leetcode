@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.5)
 project(leetcode)
 
-set(PROBLEM_NAME "337-House-Robber-III")
+set(PROBLEM_NAME "226-Invert-Binary-Tree")
 
 set(CMAKE_CXX_STANDARD 14)
 
