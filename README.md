@@ -6,9 +6,9 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 Top interviewed: 85 / 145 ![59%](https://progress-bar.dev/59/?title=top)
 
-In total: 139 / 2143 ![6%](https://progress-bar.dev/6/?title=total)
+In total: 140 / 2143 ![6%](https://progress-bar.dev/6/?title=total)
 
-**99.00%+** in running time: 89 / 139 ![64%](https://progress-bar.dev/64/?title=99%)
+**99.00%+** in running time: 90 / 140 ![64%](https://progress-bar.dev/64/?title=99%)
 
 ## Solutions
 
@@ -450,6 +450,10 @@ In total: 139 / 2143 ![6%](https://progress-bar.dev/6/?title=total)
 
 - [3ms](https://leetcode.com/submissions/detail/645252348/) **(top 99.91%)**
 
+142. [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/)
+
+- [3ms](https://leetcode.com/submissions/detail/645263608/) **(top 99.53%)**
+
 144. [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/)
 
 - Recursion: [4ms](https://leetcode.com/submissions/detail/632089390/) (top 43.36%)
@@ -632,7 +636,7 @@ In total: 139 / 2143 ![6%](https://progress-bar.dev/6/?title=total)
 | Numerical | 007, 009, 029, 050, 066, 069, 279, 564 |
 | Hash/Lookup | 001, 003, 012, 013, 020, 030, 049, 076, 146, 187, 349, 350, 460 |
 | Stack/Queue/Deque | 023, 032, 094, 102, 103, 116, 150 |
-| Linked list | 002, 019, 021, 024, 061, 086, 092, 141, 160, 206, 234, 876 |
+| Linked list | 002, 019, 021, 024, 061, 086, 092, 141, 142, 160, 206, 234, 876 |
 | Two pointers | 011, 015, 016, 018, 027, 042, 084, 088, 125, 287 |
 | Recursion | 004, 025, 033, 034, 035, 045, 079, 098, 101, 104, 105, 108, 111, 124, 130, 144, 145, 235, 236, 301, 540, 543, 752 |
 | Backtracking | 017, 022, 037, 039, 040, 046, 047, 051, 060, 078 |
