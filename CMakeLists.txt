@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.5)
 project(leetcode)
 
-set(PROBLEM_NAME "652-Find-Duplicate-Subtrees")
+set(PROBLEM_NAME "230-Kth-Smallest-Element-in-a-BST")
 
 set(CMAKE_CXX_STANDARD 14)
 
