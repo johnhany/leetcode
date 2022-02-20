@@ -6,9 +6,9 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 Top interviewed: 85 / 145 ![59%](https://progress-bar.dev/59/?title=top)
 
-In total: 150 / 2143 ![7%](https://progress-bar.dev/7/?title=total)
+In total: 151 / 2143 ![7%](https://progress-bar.dev/7/?title=total)
 
-**99.00%+** in running time: 94 / 150 ![63%](https://progress-bar.dev/63/?title=99%)
+**99.00%+** in running time: 94 / 151 ![63%](https://progress-bar.dev/63/?title=99%)
 
 ## Solutions
 
@@ -621,6 +621,10 @@ In total: 150 / 2143 ![7%](https://progress-bar.dev/7/?title=total)
 
 - [11ms](https://leetcode.com/submissions/detail/644000752/) (top 56.65%)
 
+652. [Find Duplicate Subtrees](https://leetcode.com/problems/find-duplicate-subtrees/)
+
+- [28ms](https://leetcode.com/submissions/detail/645333592/) (top 96.32%)
+
 654. [Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree/)
 
 - [64ms](https://leetcode.com/submissions/detail/645313434/) (top 98.82%)
@@ -678,7 +682,7 @@ In total: 150 / 2143 ![7%](https://progress-bar.dev/7/?title=total)
 | Stack/Queue/Deque | 023, 032, 094, 102, 103, 116, 150 |
 | Linked list | 002, 019, 021, 024, 061, 086, 092, 141, 142, 160, 206, 234, 876 |
 | Two pointers | 011, 015, 016, 018, 027, 042, 084, 088, 125, 287 |
-| Recursion | 004, 025, 033, 034, 035, 045, 079, 098, 101, 104, 105, 106, 108, 111, 114, 124, 130, 144, 145, 226, 235, 236, 301, 337, 540, 543, 654, 752, 889 |
+| Recursion | 004, 025, 033, 034, 035, 045, 079, 098, 101, 104, 105, 106, 108, 111, 114, 124, 130, 144, 145, 226, 235, 236, 301, 337, 540, 543, 652, 654, 752, 889 |
 | Backtracking | 017, 022, 037, 039, 040, 046, 047, 051, 060, 078 |
 | DP | 053, 062, 063, 064, 070, 091, 120, 131, 188, 198, 213, 221, 300, 309, 322, 509, 714, 864, 871 |
 
