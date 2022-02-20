@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.5)
 project(leetcode)
 
-set(PROBLEM_NAME "106-Construct-Binary-Tree-from-Inorder-and-Postorder-Traversal")
+set(PROBLEM_NAME "889-Construct-Binary-Tree-from-Preorder-and-Postorder-Traversal")
 
 set(CMAKE_CXX_STANDARD 14)
 
