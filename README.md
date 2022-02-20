@@ -6,9 +6,9 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 Top interviewed: 85 / 145 ![59%](https://progress-bar.dev/59/?title=top)
 
-In total: 141 / 2143 ![6%](https://progress-bar.dev/6/?title=total)
+In total: 142 / 2143 ![6%](https://progress-bar.dev/6/?title=total)
 
-**99.00%+** in running time: 91 / 141 ![64%](https://progress-bar.dev/64/?title=99%)
+**99.00%+** in running time: 91 / 142 ![64%](https://progress-bar.dev/64/?title=99%)
 
 ## Solutions
 
@@ -486,6 +486,10 @@ In total: 141 / 2143 ![6%](https://progress-bar.dev/6/?title=total)
 - 3-bit hash: [52ms](https://leetcode.com/submissions/detail/327702045/) (top 81.78%)
 - 2-bit hash: [4ms](https://leetcode.com/submissions/detail/327705672/) **(top 99.71%)**
 
+188. [Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/)
+
+- [8ms](https://leetcode.com/submissions/detail/645280699/) (top 76.49%)
+
 198. [House Robber](https://leetcode.com/problems/house-robber/)
 
 - [0ms](https://leetcode.com/submissions/detail/323703382/) **(top 100.00%)**
@@ -644,7 +648,7 @@ In total: 141 / 2143 ![6%](https://progress-bar.dev/6/?title=total)
 | Two pointers | 011, 015, 016, 018, 027, 042, 084, 088, 125, 287 |
 | Recursion | 004, 025, 033, 034, 035, 045, 079, 098, 101, 104, 105, 108, 111, 124, 130, 144, 145, 235, 236, 301, 540, 543, 752 |
 | Backtracking | 017, 022, 037, 039, 040, 046, 047, 051, 060, 078 |
-| DP | 053, 062, 063, 064, 070, 091, 120, 131, 198, 213, 221, 300, 322, 509, 864, 871 |
+| DP | 053, 062, 063, 064, 070, 091, 120, 131, 188, 198, 213, 221, 300, 322, 509, 864, 871 |
 
 > Note that binary tree problems are mostly included in the `Recursion` category.
 

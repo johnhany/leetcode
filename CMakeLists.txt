@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.5)
 project(leetcode)
 
-set(PROBLEM_NAME "704-Binary-Search")
+set(PROBLEM_NAME "188-Best-Time-to-Buy-and-Sell-Stock-IV")
 
 set(CMAKE_CXX_STANDARD 14)
 
