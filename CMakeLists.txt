@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.5)
 project(leetcode)
 
-set(PROBLEM_NAME "309-Best-Time-to-Buy-and-Sell-Stock-with-Cooldown")
+set(PROBLEM_NAME "337-House-Robber-III")
 
 set(CMAKE_CXX_STANDARD 14)
 
