@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.5)
 project(leetcode)
 
-set(PROBLEM_NAME "714-Best-Time-to-Buy-and-Sell-Stock-with-Transaction-Fee")
+set(PROBLEM_NAME "309-Best-Time-to-Buy-and-Sell-Stock-with-Cooldown")
 
 set(CMAKE_CXX_STANDARD 14)
 
