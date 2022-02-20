@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.5)
 project(leetcode)
 
-set(PROBLEM_NAME "226-Invert-Binary-Tree")
+set(PROBLEM_NAME "114-Flatten-Binary-Tree-to-Linked-List")
 
 set(CMAKE_CXX_STANDARD 14)
 

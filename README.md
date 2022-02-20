@@ -6,9 +6,9 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 Top interviewed: 85 / 145 ![59%](https://progress-bar.dev/59/?title=top)
 
-In total: 146 / 2143 ![7%](https://progress-bar.dev/7/?title=total)
+In total: 147 / 2143 ![7%](https://progress-bar.dev/7/?title=total)
 
-**99.00%+** in running time: 94 / 146 ![64%](https://progress-bar.dev/64/?title=99%)
+**99.00%+** in running time: 94 / 147 ![64%](https://progress-bar.dev/64/?title=99%)
 
 ## Solutions
 
@@ -380,6 +380,10 @@ In total: 146 / 2143 ![7%](https://progress-bar.dev/7/?title=total)
 
 - [4ms](https://leetcode.com/submissions/detail/303209807/) **(top 99.83%)**
 
+114. [Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/)
+
+- [4ms](https://leetcode.com/submissions/detail/645307070/) (top 89.52%)
+
 116. [Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/)
 
 - [16ms](https://leetcode.com/submissions/detail/317450715/) (top 95.40%)
@@ -662,7 +666,7 @@ In total: 146 / 2143 ![7%](https://progress-bar.dev/7/?title=total)
 | Stack/Queue/Deque | 023, 032, 094, 102, 103, 116, 150 |
 | Linked list | 002, 019, 021, 024, 061, 086, 092, 141, 142, 160, 206, 234, 876 |
 | Two pointers | 011, 015, 016, 018, 027, 042, 084, 088, 125, 287 |
-| Recursion | 004, 025, 033, 034, 035, 045, 079, 098, 101, 104, 105, 108, 111, 124, 130, 144, 145, 226, 235, 236, 301, 337, 540, 543, 752 |
+| Recursion | 004, 025, 033, 034, 035, 045, 079, 098, 101, 104, 105, 108, 111, 114, 124, 130, 144, 145, 226, 235, 236, 301, 337, 540, 543, 752 |
 | Backtracking | 017, 022, 037, 039, 040, 046, 047, 051, 060, 078 |
 | DP | 053, 062, 063, 064, 070, 091, 120, 131, 188, 198, 213, 221, 300, 309, 322, 509, 714, 864, 871 |
 
