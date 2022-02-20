@@ -6,9 +6,9 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 Top interviewed: 85 / 145 ![59%](https://progress-bar.dev/59/?title=top)
 
-In total: 142 / 2143 ![6%](https://progress-bar.dev/6/?title=total)
+In total: 143 / 2143 ![7%](https://progress-bar.dev/7/?title=total)
 
-**99.00%+** in running time: 91 / 142 ![64%](https://progress-bar.dev/64/?title=99%)
+**99.00%+** in running time: 92 / 143 ![64%](https://progress-bar.dev/64/?title=99%)
 
 ## Solutions
 
@@ -609,6 +609,10 @@ In total: 142 / 2143 ![6%](https://progress-bar.dev/6/?title=total)
 
 - [20ms](https://leetcode.com/submissions/detail/645278035/) **(top 99.82%)**
 
+714. [Best Time to Buy and Sell Stock with Transaction Fee](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/)
+
+- [60ms](https://leetcode.com/submissions/detail/645283352/) **(top 99.69%)**
+
 752. [Open the Lock](https://leetcode.com/problems/open-the-lock/)
 
 - BFS: [180ms](https://leetcode.com/submissions/detail/643984062/) (top 81.07%)
@@ -648,7 +652,7 @@ In total: 142 / 2143 ![6%](https://progress-bar.dev/6/?title=total)
 | Two pointers | 011, 015, 016, 018, 027, 042, 084, 088, 125, 287 |
 | Recursion | 004, 025, 033, 034, 035, 045, 079, 098, 101, 104, 105, 108, 111, 124, 130, 144, 145, 235, 236, 301, 540, 543, 752 |
 | Backtracking | 017, 022, 037, 039, 040, 046, 047, 051, 060, 078 |
-| DP | 053, 062, 063, 064, 070, 091, 120, 131, 188, 198, 213, 221, 300, 322, 509, 864, 871 |
+| DP | 053, 062, 063, 064, 070, 091, 120, 131, 188, 198, 213, 221, 300, 322, 509, 714, 864, 871 |
 
 > Note that binary tree problems are mostly included in the `Recursion` category.
 
