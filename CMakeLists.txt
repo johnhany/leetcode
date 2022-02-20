@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.5)
 project(leetcode)
 
-set(PROBLEM_NAME "230-Kth-Smallest-Element-in-a-BST")
+set(PROBLEM_NAME "538-Convert-BST-to-Greater-Tree")
 
 set(CMAKE_CXX_STANDARD 14)
 
