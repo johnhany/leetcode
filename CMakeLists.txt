@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.5)
 project(leetcode)
 
-set(PROBLEM_NAME "700-Search-in-a-Binary-Search-Tree")
+set(PROBLEM_NAME "701-Insert-into-a-Binary-Search-Tree")
 
 set(CMAKE_CXX_STANDARD 14)
 
