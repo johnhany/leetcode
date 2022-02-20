@@ -6,9 +6,9 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 Top interviewed: 85 / 145 ![59%](https://progress-bar.dev/59/?title=top)
 
-In total: 148 / 2143 ![7%](https://progress-bar.dev/7/?title=total)
+In total: 149 / 2143 ![7%](https://progress-bar.dev/7/?title=total)
 
-**99.00%+** in running time: 94 / 148 ![64%](https://progress-bar.dev/64/?title=99%)
+**99.00%+** in running time: 94 / 149 ![63%](https://progress-bar.dev/63/?title=99%)
 
 ## Solutions
 
@@ -372,6 +372,10 @@ In total: 148 / 2143 ![7%](https://progress-bar.dev/7/?title=total)
 - hash: [16ms](https://leetcode.com/submissions/detail/317142296/) (top 89.76%)
 - Stack: [11ms](https://leetcode.com/submissions/detail/632237731/) (top 94.01%)
 
+106. [Construct Binary Tree from Inorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/)
+
+- [31ms](https://leetcode.com/submissions/detail/645319669/) (top 48.33%)
+
 108. [Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)
 
 - [4ms](https://leetcode.com/submissions/detail/632241166/) **(top 99.83%)**
@@ -670,7 +674,7 @@ In total: 148 / 2143 ![7%](https://progress-bar.dev/7/?title=total)
 | Stack/Queue/Deque | 023, 032, 094, 102, 103, 116, 150 |
 | Linked list | 002, 019, 021, 024, 061, 086, 092, 141, 142, 160, 206, 234, 876 |
 | Two pointers | 011, 015, 016, 018, 027, 042, 084, 088, 125, 287 |
-| Recursion | 004, 025, 033, 034, 035, 045, 079, 098, 101, 104, 105, 108, 111, 114, 124, 130, 144, 145, 226, 235, 236, 301, 337, 540, 543, 654, 752 |
+| Recursion | 004, 025, 033, 034, 035, 045, 079, 098, 101, 104, 105, 106, 108, 111, 114, 124, 130, 144, 145, 226, 235, 236, 301, 337, 540, 543, 654, 752 |
 | Backtracking | 017, 022, 037, 039, 040, 046, 047, 051, 060, 078 |
 | DP | 053, 062, 063, 064, 070, 091, 120, 131, 188, 198, 213, 221, 300, 309, 322, 509, 714, 864, 871 |
 
