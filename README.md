@@ -6,9 +6,9 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 Top interviewed: 82 / 145 ![54%](https://progress-bar.dev/54/?title=top)
 
-In total: 137 / 2143 ![6%](https://progress-bar.dev/6/?title=total)
+In total: 138 / 2143 ![6%](https://progress-bar.dev/6/?title=total)
 
-**99.00%+** in running time: 88 / 137 ![65%](https://progress-bar.dev/65/?title=99%)
+**99.00%+** in running time: 88 / 138 ![65%](https://progress-bar.dev/65/?title=99%)
 
 ## Solutions
 
@@ -605,6 +605,10 @@ In total: 137 / 2143 ![6%](https://progress-bar.dev/6/?title=total)
 
 - [24ms](https://leetcode.com/submissions/detail/633564194/) (top 96.91%)
 
+871. [Minimum Number of Refueling Stops](https://leetcode.com/problems/minimum-number-of-refueling-stops/)
+
+- [179ms](https://leetcode.com/submissions/detail/645239204/) (top 16.32%)
+
 876. [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)
 
 - [0ms](https://leetcode.com/submissions/detail/641286453/) **(top 100.00%)**
@@ -628,7 +632,7 @@ In total: 137 / 2143 ![6%](https://progress-bar.dev/6/?title=total)
 | Two pointers | 011, 015, 016, 018, 027, 042, 084, 088, 125, 287 |
 | Recursion | 004, 025, 033, 034, 035, 045, 079, 098, 101, 104, 105, 108, 111, 124, 130, 144, 145, 235, 236, 301, 540, 543, 752 |
 | Backtracking | 017, 022, 037, 039, 040, 046, 047, 051, 060, 078 |
-| DP | 053, 062, 063, 064, 070, 091, 120, 131, 198, 213, 221, 300, 322, 509, 864 |
+| DP | 053, 062, 063, 064, 070, 091, 120, 131, 198, 213, 221, 300, 322, 509, 864, 871 |
 
 > Note that binary tree problems are mostly included in the `Recursion` category.
 

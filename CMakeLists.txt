@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.5)
 project(leetcode)
 
-set(PROBLEM_NAME "438-Find-All-Anagrams-in-a-String")
+set(PROBLEM_NAME "871-Minimum-Number-of-Refueling-Stops")
 
 set(CMAKE_CXX_STANDARD 14)
 
