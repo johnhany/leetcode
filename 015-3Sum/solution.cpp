@@ -8,9 +8,9 @@ static auto x = []() {
 	return 0;
 }();
 
+// http://www.cnblogs.com/grandyang/p/4481576.html
 
 vector<vector<int>> Solution::threeSum(vector<int>& nums) {
-	// http://www.cnblogs.com/grandyang/p/4481576.html
 	std::sort(nums.begin(), nums.end());
 	if (nums.empty() || nums.front()>0 || nums.back()<0)
 		return {};

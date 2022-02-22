@@ -6,9 +6,9 @@ Personal notes for [leetcode.com](https://leetcode.com) solutions with support f
 
 Top interviewed: 85 / 145 ![59%](https://progress-bar.dev/59/?title=top)
 
-In total: 157 / 2143 ![7%](https://progress-bar.dev/7/?title=total)
+In total: 158 / 2143 ![7%](https://progress-bar.dev/7/?title=total)
 
-**99.00%+** in running time: 97 / 157 ![62%](https://progress-bar.dev/62/?title=99%)
+**99.00%+** in running time: 98 / 158 ![62%](https://progress-bar.dev/62/?title=99%)
 
 ## Solutions
 
@@ -343,6 +343,10 @@ In total: 157 / 2143 ![7%](https://progress-bar.dev/7/?title=total)
 - Recursion - vector: [4ms](https://leetcode.com/submissions/detail/632078983/) (top 43.93%)
 - Stack: [0ms](https://leetcode.com/submissions/detail/234693349/) **(top 100.00%)**
 - Stack: [0ms](https://leetcode.com/submissions/detail/632069693/) **(top 100.00%)**
+
+96. [Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees/)
+
+- [0ms](https://leetcode.com/submissions/detail/645366588/) **(top 100.00%)**
 
 98. [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)
 
@@ -699,18 +703,15 @@ In total: 157 / 2143 ![7%](https://progress-bar.dev/7/?title=total)
 
 | Category | Problems |
 | --- | --- |
-| Sort/search | 026, 031, 036, 041, 048, 054, 055, 056, 073, 074, 075, 080, 118, 121, 122, 123, 128, 134, 136, 153, 215, 239, 240, 278, 283, 438, 567, 670, 704, 832, 1838 |
-| String | 005, 006, 008, 010, 014, 028, 038, 043, 044, 127 |
-| Numerical | 007, 009, 029, 050, 066, 069, 279, 564 |
-| Hash/Lookup | 001, 003, 012, 013, 020, 030, 049, 076, 146, 187, 349, 350, 460 |
-| Stack/Queue/Deque | 023, 032, 094, 102, 103, 116, 150 |
-| Linked list | 002, 019, 021, 024, 061, 086, 092, 141, 142, 160, 206, 234, 876 |
-| Two pointers | 011, 015, 016, 018, 027, 042, 084, 088, 125, 287 |
-| Recursion | 004, 025, 033, 034, 035, 045, 079, 098, 101, 104, 105, 106, 108, 111, 114, 124, 130, 144, 145, 226, 230, 235, 236, 301, 337, 450, 538, 540, 543, 652, 654, 700, 701, 752, 889, 1038 |
-| Backtracking | 017, 022, 037, 039, 040, 046, 047, 051, 060, 078 |
-| DP | 053, 062, 063, 064, 070, 091, 120, 131, 188, 198, 213, 221, 300, 309, 322, 509, 714, 864, 871 |
-
-> Note that binary tree problems are mostly included in the `Recursion` category.
+| Array / String | 1, 3, 6, 11, 14, 15, 16, 18, 20, 22, 26, 27, 28, 30, 31, 38, 41, 42, 44, 45, 48, 49, 54, 55, 56, 73, 75, 76, 80, 88, 125, 239, 283, 349, 350, 438, 567, 670, 832, 1838 |
+| Linked list | 2, 19, 21, 23, 24, 25, 61, 86, 92, 141, 142, 160, 206, 234, 876 |
+| Recursion | 4, 33, 34, 35, 69, 74, 153, 215, 240, 278, 287, 301, 540, 704 |
+| Dynamic Programming | 5, 10, 32, 36, 37, 53, 62, 63, 64, 70, 79, 84, 91, 96, 118, 120, 121, 122, 123, 128, 130, 134, 188, 198, 213, 221, 279, 300, 309, 322, 509, 714, 864, 871 |
+| Numerical | 7, 8, 9, 12, 13, 29, 43, 50, 66, 136, 150, 564 |
+| Backtracking | 17, 39, 40, 46, 47, 51, 60, 78, 131 |
+| Binary Tree | 94, 98, 101, 102, 103, 104, 105, 106, 108, 111, 114, 116, 124, 144, 145, 226, 230, 235, 236, 337, 450, 538, 543, 652, 654, 700, 701, 889, 1038 |
+| Graph / DFS | 127, 752 |
+| System Design | 146, 460 |
 
 ------
 

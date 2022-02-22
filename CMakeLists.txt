@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.5)
 project(leetcode)
 
-set(PROBLEM_NAME "450-Delete-Node-in-a-BST")
+set(PROBLEM_NAME "096-Unique-Binary-Search-Trees")
 
 set(CMAKE_CXX_STANDARD 14)
 
