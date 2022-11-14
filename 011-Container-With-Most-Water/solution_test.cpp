@@ -2,7 +2,7 @@
 
 #include "solution.hpp"
 
-#define BOOST_TEST_DYN_LINK
+//#define BOOST_TEST_DYN_LINK
 #include <boost/test/unit_test.hpp>
 
 BOOST_AUTO_TEST_SUITE(SolutionSuite)
@@ -22,6 +22,15 @@ BOOST_AUTO_TEST_CASE(PlainTest2)
     int results = Solution().maxArea(height);
 
     int expected = 4;
+    BOOST_CHECK_EQUAL(results, expected);
+}
+
+BOOST_AUTO_TEST_CASE(PlainTest3)
+{
+    vector<int> height{2,3,4,5,18,17,6};
+    int results = Solution().maxArea(height);
+
+    int expected = 17;
     BOOST_CHECK_EQUAL(results, expected);
 }
 

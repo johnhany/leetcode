@@ -1,9 +1,9 @@
 cmake_minimum_required (VERSION 3.5)
 project(leetcode)
 
-set(PROBLEM_NAME "096-Unique-Binary-Search-Trees")
+set(PROBLEM_NAME "014-Longest-Common-Prefix")
 
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 17)
 
 set(SOLUTION_SOURCES ${PROJECT_SOURCE_DIR}/${PROBLEM_NAME}/solution.cpp)
 add_library(solution STATIC ${SOLUTION_SOURCES})
@@ -17,8 +17,8 @@ add_executable(test_main ${TEST_SOURCES})
 
 if(WIN32)
     message(STATUS "Detected Windows platform")
-    set(BOOST_ROOT E:\\dev-lib\\boost_1_73_0)
-    set(BOOST_LIBRARYDIR E:\\dev-lib\\boost_1_73_0\\build\\lib)
+    set(BOOST_ROOT D:\\libs\\boost_1_80_0)
+    set(BOOST_LIBRARYDIR D:\\libs\\boost_1_80_0\\stage\\lib)
     set(Boost_USE_STATIC_LIBS ON)
     find_package(Boost REQUIRED COMPONENTS unit_test_framework)
 

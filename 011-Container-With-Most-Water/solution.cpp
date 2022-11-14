@@ -9,17 +9,15 @@ static auto x = []() {
 }();
 
 int Solution::maxArea(vector<int>& height) {
-	int i = 0, j = height.size()-1;
-	int tmp, h, area = 0;
-	while (i < j) {
-		h = min(height[i], height[j]);
-		tmp = h * (j-i);
-		if (tmp > area)
-			area = tmp;
-		if (height[i] < height[j])
-			while (height[++i] < h && i < j);
-		else
-			while (height[j--] < h && i < j);
-	}
-	return area;
+	int area = 0, i = 0, j = height.size() - 1;
+    while (i < j) {
+        if (height[i] < height[j]) {
+			area = max(area, (j - i) * height[i]);
+            i++;
+        } else {
+			area = max(area, (j - i) * height[j]);
+            j--;
+        }
+    }
+    return area;
 }

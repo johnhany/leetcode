@@ -1,12 +1,14 @@
 # leetcode
 
-Personal notes for [leetcode.com](https://leetcode.com) solutions with support for local building and unit testing.
+Fast C++ solutions for [leetcode.com](https://leetcode.com) problems, with VS Code support for `CMake` building, `gdb`/`lldb` debugging, and `Boost` unit testing.
 
 ## Stats
 
+Top 100 liked: 76 / 100 ![76%](https://progress-bar.dev/76/?title=top)
+
 Top interviewed: 85 / 145 ![59%](https://progress-bar.dev/59/?title=top)
 
-In total: 158 / 2143 ![7%](https://progress-bar.dev/7/?title=total)
+In total: 158 / 2472 ![6%](https://progress-bar.dev/6/?title=total)
 
 **99.00%+** in running time: 98 / 158 ![62%](https://progress-bar.dev/62/?title=99%)
 

@@ -59,3 +59,7 @@ Source file and Preprocessing
 To be classified
 
 * Calling exit during the destruction of a program with static storage duration
+
+Post increment
+
+* `i++` may act differently on MSVC and GCC/CLANG
