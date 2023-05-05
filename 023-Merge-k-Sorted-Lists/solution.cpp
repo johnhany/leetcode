@@ -17,7 +17,7 @@ struct compare {
 ListNode* Solution::mergeKLists(vector<ListNode*>& lists) {
 	if (lists.empty())
 		return nullptr;
-	ListNode* head = new ListNode();
+	ListNode* head = new ListNode(0);
 	ListNode* cur = head;
 	std::priority_queue<ListNode*, vector<ListNode*>, compare> q;
 	for (ListNode* itr: lists) {

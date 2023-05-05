@@ -38,7 +38,7 @@ int Solution::divide(int dividend, int divisor) {
 	while (a >= b) {
 		int x = 0;
 		while (a >= (b<<x)) {
-			if ((b<<x) >= 1073741824) {
+			if ((b<<x) >= 2<<29) {
 				x++;
 				break;
 			}

@@ -37,7 +37,7 @@
             "name": "(cl) Launch",
             "type": "cppvsdbg",
             "request": "launch",
-            "program": "${workspaceFolder}\\build\\test_main.exe",
+            "program": "${workspaceFolder}\\build\\Debug\\test_main.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",

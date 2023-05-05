@@ -8,7 +8,6 @@ static auto x = []() {
 	return 0;
 }();
 
-// https://labuladong.gitee.io/algo/2/18/26/
 
 TreeNode* Solution::insertIntoBST(TreeNode* root, int val) {
 	if (root == nullptr)

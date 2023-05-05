@@ -9,8 +9,6 @@ static auto x = []() {
 }();
 
 
-// https://labuladong.gitee.io/algo/1/4/
-
 int Solution::coinChange(vector<int>& coins, int amount) {
 	vector<int> dp(amount+1, amount+1);
 	dp[0] = 0;

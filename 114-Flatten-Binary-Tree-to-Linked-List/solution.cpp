@@ -8,7 +8,6 @@ static auto x = []() {
 	return 0;
 }();
 
-// https://labuladong.gitee.io/algo/2/18/22/
 
 void Solution::flatten(TreeNode* root)  {
 	if (root == nullptr) return;
@@ -22,9 +21,9 @@ void Solution::flatten(TreeNode* root)  {
 	root->left = nullptr;
 	root->right = left;
 
-	TreeNode* p = root;
-	while (p->right != nullptr) {
-		p = p->right;
+	while (root->right) {
+		root = root->right;
 	}
-	p->right = right;
+	root->right = right;
+	return;
 }

@@ -22,8 +22,6 @@ bool Solution::searchMatrix(vector<vector<int>>& matrix, int target) {
 		else
 			break;
 	}
-	if (target < matrix[row].front() || target > matrix[row].back())
-		return false;
 	int idx_start = 0, idx_end = matrix[row].size()-1, idx = 0;
 	while (idx_start <= idx_end) {
 		idx = (idx_start + idx_end) / 2;

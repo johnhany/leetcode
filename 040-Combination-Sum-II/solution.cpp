@@ -10,7 +10,6 @@ static auto x = []() {
 
 vector<vector<int>> Solution::combinationSum2(vector<int>& candidates, int target) {
 	vector<vector<int>> rst;
-	if (candidates.size() == 0) return rst;
 	vector<int> path;
 	sort(candidates.begin(), candidates.end());
 	subCombination(candidates, rst, target, 0, path);
@@ -18,18 +17,18 @@ vector<vector<int>> Solution::combinationSum2(vector<int>& candidates, int targe
 }
 
 void Solution::subCombination(vector<int>& candidates, vector<vector<int>>& rst, int target, int start, vector<int>& path) {
-	for (int i = start; i < candidates.size(); i++) {
-		if (candidates[i] > target)
-			break;
-		else {
+	if (target == 0) {
+		rst.push_back(path);
+		return;
+	}
+	for (int i=start; i<(int)candidates.size(); i++) {
+		if (candidates[i] <= target) {
 			path.push_back(candidates[i]);
-			if (target == candidates[i])
-				rst.push_back(path);
-			else
-				subCombination(candidates, rst, target - candidates[i], i+1, path);
+			subCombination(candidates, rst, target-candidates[i], i+1, path);
 			path.pop_back();
-			while (i+1 < candidates.size() && candidates[i] == candidates[i+1])
+			while (i+1 < (int)candidates.size() && candidates[i] == candidates[i+1]) {
 				i++;
+			}
 		}
 	}
 	return;

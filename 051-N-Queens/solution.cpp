@@ -8,7 +8,6 @@ static auto x = []() {
 	return 0;
 }();
 
-// https://labuladong.gitee.io/algo/1/5/
 
 bool Solution::isValid(vector<string>& board, int row, int col) {
 	int n = board.size();

@@ -8,6 +8,8 @@ static auto x = []() {
 	return 0;
 }();
 
+// https://leetcode.cn/problems/unique-binary-search-trees/solution/hua-jie-suan-fa-96-bu-tong-de-er-cha-sou-suo-shu-b/
+
 int Solution::numTrees(int n) {
     vector<int> dp(n+1, 0);
     dp[0] = 1;

@@ -9,26 +9,23 @@ static auto x = []() {
 }();
 
 int Solution::mySqrt(int x) {
-    if (x == 0 || x == 1) return x;
-	int rst = x / 2;
-    int tmp = x / rst;
-    if (tmp == rst)
-        return rst;
-    else if (tmp > rst)
-        return findSqrt(x, rst, x);
-    else
-        return findSqrt(x, 0, rst);
+    if (x == 0 || x == 1) {
+        return x;
+    }
+    return findSqrt(x, 1, x);
 }
 
-int Solution::findSqrt(int x, int low, int high) {
-    if (high - low == 1)
-        return low;
-    int rst = (high + low) / 2;
-    int tmp = x / rst;
-    if (tmp == rst)
-        return rst;
-    else if (tmp > rst)
-        return findSqrt(x, rst, high);
-    else
-        return findSqrt(x, low, rst);
+int Solution::findSqrt(int x, int left, int right) {
+    if (right - left == 1) {
+        return left;
+    }
+    int a = left + (right - left) / 2;
+    int b = x / a;
+    if (a == b) {
+        return a;
+    } else if (a > b) {
+        return findSqrt(x, left, a);
+    } else {
+        return findSqrt(x, a, right);
+    }
 }

@@ -8,7 +8,6 @@ static auto x = []() {
 	return 0;
 }();
 
-// https://labuladong.gitee.io/algo/1/11/
 
 bool Solution::checkInclusion(string t, string s) {
     unordered_map<char, int> need, window;

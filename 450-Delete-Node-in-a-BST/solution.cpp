@@ -8,7 +8,8 @@ static auto x = []() {
 	return 0;
 }();
 
-// https://labuladong.gitee.io/algo/2/18/26/
+
+// https://leetcode.cn/problems/delete-node-in-a-bst/solution/miao-dong-jiu-wan-shi-liao-by-terry2020-tc0o/
 
 TreeNode* Solution::deleteNode(TreeNode* root, int key) {
 	if (root == nullptr)
@@ -23,11 +24,8 @@ TreeNode* Solution::deleteNode(TreeNode* root, int key) {
 		while (minNode->left != nullptr)
 			minNode = minNode->left;
 
-		root->right = deleteNode(root->right, minNode->val);
-
 		minNode->left = root->left;
-		minNode->right = root->right;
-		root = minNode;
+		root = root->right;
 	} else if (root->val > key) {
 		root->left = deleteNode(root->left, key);
 	} else if (root->val < key) {

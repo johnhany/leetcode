@@ -13,10 +13,11 @@ static auto x = []() {
 
 TreeNode* Solution::builder(vector<int>& preorder, vector<int>& inorder, int pstart, int pend, int istart, int iend) {
 	if (istart > iend) return nullptr;
-	TreeNode* root = new TreeNode(preorder[pstart]);
+	int val = preorder[pstart];
+	TreeNode* root = new TreeNode(val);
 	int idx = -1;
 	for (int i = istart; i <= iend; i++) {
-		if (inorder[i] == preorder[pstart]) {
+		if (inorder[i] == val) {
 			idx = i;
 			break;
 		}
@@ -27,6 +28,5 @@ TreeNode* Solution::builder(vector<int>& preorder, vector<int>& inorder, int pst
 }
 
 TreeNode* Solution::buildTree(vector<int>& preorder, vector<int>& inorder) {
-	int len = preorder.size();
-	return builder(preorder, inorder, 0, len-1, 0, len-1);
+	return builder(preorder, inorder, 0, preorder.size()-1, 0, preorder.size()-1);
 }

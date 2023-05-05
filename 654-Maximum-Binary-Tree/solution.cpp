@@ -8,7 +8,6 @@ static auto x = []() {
 	return 0;
 }();
 
-// https://labuladong.gitee.io/algo/2/18/23/
 
 TreeNode* Solution::build(vector<int>& nums, int lo, int hi) {
 	if (lo > hi) {

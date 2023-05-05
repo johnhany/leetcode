@@ -13,13 +13,8 @@ vector<int> Solution::plusOne(vector<int>& digits) {
     int carry = 1;
     for (int i=digits.size()-1; i>=0; i--) {
         int a = digits[i] + carry;
-        if (a>9) {
-            rst.push_back(a%10);
-            carry = a/10;
-        } else {
-            rst.push_back(a);
-            carry = 0;
-        }
+        rst.push_back(a%10);
+        carry = a/10;
     }
     if (carry)
         rst.push_back(carry);

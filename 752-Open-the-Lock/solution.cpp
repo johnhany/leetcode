@@ -9,8 +9,6 @@ static auto x = []() {
 }();
 
 
-// https://labuladong.gitee.io/algo/1/6/
-
 string Solution::rollUp(string s, int i) {
 	if (s[i] == '9')
 		s[i] = '0';

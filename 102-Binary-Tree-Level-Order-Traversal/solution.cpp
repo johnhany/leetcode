@@ -9,26 +9,26 @@ static auto x = []() {
 }();
 
 vector<vector<int>> Solution::levelOrder(TreeNode* root) {
-	if (root==nullptr)
+	if (root == nullptr) {
 		return {};
-	TreeNode* flag = new TreeNode(0);
-	TreeNode* cur;
-	queue<TreeNode*> q;
+	}
 	vector<vector<int>> rst;
+	TreeNode *flag = new TreeNode(0);
+	queue<TreeNode*> q;
 	q.push(root);
 	q.push(flag);
-	while (!q.empty()) {
-		if (q.front() == flag)
-			break;
+	while (q.size() > 1) {
 		vector<int> tmp;
-		while (q.front()!=flag) {
-			cur = q.front();
+		while (q.front() != flag) {
+			TreeNode *cur = q.front();
 			tmp.push_back(cur->val);
 			q.pop();
-			if (cur->left)
+			if (cur->left) {
 				q.push(cur->left);
-			if (cur->right)
+			}
+			if (cur->right) {
 				q.push(cur->right);
+			}
 		}
 		q.pop();
 		q.push(flag);

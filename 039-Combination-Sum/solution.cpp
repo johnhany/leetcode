@@ -10,7 +10,6 @@ static auto x = []() {
 
 vector<vector<int>> Solution::combinationSum(vector<int>& candidates, int target) {
 	vector<vector<int>> rst;
-	if (candidates.size() == 0) return rst;
 	vector<int> path;
 	subCombination(candidates, rst, target, 0, path);
 	return rst;

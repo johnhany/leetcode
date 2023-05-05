@@ -10,7 +10,7 @@ static auto x = []() {
 
 string Solution::countAndSay(int n) {
 	string pre = "1";
-	string cur = pre;
+	string cur;
 	while (--n) {
 		int count = 1;
 		if (pre.size() == 1) {
@@ -31,6 +31,6 @@ string Solution::countAndSay(int n) {
 		}
 		pre = cur;
 	}
-	return cur;
+	return pre;
 }
 

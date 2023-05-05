@@ -67,4 +67,16 @@ BOOST_AUTO_TEST_CASE(PlainTest5)
                                   expected.begin(), expected.end());
 }
 
+BOOST_AUTO_TEST_CASE(PlainTest6)
+{
+    vector<int> nums{0,0,1,0,1,1};
+    Solution().sortColors(nums);
+
+    vector<int> expected{0,0,0,1,1,1};
+
+    BOOST_REQUIRE_EQUAL(nums.size(), expected.size());
+    BOOST_CHECK_EQUAL_COLLECTIONS(nums.begin(), nums.end(),
+                                  expected.begin(), expected.end());
+}
+
 BOOST_AUTO_TEST_SUITE_END()

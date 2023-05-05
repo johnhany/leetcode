@@ -9,25 +9,25 @@ static auto x = []() {
 }();
 
 vector<vector<string>> Solution::groupAnagrams(vector<string>& strs) {
-	unordered_map<string, vector<string>> hash;
-	for (auto s : strs) {
-		hash[countSort(s)].emplace_back(s);
+	unordered_map<string, vector<string>> table;
+	for (string& s : strs) {
+		table[countSort(s)].push_back(s);
 	}
-	vector<vector<string>> anagrams;
-	for (auto p : hash) {
-		anagrams.emplace_back(p.second);
+	vector<vector<string>> rst;
+	for (auto& itr : table) {
+		rst.push_back(itr.second);
 	}
-	return anagrams;
+	return rst;
 }
 
 string Solution::countSort(string s) {
-	int count[26] = {0};
+	vector<int> count(26, 0);
 	for (char c : s) {
-		++count[c-'a'];
+		count[c-'a']++;
 	}
-	string t;
-	for (int c = 0; c < 26; c++) {
-		t += string(count[c], c+'a');
+	string key;
+	for (int i=0; i<26; i++) {
+		key += string(count[i], 'a'+i);
 	}
-	return t;
+	return key;
 }

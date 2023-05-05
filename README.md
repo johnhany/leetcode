@@ -4,13 +4,13 @@ Fast C++ solutions for [leetcode.com](https://leetcode.com) problems, with VS Co
 
 ## Stats
 
-Top 100 liked: 76 / 100 ![76%](https://progress-bar.dev/76/?title=top)
+Top 100 liked: 78 / 100 ![78%](https://progress-bar.dev/76/?title=top)
 
-Top interviewed: 85 / 145 ![59%](https://progress-bar.dev/59/?title=top)
+Top interviewed: 86 / 145 ![59%](https://progress-bar.dev/59/?title=top)
 
-In total: 158 / 2472 ![6%](https://progress-bar.dev/6/?title=total)
+In total: 159 / 2573 ![6%](https://progress-bar.dev/6/?title=total)
 
-**99.00%+** in running time: 98 / 158 ![62%](https://progress-bar.dev/62/?title=99%)
+**99.00%+** in running time: 105 / 159 ![66%](https://progress-bar.dev/63/?title=99%)
 
 ## Solutions
 
@@ -91,7 +91,7 @@ In total: 158 / 2472 ![6%](https://progress-bar.dev/6/?title=total)
 18. [4Sum](https://leetcode.com/problems/4sum/)
 
 - Set: [40ms](https://leetcode.com/submissions/detail/208778417/) (top 82.57%)
-- Fast for-loop: [20ms](https://leetcode.com/submissions/detail/208780575/) (top 90.04%)
+- Fast for-loop: [7ms](https://leetcode.com/problems/4sum/submissions/901364337/) **(top 99.16%)**
 
 19. [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)
 
@@ -142,7 +142,7 @@ In total: 158 / 2472 ![6%](https://progress-bar.dev/6/?title=total)
 
 30. [Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/)
 
-- [40ms](https://leetcode.com/submissions/detail/323605364/) (top 88.85%)
+- [35ms](https://leetcode.com/problems/substring-with-concatenation-of-all-words/submissions/901402561/) (top 94.13%)
 
 31. [Next Permutation](https://leetcode.com/problems/next-permutation/)
 
@@ -362,11 +362,11 @@ In total: 158 / 2472 ![6%](https://progress-bar.dev/6/?title=total)
 
 102. [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)
 
-- [4ms](https://leetcode.com/submissions/detail/632149394/) (top 76.73%)
+- [0ms](https://leetcode.com/problems/binary-tree-level-order-traversal/submissions/900368853/) **(top 100.00%)**
 
 103. [Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/)
 
-- [4ms](https://leetcode.com/submissions/detail/632153033/) (top 63.24%)
+- [3ms](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/submissions/900385027/) (top 73.66%)
 
 104. [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
 
@@ -374,13 +374,13 @@ In total: 158 / 2472 ![6%](https://progress-bar.dev/6/?title=total)
 
 105. [Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
 
-- [40ms](https://leetcode.com/submissions/detail/317112638/) (top 19.30%)
+- [29ms](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/submissions/902042713/) (top 52.40%)
 - hash: [16ms](https://leetcode.com/submissions/detail/317142296/) (top 89.76%)
-- Stack: [11ms](https://leetcode.com/submissions/detail/632237731/) (top 94.01%)
+- Stack: [7ms](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/submissions/900852024/) **(top 99.57%)**
 
 106. [Construct Binary Tree from Inorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/)
 
-- [31ms](https://leetcode.com/submissions/detail/645319669/) (top 48.33%)
+- [23ms](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/submissions/902040628/) (top 57.38%)
 
 108. [Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)
 
@@ -396,7 +396,7 @@ In total: 158 / 2472 ![6%](https://progress-bar.dev/6/?title=total)
 
 116. [Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/)
 
-- [16ms](https://leetcode.com/submissions/detail/317450715/) (top 95.40%)
+- [11ms](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/submissions/900876771/) **(top 99.39%)**
 
 118. [Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/)
 
@@ -439,9 +439,9 @@ In total: 158 / 2472 ![6%](https://progress-bar.dev/6/?title=total)
 
 128. [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)
 
-- hash: [97ms](https://leetcode.com/submissions/detail/632922184/) (top 63.61%)
-- sort: [34ms](https://leetcode.com/submissions/detail/632926329/) (top 96.44%)
-- dp: [87ms](https://leetcode.com/submissions/detail/632934825/) (top 67.80%)
+- hash: [113ms](https://leetcode.com/problems/longest-consecutive-sequence/submissions/900960540/) (top 83.63%)
+- sort: [59ms](https://leetcode.com/problems/longest-consecutive-sequence/submissions/900959271/) **(top 99.67%)**
+- dp: [132ms](https://leetcode.com/problems/longest-consecutive-sequence/submissions/900958551/) (top 78.98%)
 
 130. [Surrounded Regions](https://leetcode.com/problems/surrounded-regions/)
 
@@ -450,7 +450,7 @@ In total: 158 / 2472 ![6%](https://progress-bar.dev/6/?title=total)
 131. [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/)
 
 - backtrack: [159ms](https://leetcode.com/submissions/detail/632960985/) (top 63.39%)
-- backtrack + DP: [150ms](https://leetcode.com/submissions/detail/632959468/) (top 67.07%)
+- backtrack + DP: [100ms](https://leetcode.com/problems/palindrome-partitioning/submissions/901013626/) (top 91.71%)
 
 134. [Gas Station](https://leetcode.com/problems/gas-station/)
 
@@ -512,7 +512,7 @@ In total: 158 / 2472 ![6%](https://progress-bar.dev/6/?title=total)
 
 - two pointers: [12ms](https://leetcode.com/submissions/detail/641316788/) (top 27.83%)
 - faster two pointers: [7ms](https://leetcode.com/submissions/detail/641321662/) (top 74.53%)
-- recursion: [6ms](https://leetcode.com/submissions/detail/641307827/) (top 78.09%)
+- recursion: [0ms](https://leetcode.com/problems/reverse-linked-list/submissions/901975778/) **(top 100.00%)**
 
 213. [House Robber II](https://leetcode.com/problems/house-robber-ii/)
 
@@ -532,7 +532,7 @@ In total: 158 / 2472 ![6%](https://progress-bar.dev/6/?title=total)
 
 230. [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)
 
-- [16ms](https://leetcode.com/submissions/detail/645342252/) (top 90.22%)
+- [7ms](https://leetcode.com/problems/kth-smallest-element-in-a-bst/submissions/902082496/) **(top 99.74%)**
 
 234. [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)
 
@@ -689,7 +689,11 @@ In total: 158 / 2472 ![6%](https://progress-bar.dev/6/?title=total)
 
 889. [Construct Binary Tree from Preorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-postorder-traversal/)
 
-- [14ms](https://leetcode.com/submissions/detail/645323543/) (top 71.19%)
+- [8ms](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-postorder-traversal/submissions/902048921/) (top 89.88%)
+
+958. [Check Completeness of a Binary Tree](https://leetcode.com/problems/check-completeness-of-a-binary-tree/)
+
+- [3ms](https://leetcode.com/problems/check-completeness-of-a-binary-tree/submissions/915368515/) (top 84.99%)
 
 1038. [Binary Search Tree to Greater Sum Tree](https://leetcode.com/problems/binary-search-tree-to-greater-sum-tree/)
 
@@ -711,7 +715,7 @@ In total: 158 / 2472 ![6%](https://progress-bar.dev/6/?title=total)
 | Dynamic Programming | 5, 10, 32, 36, 37, 53, 62, 63, 64, 70, 79, 84, 91, 96, 118, 120, 121, 122, 123, 128, 130, 134, 188, 198, 213, 221, 279, 300, 309, 322, 509, 714, 864, 871 |
 | Numerical | 7, 8, 9, 12, 13, 29, 43, 50, 66, 136, 150, 564 |
 | Backtracking | 17, 39, 40, 46, 47, 51, 60, 78, 131 |
-| Binary Tree | 94, 98, 101, 102, 103, 104, 105, 106, 108, 111, 114, 116, 124, 144, 145, 226, 230, 235, 236, 337, 450, 538, 543, 652, 654, 700, 701, 889, 1038 |
+| Binary Tree | 94, 98, 101, 102, 103, 104, 105, 106, 108, 111, 114, 116, 124, 144, 145, 226, 230, 235, 236, 337, 450, 538, 543, 652, 654, 700, 701, 889, 958, 1038 |
 | Graph / DFS | 127, 752 |
 | System Design | 146, 460 |
 

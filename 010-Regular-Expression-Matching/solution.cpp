@@ -9,6 +9,8 @@ static auto x = []() {
 }();
 
 
+// https://leetcode.cn/problems/regular-expression-matching/solution/shou-hui-tu-jie-wo-tai-nan-liao-by-hyj8/
+
 bool Solution::isMatch(string s, string p) {
 	int m = s.length(), n = p.length();
 	vector<vector<bool>> dp(m+1, vector<bool>(n+1, false));

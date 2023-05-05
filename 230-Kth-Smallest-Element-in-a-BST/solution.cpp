@@ -8,24 +8,23 @@ static auto x = []() {
 	return 0;
 }();
 
-// https://labuladong.gitee.io/algo/2/18/25/
 
-void Solution::traverse(TreeNode* root, int k) {
+void Solution::subSearch(TreeNode* root, int k, int& rst, int& count) {
 	if (root == nullptr) {
 		return;
 	}
-	traverse(root->left, k);
-
-	rank++;
-	if (k == rank) {
-		res = root->val;
+	subSearch(root->left, k, rst, count);
+	count++;
+	if (count == k) {
+		rst = root->val;
 		return;
 	}
-
-	traverse(root->right, k);
+	subSearch(root->right, k, rst, count);
+	return;
 }
 
 int Solution::kthSmallest(TreeNode* root, int k) {
-	traverse(root, k);
-    return res;
+	int rst = 0, count = 0;
+	subSearch(root, k, rst, count);
+	return rst;
 }

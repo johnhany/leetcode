@@ -8,7 +8,6 @@ static auto x = []() {
 	return 0;
 }();
 
-// https://labuladong.gitee.io/algo/1/7/
 
 int Solution::subSearch(TreeNode* root) {
 	if (root == nullptr)

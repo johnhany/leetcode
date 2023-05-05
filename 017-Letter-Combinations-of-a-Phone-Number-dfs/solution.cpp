@@ -8,35 +8,35 @@ static auto x = []() {
 	return 0;
 }();
 
-vector<char> Solution::getAlpha(char num) {
-	vector<char> res;
-	vector<pair<int,int>> arr{{0,2},{3,5},{6,8},{9,11},{12,14},{15,18},{19,21},{22,25}}; 
-	int times = num-'2';
-	for (int i=arr[times].first; i<=arr[times].second; i++ )
-	{
-		res.push_back(i+'a');
+string Solution::getLetters(char num) {
+	string letters;
+	vector<pair<int,int>> arr{{0,2},{3,5},{6,8},{9,11},{12,14},{15,18},{19,21},{22,25}};
+	num -= '2';
+	for (int k=arr[num].first; k<=arr[num].second; k++) {
+		letters.push_back('a'+k);
 	}
-	return res;
+	return letters;
 }
 
 void Solution::dfs(vector<string>& rst, string& digits, string last, int n, int i) {
-	vector<char> cur = getAlpha(digits[i]);
+	string cand = getLetters(digits[i]);
 	if (i == n-1) {
-		for (char c: cur) {
-			rst.emplace_back(last + c);
+		for (char c : cand) {
+			rst.push_back(last + c);
 		}
-		return;
 	} else {
-		for (char c: cur) {
+		for (char c : cand) {
 			dfs(rst, digits, last + c, n, i+1);
 		}
 	}
+	return;
 }
 
 vector<string> Solution::letterCombinations(string digits) {
-	if (digits.empty())
+	if (digits.empty()) {
 		return {};
+	}
 	vector<string> rst;
-	dfs(rst, digits, "", digits.length(), 0);
+	dfs(rst, digits, "", digits.size(), 0);
 	return rst;
 }

@@ -15,8 +15,6 @@ static auto x = []() {
 
 void Solution::nextPermutation(vector<int>& nums) {
 	int n = nums.size();
-	if (n <= 1)
-		return;
 	int i = n-2, j = n-1, k = n-1;
 	while (i>=0 && nums[i]>=nums[j]) {
 		i--;

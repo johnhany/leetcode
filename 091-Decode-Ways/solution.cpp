@@ -1,9 +1,14 @@
 #include "solution.hpp"
 
-int Solution::numDecodings(string s) {
+static auto x = []() {
+	// turn off sync
 	std::ios::sync_with_stdio(false);
+	// untie in/out streams
 	cin.tie(NULL);
+	return 0;
+}();
 
+int Solution::numDecodings(string s) {
 	if (s[0] == '0') return 0;
 	int n=s.size();
 	vector<int> dp(n+1, 0);

@@ -8,7 +8,6 @@ static auto x = []() {
 	return 0;
 }();
 
-// https://labuladong.gitee.io/algo/2/18/25/
 
 void Solution::traverse(TreeNode* root) {
 	if (root == nullptr) {

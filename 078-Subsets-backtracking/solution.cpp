@@ -20,10 +20,6 @@ void Solution::backtrack(vector<vector<int>>& rst, vector<int>& tmp, vector<int>
 
 
 vector<vector<int>> Solution::subsets(vector<int>& nums) {
-	if (nums.empty())
-		return vector<vector<int>>{{}};
-	else if (nums.size() == 1)
-		return vector<vector<int>>{nums, {}};
 	vector<vector<int>> rst;
 	vector<int> tmp;
 	backtrack(rst, tmp, nums, 0);

@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.5)
 project(leetcode)
 
-set(PROBLEM_NAME "014-Longest-Common-Prefix")
+set(PROBLEM_NAME "028-Find-the-Index-of-the-First-Occurrence-in-a-String")
 
 set(CMAKE_CXX_STANDARD 17)
 

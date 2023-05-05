@@ -18,7 +18,7 @@ using namespace std;
 class Solution {
 public:
 	int mySqrt(int x);
-	int findSqrt(int x, int low, int high);
+	int findSqrt(int x, int left, int right);
 };
 
 #endif

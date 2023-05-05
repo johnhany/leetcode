@@ -18,7 +18,6 @@ vector<int> Solution::findSubstring(string s, vector<string>& words) {
 		hash[w]++;
 	}
 	vector<int> rst;
-	int end = s.size() - n*len + 1;
 	for (int i = 0; i < len; i++) {
 		visit.clear();
 		int left = i, found = 0;

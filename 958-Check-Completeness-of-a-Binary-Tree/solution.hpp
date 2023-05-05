@@ -13,6 +13,7 @@
 #include <iterator>
 #include <unordered_map>
 #include <unordered_set>
+#include <stack>
 
 using namespace std;
 
@@ -67,8 +68,7 @@ inline TreeNode* stringToTreeNode(string input) {
 
 class Solution {
 public:
-    void subSearch(TreeNode* root, int k, int& rst, int& count);
-	int kthSmallest(TreeNode* root, int k);
+	bool isCompleteTree(TreeNode* root);
 };
 
 #endif
