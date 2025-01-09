@@ -11,9 +11,9 @@ static auto x = []() {
 
 bool Solution::isValid(string s) {
 	std::stack<char> q;
-	std::map<char,char> lut{{'(',')'}, {'{','}'}, {'[',']'}};
+	std::unordered_map<char,char> lut{{'(',')'}, {'{','}'}, {'[',']'}};
 	for (char c: s) {
-		if (lut.count(c) > 0) {
+		if (lut.find(c) != lut.end()) {
 			q.push(c);
 			continue;
 		}

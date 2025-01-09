@@ -15,18 +15,18 @@ string Solution::minWindow(string s, string t) {
 		hash[c]++;
 	int left = 0, right = 0;
 	int int_max = (int)((~((unsigned int) 0)) >> 1);
-	int minLeft, minLen = int_max, count = t.size();
+	int minLeft, len = int_max, count = t.size();
 	while (right < s.size()) {
 		if(hash[s[right++]]-- > 0)
 			count--;
 		while (!count) {
-			if (right - left < minLen) {
+			if (right - left < len) {
 				minLeft = left;
-				minLen = right - left;
+				len = right - left;
 			}
 			if (hash[s[left++]]++ == 0)
 				count++;
 		}
 	}
-	return minLen < int_max ? s.substr(minLeft, minLen) : "";
+	return len < int_max ? s.substr(minLeft, len) : "";
 }

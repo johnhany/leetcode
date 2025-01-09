@@ -33,7 +33,7 @@ ListNode* Solution::mergeTwoLists(ListNode* list1, ListNode* list2) {
 		}
 		std::swap(list2, list1->next);
 		std::swap(list1->next->next, list2);
-		
+
 		list1 = list1->next;
 	}
 	if (list2) {

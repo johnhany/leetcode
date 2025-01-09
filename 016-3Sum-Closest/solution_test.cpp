@@ -2,7 +2,7 @@
 
 #include "solution.hpp"
 
-#define BOOST_TEST_DYN_LINK
+// #define BOOST_TEST_DYN_LINK
 #include <boost/test/unit_test.hpp>
 
 BOOST_AUTO_TEST_SUITE(SolutionSuite)
@@ -59,21 +59,21 @@ BOOST_AUTO_TEST_CASE(PlainTest5)
 
 BOOST_AUTO_TEST_CASE(PlainTest6)
 {
-    vector<int> nums{1, 2, 5, 10, 11};
-    int target = 12;
-    int result = Solution().threeSumClosest(nums, target);
-
-    int expected = 13;
-    BOOST_CHECK_EQUAL(result, expected);
-}
-
-BOOST_AUTO_TEST_CASE(PlainTest7)
-{
     vector<int> nums{1, 2, 4, 8, 16, 32, 64, 128};
     int target = 82;
     int result = Solution().threeSumClosest(nums, target);
 
     int expected = 82;
+    BOOST_CHECK_EQUAL(result, expected);
+}
+
+BOOST_AUTO_TEST_CASE(PlainTest7)
+{
+    vector<int> nums{-100,-98,-2,-1};
+    int target = -101;
+    int result = Solution().threeSumClosest(nums, target);
+
+    int expected = -101;
     BOOST_CHECK_EQUAL(result, expected);
 }
 

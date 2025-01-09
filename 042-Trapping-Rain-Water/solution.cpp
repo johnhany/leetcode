@@ -9,30 +9,27 @@ static auto x = []() {
 }();
 
 int Solution::trap(vector<int>& height) {
-	int water = 0;
-	int i = 0, j = 1;
-	while (i < height.size()) {
-		if (height[i] == 0) {
-			++i;
-			j = i+1;
+	int water = 0, left = 0;
+	while (left < height.size()) {
+		if (height[left] == 0) {
+			++left;
 			continue;
 		}
-		int ridx = i, rmax = 0;;
-		for (int j = i+1; j < height.size(); ++j) {
-			if (height[j] >= rmax) {
-				ridx = j;
-				rmax = height[j];
+		int right = left, h = 0;;
+		for (int i = left+1; i < height.size(); ++i) {
+			if (height[i] >= h) {
+				right = i;
+				h = height[i];
 			}
-			if (rmax > height[i])
+			if (h > height[left])
 				break;
 		}
-		if (rmax == 0) break;
-		int pit = 0, depth = rmax > height[i] ? height[i] : height[ridx];
-		for (int j = i+1; j < ridx; ++j) {
-			pit += depth - height[j];
+		if (h == 0) break;
+		int depth = h > height[left] ? height[left] : height[right];
+		for (int i = left+1; i < right; ++i) {
+			water += depth - height[i];
 		}
-		water += pit;
-		i = ridx;
+		left = right;
 	}
 	return water;
 }

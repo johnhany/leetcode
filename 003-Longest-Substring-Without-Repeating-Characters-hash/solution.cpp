@@ -11,8 +11,8 @@ static auto x = []() {
 
 int Solution::lengthOfLongestSubstring(string s) {
 	std::vector<int> hash(256, -1);
-	int length = 0, lastUniqIdx = -1, n = s.length();
-	for (int i=0; i<n; i++) {
+	int length = 0, lastUniqIdx = -1;
+	for (int i=0; i<s.length(); i++) {
 		lastUniqIdx = std::max(lastUniqIdx, hash[s[i]]);
 		hash[s[i]] = i;
 		length = std::max(length, i-lastUniqIdx);

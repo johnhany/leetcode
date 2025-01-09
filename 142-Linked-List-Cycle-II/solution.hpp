@@ -46,7 +46,7 @@ inline string listNodeToString(ListNode* node) {
 
 class Solution {
 private:
-    ListNode* prev;
+    ListNode* tail;
 public:
 	ListNode *detectCycle(ListNode *head);
 };

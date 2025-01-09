@@ -108,7 +108,7 @@ In total: 159 / 2573 ![6%](https://progress-bar.dev/6/?title=total)
 22. [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)
 
 - [0ms](https://leetcode.com/submissions/detail/626012181/) **(top 100.00%)**
-- Deque: [11ms](https://leetcode.com/submissions/detail/626009102/)
+- Deque: [0ms](https://leetcode.com/problems/generate-parentheses/submissions/1415504971) **(top 100.00%)**
 
 23. [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)
 
@@ -162,7 +162,7 @@ In total: 159 / 2573 ![6%](https://progress-bar.dev/6/?title=total)
 
 35. [Search Insert Position](https://leetcode.com/problems/search-insert-position/)
 
-- [4ms](https://leetcode.com/submissions/detail/338222184/) (top 98.31%)
+- [0ms](https://leetcode.com/problems/search-insert-position/submissions/1416053798) **(top 100.00%)**
 
 36. [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)
 
@@ -521,6 +521,7 @@ In total: 159 / 2573 ![6%](https://progress-bar.dev/6/?title=total)
 215. [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)
 
 - [4ms](https://leetcode.com/submissions/detail/327677238/) **(top 99.81%)**
+- quick sort: [0ms](https://leetcode.com/problems/kth-largest-element-in-an-array/submissions/1464291297/) **(top 100.00%)**
 
 221. [Maximal Square](https://leetcode.com/problems/maximal-square/)
 

@@ -9,8 +9,7 @@ static auto x = []() {
 }();
 
 vector<string> Solution::generateParenthesis(int n) {
-	if (n==0)
-		return {};
+	if (n==0) return {};
 	vector<string> rst;
 	deque<string> q;
 	q.emplace_back("(");
@@ -26,7 +25,6 @@ vector<string> Solution::generateParenthesis(int n) {
 		if (lp > rp) {
 			q.emplace_back(c + ")");
 		}
-		
 		q.pop_front();
 	}
 	while (!q.empty()) {

@@ -9,15 +9,15 @@ static auto x = []() {
 }();
 
 int Solution::jump(vector<int>& nums) {
-	int cur = 0, jumps = 0, mx = 0;
+	int nextStep = 0, jumps = 0, reach = 0;
     int n = nums.size();
     for (int i = 0; i < n-1; i++) {
-        mx = max(mx, i+nums[i]);
-        if (mx == n-1)
+        reach = max(reach, i+nums[i]);
+        if (reach == n-1)
             return jumps+1;
-        else if (i == cur) {
+        else if (i == nextStep) {
             jumps++;
-            cur = mx;
+            nextStep = reach;
         }
     }
     return jumps;

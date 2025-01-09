@@ -2,7 +2,7 @@
 
 #include "solution.hpp"
 
-#define BOOST_TEST_DYN_LINK
+// #define BOOST_TEST_DYN_LINK
 #include <boost/test/unit_test.hpp>
 
 struct less_than_key {
@@ -125,6 +125,20 @@ BOOST_AUTO_TEST_CASE(PlainTest8)
     vector<vector<int>> results = Solution().fourSum(nums, target);
 
     vector<vector<int>> expected{{-5, -4, -3, 1}};
+    BOOST_CHECK_EQUAL(results.size(), expected.size());
+    sort(results.begin(), results.end(), less_than_key());
+    sort(expected.begin(), expected.end(), less_than_key());
+    for (int i = 0; i < results.size(); i++)
+        BOOST_CHECK_EQUAL_COLLECTIONS(results[i].begin(), results[i].end(), expected[i].begin(), expected[i].end());
+}
+
+BOOST_AUTO_TEST_CASE(PlainTest9)
+{
+    vector<int> nums{1000000000,1000000000,1000000000,1000000000};
+    int target = 0;
+    vector<vector<int>> results = Solution().fourSum(nums, target);
+
+    vector<vector<int>> expected{};
     BOOST_CHECK_EQUAL(results.size(), expected.size());
     sort(results.begin(), results.end(), less_than_key());
     sort(expected.begin(), expected.end(), less_than_key());

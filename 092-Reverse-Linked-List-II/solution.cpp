@@ -10,12 +10,12 @@ static auto x = []() {
 
 ListNode* Solution::reverseHead(ListNode* head, int right) {
 	if (right==1) {
-		prev = head->next;
+		tail = head->next;
 		return head;
 	}
 	ListNode* cur = reverseHead(head->next, right-1);
 	head->next->next = head;
-	head->next = prev;
+	head->next = tail;
 	return cur;
 }
 

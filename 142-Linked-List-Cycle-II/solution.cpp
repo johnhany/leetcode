@@ -8,6 +8,7 @@ static auto x = []() {
 	return 0;
 }();
 
+// https://leetcode.cn/problems/linked-list-cycle-ii/solutions/12616/linked-list-cycle-ii-kuai-man-zhi-zhen-shuang-zhi-/
 
 ListNode *Solution::detectCycle(ListNode *head) {
 	ListNode *fast=head, *slow=head;

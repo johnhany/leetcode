@@ -11,13 +11,13 @@ static auto x = []() {
 
 ListNode* Solution::addTwoNumbers(ListNode* l1, ListNode* l2) {
 	ListNode* rst = new ListNode(0);
-	ListNode* out = rst;
+	ListNode* tail = rst;
 	int var1, var2, value, sum;
 	int carry = 0;
 	while(true) {
 		if (l1 == nullptr && l2 == nullptr) {
 			if (carry > 0) {
-				out->next = new ListNode(carry);
+				tail->next = new ListNode(carry);
 			}
 			return rst->next;
 		}
@@ -36,8 +36,8 @@ ListNode* Solution::addTwoNumbers(ListNode* l1, ListNode* l2) {
 		sum = var1 + var2 + carry;
 		value = sum % 10;
 		carry = sum / 10;
-		out->next = new ListNode(value);
-		out = out->next;
+		tail->next = new ListNode(value);
+		tail = tail->next;
 	}
 }
 

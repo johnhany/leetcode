@@ -11,26 +11,25 @@ static auto x = []() {
 
 
 int Solution::threeSumClosest(vector<int>& nums, int target) {
-	int dist = INT_MAX, res;
 	sort(nums.begin(), nums.end());
-	if (nums.size() < 3) return 0;
-	for (int k = 0; k < nums.size()-2; ++k) {
-		if (nums[k] - target > dist) break;
-		if (k > 0 && nums[k] == nums[k - 1]) continue;
-		int i = k + 1, j = nums.size() - 1, sum;
-		while (i < j) {
-			sum = nums[k] + nums[i] + nums[j];
-			if (sum == target)
+	int sum = 0;
+	int closest_sum = nums[0] + nums[1] + nums[2];
+	for(int i=0; i<nums.size()-1; i++) {
+        int left = i+1;
+        int right = nums.size()-1;
+        while (left < right) {
+			sum = nums[left] + nums[right] + nums[i];
+			if (sum == target){
 				return sum;
-			else {
-				if (abs(sum - target) < dist) {
-					dist = abs(sum - target);
-					res = sum;
-				}
-				if (sum < target) ++i;
-				else --j;
-			}
-		}
-	}
-	return res;
+			} else if (abs(sum-target) < abs(closest_sum-target)) {
+				closest_sum = sum;
+				left++;
+            } else if (sum < target) {
+                left++;
+            } else {
+                right--;
+            }
+        }
+     }
+     return closest_sum;
 }

@@ -18,11 +18,11 @@ int Solution::findKthLargest(vector<int>& nums, int k) {
 	for (int i = 1; i < n; i++) {
 		if (nums[i] > big)
 			big = nums[i];
-		if (nums[i] < small) 
+		if (nums[i] < small)
 			small = nums[i];
 	}
 	const double mid = (big + small) / 2.0; // use the medium as partition pivot
-	for (int i = 0; i < n; i++) { 
+	for (int i = 0; i < n; i++) {
 		if (nums[i] <= mid)
 			left.push_back(nums[i]);
 		else

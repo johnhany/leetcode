@@ -45,6 +45,6 @@ int Solution::strStr(string haystack, string needle) {
 
     if (j == m)
        return i - j;
-    else 
+    else
        return -1;
 }

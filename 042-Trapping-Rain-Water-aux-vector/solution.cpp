@@ -17,11 +17,11 @@ int Solution::trap(vector<int>& height) {
 		left[i] = max(left[i-1], height[i]);
 	for (int i=n-2; i>=0; i--)
 		right[i] = max(right[i+1], height[i]);
-	int area = 0;
+	int water = 0;
 	for (int i=1; i<n-1; i++) {
 		int h = min(left[i-1], right[i+1]);
-		area += h>height[i] ? h-height[i] : 0;
+		water += h>height[i] ? h-height[i] : 0;
 	}
-	return area;
+	return water;
 }
 

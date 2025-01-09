@@ -9,7 +9,7 @@ static auto x = []() {
 }();
 
 bool Solution::isValidBST(TreeNode* root) {
-	return isValidBST(root, NULL, NULL);
+	return isValidBST(root, nullptr, nullptr);
 }
 
 bool Solution::isValidBST(TreeNode* root, TreeNode* minNode, TreeNode* maxNode) {
