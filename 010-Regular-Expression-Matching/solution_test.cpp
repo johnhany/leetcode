@@ -1,60 +1,51 @@
-#define BOOST_TEST_MODULE SolutionTest
+#include <catch2/catch_test_macros.hpp>
+#include <catch2/matchers/catch_matchers_string.hpp>
+#include <catch2/matchers/catch_matchers_vector.hpp>
 
 #include "solution.hpp"
 
-//#define BOOST_TEST_DYN_LINK
-#include <boost/test/unit_test.hpp>
 
-BOOST_AUTO_TEST_SUITE(SolutionSuite)
-
-BOOST_AUTO_TEST_CASE(PlainTest1)
-{
+TEST_CASE( "Running solution test 1" ) {
     string s = "aa";
     string p = "a";
-    bool results = Solution().isMatch(s, p);
 
     bool expected = false;
-    BOOST_CHECK_EQUAL(results, expected);
+
+    REQUIRE( Solution().isMatch(s, p) == expected );
 }
 
-BOOST_AUTO_TEST_CASE(PlainTest2)
-{
+TEST_CASE( "Running solution test 2" ) {
     string s = "aa";
     string p = "a*";
-    bool results = Solution().isMatch(s, p);
 
     bool expected = true;
-    BOOST_CHECK_EQUAL(results, expected);
+
+    REQUIRE( Solution().isMatch(s, p) == expected );
 }
 
-BOOST_AUTO_TEST_CASE(PlainTest3)
-{
+TEST_CASE( "Running solution test 3" ) {
     string s = "ab";
     string p = ".*";
-    bool results = Solution().isMatch(s, p);
 
     bool expected = true;
-    BOOST_CHECK_EQUAL(results, expected);
+
+    REQUIRE( Solution().isMatch(s, p) == expected );
 }
 
-BOOST_AUTO_TEST_CASE(PlainTest4)
-{
+TEST_CASE( "Running solution test 4" ) {
     string s = "aab";
     string p = "c*a*b";
-    bool results = Solution().isMatch(s, p);
 
     bool expected = true;
-    BOOST_CHECK_EQUAL(results, expected);
+
+    REQUIRE( Solution().isMatch(s, p) == expected );
 }
 
-BOOST_AUTO_TEST_CASE(PlainTest5)
-{
+TEST_CASE( "Running solution test 5" ) {
     string s = "mississippi";
     string p = "mis*is*p*.";
-    bool results = Solution().isMatch(s, p);
 
     bool expected = false;
-    BOOST_CHECK_EQUAL(results, expected);
-}
 
-BOOST_AUTO_TEST_SUITE_END()
+    REQUIRE( Solution().isMatch(s, p) == expected );
+}

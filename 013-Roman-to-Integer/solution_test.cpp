@@ -1,64 +1,54 @@
-#define BOOST_TEST_MODULE SolutionTest
+#include <catch2/catch_test_macros.hpp>
+#include <catch2/matchers/catch_matchers_string.hpp>
+#include <catch2/matchers/catch_matchers_vector.hpp>
 
 #include "solution.hpp"
 
-//#define BOOST_TEST_DYN_LINK
-#include <boost/test/unit_test.hpp>
 
-BOOST_AUTO_TEST_SUITE(SolutionSuite)
-
-BOOST_AUTO_TEST_CASE(PlainTest1)
-{
+TEST_CASE( "Running solution test 1" ) {
     string roman = "III";
-    int results = Solution().romanToInt(roman);
 
     int expected = 3;
-    BOOST_CHECK_EQUAL(results, expected);
+
+    REQUIRE( Solution().romanToInt(roman) == expected );
 }
 
-BOOST_AUTO_TEST_CASE(PlainTest2)
-{
+TEST_CASE( "Running solution test 2" ) {
     string roman = "IV";
-    int results = Solution().romanToInt(roman);
 
     int expected = 4;
-    BOOST_CHECK_EQUAL(results, expected);
+
+    REQUIRE( Solution().romanToInt(roman) == expected );
 }
 
-BOOST_AUTO_TEST_CASE(PlainTest3)
-{
+TEST_CASE( "Running solution test 3" ) {
     string roman = "IX";
-    int results = Solution().romanToInt(roman);
 
     int expected = 9;
-    BOOST_CHECK_EQUAL(results, expected);
+
+    REQUIRE( Solution().romanToInt(roman) == expected );
 }
 
-BOOST_AUTO_TEST_CASE(PlainTest4)
-{
+TEST_CASE( "Running solution test 4" ) {
     string roman = "LVIII";
-    int results = Solution().romanToInt(roman);
 
     int expected = 58;
-    BOOST_CHECK_EQUAL(results, expected);
+
+    REQUIRE( Solution().romanToInt(roman) == expected );
 }
 
-BOOST_AUTO_TEST_CASE(PlainTest5)
-{
+TEST_CASE( "Running solution test 5" ) {
     string roman = "MCMXCIV";
-    int results = Solution().romanToInt(roman);
 
     int expected = 1994;
-    BOOST_CHECK_EQUAL(results, expected);
+
+    REQUIRE( Solution().romanToInt(roman) == expected );
 }
 
-BOOST_AUTO_TEST_CASE(PlainTest6)
-{
+TEST_CASE( "Running solution test 6" ) {
     string roman = "";
-    int results = Solution().romanToInt(roman);
 
     int expected = 0;
-    BOOST_CHECK_EQUAL(results, expected);
-}
 
-BOOST_AUTO_TEST_SUITE_END()
+    REQUIRE( Solution().romanToInt(roman) == expected );
+}

@@ -1,73 +1,62 @@
-#define BOOST_TEST_MODULE SolutionTest
+#include <catch2/catch_test_macros.hpp>
+#include <catch2/matchers/catch_matchers_string.hpp>
+#include <catch2/matchers/catch_matchers_vector.hpp>
 
 #include "solution.hpp"
 
-//#define BOOST_TEST_DYN_LINK
-#include <boost/test/unit_test.hpp>
 
-BOOST_AUTO_TEST_SUITE(SolutionSuite)
-
-BOOST_AUTO_TEST_CASE(PlainTest1)
-{
+TEST_CASE( "Running solution test 1" ) {
     string s = "()";
-    bool result = Solution().isValid(s);
 
     bool expected = true;
-    BOOST_CHECK_EQUAL(result, expected);
+
+    REQUIRE( Solution().isValid(s) == expected );
 }
 
-BOOST_AUTO_TEST_CASE(PlainTest2)
-{
+TEST_CASE( "Running solution test 2" ) {
     string s = "()[]{}";
-    bool result = Solution().isValid(s);
 
     bool expected = true;
-    BOOST_CHECK_EQUAL(result, expected);
+
+    REQUIRE( Solution().isValid(s) == expected );
 }
 
-BOOST_AUTO_TEST_CASE(PlainTest3)
-{
+TEST_CASE( "Running solution test 3" ) {
     string s = "(]";
-    bool result = Solution().isValid(s);
 
     bool expected = false;
-    BOOST_CHECK_EQUAL(result, expected);
+
+    REQUIRE( Solution().isValid(s) == expected );
 }
 
-BOOST_AUTO_TEST_CASE(PlainTest4)
-{
+TEST_CASE( "Running solution test 4" ) {
     string s = "([)]";
-    bool result = Solution().isValid(s);
 
     bool expected = false;
-    BOOST_CHECK_EQUAL(result, expected);
+
+    REQUIRE( Solution().isValid(s) == expected );
 }
 
-BOOST_AUTO_TEST_CASE(PlainTest5)
-{
+TEST_CASE( "Running solution test 5" ) {
     string s = "{[]}";
-    bool result = Solution().isValid(s);
 
     bool expected = true;
-    BOOST_CHECK_EQUAL(result, expected);
+
+    REQUIRE( Solution().isValid(s) == expected );
 }
 
-BOOST_AUTO_TEST_CASE(PlainTest6)
-{
+TEST_CASE( "Running solution test 6" ) {
     string s = "";
-    bool result = Solution().isValid(s);
 
     bool expected = true;
-    BOOST_CHECK_EQUAL(result, expected);
+
+    REQUIRE( Solution().isValid(s) == expected );
 }
 
-BOOST_AUTO_TEST_CASE(PlainTest7)
-{
+TEST_CASE( "Running solution test 7" ) {
     string s = "]";
-    bool result = Solution().isValid(s);
 
     bool expected = false;
-    BOOST_CHECK_EQUAL(result, expected);
-}
 
-BOOST_AUTO_TEST_SUITE_END()
+    REQUIRE( Solution().isValid(s) == expected );
+}

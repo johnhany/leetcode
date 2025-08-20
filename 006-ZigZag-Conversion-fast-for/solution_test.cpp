@@ -1,30 +1,24 @@
-#define BOOST_TEST_MODULE SolutionTest
+#include <catch2/catch_test_macros.hpp>
+#include <catch2/matchers/catch_matchers_string.hpp>
+#include <catch2/matchers/catch_matchers_vector.hpp>
 
 #include "solution.hpp"
 
-//#define BOOST_TEST_DYN_LINK
-#include <boost/test/unit_test.hpp>
 
-BOOST_AUTO_TEST_SUITE(SolutionSuite)
-
-BOOST_AUTO_TEST_CASE(PlainTest1)
-{
+TEST_CASE( "Running solution test 1" ) {
     string input = "PAYPALISHIRING";
     int numRows = 3;
-    string results = Solution().convert(input, numRows);
 
     string expected = "PAHNAPLSIIGYIR";
-    BOOST_CHECK_EQUAL(results, expected);
+
+    REQUIRE_THAT( Solution().convert(input, numRows), Catch::Matchers::Equals(expected) );
 }
 
-BOOST_AUTO_TEST_CASE(PlainTest2)
-{
+TEST_CASE( "Running solution test 2" ) {
     string input = "PAYPALISHIRING";
     int numRows = 4;
-    string results = Solution().convert(input, numRows);
 
     string expected = "PINALSIGYAHRPI";
-    BOOST_CHECK_EQUAL(results, expected);
-}
 
-BOOST_AUTO_TEST_SUITE_END()
+    REQUIRE_THAT( Solution().convert(input, numRows), Catch::Matchers::Equals(expected) );
+}

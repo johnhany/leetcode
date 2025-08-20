@@ -1,18 +1,18 @@
-# leetcode
+# leetcode C++高性能版
 
-Fast C++ solutions for [leetcode.com](https://leetcode.com) problems, with VS Code support for `CMake` building, `gdb`/`lldb` debugging, and `Boost` unit testing.
+[leetcode](https://leetcode.com)的C++高性能题解，追求运行时长99%+
 
-## Stats
+## 数据统计
 
-Top 100 liked: 78 / 100 ![78%](https://progress-bar.dev/76/?title=top)
+![](https://geps.dev/progress/78) Top100受欢迎题目: 78 / 100 已解决
 
-Top interviewed: 86 / 145 ![59%](https://progress-bar.dev/59/?title=top)
+![](https://geps.dev/progress/59) Top面试题目: 86 / 145 已解决
 
-In total: 159 / 2573 ![6%](https://progress-bar.dev/6/?title=total)
+![](https://geps.dev/progress/6) 总计: 159 / 2573 已解决
 
-**99.00%+** in running time: 105 / 159 ![66%](https://progress-bar.dev/63/?title=99%)
+![](https://geps.dev/progress/66) 运行时长**99%**以上的题解占比: 105 / 159
 
-## Solutions
+## 题解
 
 1. [Two Sum](https://leetcode.com/problems/two-sum/description/)
 
@@ -706,9 +706,9 @@ In total: 159 / 2573 ![6%](https://progress-bar.dev/6/?title=total)
 
 ------
 
-## Problem categories
+## 题目分类
 
-| Category | Problems |
+| 分类 | 题目编号 |
 | --- | --- |
 | Array / String | 1, 3, 6, 11, 14, 15, 16, 18, 20, 22, 26, 27, 28, 30, 31, 38, 41, 42, 44, 45, 48, 49, 54, 55, 56, 73, 75, 76, 80, 88, 125, 239, 283, 349, 350, 438, 567, 670, 832, 1838 |
 | Linked list | 2, 19, 21, 23, 24, 25, 61, 86, 92, 141, 142, 160, 206, 234, 876 |
@@ -722,73 +722,10 @@ In total: 159 / 2573 ![6%](https://progress-bar.dev/6/?title=total)
 
 ------
 
-## Environment
+## 开发环境
 
-- Ubuntu 21.10 / Manjaro 19.0 / Windows 10 / macOS Catalina 10.15.3
-- Visual Studio Code *with following extensions:*
-  - C/C++ ([ms-vscode.cpptools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools))
-  - C/C++ Clang Command Adapter ([mitaki28.vscode-clang](https://marketplace.visualstudio.com/items?itemName=llvm-vs-code-extensions.vscode-clangd)) (optional)
-  - CMake ([twxs.cmake](https://marketplace.visualstudio.com/items?itemName=twxs.cmake))
-  - CMake Tools ([vector-of-bool.cmake-tools](https://marketplace.visualstudio.com/items?itemName=vector-of-bool.cmake-tools))
-  - CodeLLDB ([vadimcn.vscode-lldb](https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb)) (optional)
+已经在以下环境测试通过：macOS Sequoia 15.6
 
-```bash
-sudo snap install --classic code
-sudo apt-get install pylint
-```
-
-- clang (used by default. You can use other tools as long as your `.vscode/c_cpp_properties.json` file is modified correctly)
-
-```bash
-wget -O - http://apt.llvm.org/llvm-snapshot.gpg.key|sudo apt-key add -
-sudo apt-get update
-sudo apt-get install clang-8 lldb-8
-```
-
-- CMake
-- Boost (for unit testing)
-
-```bash
-wget -O boost_1_70_0.tar.gz https://dl.bintray.com/boostorg/release/1.70.0/source/boost_1_70_0.tar.gz
-tar xzvf boost_1_70_0.tar.gz
-cd boost_1_70_0/
-
-sudo apt-get update
-sudo apt-get install build-essential g++ python-dev autotools-dev libicu-dev build-essential libbz2-dev libboost-all-dev
-
-./bootstrap.sh --prefix=/usr/
-./b2
-sudo ./b2 install
-```
-
-## Usage
-
-Each folder contains 3 files: `solution.hpp`, `solution.cpp` and `solution_test.cpp`. The first folder `001-Two-Sum` contains an additional `main.cpp` file, in case you don't feel like using unit testing and you can test your own cases in `main.cpp`.
-
-Add following lines to your `settings.json` to configure the building and linting:
-
-```json
-{
-    "clang.executable": "clang++",
-    "clang.cflags": ["c11"],
-    "clang.cxxflags": ["-std=c++17"],
-    "lldb.executable": "lldb"
-}
-```
-
-**Steps to build a solution:**
-
-1. Change the line `set(PROBLEM_NAME {Problem_Folder})` in `CMakeLists.txt` to choose the problem you want to solve, in which `{Problem_Folder}` is the folder name of the problem. For example, `set(PROBLEM_NAME "001-Two-Sum")`.
-2. Press `Ctrl` + `Shift` + `P` to bring up the Command Palette of VSCode. Type in `CMake`, and look for a `CMake: Configure` command, select it. It will configure the cache files and makefile which are located in `build` folder by default.
-3. Type in or look for a `CMake: Build` command in the Command Palette and execute it. It will compile the source codes of the solution that you previously chose.
-4. **Debug** Press  `Ctrl` + `Shift` + `D` or click the bug icon on the left. The `.vscode/launch.json` for debugging is already set up for you, and both GDB and LLDB is supported.
-
-    **gdb**: Choose `(gdb) Launch` and you're good to go.
-
-    **lldb**: Choose `(lldb) Launch`. You may need to disable and re-enable `ms-vscode.cpptools` and `mitaki28.vscode-clang` extensions in case the variables won't properly display in "Watch" Panel. Data visualization is supported ([https://github.com/vadimcn/vscode-lldb/wiki/Data-visualization](https://github.com/vadimcn/vscode-lldb/wiki/Data-visualization)).
-
-5. **Unit testing** Type in or look for a `CMake: Run tests` command in the Command Palette and execute it. It will run all test cases in `solution_test.cpp`. Feel free to add your own test cases.
-
-**Clear build folder:**
-
-1. Press `Ctrl` + `Shift` + `P` to bring up the Command Palette. Type in `Task: Run Task` and press `enter`. Choose `clean` will delete everything in the `build` folder. Bear in mind that you need to configure the project after cleaning the folder or switching to another solution, by either executing `Task: Run Task` -> `configure` or `CMake: Configure`.
+- Clang 17.0.0
+- CMake 4.1.0
+- Catch2 v3.9.1

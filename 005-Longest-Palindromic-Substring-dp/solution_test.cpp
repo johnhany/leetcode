@@ -1,41 +1,31 @@
-#define BOOST_TEST_MODULE SolutionTest
+#include <catch2/catch_test_macros.hpp>
+#include <catch2/matchers/catch_matchers_string.hpp>
+#include <catch2/matchers/catch_matchers_vector.hpp>
 
 #include "solution.hpp"
 
-//#define BOOST_TEST_DYN_LINK
-#include <boost/test/unit_test.hpp>
 
-BOOST_AUTO_TEST_SUITE(SolutionSuite)
-
-BOOST_AUTO_TEST_CASE(PlainTest1)
-{
+TEST_CASE( "Running solution test 1" ) {
     string input = "babad";
-    string results = Solution().longestPalindrome(input);
-    cout << results << endl;
 
     string expected1 = "bab";
     string expected2 = "aba";
-    BOOST_CHECK((results.compare(expected1) & results.compare(expected2)) == 0);
+
+    REQUIRE_THAT( Solution().longestPalindrome(input), Catch::Matchers::Equals(expected1) || Catch::Matchers::Equals(expected2) );
 }
 
-BOOST_AUTO_TEST_CASE(PlainTest2)
-{
+TEST_CASE( "Running solution test 2" ) {
     string input = "cbbd";
-    string results = Solution().longestPalindrome(input);
-    cout << results << endl;
 
     string expected1 = "bb";
-    BOOST_CHECK(results.compare(expected1) == 0);
+
+    REQUIRE_THAT( Solution().longestPalindrome(input), Catch::Matchers::Equals(expected1) );
 }
 
-BOOST_AUTO_TEST_CASE(PlainTest3)
-{
+TEST_CASE( "Running solution test 3" ) {
     string input = "ccc";
-    string results = Solution().longestPalindrome(input);
-    cout << results << endl;
 
     string expected1 = "ccc";
-    BOOST_CHECK(results.compare(expected1) == 0);
-}
 
-BOOST_AUTO_TEST_SUITE_END()
+    REQUIRE_THAT( Solution().longestPalindrome(input), Catch::Matchers::Equals(expected1) );
+}

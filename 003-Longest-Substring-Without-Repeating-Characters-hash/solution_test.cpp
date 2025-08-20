@@ -1,37 +1,30 @@
-#define BOOST_TEST_MODULE SolutionTest
+#include <catch2/catch_test_macros.hpp>
+#include <catch2/matchers/catch_matchers_string.hpp>
+#include <catch2/matchers/catch_matchers_vector.hpp>
 
 #include "solution.hpp"
 
-//#define BOOST_TEST_DYN_LINK
-#include <boost/test/unit_test.hpp>
 
-BOOST_AUTO_TEST_SUITE(SolutionSuite)
-
-BOOST_AUTO_TEST_CASE(PlainTest1)
-{
+TEST_CASE( "Running solution test 1" ) {
     string input = "abcabcbb";
-    int results = Solution().lengthOfLongestSubstring(input);
+
     int expected = 3;
 
-    BOOST_CHECK_EQUAL(results, expected);
+    REQUIRE( expected == Solution().lengthOfLongestSubstring(input) );
 }
 
-BOOST_AUTO_TEST_CASE(PlainTest2)
-{
+TEST_CASE( "Running solution test 2" ) {
     string input = "bbbbb";
-    int results = Solution().lengthOfLongestSubstring(input);
+
     int expected = 1;
 
-    BOOST_CHECK_EQUAL(results, expected);
+    REQUIRE( expected == Solution().lengthOfLongestSubstring(input) );
 }
 
-BOOST_AUTO_TEST_CASE(PlainTest3)
-{
+TEST_CASE( "Running solution test 3" ) {
     string input = "pwwkew";
-    int results = Solution().lengthOfLongestSubstring(input);
+
     int expected = 3;
 
-    BOOST_CHECK_EQUAL(results, expected);
+    REQUIRE( expected == Solution().lengthOfLongestSubstring(input) );
 }
-
-BOOST_AUTO_TEST_SUITE_END()
