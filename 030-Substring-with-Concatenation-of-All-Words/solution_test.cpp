@@ -1,75 +1,71 @@
-#define BOOST_TEST_MODULE SolutionTest
+#include <catch2/catch_test_macros.hpp>
+#include <catch2/matchers/catch_matchers_string.hpp>
+#include <catch2/matchers/catch_matchers_vector.hpp>
 
 #include "solution.hpp"
 
-//#define BOOST_TEST_DYN_LINK
-#include <boost/test/unit_test.hpp>
 
-BOOST_AUTO_TEST_SUITE(SolutionSuite)
-
-BOOST_AUTO_TEST_CASE(PlainTest1)
-{
+TEST_CASE( "Running solution test 1" ) {
     string s = "barfoothefoobarman";
     vector<string> words{
         "foo","bar"
     };
+
     vector<int> result = Solution().findSubstring(s, words);
 
     vector<int> expected{0, 9};
-    BOOST_CHECK_EQUAL(result.size(), expected.size());
-    BOOST_CHECK_EQUAL_COLLECTIONS(result.begin(), result.end(), expected.begin(), expected.end());
+
+    REQUIRE_THAT( expected, Catch::Matchers::Equals(result) );
 }
 
-BOOST_AUTO_TEST_CASE(PlainTest2)
-{
+TEST_CASE( "Running solution test 2" ) {
     string s = "wordgoodgoodgoodbestword";
     vector<string> words{
         "word","good","best","word"
     };
+
     vector<int> result = Solution().findSubstring(s, words);
 
     vector<int> expected{};
-    BOOST_CHECK_EQUAL(result.size(), expected.size());
-    BOOST_CHECK_EQUAL_COLLECTIONS(result.begin(), result.end(), expected.begin(), expected.end());
+
+    REQUIRE_THAT( expected, Catch::Matchers::Equals(result) );
 }
 
-BOOST_AUTO_TEST_CASE(PlainTest3)
-{
+TEST_CASE( "Running solution test 3" ) {
     string s = "foofoobarbar";
     vector<string> words{
         "foo","bar"
     };
+
     vector<int> result = Solution().findSubstring(s, words);
 
     vector<int> expected{3};
-    BOOST_CHECK_EQUAL(result.size(), expected.size());
-    BOOST_CHECK_EQUAL_COLLECTIONS(result.begin(), result.end(), expected.begin(), expected.end());
+
+    REQUIRE_THAT( expected, Catch::Matchers::Equals(result) );
 }
 
-BOOST_AUTO_TEST_CASE(PlainTest4)
-{
+TEST_CASE( "Running solution test 4" ) {
     string s = "barfoofoobarthefoobarman";
     vector<string> words{
         "bar","foo","the"
     };
+
     vector<int> result = Solution().findSubstring(s, words);
 
     vector<int> expected{6, 9, 12};
-    BOOST_CHECK_EQUAL(result.size(), expected.size());
-    BOOST_CHECK_EQUAL_COLLECTIONS(result.begin(), result.end(), expected.begin(), expected.end());
+
+    REQUIRE_THAT( expected, Catch::Matchers::Equals(result) );
 }
 
-BOOST_AUTO_TEST_CASE(PlainTest5)
-{
+TEST_CASE( "Running solution test 5" ) {
     string s = "wordgoodgoodgoodbestword";
     vector<string> words{
         "word","good","best","good"
     };
+
     vector<int> result = Solution().findSubstring(s, words);
 
     vector<int> expected{8};
-    BOOST_CHECK_EQUAL(result.size(), expected.size());
-    BOOST_CHECK_EQUAL_COLLECTIONS(result.begin(), result.end(), expected.begin(), expected.end());
-}
 
-BOOST_AUTO_TEST_SUITE_END()
+    REQUIRE_THAT( expected, Catch::Matchers::Equals(result) );
+}

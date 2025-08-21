@@ -10,7 +10,7 @@
 
 ![](https://geps.dev/progress/6) 总计: 159 / 2573 已解决
 
-![](https://geps.dev/progress/66) 运行时长**99%**以上的题解占比: 105 / 159
+![](https://geps.dev/progress/66) 运行时长 **99%** 以上的题解占比: 105 / 159
 
 ## 题解
 

@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.30)
 project(leetcode)
 
-set(PROBLEM_NAME "020-Valid-Parentheses-lookup-table")
+set(PROBLEM_NAME "040-Combination-Sum-II")
 
 set(CMAKE_CXX_STANDARD 20)
 

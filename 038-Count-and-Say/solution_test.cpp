@@ -1,100 +1,96 @@
-#define BOOST_TEST_MODULE SolutionTest
+#include <catch2/catch_test_macros.hpp>
+#include <catch2/matchers/catch_matchers_string.hpp>
+#include <catch2/matchers/catch_matchers_vector.hpp>
 
 #include "solution.hpp"
 
-//#define BOOST_TEST_DYN_LINK
-#include <boost/test/unit_test.hpp>
 
-BOOST_AUTO_TEST_SUITE(SolutionSuite)
-
-BOOST_AUTO_TEST_CASE(PlainTest1)
-{
+TEST_CASE( "Running solution test 1" ) {
     int n = 1;
     string result = Solution().countAndSay(n);
 
     string expected = "1";
-    BOOST_CHECK_EQUAL(result, expected);
+
+    REQUIRE_THAT( expected, Catch::Matchers::Equals(result) );
 }
 
-BOOST_AUTO_TEST_CASE(PlainTest2)
-{
+TEST_CASE( "Running solution test 2" ) {
     int n = 2;
     string result = Solution().countAndSay(n);
 
     string expected = "11";
-    BOOST_CHECK_EQUAL(result, expected);
+
+    REQUIRE_THAT( expected, Catch::Matchers::Equals(result) );
 }
 
-BOOST_AUTO_TEST_CASE(PlainTest3)
-{
+TEST_CASE( "Running solution test 3" ) {
     int n = 3;
     string result = Solution().countAndSay(n);
 
     string expected = "21";
-    BOOST_CHECK_EQUAL(result, expected);
+
+    REQUIRE_THAT( expected, Catch::Matchers::Equals(result) );
 }
 
-BOOST_AUTO_TEST_CASE(PlainTest4)
-{
+TEST_CASE( "Running solution test 4" ) {
     int n = 4;
     string result = Solution().countAndSay(n);
 
     string expected = "1211";
-    BOOST_CHECK_EQUAL(result, expected);
+
+    REQUIRE_THAT( expected, Catch::Matchers::Equals(result) );
 }
 
-BOOST_AUTO_TEST_CASE(PlainTest5)
-{
+TEST_CASE( "Running solution test 5" ) {
     int n = 5;
     string result = Solution().countAndSay(n);
 
     string expected = "111221";
-    BOOST_CHECK_EQUAL(result, expected);
+
+    REQUIRE_THAT( expected, Catch::Matchers::Equals(result) );
 }
 
-BOOST_AUTO_TEST_CASE(PlainTest6)
-{
+TEST_CASE( "Running solution test 6" ) {
     int n = 6;
     string result = Solution().countAndSay(n);
 
     string expected = "312211";
-    BOOST_CHECK_EQUAL(result, expected);
+
+    REQUIRE_THAT( expected, Catch::Matchers::Equals(result) );
 }
 
-BOOST_AUTO_TEST_CASE(PlainTest7)
-{
+TEST_CASE( "Running solution test 7" ) {
     int n = 7;
     string result = Solution().countAndSay(n);
 
     string expected = "13112221";
-    BOOST_CHECK_EQUAL(result, expected);
+
+    REQUIRE_THAT( expected, Catch::Matchers::Equals(result) );
 }
 
-BOOST_AUTO_TEST_CASE(PlainTest8)
-{
+TEST_CASE( "Running solution test 8" ) {
     int n = 8;
     string result = Solution().countAndSay(n);
 
     string expected = "1113213211";
-    BOOST_CHECK_EQUAL(result, expected);
+
+    REQUIRE_THAT( expected, Catch::Matchers::Equals(result) );
 }
 
-BOOST_AUTO_TEST_CASE(PlainTest9)
-{
+TEST_CASE( "Running solution test 9" ) {
     int n = 9;
     string result = Solution().countAndSay(n);
 
     string expected = "31131211131221";
-    BOOST_CHECK_EQUAL(result, expected);
+
+    REQUIRE_THAT( expected, Catch::Matchers::Equals(result) );
 }
 
-BOOST_AUTO_TEST_CASE(PlainTest10)
-{
+TEST_CASE( "Running solution test 10" ) {
     int n = 10;
     string result = Solution().countAndSay(n);
 
     string expected = "13211311123113112211";
-    BOOST_CHECK_EQUAL(result, expected);
-}
 
-BOOST_AUTO_TEST_SUITE_END()
+    REQUIRE_THAT( expected, Catch::Matchers::Equals(result) );
+}

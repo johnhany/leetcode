@@ -1,9 +1,9 @@
-#define BOOST_TEST_MODULE SolutionTest
+#include <catch2/catch_test_macros.hpp>
+#include <catch2/matchers/catch_matchers_string.hpp>
+#include <catch2/matchers/catch_matchers_vector.hpp>
 
 #include "solution.hpp"
 
-//#define BOOST_TEST_DYN_LINK
-#include <boost/test/unit_test.hpp>
 
 struct less_than_key {
     inline bool operator() (const vector<int>& vec1, const vector<int>& vec2) {
@@ -21,10 +21,7 @@ struct less_than_key {
     }
 };
 
-BOOST_AUTO_TEST_SUITE(SolutionSuite)
-
-BOOST_AUTO_TEST_CASE(PlainTest1)
-{
+TEST_CASE( "Running solution test 1" ) {
     vector<int> candidates{2,3,6,7};
     int target = 7;
     vector<vector<int>> result = Solution().combinationSum(candidates, target);
@@ -33,11 +30,11 @@ BOOST_AUTO_TEST_CASE(PlainTest1)
         {7},
         {2,2,3}
     };
-    BOOST_CHECK_EQUAL(result.size(), expected.size());
+
     sort(result.begin(), result.end(), less_than_key());
     sort(expected.begin(), expected.end(), less_than_key());
-    for (int i = 0; i < result.size(); i++)
-        BOOST_CHECK_EQUAL_COLLECTIONS(result[i].begin(), result[i].end(), expected[i].begin(), expected[i].end());
-}
 
-BOOST_AUTO_TEST_SUITE_END()
+    for (int i = 0; i < result.size(); i++) {
+        REQUIRE_THAT( expected[i], Catch::Matchers::Equals(result[i]) );
+    }
+}

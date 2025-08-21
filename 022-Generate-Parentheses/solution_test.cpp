@@ -1,14 +1,11 @@
-#define BOOST_TEST_MODULE SolutionTest
+#include <catch2/catch_test_macros.hpp>
+#include <catch2/matchers/catch_matchers_string.hpp>
+#include <catch2/matchers/catch_matchers_vector.hpp>
 
 #include "solution.hpp"
 
-//#define BOOST_TEST_DYN_LINK
-#include <boost/test/unit_test.hpp>
 
-BOOST_AUTO_TEST_SUITE(SolutionSuite)
-
-BOOST_AUTO_TEST_CASE(PlainTest1)
-{
+TEST_CASE( "Running solution test 1" ) {
     int n = 3;
     vector<string> result = Solution().generateParenthesis(n);
 
@@ -19,22 +16,25 @@ BOOST_AUTO_TEST_CASE(PlainTest1)
         "()(())",
         "()()()"
     };
-    BOOST_CHECK_EQUAL(result.size(), expected.size());
+
     sort(result.begin(), result.end());
     sort(expected.begin(), expected.end());
-    BOOST_CHECK_EQUAL_COLLECTIONS(result.begin(), result.end(), expected.begin(), expected.end());
+
+    REQUIRE( result.size() == expected.size() );
+
+    REQUIRE_THAT( result, Catch::Matchers::Equals(expected) );
 }
 
-BOOST_AUTO_TEST_CASE(PlainTest2)
-{
+TEST_CASE( "Running solution test 2" ) {
     int n = 0;
     vector<string> result = Solution().generateParenthesis(n);
 
     vector<string> expected{};
-    BOOST_CHECK_EQUAL(result.size(), expected.size());
+
     sort(result.begin(), result.end());
     sort(expected.begin(), expected.end());
-    BOOST_CHECK_EQUAL_COLLECTIONS(result.begin(), result.end(), expected.begin(), expected.end());
-}
 
-BOOST_AUTO_TEST_SUITE_END()
+    REQUIRE( result.size() == expected.size() );
+
+    REQUIRE_THAT( result, Catch::Matchers::Equals(expected) );
+}

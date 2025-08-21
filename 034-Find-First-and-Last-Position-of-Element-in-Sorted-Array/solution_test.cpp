@@ -1,76 +1,72 @@
-#define BOOST_TEST_MODULE SolutionTest
+#include <catch2/catch_test_macros.hpp>
+#include <catch2/matchers/catch_matchers_string.hpp>
+#include <catch2/matchers/catch_matchers_vector.hpp>
 
 #include "solution.hpp"
 
-//#define BOOST_TEST_DYN_LINK
-#include <boost/test/unit_test.hpp>
 
-BOOST_AUTO_TEST_SUITE(SolutionSuite)
-
-BOOST_AUTO_TEST_CASE(PlainTest1)
-{
+TEST_CASE( "Running solution test 1" ) {
     vector<int> nums{5,7,7,8,8,10};
     int target = 8;
+
     vector<int> result = Solution().searchRange(nums, target);
 
     vector<int> expected{3,4};
-    BOOST_CHECK_EQUAL_COLLECTIONS(result.begin(), result.end(),
-                                  expected.begin(), expected.end());
+
+    REQUIRE_THAT( expected, Catch::Matchers::Equals(result) );
 }
 
-BOOST_AUTO_TEST_CASE(PlainTest2)
-{
+TEST_CASE( "Running solution test 2" ) {
     vector<int> nums{5,7,7,8,8,10};
     int target = 6;
+
     vector<int> result = Solution().searchRange(nums, target);
 
     vector<int> expected{-1,-1};
-    BOOST_CHECK_EQUAL_COLLECTIONS(result.begin(), result.end(),
-                                  expected.begin(), expected.end());
+
+    REQUIRE_THAT( expected, Catch::Matchers::Equals(result) );
 }
 
-BOOST_AUTO_TEST_CASE(PlainTest3)
-{
+TEST_CASE( "Running solution test 3" ) {
     vector<int> nums{5,7,7,8,8,10};
     int target = 4;
+
     vector<int> result = Solution().searchRange(nums, target);
 
     vector<int> expected{-1,-1};
-    BOOST_CHECK_EQUAL_COLLECTIONS(result.begin(), result.end(),
-                                  expected.begin(), expected.end());
+
+    REQUIRE_THAT( expected, Catch::Matchers::Equals(result) );
 }
 
-BOOST_AUTO_TEST_CASE(PlainTest4)
-{
+TEST_CASE( "Running solution test 4" ) {
     vector<int> nums{5,7,7,8,8,10};
     int target = 11;
+
     vector<int> result = Solution().searchRange(nums, target);
 
     vector<int> expected{-1,-1};
-    BOOST_CHECK_EQUAL_COLLECTIONS(result.begin(), result.end(),
-                                  expected.begin(), expected.end());
+
+    REQUIRE_THAT( expected, Catch::Matchers::Equals(result) );
 }
 
-BOOST_AUTO_TEST_CASE(PlainTest5)
-{
+TEST_CASE( "Running solution test 5" ) {
     vector<int> nums{5,5,5};
     int target = 5;
+
     vector<int> result = Solution().searchRange(nums, target);
 
     vector<int> expected{0,2};
-    BOOST_CHECK_EQUAL_COLLECTIONS(result.begin(), result.end(),
-                                  expected.begin(), expected.end());
+
+    REQUIRE_THAT( expected, Catch::Matchers::Equals(result) );
 }
 
-BOOST_AUTO_TEST_CASE(PlainTest6)
-{
+TEST_CASE( "Running solution test 6" ) {
     vector<int> nums{5,5,5};
     int target = 4;
+
     vector<int> result = Solution().searchRange(nums, target);
 
     vector<int> expected{-1,-1};
-    BOOST_CHECK_EQUAL_COLLECTIONS(result.begin(), result.end(),
-                                  expected.begin(), expected.end());
-}
 
-BOOST_AUTO_TEST_SUITE_END()
+    REQUIRE_THAT( expected, Catch::Matchers::Equals(result) );
+}
