@@ -1,14 +1,6 @@
 #include "solution.hpp"
 #include <cmath>
 
-static auto x = []() {
-	// turn off sync
-	std::ios::sync_with_stdio(false);
-	// untie in/out streams
-	cin.tie(NULL);
-	return 0;
-}();
-
 
 bool Solution::searchMatrix(vector<vector<int>>& matrix, int target) {
 	if (matrix.empty() || matrix[0].empty()) return false;

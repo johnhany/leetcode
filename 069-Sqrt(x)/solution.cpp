@@ -1,13 +1,5 @@
 #include "solution.hpp"
 
-static auto x = []() {
-	// turn off sync
-	std::ios::sync_with_stdio(false);
-	// untie in/out streams
-	cin.tie(NULL);
-	return 0;
-}();
-
 int Solution::mySqrt(int x) {
     if (x == 0 || x == 1) {
         return x;

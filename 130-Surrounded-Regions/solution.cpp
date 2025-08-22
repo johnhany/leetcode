@@ -1,13 +1,5 @@
 #include "solution.hpp"
 
-static auto x = []() {
-	// turn off sync
-	std::ios::sync_with_stdio(false);
-	// untie in/out streams
-	cin.tie(NULL);
-	return 0;
-}();
-
 
 void Solution::flood(vector<vector<char>>& board, int x, int y, int rows, int cols) {
 	if (x<0 || x>=rows || y<0 || y>=cols || board[x][y] != 'O')

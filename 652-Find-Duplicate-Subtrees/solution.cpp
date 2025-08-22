@@ -1,13 +1,5 @@
 #include "solution.hpp"
 
-static auto x = []() {
-	// turn off sync
-	std::ios::sync_with_stdio(false);
-	// untie in/out streams
-	cin.tie(NULL);
-	return 0;
-}();
-
 // https://leetcode-cn.com/problems/find-duplicate-subtrees/solution/hou-xu-bian-li-xu-lie-hua-hashcun-chu-by-k940/
 
 string Solution::subSearch(TreeNode* root) {

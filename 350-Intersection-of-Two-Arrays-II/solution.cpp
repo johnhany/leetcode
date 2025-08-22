@@ -1,14 +1,6 @@
 #include "solution.hpp"
 #include <cmath>
 
-static auto x = []() {
-	// turn off sync
-	std::ios::sync_with_stdio(false);
-	// untie in/out streams
-	cin.tie(NULL);
-	return 0;
-}();
-
 
 vector<int> Solution::intersection(vector<int>& nums1, vector<int>& nums2) {
 	if (nums1.size() > nums2.size())

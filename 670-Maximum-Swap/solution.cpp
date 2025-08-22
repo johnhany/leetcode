@@ -1,13 +1,5 @@
 #include "solution.hpp"
 
-static auto x = []() {
-	// turn off sync
-	std::ios::sync_with_stdio(false);
-	// untie in/out streams
-	cin.tie(NULL);
-	return 0;
-}();
-
 
 // https://leetcode-cn.com/problems/maximum-swap/solution/tan-xin-zhao-shen-hou-zui-da-zhi-suo-zai-9pyw/
 

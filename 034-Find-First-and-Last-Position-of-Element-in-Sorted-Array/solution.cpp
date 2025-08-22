@@ -1,13 +1,5 @@
 #include "solution.hpp"
 
-static auto x = []() {
-	// turn off sync
-	std::ios::sync_with_stdio(false);
-	// untie in/out streams
-	cin.tie(NULL);
-	return 0;
-}();
-
 vector<int> Solution::searchRange(vector<int>& nums, int target) {
 	if (nums.empty()) return vector<int>{-1, -1};
 	int low = subsearch(nums, (float)target-0.5, 0, nums.size()-1);

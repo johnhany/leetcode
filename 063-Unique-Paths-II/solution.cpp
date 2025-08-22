@@ -1,13 +1,5 @@
 #include "solution.hpp"
 
-static auto x = []() {
-	// turn off sync
-	std::ios::sync_with_stdio(false);
-	// untie in/out streams
-	cin.tie(NULL);
-	return 0;
-}();
-
 int Solution::uniquePathsWithObstacles(vector<vector<int>>& obstacleGrid) {
     int n = obstacleGrid.size(), m = obstacleGrid[0].size();
     if (obstacleGrid[n-1][m-1] || obstacleGrid[0][0])

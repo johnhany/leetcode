@@ -1,13 +1,5 @@
 #include "solution.hpp"
 
-static auto x = []() {
-	// turn off sync
-	std::ios::sync_with_stdio(false);
-	// untie in/out streams
-	cin.tie(NULL);
-	return 0;
-}();
-
 
 double Solution::findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
 	if ((nums1.size() + nums2.size()) % 2 == 1) {

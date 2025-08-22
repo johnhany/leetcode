@@ -1,13 +1,5 @@
 #include "solution.hpp"
 
-static auto x = []() {
-	// turn off sync
-	std::ios::sync_with_stdio(false);
-	// untie in/out streams
-	cin.tie(NULL);
-	return 0;
-}();
-
 int Solution::minRefuelStops(int target, int startFuel, vector<vector<int>>& stations) {
 	if(startFuel>=target)
         return 0;

@@ -1,13 +1,5 @@
 #include "solution.hpp"
 
-static auto x = []() {
-	// turn off sync
-	std::ios::sync_with_stdio(false);
-	// untie in/out streams
-	cin.tie(NULL);
-	return 0;
-}();
-
 int Solution::removeElement(vector<int>& nums, int val) {
 	if (nums.empty()) return 0;
 	int start = 0, end = nums.size()-1;

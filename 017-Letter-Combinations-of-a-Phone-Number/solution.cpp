@@ -1,13 +1,5 @@
 #include "solution.hpp"
 
-static auto x = []() {
-	// turn off sync
-	std::ios::sync_with_stdio(false);
-	// untie in/out streams
-	cin.tie(NULL);
-	return 0;
-}();
-
 vector<string> Solution::letterCombinations(string digits) {
 	map<int, vector<char>> phone;
 	for (int i = 2, lt = 0; i < 10; i++) {

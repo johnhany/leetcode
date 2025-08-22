@@ -1,14 +1,6 @@
 #include "solution.hpp"
 #include <bitset>
 
-static auto x = []() {
-	// turn off sync
-	std::ios::sync_with_stdio(false);
-	// untie in/out streams
-	cin.tie(NULL);
-	return 0;
-}();
-
 
 vector<string> Solution::findRepeatedDnaSequences(string s) {
 	const ui32 n = s.size();

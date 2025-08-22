@@ -1,13 +1,5 @@
 #include "solution.hpp"
 
-static auto x = []() {
-	// turn off sync
-	std::ios::sync_with_stdio(false);
-	// untie in/out streams
-	cin.tie(NULL);
-	return 0;
-}();
-
 bool Solution::exist(vector<vector<char>>& board, string word) {
 	if (board.empty() || word.empty()) return false;
 	int h = board.size(), w = board[0].size();

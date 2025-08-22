@@ -1,13 +1,5 @@
 #include "solution.hpp"
 
-static auto x = []() {
-	// turn off sync
-	std::ios::sync_with_stdio(false);
-	// untie in/out streams
-	cin.tie(NULL);
-	return 0;
-}();
-
 
 int Solution::findKthLargest(vector<int>& nums, int k) {
 	return quickSortKthElement(nums, k, 0, nums.size() - 1);    // 快排整个区间

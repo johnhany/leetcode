@@ -1,13 +1,5 @@
 #include "solution.hpp"
 
-static auto x = []() {
-	// turn off sync
-	std::ios::sync_with_stdio(false);
-	// untie in/out streams
-	cin.tie(NULL);
-	return 0;
-}();
-
 void Solution::solveSudoku(vector<vector<char>>& board) {
 	vector<vector<int>> row(9, vector<int>(9, 0)), col(9, vector<int>(9, 0)), block(9, vector<int>(9, 0));
 	for (int i = 0; i < 9; i++) {

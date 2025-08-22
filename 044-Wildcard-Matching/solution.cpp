@@ -1,13 +1,5 @@
 #include "solution.hpp"
 
-static auto x = []() {
-	// turn off sync
-	std::ios::sync_with_stdio(false);
-	// untie in/out streams
-	cin.tie(NULL);
-	return 0;
-}();
-
 bool Solution::isMatch(string s, string p) {
 	int pidx = -1, sidx = -1;
 	int i = 0, j = 0;

@@ -1,14 +1,6 @@
 #include "solution.hpp"
 #include <cmath>
 
-static auto x = []() {
-	// turn off sync
-	std::ios::sync_with_stdio(false);
-	// untie in/out streams
-	cin.tie(NULL);
-	return 0;
-}();
-
 
 void Solution::DFS(string& s, int left, int right, int idx, vector<string>& rst, string& path) {
 	if (right > left) return;

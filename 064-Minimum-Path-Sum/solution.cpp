@@ -1,13 +1,5 @@
 #include "solution.hpp"
 
-static auto x = []() {
-	// turn off sync
-	std::ios::sync_with_stdio(false);
-	// untie in/out streams
-	cin.tie(NULL);
-	return 0;
-}();
-
 int Solution::minPathSum(vector<vector<int>>& grid) {
     if (grid.empty() || grid[0].empty()) return 0;
     int n = grid.size(), m = grid[0].size();

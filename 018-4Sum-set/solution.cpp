@@ -1,13 +1,5 @@
 #include "solution.hpp"
 
-static auto x = []() {
-	// turn off sync
-	std::ios::sync_with_stdio(false);
-	// untie in/out streams
-	cin.tie(NULL);
-	return 0;
-}();
-
 vector<vector<int>> Solution::fourSum(vector<int>& nums, int target) {
 	set<vector<int>> res;
 	sort(nums.begin(), nums.end());

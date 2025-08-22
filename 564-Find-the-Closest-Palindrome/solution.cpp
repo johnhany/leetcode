@@ -1,13 +1,5 @@
 #include "solution.hpp"
 
-static auto x = []() {
-	// turn off sync
-	std::ios::sync_with_stdio(false);
-	// untie in/out streams
-	cin.tie(NULL);
-	return 0;
-}();
-
 
 // https://leetcode-cn.com/problems/find-the-closest-palindrome/solution/qu-zi-fu-chuan-zuo-ban-bian-kao-lu-10-1san-chong-q/
 

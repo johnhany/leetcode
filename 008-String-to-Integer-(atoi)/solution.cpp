@@ -1,14 +1,6 @@
 #include "solution.hpp"
 #include <limits.h>
 
-static auto x = []() {
-	// turn off sync
-	std::ios::sync_with_stdio(false);
-	// untie in/out streams
-	cin.tie(NULL);
-	return 0;
-}();
-
 
 int Solution::myAtoi(string s) {
 	int n = s.length();

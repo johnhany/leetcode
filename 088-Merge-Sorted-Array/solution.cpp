@@ -1,13 +1,5 @@
 #include "solution.hpp"
 
-static auto x = []() {
-	// turn off sync
-	std::ios::sync_with_stdio(false);
-	// untie in/out streams
-	cin.tie(NULL);
-	return 0;
-}();
-
 void Solution::merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
 	if (nums1.empty() || m == 0) {
 		nums1 = nums2;

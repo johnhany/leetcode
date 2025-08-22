@@ -1,13 +1,5 @@
 #include "solution.hpp"
 
-static auto x = []() {
-	// turn off sync
-	std::ios::sync_with_stdio(false);
-	// untie in/out streams
-	cin.tie(NULL);
-	return 0;
-}();
-
 ListNode* Solution::mergeTwoLists(ListNode* list1, ListNode* list2) {
 	if (list1 == nullptr)
 		return list2;

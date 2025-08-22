@@ -1,13 +1,5 @@
 #include "solution.hpp"
 
-static auto x = []() {
-	// turn off sync
-	std::ios::sync_with_stdio(false);
-	// untie in/out streams
-	cin.tie(NULL);
-	return 0;
-}();
-
 vector<int> Solution::spiralOrder(vector<vector<int>>& matrix) {
 	int rows = matrix.size(), cols = matrix[0].size();
     int n = (rows+1)/2, m = (cols+1)/2;

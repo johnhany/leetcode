@@ -1,13 +1,5 @@
 #include "solution.hpp"
 
-static auto x = []() {
-	// turn off sync
-	std::ios::sync_with_stdio(false);
-	// untie in/out streams
-	cin.tie(NULL);
-	return 0;
-}();
-
 vector<vector<string>> Solution::groupAnagrams(vector<string>& strs) {
 	unordered_map<string, vector<string>> table;
 	for (string& s : strs) {

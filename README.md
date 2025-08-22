@@ -1,6 +1,8 @@
 # leetcode C++高性能版
 
-[leetcode](https://leetcode.com)的C++高性能题解，追求运行时长99%+
+[leetcode](https://leetcode.com)的C++高性能题解，追求运行时长top 99%+
+
+![img/image.png](img/image.png)
 
 ## 数据统计
 
@@ -10,17 +12,17 @@
 
 ![](https://geps.dev/progress/6) 总计: 159 / 2573 已解决
 
-![](https://geps.dev/progress/66) 运行时长 **99%** 以上的题解占比: 105 / 159
+![](https://geps.dev/progress/66) 运行时长 **99%** 以上的题解占比: 108 / 159
 
 ## 题解
 
 1. [Two Sum](https://leetcode.com/problems/two-sum/description/)
 
-- Hash table (unorderd_map): [4ms](https://leetcode.com/submissions/detail/623954988/) **(top 99.54%)**
+- Hash table (unorderd_map): [0ms](https://leetcode.com/problems/two-sum/submissions/1743444479/) **(top 100.00%)**
 
 2. [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/)
 
-- Linked list: [16ms](https://leetcode.com/submissions/detail/162239592/) **(top 100.00%)**
+- Linked list: [0ms](https://leetcode.com/problems/add-two-numbers/submissions/1744458758/) **(top 100.00%)**
 
 3. [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
 
@@ -28,18 +30,18 @@
 
 4. [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)
 
-- Non-recursive: [35 ms](https://leetcode.com/submissions/detail/625257120/) (top 63.25%)
-- Recursion: [16 ms](https://leetcode.com/submissions/detail/162238879/) **(top 100.00%)**
+- Non-recursive: [0ms](https://leetcode.com/problems/median-of-two-sorted-arrays/submissions/1744462906/) **(top 100.00%)**
+- Recursion: [0ms](https://leetcode.com/problems/median-of-two-sorted-arrays/submissions/1744461258/) **(top 100.00%)**
 
 5. [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
 
-- Brutal force: [9ms](https://leetcode.com/submissions/detail/625311843/) (top 94.73%)
+- Brute force: [0ms](https://leetcode.com/problems/longest-palindromic-substring/submissions/1744465370/) **(top 100.00%)**
 - Manacher's algorithm: [0ms](https://leetcode.com/submissions/detail/163268305/) **(top 100.00%)**
 
 6. [ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/)
 
-- Brutal force: [40ms](https://leetcode.com/submissions/detail/163403986/) (top 55.26%)
-- Fast for-loop: [8ms](https://leetcode.com/submissions/detail/163405430/) **(top 100.00%)**
+- Brute force: [31ms](https://leetcode.com/problems/zigzag-conversion/submissions/1744467555/) (top 11.68%)
+- Fast for-loop: [0ms](https://leetcode.com/problems/zigzag-conversion/submissions/1744468546/) **(top 100.00%)**
 
 7. [Reverse Integer](https://leetcode.com/problems/reverse-integer/)
 
@@ -51,47 +53,47 @@
 
 9. [Palindrome Number](https://leetcode.com/problems/palindrome-number/)
 
-- Lookup table: [52ms](https://leetcode.com/submissions/detail/163427855/) **(top 100.00%)**
+- Lookup table: [0ms](https://leetcode.com/problems/palindrome-number/submissions/1744470289/) **(top 100.00%)**
 
 10. [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/)
 
-- Dynamic programming: [4ms](https://leetcode.com/submissions/detail/163443067/) **(top 100.00%)**
+- Dynamic programming: [0ms](https://leetcode.com/problems/regular-expression-matching/submissions/1744471585/) **(top 100.00%)**
 
 11. [Container With Most Water](https://leetcode.com/problems/container-with-most-water/)
 
-- Two pointers: [12ms](https://leetcode.com/submissions/detail/207126145/) **(top 100.00%)**
+- Two pointers: [0ms](https://leetcode.com/problems/container-with-most-water/submissions/1744473200/) **(top 100.00%)**
 
 12. [Integer to Roman](https://leetcode.com/problems/integer-to-roman/)
 
-- Two arrays: [28ms](https://leetcode.com/submissions/detail/207183826/) (top 99.20%)
-- Lookup table: [28ms](https://leetcode.com/submissions/detail/207184862/) **(top 99.20%)**
+- Two arrays: [0ms](https://leetcode.com/problems/integer-to-roman/submissions/1744474752/) **(top 100.00%)**
+- Lookup table: [0ms](https://leetcode.com/problems/integer-to-roman/submissions/1744475813/) **(top 100.00%)**
 
 13. [Roman to Integer](https://leetcode.com/problems/roman-to-integer/)
 
-- [10ms](https://leetcode.com/submissions/detail/625403716/) (top 67.12%)
-- Map: [44ms](https://leetcode.com/submissions/detail/208111358/) (top 97.72%)
+- [0ms](https://leetcode.com/problems/roman-to-integer/submissions/1744478202/) **(top 100.00%)**
+- Map: [3ms](https://leetcode.com/problems/roman-to-integer/submissions/1744481945/) (top 75.78%)
 
 14.  [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)
 
-- [4ms](https://leetcode.com/submissions/detail/208296888/) **(top 100.00%)**
+- [0ms](https://leetcode.com/problems/longest-common-prefix/submissions/1744485165/) **(top 100.00%)**
 
 15. [3Sum](https://leetcode.com/problems/3sum/)
 
-- Two pointers: [112ms](https://leetcode.com/submissions/detail/208704228/) **(top 99.88%)**
+- Two pointers: [31ms](https://leetcode.com/problems/3sum/submissions/1744487682/) **(top 99.17%)**
 
 16. [3Sum Closest](https://leetcode.com/problems/3sum-closest/)
 
-- Two pointers: [8ms](https://leetcode.com/submissions/detail/208717787/) **(top 100.00%)**
+- Two pointers: [5ms](https://leetcode.com/problems/3sum-closest/submissions/1744497480/) (top 93.93%)
 
 17. [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)
 
-- Deque: [4ms](https://leetcode.com/submissions/detail/208767129/) **(top 100.00%)**
+- Deque: [0ms](https://leetcode.com/problems/letter-combinations-of-a-phone-number/submissions/1744500143/) **(top 100.00%)**
 - DFS: [0ms](https://leetcode.com/submissions/detail/625909390/) **(top 100.00%)**
 
 18. [4Sum](https://leetcode.com/problems/4sum/)
 
-- Set: [40ms](https://leetcode.com/submissions/detail/208778417/) (top 82.57%)
-- Fast for-loop: [7ms](https://leetcode.com/problems/4sum/submissions/901364337/) **(top 99.16%)**
+- Set: [35ms](https://leetcode.com/problems/4sum/submissions/1744504101/) (top 16.53%)
+- Fast for-loop: [0ms](https://leetcode.com/problems/4sum/submissions/1744501884/) **(top 100.00%)**
 
 19. [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)
 
@@ -99,11 +101,12 @@
 
 20. [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)
 
-- Stack: [4ms](https://leetcode.com/submissions/detail/208788918/) **(top 100.00%)**
+- Stack: [0ms](https://leetcode.com/problems/valid-parentheses/submissions/1744507576/) **(top 100.00%)**
+- Lookup table: [0ms](https://leetcode.com/problems/valid-parentheses/submissions/1744508432/) **(top 100.00%)**
 
 21. [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)
 
-- Two swaps: [12ms](https://leetcode.com/submissions/detail/209094239/) **(top 100.00%)**
+- Two swaps: [0ms](https://leetcode.com/problems/merge-two-sorted-lists/submissions/1744509502/) **(top 100.00%)**
 
 22. [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)
 
@@ -112,8 +115,8 @@
 
 23. [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)
 
-- Use 021: [16ms](https://leetcode.com/submissions/detail/626027420/) (top 98.02%)
-- Priority queue: [32ms](https://leetcode.com/submissions/detail/209600116/) (top 98.10%)
+- Use 021: [0ms](https://leetcode.com/problems/merge-k-sorted-lists/submissions/1744511229/) **(top 100.00%)**
+- Priority queue: [0ms](https://leetcode.com/problems/merge-k-sorted-lists/submissions/1744512697/) **(top 100.00%)**
 
 24. [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/)
 
@@ -121,36 +124,36 @@
 
 25. [Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/)
 
-- [20ms](https://leetcode.com/submissions/detail/318916507/) (top 95.79%)
+- [0ms](https://leetcode.com/problems/reverse-nodes-in-k-group/submissions/1744513834/) **(top 100.00%)**
 
 26. [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
 
-- [20ms](https://leetcode.com/submissions/detail/213952893/) **(top 99.75%)**
+- [0ms](https://leetcode.com/problems/remove-duplicates-from-sorted-array/submissions/1744515251/) **(top 100.00%)**
 
 27. [Remove Element](https://leetcode.com/problems/remove-element/)
 
 - [0ms](https://leetcode.com/submissions/detail/318922754/) **(top 100.00%)**
 
-28. [Implement strStr()](https://leetcode.com/problems/implement-strstr/)
+28. [Find the Index of the First Occurrence in a String](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/)
 
-- [8ms](https://leetcode.com/submissions/detail/213957985/) (top 98.99%)
-- KMP: [4ms](https://leetcode.com/submissions/detail/303449766/) (top 91.65%)
+- Brute force: [0ms](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/submissions/1744518236/) **(top 100.00%)**
+- KMP: [0ms](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/submissions/1744523486/) **(top 100.00%)**
 
 29. [Divide Two Integers](https://leetcode.com/problems/divide-two-integers/)
 
-- [0ms](https://leetcode.com/submissions/detail/214028878/) **(top 100.00%)**
+- [0ms](https://leetcode.com/problems/divide-two-integers/submissions/1744526748/) **(top 100.00%)**
 
 30. [Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/)
 
-- [35ms](https://leetcode.com/problems/substring-with-concatenation-of-all-words/submissions/901402561/) (top 94.13%)
+- [16ms](https://leetcode.com/problems/substring-with-concatenation-of-all-words/submissions/1744528957/) (top 90.48%)
 
 31. [Next Permutation](https://leetcode.com/problems/next-permutation/)
 
-- [4ms](https://leetcode.com/submissions/detail/337734158/) (top 96.34%)
+- [0ms](https://leetcode.com/problems/next-permutation/submissions/1744532022/) **(top 100.00%)**
 
 32. [Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/)
 
-- [4ms](https://leetcode.com/submissions/detail/337858387/) (top 96.65%)
+- [0ms](https://leetcode.com/problems/longest-valid-parentheses/submissions/1744537185/) **(top 100.00%)**
 
 33. [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)
 
@@ -158,7 +161,7 @@
 
 34. [Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
 
-- [8ms](https://leetcode.com/submissions/detail/229284793/) (top 98.52%)
+- [0ms](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/submissions/1744538658/) **(top 100.00%)**
 
 35. [Search Insert Position](https://leetcode.com/problems/search-insert-position/)
 
@@ -166,23 +169,23 @@
 
 36. [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)
 
-- [8ms](https://leetcode.com/submissions/detail/229539524/) **(top 99.96%)**
+- [3ms](https://leetcode.com/problems/valid-sudoku/submissions/1744540255/) (top 62.61%)
 
 37. [Sudoku Solver](https://leetcode.com/problems/sudoku-solver/)
 
-- [4ms](https://leetcode.com/submissions/detail/338275850/) (top 95.52%)
+- [4ms](https://leetcode.com/submissions/detail/338275850/) (top 98.43%)
 
 38. [Count and Say](https://leetcode.com/problems/count-and-say/)
 
-- [4ms](https://leetcode.com/submissions/detail/229554165/) (top 97.84%)
+- [0ms](https://leetcode.com/problems/count-and-say/submissions/1744550630/) **(top 100.00%)**
 
 39. [Combination Sum](https://leetcode.com/problems/combination-sum/)
 
-- [8ms](https://leetcode.com/submissions/detail/338287221/) (top 95.15%)
+- [0ms](https://leetcode.com/problems/combination-sum/submissions/1744551584/) **(top 100.00%)**
 
 40. [Combination Sum II](https://leetcode.com/problems/combination-sum-ii/)
 
-- [4ms](https://leetcode.com/submissions/detail/338299514/) (top 98.92%)
+- [0ms](https://leetcode.com/problems/combination-sum-ii/submissions/1744552804/) **(top 100.00%)**
 
 41. [First Missing Positive](https://leetcode.com/problems/first-missing-positive/)
 
@@ -724,8 +727,9 @@
 
 ## 开发环境
 
-已经在以下环境测试通过：macOS Sequoia 15.6
+已经在以下环境测试通过：
 
-- Clang 17.0.0
-- CMake 4.1.0
-- Catch2 v3.9.1
+- macOS Sequoia 15.6
+  - Clang 17.0.0
+  - CMake 4.1.0
+  - Catch2 v3.9.1
