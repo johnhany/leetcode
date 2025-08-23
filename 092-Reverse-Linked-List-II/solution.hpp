@@ -49,7 +49,7 @@ private:
     ListNode* tail;
 public:
     ListNode* reverseHead(ListNode* head, int right);
-	ListNode* reverseBetween(ListNode* head, int left, int right);
+    ListNode* reverseBetween(ListNode* head, int left, int right);
 };
 
 #endif

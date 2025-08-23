@@ -1,14 +1,11 @@
-#define BOOST_TEST_MODULE SolutionTest
+#include <catch2/catch_test_macros.hpp>
+#include <catch2/matchers/catch_matchers_string.hpp>
+#include <catch2/matchers/catch_matchers_vector.hpp>
 
 #include "solution.hpp"
 
-//#define BOOST_TEST_DYN_LINK
-#include <boost/test/unit_test.hpp>
 
-BOOST_AUTO_TEST_SUITE(SolutionSuite)
-
-BOOST_AUTO_TEST_CASE(PlainTest1)
-{
+TEST_CASE( "Running solution test 1" ) {
     vector<vector<int>> matrix{
         { 1, 2, 3 },
         { 4, 5, 6 },
@@ -18,12 +15,11 @@ BOOST_AUTO_TEST_CASE(PlainTest1)
 
     vector<int> expected{1,2,3,6,9,8,7,4,5};
 
-    BOOST_CHECK_EQUAL(result.size(), expected.size());
-    BOOST_CHECK_EQUAL_COLLECTIONS(result.begin(), result.end(), expected.begin(), expected.end());
+    REQUIRE( result.size() == expected.size() );
+    REQUIRE_THAT( result, Catch::Matchers::Equals(expected) );
 }
 
-BOOST_AUTO_TEST_CASE(PlainTest2)
-{
+TEST_CASE( "Running solution test 2" ) {
     vector<vector<int>> matrix{
         {1, 2, 3, 4},
         {5, 6, 7, 8},
@@ -33,8 +29,6 @@ BOOST_AUTO_TEST_CASE(PlainTest2)
 
     vector<int> expected{1,2,3,4,8,12,11,10,9,5,6,7};
 
-    BOOST_CHECK_EQUAL(result.size(), expected.size());
-    BOOST_CHECK_EQUAL_COLLECTIONS(result.begin(), result.end(), expected.begin(), expected.end());
+    REQUIRE( result.size() == expected.size() );
+    REQUIRE_THAT( result, Catch::Matchers::Equals(expected) );
 }
-
-BOOST_AUTO_TEST_SUITE_END()

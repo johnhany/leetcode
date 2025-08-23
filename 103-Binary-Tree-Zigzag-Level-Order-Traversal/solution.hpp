@@ -71,7 +71,7 @@ inline TreeNode* stringToTreeNode(string input) {
 
 class Solution {
 public:
-	vector<vector<int>> zigzagLevelOrder(TreeNode* root);
+    vector<vector<int>> zigzagLevelOrder(TreeNode* root);
 };
 
 #endif

@@ -69,7 +69,7 @@ inline TreeNode* stringToTreeNode(string input) {
 class Solution {
 public:
     int helper(TreeNode* root, int& rst);
-	int maxPathSum(TreeNode* root);
+    int maxPathSum(TreeNode* root);
 };
 
 #endif

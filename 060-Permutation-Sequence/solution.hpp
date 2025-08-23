@@ -16,9 +16,9 @@ using namespace std;
 
 class Solution {
 public:
-	string getPermutation(int n, int k);
+    string getPermutation(int n, int k);
 private:
-	int fact[10] = {1,1,2,6,24,120,720,5040,40320,362880};
+    int fact[10] = {1,1,2,6,24,120,720,5040,40320,362880};
 };
 
 #endif

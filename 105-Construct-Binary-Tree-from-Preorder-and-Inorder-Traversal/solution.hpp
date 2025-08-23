@@ -93,7 +93,7 @@ inline string treeNodeToString(TreeNode* root) {
 
 class Solution {
 public:
-	TreeNode* buildTree(vector<int>& preorder, vector<int>& inorder);
+    TreeNode* buildTree(vector<int>& preorder, vector<int>& inorder);
     TreeNode* builder(vector<int>& preorder, vector<int>& inorder, int pstart, int pend, int istart, int iend);
 };
 

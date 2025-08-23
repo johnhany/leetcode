@@ -1,8 +1,8 @@
 #include "solution.hpp"
 
 void Solution::solveSudoku(vector<vector<char>>& board) {
-	vector<vector<int>> row(9, vector<int>(9, 0)), col(9, vector<int>(9, 0)), block(9, vector<int>(9, 0));
-	for (int i = 0; i < 9; i++) {
+    vector<vector<int>> row(9, vector<int>(9, 0)), col(9, vector<int>(9, 0)), block(9, vector<int>(9, 0));
+    for (int i = 0; i < 9; i++) {
         for (int j = 0; j < 9; j++) {
             int b = board[i][j] - '1';
             if (b >= 0) {
@@ -11,12 +11,12 @@ void Solution::solveSudoku(vector<vector<char>>& board) {
                 block[i/3*3+j/3][b] = 1;
             }
         }
-	}
+    }
     fill(board, 0, 0, row, col, block);
 }
 
 bool Solution::fill(vector<vector<char>>& board, int r, int c, vector<vector<int>>& row, vector<vector<int>>& col, vector<vector<int>>& block) {
-	if (c == 9) {
+    if (c == 9) {
         c = 0;
         ++r;
     }
@@ -31,10 +31,10 @@ bool Solution::fill(vector<vector<char>>& board, int r, int c, vector<vector<int
                     row[r][k] = col[c][k] = block[r/3*3+c/3][k] = 0;
                     board[r][c] = '.';
                 } else
-					return true;
+                    return true;
             }
-		}
-		return false;
+        }
+        return false;
     } else
         return fill(board, r, c+1, row, col, block);
 }

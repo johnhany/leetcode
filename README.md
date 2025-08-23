@@ -1,8 +1,10 @@
 # leetcode C++高性能版
 
-[leetcode](https://leetcode.com)的C++高性能题解，追求运行时长top 99%+
+[leetcode](https://leetcode.com)的C++高性能题解，追求运行时长top 95%+
 
 ![img/image.png](img/image.png)
+
+------
 
 ## 数据统计
 
@@ -12,13 +14,46 @@
 
 ![](https://geps.dev/progress/6) 总计: 159 / 2573 已解决
 
-![](https://geps.dev/progress/66) 运行时长 **99%** 以上的题解占比: 108 / 159
+![](https://geps.dev/progress/66) 运行时长 **95%** 以上的题解占比: 108 / 159
+
+------
+
+## 题目分类
+
+| 分类 | 题目编号 |
+| --- | --- |
+| Array / String | 1, 3, 6, 11, 14, 15, 16, 18, 20, 22, 26, 27, 28, 30, 31, 38, 41, 42, 44, 45, 48, 49, 54, 55, 56, 73, 75, 76, 80, 88, 125, 239, 283, 349, 350, 438, 567, 670, 832, 1838 |
+| Linked list | 2, 19, 21, 23, 24, 25, 61, 86, 92, 141, 142, 160, 206, 234, 876 |
+| Recursion | 4, 33, 34, 35, 69, 74, 153, 215, 240, 278, 287, 301, 540, 704 |
+| Dynamic Programming | 5, 10, 32, 36, 37, 53, 62, 63, 64, 70, 79, 84, 91, 96, 118, 120, 121, 122, 123, 128, 130, 134, 188, 198, 213, 221, 279, 300, 309, 322, 509, 714, 864, 871 |
+| Numerical | 7, 8, 9, 12, 13, 29, 43, 50, 66, 136, 150, 564 |
+| Backtracking | 17, 39, 40, 46, 47, 51, 60, 78, 131 |
+| Binary Tree | 94, 98, 101, 102, 103, 104, 105, 106, 108, 111, 114, 116, 124, 144, 145, 226, 230, 235, 236, 337, 450, 538, 543, 652, 654, 700, 701, 889, 958, 1038 |
+| Graph / DFS | 127, 752 |
+| System Design | 146, 460 |
+
+------
+
+## 开发环境
+
+已经在以下环境测试通过：
+
+- macOS Sequoia 15.6
+  - Clang 17.0.0
+  - CMake 4.1.0
+  - Catch2 v3.9.1
+- Windows 11 24H2
+  - VC 14.44.35207 (Visual Studio 2022)
+  - CMake 4.1.0
+  - Catch2 v3.9.1
+
+------
 
 ## 题解
 
 1. [Two Sum](https://leetcode.com/problems/two-sum/description/)
 
-- Hash table (unorderd_map): [0ms](https://leetcode.com/problems/two-sum/submissions/1743444479/) **(top 100.00%)**
+- Hash table: [0ms](https://leetcode.com/problems/two-sum/submissions/1743444479/) **(top 100.00%)**
 
 2. [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/)
 
@@ -26,7 +61,7 @@
 
 3. [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
 
-- Hash table (vector): [0ms](https://leetcode.com/submissions/detail/624009196/) **(top 100.00%)**
+- Hash table: [0ms](https://leetcode.com/submissions/detail/624009196/) **(top 100.00%)**
 
 4. [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)
 
@@ -41,7 +76,7 @@
 6. [ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/)
 
 - Brute force: [31ms](https://leetcode.com/problems/zigzag-conversion/submissions/1744467555/) (top 11.68%)
-- Fast for-loop: [0ms](https://leetcode.com/problems/zigzag-conversion/submissions/1744468546/) **(top 100.00%)**
+- Better loop: [0ms](https://leetcode.com/problems/zigzag-conversion/submissions/1744468546/) **(top 100.00%)**
 
 7. [Reverse Integer](https://leetcode.com/problems/reverse-integer/)
 
@@ -57,7 +92,7 @@
 
 10. [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/)
 
-- Dynamic programming: [0ms](https://leetcode.com/problems/regular-expression-matching/submissions/1744471585/) **(top 100.00%)**
+- DP: [0ms](https://leetcode.com/problems/regular-expression-matching/submissions/1744471585/) **(top 100.00%)**
 
 11. [Container With Most Water](https://leetcode.com/problems/container-with-most-water/)
 
@@ -93,7 +128,7 @@
 18. [4Sum](https://leetcode.com/problems/4sum/)
 
 - Set: [35ms](https://leetcode.com/problems/4sum/submissions/1744504101/) (top 16.53%)
-- Fast for-loop: [0ms](https://leetcode.com/problems/4sum/submissions/1744501884/) **(top 100.00%)**
+- Better loop: [0ms](https://leetcode.com/problems/4sum/submissions/1744501884/) **(top 100.00%)**
 
 19. [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)
 
@@ -173,7 +208,7 @@
 
 37. [Sudoku Solver](https://leetcode.com/problems/sudoku-solver/)
 
-- [4ms](https://leetcode.com/submissions/detail/338275850/) (top 98.43%)
+- [4ms](https://leetcode.com/submissions/detail/338275850/) **(top 98.43%)**
 
 38. [Count and Say](https://leetcode.com/problems/count-and-say/)
 
@@ -189,56 +224,59 @@
 
 41. [First Missing Positive](https://leetcode.com/problems/first-missing-positive/)
 
-- [4ms](https://leetcode.com/submissions/detail/229675184/) (top 96.34%)
+- Lookup table: [0ms](https://leetcode.com/problems/first-missing-positive/submissions/1744879419/) **(top 100.00%)**
+- Swap: [0ms](https://leetcode.com/problems/first-missing-positive/submissions/1744879842/) **(top 100.00%)**
 
 42. [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)
 
-- [4ms](https://leetcode.com/submissions/detail/229679714/) **(top 99.71%)**
+- Two pointers: [515ms](https://leetcode.com/problems/trapping-rain-water/submissions/1744881463/) (top 5.33%)
+- Auxiliary vector: [0ms](https://leetcode.com/problems/trapping-rain-water/submissions/1744881975/) **(top 100.00%)**
 
-43. [Multiply Strings](https://leetcode.com/problems/multiply-strings/)
+43.  [Multiply Strings](https://leetcode.com/problems/multiply-strings/)
 
-- C++ interface: [8ms](https://leetcode.com/submissions/detail/338314781/) (top 72.26%)
-- C interface: [4ms](https://leetcode.com/submissions/detail/338320543/) (top 97.53%)
+- C++ interface: [2ms](https://leetcode.com/problems/multiply-strings/submissions/1744883435/) (top 71.45%)
+- C interface: [0ms](https://leetcode.com/problems/multiply-strings/submissions/1744883733/) **(top 100.00%)**
 
 44. [Wildcard Matching](https://leetcode.com/problems/wildcard-matching/)
 
-- [4ms](https://leetcode.com/submissions/detail/229689968/) **(top 99.84%)**
+- [0ms](https://leetcode.com/problems/wildcard-matching/submissions/1744884076/) **(top 100.00%)**
 
 45. [Jump Game II](https://leetcode.com/problems/jump-game-ii/)
 
-- [8ms](https://leetcode.com/submissions/detail/338330469/) (top 95.32%)
+- [0ms](https://leetcode.com/problems/jump-game-ii/submissions/1744884320/) **(top 100.00%)**
 
 46. [Permutations](https://leetcode.com/problems/permutations/)
 
-- Recursive: [20ms](https://leetcode.com/submissions/detail/229700657/) (top 22.83%)
-- Better loop: [12ms](https://leetcode.com/submissions/detail/229703064/) (top 96.86%)
-- Backtracking: [4ms](https://leetcode.com/submissions/detail/337776417/) (top 96.41%)
+- Recursive: [7ms](https://leetcode.com/problems/permutations/submissions/1744886637/) (top 6.15%)
+- Better loop: [0ms](https://leetcode.com/problems/permutations/submissions/1744886897/) **(top 100.00%)**
+- Backtracking: [0ms](https://leetcode.com/problems/permutations/submissions/1744887086/) **(top 100.00%)**
 
 47. [Permutations II](https://leetcode.com/problems/permutations-ii/)
 
-- [8ms](https://leetcode.com/submissions/detail/337786224/) (top 96.44%)
+- [3ms](https://leetcode.com/problems/permutations-ii/submissions/1744887723/) (top 67.49%)
 
 48. [Rotate Image](https://leetcode.com/problems/rotate-image/)
 
-- Direct rotation: [4ms](https://leetcode.com/submissions/detail/229728814/) (top 98.21%)
-- Flip & swap: [4ms](https://leetcode.com/submissions/detail/229729814/) (top 98.21%)
+- [0ms](https://leetcode.com/problems/rotate-image/submissions/1744888823/) **(top 100.00%)**
+- Flip + swap: [0ms](https://leetcode.com/problems/rotate-image/submissions/1744889005/) **(top 100.00%)**
 
 49. [Group Anagrams](https://leetcode.com/problems/group-anagrams/)
 
-- [40ms](https://leetcode.com/submissions/detail/230186536/) (top 95.50%)
+- Hash table: [23ms](https://leetcode.com/problems/group-anagrams/submissions/1744889830/) (top 32.64%)
+- Sort + hash table: [7ms](https://leetcode.com/problems/group-anagrams/submissions/1744891159/) **(top 98.59%)**
 
 50. [Pow(x, n)](https://leetcode.com/problems/powx-n/)
 
-- [4ms](https://leetcode.com/submissions/detail/230192088/) (top 96.07%)
+- [0ms](https://leetcode.com/problems/powx-n/submissions/1744893953/) **(top 100.00%)**
 
 51. [N-Queens](https://leetcode.com/problems/n-queens/)
 
-- [4ms](https://leetcode.com/submissions/detail/342609229/) **(top 99.62%)**
+- [0ms](https://leetcode.com/problems/n-queens/submissions/1744895138/) **(top 100.00%)**
 
 53. [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
 
-- Divide and conquer: [8ms](https://leetcode.com/submissions/detail/230357741/) (top 96.32%)
-- Kadane: [4ms](https://leetcode.com/submissions/detail/230359418/) **(top 99.88%)**
+- Divide and conquer: [21ms](https://leetcode.com/problems/maximum-subarray/submissions/1744895992/) (top 5.11%)
+- Kadane: [0ms](https://leetcode.com/problems/maximum-subarray/submissions/1744903617/) **(top 100.00%)**
 - DP: [0ms](https://leetcode.com/submissions/detail/323667238/) **(top 100.00%)**
 
 54. [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)
@@ -247,11 +285,12 @@
 
 55. [Jump Game](https://leetcode.com/problems/jump-game/)
 
-- [28ms](https://leetcode.com/submissions/detail/630825210/) **(top 99.98%)**
+- Forward: [0ms](https://leetcode.com/problems/jump-game/submissions/1744905044/) **(top 100.00%)**
+- Backward: [0ms](https://leetcode.com/problems/jump-game/submissions/1744905413/) **(top 100.00%)**
 
 56. [Merge Intervals](https://leetcode.com/problems/merge-intervals/)
 
-- [8ms](https://leetcode.com/submissions/detail/303486504/) **(top 100.00%)**
+- [2ms](https://leetcode.com/problems/merge-intervals/submissions/1744909887/) (top 93.23%)
 
 60. [Permutation Sequence](https://leetcode.com/problems/permutation-sequence/)
 
@@ -259,7 +298,7 @@
 
 61. [Rotate List](https://leetcode.com/problems/rotate-list/)
 
-- [4ms](https://leetcode.com/submissions/detail/643290409/) (top 94.70%)
+- [0ms](https://leetcode.com/problems/rotate-list/submissions/1744912499/) **(top 100.00%)**
 
 62. [Unique Paths](https://leetcode.com/problems/unique-paths/)
 
@@ -271,7 +310,7 @@
 
 64. [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)
 
-- [4ms](https://leetcode.com/submissions/detail/323679136/) **(top 99.39%)**
+- [0ms](https://leetcode.com/problems/minimum-path-sum/submissions/1744912839/) **(top 100.00%)**
 
 66. [Plus One](https://leetcode.com/problems/plus-one/)
 
@@ -287,11 +326,11 @@
 
 73. [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)
 
-- [44ms](https://leetcode.com/submissions/detail/231696419/) (top 98.55%)
+- [0ms](https://leetcode.com/problems/set-matrix-zeroes/submissions/1744913904/) **(top 100.00%)**
 
 74. [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/)
 
-- [4ms](https://leetcode.com/submissions/detail/327576061/) **(top 99.56%)**
+- [0ms](https://leetcode.com/problems/search-a-2d-matrix/submissions/1744914476/) **(top 100.00%)**
 
 75. [Sort Colors](https://leetcode.com/problems/sort-colors/)
 
@@ -300,39 +339,37 @@
 
 76. [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)
 
-- sliding window: [32ms](https://leetcode.com/submissions/detail/232627407/) (top 38.25%)
-- optimized sliding window: [44ms](https://leetcode.com/submissions/detail/232631706/) (top 19.33%)
-- hash: [4ms](https://leetcode.com/submissions/detail/232634035/) **(top 99.92%)**
+- Sliding window: [23ms](https://leetcode.com/problems/minimum-window-substring/submissions/1744916625/) (top 13.60%)
+- Hash table: [0ms](https://leetcode.com/problems/minimum-window-substring/submissions/1744917528/) **(top 100.00%)**
 
-78. [Subsets](https://leetcode.com/problems/subsets/)
+77. [Subsets](https://leetcode.com/problems/subsets/)
 
-- [8ms](https://leetcode.com/submissions/detail/233101865/) (top 90.16%)
-- backtrack: [4ms](https://leetcode.com/submissions/detail/303500829/) (top 98.41%)
-- bitwise: [0ms](https://leetcode.com/submissions/detail/630925819/) **(top 100.00%)**
+- [0ms](https://leetcode.com/problems/subsets/submissions/1744918400/) **(top 100.00%)**
+- Backtrack: [0ms](https://leetcode.com/problems/subsets/submissions/1744918691/) **(top 100.00%)**
+- Bitwise: [0ms](https://leetcode.com/submissions/detail/630925819/) **(top 100.00%)**
 
 79. [Word Search](https://leetcode.com/problems/word-search/)
 
-- [92ms](https://leetcode.com/submissions/detail/233113744/) (top 98.72%)
-- [72ms](https://leetcode.com/submissions/detail/233115782/) (top 98.84%)
+- [92ms](https://leetcode.com/submissions/detail/233113744/) **(top 97.42%)**
+- Inplace: [72ms](https://leetcode.com/submissions/detail/233115782/) **(top 97.59%)**
 
 80. [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/)
 
-- [3ms](https://leetcode.com/submissions/detail/635412822/) (top 92.82%)
+- [3ms](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/submissions/1744921602/) **(top 96.26%)**
 
 84. [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/)
 
-- recursion: [32ms](https://leetcode.com/submissions/detail/233599788/) (top 14.84%)
-- two vector: [4ms](https://leetcode.com/submissions/detail/233606081/) **(top 100.00%)**
-- one vector: [122ms](https://leetcode.com/submissions/detail/630955175/) (top 75.97%)
+- Two vector: [4ms](https://leetcode.com/submissions/detail/233606081/) **(top 99.11%)**
+- One vector: [4ms](https://leetcode.com/problems/largest-rectangle-in-histogram/submissions/1744922199/) **(top 99.11%)**
 
 86. [Partition List](https://leetcode.com/problems/partition-list/)
 
-- [7ms](https://leetcode.com/submissions/detail/643299729/) (top 62.59%)
+- [0ms](https://leetcode.com/problems/partition-list/submissions/1744923182/) **(top 100.00%)**
 
 88. [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)
 
-- additional space: [4ms](https://leetcode.com/submissions/detail/233801676/) (top 96.53%)
-- 3 pointers: [0ms](https://leetcode.com/submissions/detail/233802294/) **(top 100.00%)**
+- [0ms](https://leetcode.com/problems/merge-sorted-array/submissions/1744924173/) **(top 100.00%)**
+- Three pointers: [0ms](https://leetcode.com/submissions/detail/233802294/) **(top 100.00%)**
 
 91. [Decode Ways](https://leetcode.com/problems/decode-ways/)
 
@@ -344,8 +381,8 @@
 
 94. [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)
 
-- Recursion - list: [4ms](https://leetcode.com/submissions/detail/234690013/) (top 87.58%)
-- Recursion - vector: [4ms](https://leetcode.com/submissions/detail/632078983/) (top 43.93%)
+- Recursion - vector: [0ms](https://leetcode.com/problems/binary-tree-inorder-traversal/submissions/1744925000/) **(top 100.00%)**
+- Recursion - list: [0ms](https://leetcode.com/problems/binary-tree-inorder-traversal/submissions/1744925632/) **(top 100.00%)**
 - Stack: [0ms](https://leetcode.com/submissions/detail/234693349/) **(top 100.00%)**
 - Stack: [0ms](https://leetcode.com/submissions/detail/632069693/) **(top 100.00%)**
 
@@ -355,13 +392,13 @@
 
 98. [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)
 
-- Two pointers: [4ms](https://leetcode.com/submissions/detail/235902664/) **(top 99.99%)**
-- [12ms](https://leetcode.com/submissions/detail/632116694/) (top 74.23%)
+- [0ms](https://leetcode.com/problems/validate-binary-search-tree/submissions/1744926085/) **(top 100.00%)**
+- Two pointers: [0ms](https://leetcode.com/problems/validate-binary-search-tree/submissions/1744926525/) **(top 100.00%)**
 
 101. [Symmetric Tree](https://leetcode.com/problems/symmetric-tree/)
 
 - Recursive: [0ms](https://leetcode.com/submissions/detail/236511384/) **(top 100.00%)**
-- Queue: [4ms](https://leetcode.com/submissions/detail/632127799/) (top 81.64%)
+- Queue: [0ms](https://leetcode.com/problems/symmetric-tree/submissions/1744927963/) **(top 100.00%)**
 
 102. [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)
 
@@ -369,43 +406,46 @@
 
 103. [Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/)
 
-- [3ms](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/submissions/900385027/) (top 73.66%)
+- [0ms](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/submissions/1744928333/) **(top 100.00%)**
 
 104. [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
 
-- [8ms](https://leetcode.com/submissions/detail/632156409/) (top 75.97%)
+- [0ms](https://leetcode.com/problems/maximum-depth-of-binary-tree/submissions/1744928641/) **(top 100.00%)**
 
 105. [Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
 
-- [29ms](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/submissions/902042713/) (top 52.40%)
-- hash: [16ms](https://leetcode.com/submissions/detail/317142296/) (top 89.76%)
-- Stack: [7ms](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/submissions/900852024/) **(top 99.57%)**
+- [7ms](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/submissions/1744929439/) (top 37.32%)
+- Hash table: [0ms](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/submissions/1744929962/) **(top 100.00%)**
+- Stack: [0ms](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/submissions/1744930370/) **(top 100.00%)**
 
 106. [Construct Binary Tree from Inorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/)
 
-- [23ms](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/submissions/902040628/) (top 57.38%)
+- [3ms](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/submissions/1744930888/) (top 71.46%)
+- Hash table: [0ms](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/submissions/1744932774/) **(top 100.00%)**
 
 108. [Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)
 
-- [4ms](https://leetcode.com/submissions/detail/632241166/) **(top 99.83%)**
+- [0ms](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/submissions/1744935462/) **(top 100.00%)**
 
 111. [Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/)
 
-- [4ms](https://leetcode.com/submissions/detail/303209807/) **(top 99.83%)**
+- Recursion: [3ms](https://leetcode.com/problems/minimum-depth-of-binary-tree/submissions/1744936537/) (top 54.48%)
+- Queue: [0ms](https://leetcode.com/problems/minimum-depth-of-binary-tree/submissions/1744937636/) **(top 100.00%)**
 
 114. [Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/)
 
-- [4ms](https://leetcode.com/submissions/detail/645307070/) (top 89.52%)
+- [0ms](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/submissions/1744938349/) **(top 100.00%)**
 
 116. [Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/)
 
-- [11ms](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/submissions/900876771/) **(top 99.39%)**
+- [11ms](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/submissions/900876771/) (top 82.38%)
+- [8ms](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/submissions/1744940522/) (top 91.84%)
 
 118. [Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/)
 
-- swap: [4ms](https://leetcode.com/submissions/detail/317454106/) (top 51.26%)
-- resize: [0ms](https://leetcode.com/submissions/detail/317455216/) **(top 100.00%)**
 - [0ms](https://leetcode.com/submissions/detail/632260948/) **(top 100.00%)**
+- Swap: [0ms](https://leetcode.com/problems/pascals-triangle/submissions/1744941665/) **(top 100.00%)**
+- Resize: [0ms](https://leetcode.com/submissions/detail/317455216/) **(top 100.00%)**
 
 120. [Triangle](https://leetcode.com/problems/triangle/)
 
@@ -413,9 +453,9 @@
 
 121. [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
 
-- priority queue: [12ms](https://leetcode.com/submissions/detail/317459138/) (top 17.37%)
-- [4ms](https://leetcode.com/submissions/detail/317461596/) (top 97.69%)
-- [76ms](https://leetcode.com/submissions/detail/632270517/) **(top 99.79%)**
+- Priority queue: [11ms](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/submissions/1744944082/) (top 6.67%)
+- Forward: [0ms](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/submissions/1744942743/) **(top 100.00%)**
+- Backward: [0ms](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/submissions/1744943532/) **(top 100.00%)**
 
 122. [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)
 
@@ -423,37 +463,38 @@
 
 123. [Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/)
 
-- [68ms](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/submissions/) **(top 99.95%)**
+- [0ms](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/submissions/1744944683/) **(top 100.00%)**
 
 124. [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/)
 
-- [16ms](https://leetcode.com/submissions/detail/317484156/) **(top 99.85%)**
+- [0ms](https://leetcode.com/problems/binary-tree-maximum-path-sum/submissions/1744945263/) **(top 100.00%)**
 
 125. [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)
 
-- [4ms](https://leetcode.com/submissions/detail/317490447/) **(top 99.16%)**
+- [0ms](https://leetcode.com/problems/valid-palindrome/submissions/1744946181/) **(top 100.00%)**
 
 127. [Word Ladder](https://leetcode.com/problems/word-ladder/)
 
-- [28ms](https://leetcode.com/submissions/detail/632915025/) **(top 99.56%)**
-- Graph + BFS: [138ms](https://leetcode.com/submissions/detail/632851048/) (top 67.54%)
-- Graph + BiDir BFS: [131ms](https://leetcode.com/submissions/detail/632860437/) (top 69.50%)
-- BiDir BFS: [560ms](https://leetcode.com/submissions/detail/632905123/) (top 34.48%)
+- [16ms](https://leetcode.com/problems/word-ladder/submissions/1744947060/) **(top 99.21%)**
+- Graph + BFS: [103ms](https://leetcode.com/problems/word-ladder/submissions/1744948889/) (top 39.97%)
+- Graph + BiDir BFS: [101ms](https://leetcode.com/problems/word-ladder/submissions/1744949776/) (top 40.23%)
+- BiDir BFS: [451ms](https://leetcode.com/problems/word-ladder/submissions/1744947827/) (top 19.11%)
 
 128. [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)
 
-- hash: [113ms](https://leetcode.com/problems/longest-consecutive-sequence/submissions/900960540/) (top 83.63%)
-- sort: [59ms](https://leetcode.com/problems/longest-consecutive-sequence/submissions/900959271/) **(top 99.67%)**
-- dp: [132ms](https://leetcode.com/problems/longest-consecutive-sequence/submissions/900958551/) (top 78.98%)
+- DP: [91ms](https://leetcode.com/problems/longest-consecutive-sequence/submissions/1744950767/) (top 30.64%)
+- Hash table: [78ms](https://leetcode.com/problems/longest-consecutive-sequence/submissions/1744951785/) (top 70.64%)
+- Sort + erase: [15ms](https://leetcode.com/problems/longest-consecutive-sequence/submissions/1744955500/) (top 87.75%)
+- Sort: [11ms](https://leetcode.com/problems/longest-consecutive-sequence/submissions/1744952623/) (top 94.32%)
 
 130. [Surrounded Regions](https://leetcode.com/problems/surrounded-regions/)
 
-- [4ms](https://leetcode.com/submissions/detail/632941565/) **(top 99.88%)**
+- [0ms](https://leetcode.com/problems/surrounded-regions/submissions/1744956893/) **(top 100.00%)**
 
 131. [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/)
 
-- backtrack: [159ms](https://leetcode.com/submissions/detail/632960985/) (top 63.39%)
-- backtrack + DP: [100ms](https://leetcode.com/problems/palindrome-partitioning/submissions/901013626/) (top 91.71%)
+- Backtrack: [52ms](https://leetcode.com/problems/palindrome-partitioning/submissions/1744958548/) (top 52.78%)
+- Backtrack + DP: [23ms](https://leetcode.com/problems/palindrome-partitioning/submissions/1744959503/) **(top 98.28%)**
 
 134. [Gas Station](https://leetcode.com/problems/gas-station/)
 
@@ -461,34 +502,34 @@
 
 136. [Single Number](https://leetcode.com/problems/single-number/)
 
-- [4ms](https://leetcode.com/submissions/detail/318707842/) **(top 99.88%)**
+- [0ms](https://leetcode.com/problems/single-number/submissions/1744962574/) **(top 100.00%)**
 
 141. [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)
 
-- [3ms](https://leetcode.com/submissions/detail/645252348/) **(top 99.91%)**
+- [3ms](https://leetcode.com/submissions/detail/645252348/) **(top 99.30%)**
 
 142. [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/)
 
-- [3ms](https://leetcode.com/submissions/detail/645263608/) **(top 99.53%)**
+- [3ms](https://leetcode.com/submissions/detail/645263608/) **(top 98.18%)**
 
 144. [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/)
 
-- Recursion: [4ms](https://leetcode.com/submissions/detail/632089390/) (top 43.36%)
+- Recursion: [0ms](https://leetcode.com/problems/binary-tree-preorder-traversal/submissions/1744977240/) **(top 100.00%)**
 - Stack: [0ms](https://leetcode.com/submissions/detail/632085399/) **(top 100.00%)**
 
 145. [Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/)
 
-- Recursion: [4ms](https://leetcode.com/submissions/detail/632099108/) (top 44.24%)
+- Recursion: [0ms](https://leetcode.com/problems/binary-tree-postorder-traversal/submissions/1744977910/) **(top 100.00%)**
 - Stack: [0ms](https://leetcode.com/submissions/detail/632096936/) **(top 100.00%)**
 
 146. [LRU Cache](https://leetcode.com/problems/lru-cache/)
 
-- [711ms](https://leetcode.com/submissions/detail/636862837/) (top 29.13%)
-- custom linked list: [316ms](https://leetcode.com/submissions/detail/637201261/) **(top 99.94%)**
+- [61ms](https://leetcode.com/problems/lru-cache/submissions/1744980783/) (top 85.67%)
+- Linked list: [32ms](https://leetcode.com/problems/lru-cache/submissions/1744985623/) **(top 98.86%)**
 
 150. [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/)
 
-- [12ms](https://leetcode.com/submissions/detail/303228064/) (top 91.72%)
+- [0ms](https://leetcode.com/problems/evaluate-reverse-polish-notation/submissions/1744987246/) **(top 100.00%)**
 
 153. [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)
 
@@ -496,16 +537,16 @@
 
 160. [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/)
 
-- [28ms](https://leetcode.com/submissions/detail/641300625/) **(top 99.98%)**
+- [28ms](https://leetcode.com/submissions/detail/641300625/) **(top 96.62%)**
 
 187. [Repeated DNA Sequences](https://leetcode.com/problems/repeated-dna-sequences/)
 
-- 3-bit hash: [52ms](https://leetcode.com/submissions/detail/327702045/) (top 81.78%)
-- 2-bit hash: [4ms](https://leetcode.com/submissions/detail/327705672/) **(top 99.71%)**
+- 3-bit hash: [0ms](https://leetcode.com/problems/repeated-dna-sequences/submissions/1744992619/) **(top 100.00%)**
+- 2-bit hash: [24ms](https://leetcode.com/problems/repeated-dna-sequences/submissions/1744993443/) **(top 98.77%)**
 
 188. [Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/)
 
-- [8ms](https://leetcode.com/submissions/detail/645280699/) (top 76.49%)
+- [0ms](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/submissions/1744997324/) **(top 100.00%)**
 
 198. [House Robber](https://leetcode.com/problems/house-robber/)
 
@@ -513,9 +554,9 @@
 
 206. [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)
 
-- two pointers: [12ms](https://leetcode.com/submissions/detail/641316788/) (top 27.83%)
-- faster two pointers: [7ms](https://leetcode.com/submissions/detail/641321662/) (top 74.53%)
-- recursion: [0ms](https://leetcode.com/problems/reverse-linked-list/submissions/901975778/) **(top 100.00%)**
+- Two pointers: [0ms](https://leetcode.com/problems/reverse-linked-list/submissions/1744998629/) **(top 100.00%)**
+- Faster two pointers: [0ms](https://leetcode.com/problems/reverse-linked-list/submissions/1744999148/) **(top 100.00%)**
+- Recursion: [0ms](https://leetcode.com/problems/reverse-linked-list/submissions/901975778/) **(top 100.00%)**
 
 213. [House Robber II](https://leetcode.com/problems/house-robber-ii/)
 
@@ -523,12 +564,12 @@
 
 215. [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)
 
-- [4ms](https://leetcode.com/submissions/detail/327677238/) **(top 99.81%)**
-- quick sort: [0ms](https://leetcode.com/problems/kth-largest-element-in-an-array/submissions/1464291297/) **(top 100.00%)**
+- [4ms](https://leetcode.com/problems/kth-largest-element-in-an-array/submissions/1745000023/) **(top 97.59%)**
+- Quick sort: [0ms](https://leetcode.com/problems/kth-largest-element-in-an-array/submissions/1464291297/) **(top 100.00%)**
 
 221. [Maximal Square](https://leetcode.com/problems/maximal-square/)
 
-- [8ms](https://leetcode.com/submissions/detail/323687156/) **(top 99.64%)**
+- [1ms](https://leetcode.com/problems/maximal-square/submissions/1745001184/) **(top 96.15%)**
 
 226. [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)
 
@@ -536,27 +577,28 @@
 
 230. [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)
 
-- [7ms](https://leetcode.com/problems/kth-smallest-element-in-a-bst/submissions/902082496/) **(top 99.74%)**
+- [0ms](https://leetcode.com/problems/kth-smallest-element-in-a-bst/submissions/1745002273/) **(top 100.00%)**
 
 234. [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)
 
-- [276ms](https://leetcode.com/submissions/detail/641348178/) (top 60.58%)
+- Recursion: [4ms](https://leetcode.com/problems/palindrome-linked-list/submissions/1745003586/) (top 53.48%)
+- Two pointers: [0ms](https://leetcode.com/problems/palindrome-linked-list/submissions/1745006383/) **(top 100.00%)**
 
 235. [Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)
 
-- [24ms](https://leetcode.com/submissions/detail/637241828/) (top 97.70%)
+- [14ms](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/submissions/1745007997/) **(top 97.81%)**
 
 236. [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)
 
-- [7ms](https://leetcode.com/submissions/detail/637252584/) **(top 99.85%)**
+- [6ms](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/submissions/1745008749/) **(top 96.44%)**
 
 239. [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)
 
-- [168ms](https://leetcode.com/submissions/detail/636104845/) **(top 99.89%)**
+- [11ms](https://leetcode.com/problems/sliding-window-maximum/submissions/1745010408/) **(top 97.23%)**
 
 240. [Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/)
 
-- [84ms](https://leetcode.com/submissions/detail/327597630/) (top 72.87%)
+- [36ms](https://leetcode.com/problems/search-a-2d-matrix-ii/submissions/1745011236/) **(top 97.55%)**
 
 278. [First Bad Version](https://leetcode.com/problems/first-bad-version/)
 
@@ -565,17 +607,17 @@
 279. [Perfect Squares](https://leetcode.com/problems/perfect-squares/)
 
 - [0ms](https://leetcode.com/submissions/detail/324570540/) **(top 100.00%)**
-- Tree search: [92ms](https://leetcode.com/submissions/detail/324575850/) (top 79.03%)
+- Tree search: [54ms](https://leetcode.com/problems/perfect-squares/submissions/1745012553/) (top 61.29%)
 
 283. [Move Zeroes](https://leetcode.com/problems/move-zeroes/)
 
-- two pointers: [33ms](https://leetcode.com/submissions/detail/643338705/) (top 50.97%)
-- faster two pointers: [16ms](https://leetcode.com/submissions/detail/643344367/) (top 97.08%)
+- Two pointers: [0ms](https://leetcode.com/problems/move-zeroes/submissions/1745013609/) **(top 100.00%)**
+- Faster two pointers: [0ms](https://leetcode.com/problems/move-zeroes/submissions/1745014094/) **(top 100.00%)**
 
 287. [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/)
 
-- Binary search: [8ms](https://leetcode.com/submissions/detail/327684807/) (top 94.55%)
-- Two pointers: [4ms](https://leetcode.com/submissions/detail/327690200/) **(top 99.76%)**
+- Binary search: [8ms](https://leetcode.com/submissions/detail/327684807/) (top 48.64%)
+- Two pointers: [1ms](https://leetcode.com/problems/find-the-duplicate-number/submissions/1745016838/) (top 76.75%)
 
 300. [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)
 
@@ -583,7 +625,7 @@
 
 301. [Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses/)
 
-- [12ms](https://leetcode.com/submissions/detail/324615389/) (top 68.31%)
+- [0ms](https://leetcode.com/problems/remove-invalid-parentheses/submissions/1745017798/) **(top 100.00%)**
 
 309. [Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/)
 
@@ -591,32 +633,33 @@
 
 322. [Coin Change](https://leetcode.com/problems/coin-change/)
 
-- [64ms](https://leetcode.com/submissions/detail/643922874/) (top 86.51%)
+- [15ms](https://leetcode.com/problems/coin-change/submissions/1745018634/) (top 93.27%)
 
 337. [House Robber III](https://leetcode.com/problems/house-robber-iii/)
 
-- [44ms](https://leetcode.com/submissions/detail/645294530/) (top 13.37%)
+- Vector: [11ms](https://leetcode.com/problems/house-robber-iii/submissions/1745020557/) (top 25.30%)
+- Pair: [0ms](https://leetcode.com/problems/house-robber-iii/submissions/1745023063/) **(top 100.00%)**
 
 349. [Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/)
 
-- Set: [4ms](https://leetcode.com/submissions/detail/328020887/) **(top 99.21%)**
-- Map: [4ms](https://leetcode.com/submissions/detail/328024354/) **(top 99.21%)**
+- Set: [0ms](https://leetcode.com/problems/intersection-of-two-arrays/submissions/1745024169/) **(top 100.00%)**
+- Map: [0ms](https://leetcode.com/problems/intersection-of-two-arrays/submissions/1745024839/) **(top 100.00%)**
 
 350. [Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/)
 
-- [4ms](https://leetcode.com/submissions/detail/328027553/) **(top 99.54%)**
+- [0ms](https://leetcode.com/problems/intersection-of-two-arrays-ii/submissions/1745025600/) **(top 100.00%)**
 
 438. [Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/)
 
-- [27ms](https://leetcode.com/submissions/detail/644004382/) (top 41.24%)
+- [2ms](https://leetcode.com/problems/find-all-anagrams-in-a-string/submissions/1745027814/) (top 85.24%)
 
 450. [Delete Node in a BST](https://leetcode.com/problems/delete-node-in-a-bst/)
 
-- [40ms](https://leetcode.com/submissions/detail/645361844/) (top 65.32%)
+- [0ms](https://leetcode.com/problems/delete-node-in-a-bst/submissions/1745029005/) **(top 100.00%)**
 
 460. [LFU Cache](https://leetcode.com/problems/lfu-cache/)
 
-- [853ms](https://leetcode.com/submissions/detail/637217647/) (top 36.82%)
+- [59ms](https://leetcode.com/problems/lfu-cache/submissions/1745031809/) **(top 98.92%)**
 
 509. [Fibonacci Number](https://leetcode.com/problems/fibonacci-number/)
 
@@ -624,16 +667,16 @@
 
 538. [Convert BST to Greater Tree](https://leetcode.com/problems/convert-bst-to-greater-tree/)
 
-- [20ms](https://leetcode.com/submissions/detail/645346521/) **(top 100.00%)**
+- [0ms](https://leetcode.com/problems/convert-bst-to-greater-tree/submissions/1745033310/) **(top 100.00%)**
 
 540. [Single Element in a Sorted Array](https://leetcode.com/problems/single-element-in-a-sorted-array/)
 
-- recursion: [19ms](https://leetcode.com/submissions/detail/633039574/) (top 96.25%)
-- iteration: [12ms](https://leetcode.com/submissions/detail/633040407/) **(top 99.87%)**
+- Recursion: [0ms](https://leetcode.com/problems/single-element-in-a-sorted-array/submissions/1745034704/) **(top 100.00%)**
+- Iteration: [0ms](https://leetcode.com/problems/single-element-in-a-sorted-array/submissions/1745034063/) **(top 100.00%)**
 
 543. [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/)
 
-- [7ms](https://leetcode.com/submissions/detail/643913046/) (top 89.75%)
+- [0ms](https://leetcode.com/problems/diameter-of-binary-tree/submissions/1745035633/) **(top 100.00%)**
 
 564. [Find the Closest Palindrome](https://leetcode.com/problems/find-the-closest-palindrome/)
 
@@ -641,15 +684,15 @@
 
 567. [Permutation in String](https://leetcode.com/problems/permutation-in-string/)
 
-- [11ms](https://leetcode.com/submissions/detail/644000752/) (top 56.65%)
+- [2ms](https://leetcode.com/problems/permutation-in-string/submissions/1745037892/) (top 73.12%)
 
 652. [Find Duplicate Subtrees](https://leetcode.com/problems/find-duplicate-subtrees/)
 
-- [28ms](https://leetcode.com/submissions/detail/645333592/) (top 96.32%)
+- [13ms](https://leetcode.com/problems/find-duplicate-subtrees/submissions/1745136012/) (top 93.57%)
 
 654. [Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree/)
 
-- [64ms](https://leetcode.com/submissions/detail/645313434/) (top 98.82%)
+- [8ms](https://leetcode.com/problems/maximum-binary-tree/submissions/1745138626/) (top 75.89%)
 
 670. [Maximum Swap](https://leetcode.com/problems/maximum-swap/)
 
@@ -657,35 +700,36 @@
 
 700. [Search in a Binary Search Tree](https://leetcode.com/problems/search-in-a-binary-search-tree/)
 
-- [32ms](https://leetcode.com/submissions/detail/645351013/) (top 98.21%)
+- [0ms](https://leetcode.com/problems/search-in-a-binary-search-tree/submissions/1745140408/) **(top 100.00%)**
 
 701. [Insert into a Binary Search Tree](https://leetcode.com/problems/insert-into-a-binary-search-tree/)
 
-- [72ms](https://leetcode.com/submissions/detail/645355583/) **(top 99.48%)**
+- [0ms](https://leetcode.com/problems/insert-into-a-binary-search-tree/submissions/1745141809/) **(top 100.00%)**
 
 704. [Binary Search](https://leetcode.com/problems/binary-search/)
 
-- [20ms](https://leetcode.com/submissions/detail/645278035/) **(top 99.82%)**
+- [0ms](https://leetcode.com/problems/binary-search/submissions/1745142524/) **(top 100.00%)**
 
 714. [Best Time to Buy and Sell Stock with Transaction Fee](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/)
 
-- [60ms](https://leetcode.com/submissions/detail/645283352/) **(top 99.69%)**
+- [0ms](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/submissions/1745143128/) **(top 100.00%)**
 
 752. [Open the Lock](https://leetcode.com/problems/open-the-lock/)
 
-- BFS: [180ms](https://leetcode.com/submissions/detail/643984062/) (top 81.07%)
+- BFS: [132ms](https://leetcode.com/problems/open-the-lock/submissions/1745144304/) (top 66.03%)
 
 832. [Flipping an Image](https://leetcode.com/problems/flipping-an-image/)
 
-- [4ms](https://leetcode.com/submissions/detail/637229430/) (top 88.29%)
+- [0ms](https://leetcode.com/problems/flipping-an-image/submissions/1745147141/) **(top 100.00%)**
 
 864. [Shortest Path to Get All Keys](https://leetcode.com/problems/shortest-path-to-get-all-keys/)
 
-- [24ms](https://leetcode.com/submissions/detail/633564194/) (top 96.91%)
+- [8ms](https://leetcode.com/problems/shortest-path-to-get-all-keys/submissions/1745148944/) **(top 98.51%)**
 
 871. [Minimum Number of Refueling Stops](https://leetcode.com/problems/minimum-number-of-refueling-stops/)
 
-- [179ms](https://leetcode.com/submissions/detail/645239204/) (top 16.32%)
+- DP: [13ms](https://leetcode.com/problems/minimum-number-of-refueling-stops/submissions/1745150383/) (top 15.59%)
+- Priority queue: [0ms](https://leetcode.com/problems/minimum-number-of-refueling-stops/submissions/1745152549/) **(top 100.00%)**
 
 876. [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)
 
@@ -693,11 +737,11 @@
 
 889. [Construct Binary Tree from Preorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-postorder-traversal/)
 
-- [8ms](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-postorder-traversal/submissions/902048921/) (top 89.88%)
+- [0ms](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-postorder-traversal/submissions/1745153758/) **(top 100.00%)**
 
 958. [Check Completeness of a Binary Tree](https://leetcode.com/problems/check-completeness-of-a-binary-tree/)
 
-- [3ms](https://leetcode.com/problems/check-completeness-of-a-binary-tree/submissions/915368515/) (top 84.99%)
+- [0ms](https://leetcode.com/problems/check-completeness-of-a-binary-tree/submissions/1745154406/) **(top 100.00%)**
 
 1038. [Binary Search Tree to Greater Sum Tree](https://leetcode.com/problems/binary-search-tree-to-greater-sum-tree/)
 
@@ -705,31 +749,4 @@
 
 1838. [Frequency of the Most Frequent Element](https://leetcode.com/problems/frequency-of-the-most-frequent-element/)
 
-- [136ms](https://leetcode.com/submissions/detail/636124130/) **(top 99.88%)**
-
-------
-
-## 题目分类
-
-| 分类 | 题目编号 |
-| --- | --- |
-| Array / String | 1, 3, 6, 11, 14, 15, 16, 18, 20, 22, 26, 27, 28, 30, 31, 38, 41, 42, 44, 45, 48, 49, 54, 55, 56, 73, 75, 76, 80, 88, 125, 239, 283, 349, 350, 438, 567, 670, 832, 1838 |
-| Linked list | 2, 19, 21, 23, 24, 25, 61, 86, 92, 141, 142, 160, 206, 234, 876 |
-| Recursion | 4, 33, 34, 35, 69, 74, 153, 215, 240, 278, 287, 301, 540, 704 |
-| Dynamic Programming | 5, 10, 32, 36, 37, 53, 62, 63, 64, 70, 79, 84, 91, 96, 118, 120, 121, 122, 123, 128, 130, 134, 188, 198, 213, 221, 279, 300, 309, 322, 509, 714, 864, 871 |
-| Numerical | 7, 8, 9, 12, 13, 29, 43, 50, 66, 136, 150, 564 |
-| Backtracking | 17, 39, 40, 46, 47, 51, 60, 78, 131 |
-| Binary Tree | 94, 98, 101, 102, 103, 104, 105, 106, 108, 111, 114, 116, 124, 144, 145, 226, 230, 235, 236, 337, 450, 538, 543, 652, 654, 700, 701, 889, 958, 1038 |
-| Graph / DFS | 127, 752 |
-| System Design | 146, 460 |
-
-------
-
-## 开发环境
-
-已经在以下环境测试通过：
-
-- macOS Sequoia 15.6
-  - Clang 17.0.0
-  - CMake 4.1.0
-  - Catch2 v3.9.1
+- [31ms](https://leetcode.com/problems/frequency-of-the-most-frequent-element/submissions/1745155162/) (top 90.46%)

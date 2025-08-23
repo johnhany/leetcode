@@ -10,7 +10,7 @@ using namespace std;
 
 class Solution {
 public:
-	bool isMatch(string, string);
+    bool isMatch(string, string);
 };
 
 #endif

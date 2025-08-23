@@ -41,7 +41,7 @@ inline string listNodeToString(ListNode* node) {
 
 class Solution {
 public:
-	ListNode* addTwoNumbers(ListNode*, ListNode*);
+    ListNode* addTwoNumbers(ListNode*, ListNode*);
 };
 
 #endif

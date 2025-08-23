@@ -14,7 +14,7 @@ using namespace std;
 
 class Solution {
 public:
-	vector<vector<int>> threeSum(vector<int>&);
+    vector<vector<int>> threeSum(vector<int>&);
 };
 
 #endif

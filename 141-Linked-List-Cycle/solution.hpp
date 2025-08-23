@@ -31,6 +31,26 @@ inline ListNode* stringToListNode(vector<int>& input) {
     return ptr;
 }
 
+inline ListNode* stringToListNodeWithCycle(vector<int>& input, int pos) {
+    // Now convert that list into linked list
+    ListNode* dummyRoot = new ListNode(0);
+    ListNode* ptr = dummyRoot;
+    ListNode* cycleEntry = nullptr;
+    int cnt = 0;
+    for(int item : input) {
+        ptr->next = new ListNode(item);
+        ptr = ptr->next;
+        if (cnt == pos)
+            cycleEntry = ptr;
+        cnt++;
+    }
+    ptr->next = cycleEntry;
+
+    ptr = dummyRoot->next;
+    delete dummyRoot;
+    return ptr;
+}
+
 inline string listNodeToString(ListNode* node) {
     if (node == nullptr) {
         return "[]";
@@ -48,7 +68,7 @@ class Solution {
 private:
     ListNode* tail;
 public:
-	bool hasCycle(ListNode *head);
+    bool hasCycle(ListNode *head);
 };
 
 #endif

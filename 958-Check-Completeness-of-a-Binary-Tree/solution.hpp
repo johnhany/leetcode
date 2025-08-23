@@ -68,7 +68,7 @@ inline TreeNode* stringToTreeNode(string input) {
 
 class Solution {
 public:
-	bool isCompleteTree(TreeNode* root);
+    bool isCompleteTree(TreeNode* root);
 };
 
 #endif

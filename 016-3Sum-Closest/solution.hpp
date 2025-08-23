@@ -14,7 +14,7 @@ using namespace std;
 
 class Solution {
 public:
-	int threeSumClosest(vector<int>&, int);
+    int threeSumClosest(vector<int>&, int);
 };
 
 #endif

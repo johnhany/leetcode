@@ -12,7 +12,7 @@ using namespace std;
 
 class Solution {
 public:
-	string nearestPalindromic(string n);
+    string nearestPalindromic(string n);
 };
 
 #endif

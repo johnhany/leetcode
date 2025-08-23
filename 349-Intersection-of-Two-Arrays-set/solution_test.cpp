@@ -1,14 +1,11 @@
-#define BOOST_TEST_MODULE SolutionTest
+#include <catch2/catch_test_macros.hpp>
+#include <catch2/matchers/catch_matchers_string.hpp>
+#include <catch2/matchers/catch_matchers_vector.hpp>
 
 #include "solution.hpp"
 
-//#define BOOST_TEST_DYN_LINK
-#include <boost/test/unit_test.hpp>
 
-BOOST_AUTO_TEST_SUITE(SolutionSuite)
-
-BOOST_AUTO_TEST_CASE(PlainTest1)
-{
+TEST_CASE( "Running solution test 1" ) {
     vector<int> nums1{1,2,2,1};
     vector<int> nums2{2,2};
     vector<int> results = Solution().intersection(nums1, nums2);
@@ -17,11 +14,10 @@ BOOST_AUTO_TEST_CASE(PlainTest1)
 
     sort(results.begin(), results.end());
     sort(expected.begin(), expected.end());
-    BOOST_CHECK_EQUAL_COLLECTIONS(results.begin(), results.end(), expected.begin(), expected.end());
+    REQUIRE_THAT( expected, Catch::Matchers::Equals(results) );
 }
 
-BOOST_AUTO_TEST_CASE(PlainTest2)
-{
+TEST_CASE( "Running solution test 2" ) {
     vector<int> nums1{4,9,5};
     vector<int> nums2{9,4,9,8,4};
     vector<int> results = Solution().intersection(nums1, nums2);
@@ -30,7 +26,5 @@ BOOST_AUTO_TEST_CASE(PlainTest2)
 
     sort(results.begin(), results.end());
     sort(expected.begin(), expected.end());
-    BOOST_CHECK_EQUAL_COLLECTIONS(results.begin(), results.end(), expected.begin(), expected.end());
+    REQUIRE_THAT( expected, Catch::Matchers::Equals(results) );
 }
-
-BOOST_AUTO_TEST_SUITE_END()

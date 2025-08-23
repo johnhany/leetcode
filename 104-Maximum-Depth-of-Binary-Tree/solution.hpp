@@ -68,7 +68,7 @@ inline TreeNode* stringToTreeNode(string input) {
 
 class Solution {
 public:
-	int maxDepth(TreeNode* root);
+    int maxDepth(TreeNode* root);
 };
 
 #endif

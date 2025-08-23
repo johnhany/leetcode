@@ -46,7 +46,7 @@ inline string listNodeToString(ListNode* node) {
 
 class Solution {
 public:
-	ListNode* removeNthFromEnd(ListNode*, int);
+    ListNode* removeNthFromEnd(ListNode*, int);
 };
 
 #endif

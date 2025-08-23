@@ -14,9 +14,9 @@ using namespace std;
 
 class Solution {
 public:
-	vector<string> letterCombinations(string);
-	string getLetters(char);
-	void dfs(vector<string>&, string&, string, int, int);
+    vector<string> letterCombinations(string);
+    string getLetters(char);
+    void dfs(vector<string>&, string&, string, int, int);
 };
 
 #endif

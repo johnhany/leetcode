@@ -16,8 +16,8 @@ using namespace std;
 
 class Solution {
 public:
-	int searchInsert(vector<int>& nums, int target);
-	int binarySearch(vector<int>& nums, int target, int start, int end);
+    int searchInsert(vector<int>& nums, int target);
+    int binarySearch(vector<int>& nums, int target, int start, int end);
 };
 
 #endif

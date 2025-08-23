@@ -15,7 +15,7 @@ using namespace std;
 
 class Solution {
 public:
-	int longestValidParentheses(string s);
+    int longestValidParentheses(string s);
 };
 
 #endif

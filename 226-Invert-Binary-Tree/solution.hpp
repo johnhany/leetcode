@@ -93,7 +93,7 @@ inline string treeNodeToString(TreeNode* root) {
 
 class Solution {
 public:
-	TreeNode* invertTree(TreeNode* root);
+    TreeNode* invertTree(TreeNode* root);
 };
 
 #endif

@@ -10,7 +10,7 @@ using namespace std;
 
 class Solution {
 public:
-	int reverse(int);
+    int reverse(int);
 };
 
 #endif

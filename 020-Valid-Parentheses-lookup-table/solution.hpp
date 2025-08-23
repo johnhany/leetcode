@@ -14,7 +14,7 @@ using namespace std;
 
 class Solution {
 public:
-	bool isValid(string);
+    bool isValid(string);
 };
 
 #endif

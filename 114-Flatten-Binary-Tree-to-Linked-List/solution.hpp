@@ -93,7 +93,7 @@ inline string treeNodeToString(TreeNode* root) {
 
 class Solution {
 public:
-	void flatten(TreeNode* root);
+    void flatten(TreeNode* root);
 };
 
 #endif

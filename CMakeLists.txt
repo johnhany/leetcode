@@ -1,16 +1,16 @@
 cmake_minimum_required (VERSION 3.30)
 project(leetcode)
 
-set(PROBLEM_NAME "040-Combination-Sum-II")
+set(PROBLEM_NAME "142-Linked-List-Cycle-II")
 
 set(CMAKE_CXX_STANDARD 20)
 
 Include(FetchContent)
 
 FetchContent_Declare(
-  Catch2
-  GIT_REPOSITORY https://github.com/catchorg/Catch2.git
-  GIT_TAG        v3.9.1 # or a later release
+    Catch2
+    GIT_REPOSITORY https://github.com/catchorg/Catch2.git
+    GIT_TAG        v3.9.1 # or a later release
 )
 
 FetchContent_MakeAvailable(Catch2)

@@ -10,7 +10,7 @@ using namespace std;
 
 class Solution {
 public:
-	double findMedianSortedArrays(vector<int>&, vector<int>&);
+    double findMedianSortedArrays(vector<int>&, vector<int>&);
 };
 
 #endif

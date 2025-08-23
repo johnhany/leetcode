@@ -14,15 +14,15 @@
 # with private memeber: vector<int> rst
 
 vector<int> preorderTraversal(TreeNode* root) {
-	if (root==nullptr)
-		return rst;
-	if (root)
-		rst.push_back(root->val);
-	if (root->left)
-		preorderTraversal(root->left);
-	if (root->right)
-		preorderTraversal(root->right);
-	return rst;
+    if (root==nullptr)
+        return rst;
+    if (root)
+        rst.push_back(root->val);
+    if (root->left)
+        preorderTraversal(root->left);
+    if (root->right)
+        preorderTraversal(root->right);
+    return rst;
 }
 ```
 
@@ -30,19 +30,19 @@ vector<int> preorderTraversal(TreeNode* root) {
 
 ```
 vector<int> preorderTraversal(TreeNode* root) {
-	stack<TreeNode*> q;
-	vector<int> rst;
-	while (root || !q.empty()) {
-		while (root) {
-			q.push(root);
-			rst.push_back(root->val);
-			root = root->left;
-		}
-		root = q.top();
-		q.pop();
-		root = root->right;
-	}
-	return rst;
+    stack<TreeNode*> q;
+    vector<int> rst;
+    while (root || !q.empty()) {
+        while (root) {
+            q.push(root);
+            rst.push_back(root->val);
+            root = root->left;
+        }
+        root = q.top();
+        q.pop();
+        root = root->right;
+    }
+    return rst;
 }
 ```
 
@@ -52,15 +52,15 @@ vector<int> preorderTraversal(TreeNode* root) {
 # with private memeber: vector<int> rst
 
 vector<int> inorderTraversal(TreeNode* root) {
-	if (root==nullptr)
-		return rst;
-	if (root->left)
-		inorderTraversal(root->left);
-	if (root)
-		rst.push_back(root->val);
-	if (root->right)
-		inorderTraversal(root->right);
-	return rst;
+    if (root==nullptr)
+        return rst;
+    if (root->left)
+        inorderTraversal(root->left);
+    if (root)
+        rst.push_back(root->val);
+    if (root->right)
+        inorderTraversal(root->right);
+    return rst;
 }
 ```
 
@@ -110,15 +110,15 @@ vector<int> inorderTraversal(TreeNode* root) {
 # with private memeber: vector<int> rst
 
 vector<int> postorderTraversal(TreeNode* root) {
-	if (root==nullptr)
-		return rst;
-	if (root->left)
-		postorderTraversal(root->left);
-	if (root->right)
-		postorderTraversal(root->right);
-	if (root)
-		rst.push_back(root->val);
-	return rst;
+    if (root==nullptr)
+        return rst;
+    if (root->left)
+        postorderTraversal(root->left);
+    if (root->right)
+        postorderTraversal(root->right);
+    if (root)
+        rst.push_back(root->val);
+    return rst;
 }
 ```
 
@@ -126,23 +126,23 @@ vector<int> postorderTraversal(TreeNode* root) {
 
 ```
 vector<int> postorderTraversal(TreeNode* root) {
-	stack<TreeNode*> q;
-	TreeNode* prev = nullptr;
-	vector<int> rst;
-	while (root || !q.empty()) {
-		while (root) {
-			q.push(root);
-			root = root->left;
-		}
-		TreeNode* tmp = q.top();
-		if (tmp->right==nullptr || tmp->right==prev) {
-			q.pop();
-			rst.push_back(tmp->val);
-			prev = tmp;
-		} else {
-			root = tmp->right;
-		}
-	}
-	return rst;
+    stack<TreeNode*> q;
+    TreeNode* prev = nullptr;
+    vector<int> rst;
+    while (root || !q.empty()) {
+        while (root) {
+            q.push(root);
+            root = root->left;
+        }
+        TreeNode* tmp = q.top();
+        if (tmp->right==nullptr || tmp->right==prev) {
+            q.pop();
+            rst.push_back(tmp->val);
+            prev = tmp;
+        } else {
+            root = tmp->right;
+        }
+    }
+    return rst;
 }
 ```

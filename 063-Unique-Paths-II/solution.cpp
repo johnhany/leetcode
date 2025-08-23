@@ -4,7 +4,7 @@ int Solution::uniquePathsWithObstacles(vector<vector<int>>& obstacleGrid) {
     int n = obstacleGrid.size(), m = obstacleGrid[0].size();
     if (obstacleGrid[n-1][m-1] || obstacleGrid[0][0])
         return 0;
-	vector<vector<unsigned long long>> table(n, vector<unsigned long long>(m));
+    vector<vector<unsigned long long>> table(n, vector<unsigned long long>(m));
     table[0][0] = 1;
     for (int i = 1; i < n; i++)
         table[i][0] = obstacleGrid[i][0] ? 0 : table[i-1][0];

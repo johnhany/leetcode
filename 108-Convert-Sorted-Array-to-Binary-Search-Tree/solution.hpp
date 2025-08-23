@@ -93,7 +93,7 @@ inline string treeNodeToString(TreeNode* root) {
 
 class Solution {
 public:
-	TreeNode* sortedArrayToBST(vector<int>& nums);
+    TreeNode* sortedArrayToBST(vector<int>& nums);
     TreeNode* builder(vector<int>& nums, int left, int right);
 };
 

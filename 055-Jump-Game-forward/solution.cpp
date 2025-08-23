@@ -1,7 +1,7 @@
 #include "solution.hpp"
 
 bool Solution::canJump(vector<int>& nums) {
-	if (nums[0] == 0) {
+    if (nums[0] == 0) {
         if (nums.size() == 1) {
             return true;
         } else {

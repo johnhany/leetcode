@@ -18,8 +18,8 @@ using namespace std;
 
 class Solution {
 public:
-	vector<vector<int>> subsets(vector<int>& nums);
-	void backtrack(vector<vector<int>>& rst, vector<int>& tmp, vector<int>& nums, int start);
+    vector<vector<int>> subsets(vector<int>& nums);
+    void backtrack(vector<vector<int>>& rst, vector<int>& tmp, vector<int>& nums, int start);
 };
 
 #endif

@@ -16,7 +16,7 @@ using namespace std;
 
 class Solution {
 public:
-	int trap(vector<int>&);
+    int trap(vector<int>&);
 };
 
 #endif

@@ -10,7 +10,7 @@ using namespace std;
 
 class Solution {
 public:
-	string longestPalindrome(string);
+    string longestPalindrome(string);
 };
 
 #endif

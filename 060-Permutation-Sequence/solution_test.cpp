@@ -1,9 +1,8 @@
-#define BOOST_TEST_MODULE SolutionTest
+#include <catch2/catch_test_macros.hpp>
+#include <catch2/matchers/catch_matchers_string.hpp>
+#include <catch2/matchers/catch_matchers_vector.hpp>
 
 #include "solution.hpp"
-
-//#define BOOST_TEST_DYN_LINK
-#include <boost/test/unit_test.hpp>
 
 struct less_than_key {
     inline bool operator() (const vector<int>& vec1, const vector<int>& vec2) {
@@ -17,26 +16,21 @@ struct less_than_key {
     }
 };
 
-BOOST_AUTO_TEST_SUITE(SolutionSuite)
 
-BOOST_AUTO_TEST_CASE(PlainTest1)
-{
+TEST_CASE( "Running solution test 1" ) {
     int n = 3;
     int k = 3;
     string result = Solution().getPermutation(n, k);
 
     string expected = "213";
-    BOOST_CHECK_EQUAL(result, expected);
+    REQUIRE_THAT( result, Catch::Matchers::Equals(expected) );
 }
 
-BOOST_AUTO_TEST_CASE(PlainTest2)
-{
+TEST_CASE( "Running solution test 2" ) {
     int n = 4;
     int k = 9;
     string result = Solution().getPermutation(n, k);
 
     string expected = "2314";
-    BOOST_CHECK_EQUAL(result, expected);
+    REQUIRE_THAT( result, Catch::Matchers::Equals(expected) );
 }
-
-BOOST_AUTO_TEST_SUITE_END()

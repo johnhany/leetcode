@@ -1,9 +1,8 @@
-#define BOOST_TEST_MODULE SolutionTest
+#include <catch2/catch_test_macros.hpp>
+#include <catch2/matchers/catch_matchers_string.hpp>
+#include <catch2/matchers/catch_matchers_vector.hpp>
 
 #include "solution.hpp"
-
-//#define BOOST_TEST_DYN_LINK
-#include <boost/test/unit_test.hpp>
 
 struct less_than_key {
     inline bool operator() (const vector<int>& vec1, const vector<int>& vec2) {
@@ -17,16 +16,12 @@ struct less_than_key {
     }
 };
 
-BOOST_AUTO_TEST_SUITE(SolutionSuite)
 
-BOOST_AUTO_TEST_CASE(PlainTest1)
-{
+TEST_CASE( "Running solution test 1" ) {
     string s = "cbaebabacd";
     string t = "abc";
     vector<int> result = Solution().findAnagrams(s, t);
 
     vector<int> expected{0,6};
-    BOOST_CHECK_EQUAL_COLLECTIONS(result.begin(), result.end(), expected.begin(), expected.end());
+    REQUIRE_THAT( result, Catch::Matchers::Equals(expected) );
 }
-
-BOOST_AUTO_TEST_SUITE_END()

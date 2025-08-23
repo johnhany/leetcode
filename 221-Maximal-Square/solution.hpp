@@ -17,7 +17,7 @@ using namespace std;
 
 class Solution {
 public:
-	int maximalSquare(vector<vector<char>>& matrix);
+    int maximalSquare(vector<vector<char>>& matrix);
 };
 
 #endif

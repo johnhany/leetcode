@@ -14,7 +14,7 @@ using namespace std;
 
 class Solution {
 public:
-	vector<string> letterCombinations(string);
+    vector<string> letterCombinations(string);
 };
 
 #endif

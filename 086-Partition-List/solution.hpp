@@ -41,7 +41,7 @@ inline string listNodeToString(ListNode* node) {
 
 class Solution {
 public:
-	ListNode* partition(ListNode* head, int x);
+    ListNode* partition(ListNode* head, int x);
 };
 
 #endif

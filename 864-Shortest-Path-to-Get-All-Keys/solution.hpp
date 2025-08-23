@@ -20,9 +20,9 @@ private:
         int state;
     };
 public:
-	int isKey(char c);
-	int isLock(char c);
-	int shortestPathAllKeys(vector<string>& grid);
+    int isKey(char c);
+    int isLock(char c);
+    int shortestPathAllKeys(vector<string>& grid);
 };
 
 #endif

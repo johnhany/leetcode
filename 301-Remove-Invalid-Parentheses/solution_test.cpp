@@ -1,14 +1,11 @@
-#define BOOST_TEST_MODULE SolutionTest
+#include <catch2/catch_test_macros.hpp>
+#include <catch2/matchers/catch_matchers_string.hpp>
+#include <catch2/matchers/catch_matchers_vector.hpp>
 
 #include "solution.hpp"
 
-//#define BOOST_TEST_DYN_LINK
-#include <boost/test/unit_test.hpp>
 
-BOOST_AUTO_TEST_SUITE(SolutionSuite)
-
-BOOST_AUTO_TEST_CASE(PlainTest1)
-{
+TEST_CASE( "Running solution test 1" ) {
     string s = "()())()";
     vector<string> results = Solution().removeInvalidParentheses(s);
 
@@ -16,11 +13,10 @@ BOOST_AUTO_TEST_CASE(PlainTest1)
         "()()()", "(())()"
     };
 
-    BOOST_CHECK_EQUAL_COLLECTIONS(results.begin(), results.end(), expected.begin(), expected.end());
+    REQUIRE_THAT( expected, Catch::Matchers::Equals(results) );
 }
 
-BOOST_AUTO_TEST_CASE(PlainTest2)
-{
+TEST_CASE( "Running solution test 2" ) {
     string s = "(a)())()";
     vector<string> results = Solution().removeInvalidParentheses(s);
 
@@ -28,11 +24,10 @@ BOOST_AUTO_TEST_CASE(PlainTest2)
         "(a)()()", "(a())()"
     };
 
-    BOOST_CHECK_EQUAL_COLLECTIONS(results.begin(), results.end(), expected.begin(), expected.end());
+    REQUIRE_THAT( expected, Catch::Matchers::Equals(results) );
 }
 
-BOOST_AUTO_TEST_CASE(PlainTest3)
-{
+TEST_CASE( "Running solution test 3" ) {
     string s = ")(";
     vector<string> results = Solution().removeInvalidParentheses(s);
 
@@ -40,7 +35,5 @@ BOOST_AUTO_TEST_CASE(PlainTest3)
         ""
     };
 
-    BOOST_CHECK_EQUAL_COLLECTIONS(results.begin(), results.end(), expected.begin(), expected.end());
+    REQUIRE_THAT( expected, Catch::Matchers::Equals(results) );
 }
-
-BOOST_AUTO_TEST_SUITE_END()

@@ -4,7 +4,7 @@
 // https://leetcode.cn/problems/construct-binary-tree-from-preorder-and-postorder-traversal/solution/tu-jie-889-gen-ju-qian-xu-he-hou-xu-bian-li-gou-2/
 
 TreeNode* Solution::builder(vector<int>& preorder, vector<int>& postorder, int preStart, int preEnd, int postStart, int postEnd) {
-	if (preStart > preEnd) {
+    if (preStart > preEnd) {
         return nullptr;
     }
     if (preStart == preEnd) {
@@ -30,6 +30,6 @@ TreeNode* Solution::builder(vector<int>& preorder, vector<int>& postorder, int p
     return root;
 }
 
-TreeNode* Solution::buildTree(vector<int>& preorder, vector<int>& postorder) {
-	return builder(preorder, postorder, 0, preorder.size()-1, 0, preorder.size()-1);
+TreeNode* Solution::constructFromPrePost(vector<int>& preorder, vector<int>& postorder) {
+    return builder(preorder, postorder, 0, preorder.size()-1, 0, preorder.size()-1);
 }

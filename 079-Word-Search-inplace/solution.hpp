@@ -18,10 +18,10 @@ using namespace std;
 
 class Solution {
 public:
-	bool exist(vector<vector<char>>& board, string word);
-	bool findWord(vector<vector<char>>& board, int x, int y, string& word, int i);
+    bool exist(vector<vector<char>>& board, string word);
+    bool findWord(vector<vector<char>>& board, int x, int y, string& word, int i);
 private:
-	int h, w, len;
+    int h, w, len;
 };
 
 #endif

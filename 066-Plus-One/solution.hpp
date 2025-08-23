@@ -17,7 +17,7 @@ using namespace std;
 
 class Solution {
 public:
-	vector<int> plusOne(vector<int>& digits);
+    vector<int> plusOne(vector<int>& digits);
 };
 
 #endif

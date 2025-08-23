@@ -19,8 +19,8 @@ using namespace std;
 
 
 bool isBadVersion(int version) {
-	if (version >= 4) return true;
-	else return false;
+    if (version >= 4) return true;
+    else return false;
 }
 
 class Solution {

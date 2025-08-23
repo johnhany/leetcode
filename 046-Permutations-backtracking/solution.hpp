@@ -16,8 +16,8 @@ using namespace std;
 
 class Solution {
 public:
-	vector<vector<int>> permute(vector<int>&);
-	void perm(vector<vector<int>>& vec, vector<int> nums, int index);
+    vector<vector<int>> permute(vector<int>&);
+    void perm(vector<vector<int>>& vec, vector<int> nums, int index);
 };
 
 #endif

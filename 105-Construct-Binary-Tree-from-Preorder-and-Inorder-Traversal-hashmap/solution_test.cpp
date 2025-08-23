@@ -1,14 +1,11 @@
-#define BOOST_TEST_MODULE SolutionTest
+#include <catch2/catch_test_macros.hpp>
+#include <catch2/matchers/catch_matchers_string.hpp>
+#include <catch2/matchers/catch_matchers_vector.hpp>
 
 #include "solution.hpp"
 
-//#define BOOST_TEST_DYN_LINK
-#include <boost/test/unit_test.hpp>
 
-BOOST_AUTO_TEST_SUITE(SolutionSuite)
-
-BOOST_AUTO_TEST_CASE(PlainTest1)
-{
+TEST_CASE( "Running solution test 1" ) {
     vector<int> preorder{3,9,20,15,7};
     vector<int> inorder{9,3,15,20,7};
     TreeNode *root = Solution().buildTree(preorder, inorder);
@@ -16,7 +13,5 @@ BOOST_AUTO_TEST_CASE(PlainTest1)
 
     string expected = "[3, 9, 20, null, null, 15, 7, null, null, null, null]";
 
-    BOOST_CHECK_EQUAL(result, expected);
+    REQUIRE( result == expected );
 }
-
-BOOST_AUTO_TEST_SUITE_END()

@@ -18,7 +18,7 @@ using namespace std;
 
 class Solution {
 public:
-	int numDecodings(string s);
+    int numDecodings(string s);
 };
 
 #endif

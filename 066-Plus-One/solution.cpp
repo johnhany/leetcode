@@ -1,7 +1,7 @@
 #include "solution.hpp"
 
 vector<int> Solution::plusOne(vector<int>& digits) {
-	vector<int> rst;
+    vector<int> rst;
     int carry = 1;
     for (int i=digits.size()-1; i>=0; i--) {
         int a = digits[i] + carry;

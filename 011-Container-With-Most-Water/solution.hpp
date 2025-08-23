@@ -11,7 +11,7 @@ using namespace std;
 
 class Solution {
 public:
-	int maxArea(vector<int>&);
+    int maxArea(vector<int>&);
 };
 
 #endif

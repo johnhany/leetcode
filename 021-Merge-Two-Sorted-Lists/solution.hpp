@@ -46,7 +46,7 @@ inline string listNodeToString(ListNode* node) {
 
 class Solution {
 public:
-	ListNode* mergeTwoLists(ListNode*, ListNode*);
+    ListNode* mergeTwoLists(ListNode*, ListNode*);
 };
 
 #endif

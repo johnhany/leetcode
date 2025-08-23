@@ -46,7 +46,7 @@ inline string listNodeToString(ListNode* node) {
 
 class Solution {
 public:
-	ListNode* reverseList(ListNode* head);
+    ListNode* reverseList(ListNode* head);
 };
 
 #endif

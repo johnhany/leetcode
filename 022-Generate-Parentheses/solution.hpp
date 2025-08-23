@@ -14,7 +14,7 @@ using namespace std;
 
 class Solution {
 public:
-	vector<string> generateParenthesis(int);
+    vector<string> generateParenthesis(int);
 };
 
 #endif

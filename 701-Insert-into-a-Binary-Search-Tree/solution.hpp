@@ -91,7 +91,7 @@ inline string treeNodeToString(TreeNode* root) {
 
 class Solution {
 public:
-	TreeNode* insertIntoBST(TreeNode* root, int target);
+    TreeNode* insertIntoBST(TreeNode* root, int target);
 };
 
 #endif

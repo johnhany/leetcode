@@ -16,7 +16,7 @@ using namespace std;
 
 class Solution {
 public:
-	string multiply(string num1, string num2);
+    string multiply(string num1, string num2);
 };
 
 #endif

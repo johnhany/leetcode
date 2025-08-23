@@ -2,18 +2,18 @@
 
 
 int Solution::longestConsecutive(vector<int>& nums) {
-	if (nums.empty()) return 0;
-	sort(nums.begin(), nums.end());
-	nums.erase(unique(nums.begin(), nums.end()), nums.end());
-
-	int maxLen = 1, len = 1;
-	for (int i = 1; i < nums.size(); i++) {
-		if (nums[i-1] + 1 == nums[i]) {
-			len++;
-		} else {
-			maxLen = max(maxLen, len);
-			len = 1;
-		}
-	}
-	return max(maxLen, len);
+    if(nums.empty()) return 0;
+    sort(nums.begin(),nums.end());
+    int curLen=1;
+    int maxLen=1;
+    for(int i=0;i<nums.size()-1;i++){
+        if(nums[i]==nums[i+1]) continue;
+        if(nums[i]+1==nums[i+1]){
+            curLen++;
+            maxLen=max(curLen,maxLen);
+        } else {
+            curLen=1;
+        }
+    }
+    return maxLen;
 }

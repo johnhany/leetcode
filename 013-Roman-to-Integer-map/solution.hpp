@@ -14,7 +14,7 @@ using namespace std;
 
 class Solution {
 public:
-	int romanToInt(string);
+    int romanToInt(string);
 };
 
 #endif

@@ -17,7 +17,7 @@ using namespace std;
 
 class Solution {
 public:
-	int divide(int, int);
+    int divide(int, int);
 };
 
 #endif

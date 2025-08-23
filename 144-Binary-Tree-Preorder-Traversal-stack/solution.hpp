@@ -68,7 +68,7 @@ inline TreeNode* stringToTreeNode(string input) {
 
 class Solution {
 public:
-	vector<int> preorderTraversal(TreeNode* root);
+    vector<int> preorderTraversal(TreeNode* root);
 };
 
 #endif

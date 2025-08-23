@@ -16,11 +16,11 @@ using namespace std;
 
 class Solution {
 private:
-	vector<vector<string>> res;
+    vector<vector<string>> res;
 public:
-	bool isValid(vector<string>& board, int row, int col);
-	void backtrack(vector<string>& board, int row);
-	vector<vector<string>> solveNQueens(int n);
+    bool isValid(vector<string>& board, int row, int col);
+    void backtrack(vector<string>& board, int row);
+    vector<vector<string>> solveNQueens(int n);
 };
 
 #endif

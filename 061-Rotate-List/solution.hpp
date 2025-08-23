@@ -41,7 +41,7 @@ inline string listNodeToString(ListNode* node) {
 
 class Solution {
 public:
-	ListNode* rotateRight(ListNode* head, int k);
+    ListNode* rotateRight(ListNode* head, int k);
 };
 
 #endif

@@ -1,9 +1,8 @@
-#define BOOST_TEST_MODULE SolutionTest
+#include <catch2/catch_test_macros.hpp>
+#include <catch2/matchers/catch_matchers_string.hpp>
+#include <catch2/matchers/catch_matchers_vector.hpp>
 
 #include "solution.hpp"
-
-//#define BOOST_TEST_DYN_LINK
-#include <boost/test/unit_test.hpp>
 
 struct less_than_key {
     inline bool operator() (const vector<int>& vec1, const vector<int>& vec2) {
@@ -18,12 +17,10 @@ struct less_than_key {
     }
 };
 
-BOOST_AUTO_TEST_SUITE(SolutionSuite)
 
-BOOST_AUTO_TEST_CASE(PlainTest1)
-{
+TEST_CASE( "Running solution test 1" ) {
     vector<int> nums{1,2,3};
-    vector<vector<int>> result = Solution().subsets(nums);
+    vector<vector<int>> results = Solution().subsets(nums);
 
     vector<vector<int>> expected = {
         {3},
@@ -36,11 +33,11 @@ BOOST_AUTO_TEST_CASE(PlainTest1)
         {}
     };
 
-    BOOST_REQUIRE_EQUAL(result.size(), expected.size());
-    sort(result.begin(), result.end(), less_than_key());
+    sort(results.begin(), results.end(), less_than_key());
     sort(expected.begin(), expected.end(), less_than_key());
-    for (int i = 0; i < result.size(); i++)
-        BOOST_CHECK_EQUAL_COLLECTIONS(result[i].begin(), result[i].end(), expected[i].begin(), expected[i].end());
-}
 
-BOOST_AUTO_TEST_SUITE_END()
+    REQUIRE( results.size() == expected.size() );
+
+    for (int i = 0; i < results.size(); i++)
+        REQUIRE_THAT( results[i], Catch::Matchers::Equals(expected[i]) );
+}

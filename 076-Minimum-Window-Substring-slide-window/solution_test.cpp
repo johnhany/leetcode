@@ -1,76 +1,66 @@
-#define BOOST_TEST_MODULE SolutionTest
+#include <catch2/catch_test_macros.hpp>
+#include <catch2/matchers/catch_matchers_string.hpp>
+#include <catch2/matchers/catch_matchers_vector.hpp>
 
 #include "solution.hpp"
 
-//#define BOOST_TEST_DYN_LINK
-#include <boost/test/unit_test.hpp>
 
-BOOST_AUTO_TEST_SUITE(SolutionSuite)
-
-BOOST_AUTO_TEST_CASE(PlainTest1)
-{
+TEST_CASE( "Running solution test 1" ) {
     string s = "ADOBECODEBANC";
     string t = "ABC";
     string result = Solution().minWindow(s, t);
 
     string expected = "BANC";
 
-    BOOST_REQUIRE_EQUAL(result, expected);
+    REQUIRE( result == expected );
 }
 
-BOOST_AUTO_TEST_CASE(PlainTest2)
-{
+TEST_CASE( "Running solution test 2" ) {
     string s = "BAC";
     string t = "A";
     string result = Solution().minWindow(s, t);
 
     string expected = "A";
 
-    BOOST_REQUIRE_EQUAL(result, expected);
+    REQUIRE( result == expected );
 }
 
-BOOST_AUTO_TEST_CASE(PlainTest3)
-{
+TEST_CASE( "Running solution test 3" ) {
     string s = "APQCBABAC";
     string t = "AABC";
     string result = Solution().minWindow(s, t);
 
     string expected = "ABAC";
 
-    BOOST_REQUIRE_EQUAL(result, expected);
+    REQUIRE( result == expected );
 }
 
-BOOST_AUTO_TEST_CASE(PlainTest4)
-{
+TEST_CASE( "Running solution test 4" ) {
     string s = "APQBABA";
     string t = "ABC";
     string result = Solution().minWindow(s, t);
 
     string expected = "";
 
-    BOOST_REQUIRE_EQUAL(result, expected);
+    REQUIRE( result == expected );
 }
 
-BOOST_AUTO_TEST_CASE(PlainTest5)
-{
+TEST_CASE( "Running solution test 5" ) {
     string s = "BBA";
     string t = "AB";
     string result = Solution().minWindow(s, t);
 
     string expected = "BA";
 
-    BOOST_REQUIRE_EQUAL(result, expected);
+    REQUIRE( result == expected );
 }
 
-BOOST_AUTO_TEST_CASE(PlainTest6)
-{
+TEST_CASE( "Running solution test 6" ) {
     string s = "aaaaaaaaaaaabbbbbcdd";
     string t = "abcdd";
     string result = Solution().minWindow(s, t);
 
     string expected = "abbbbbcdd";
 
-    BOOST_REQUIRE_EQUAL(result, expected);
+    REQUIRE( result == expected );
 }
-
-BOOST_AUTO_TEST_SUITE_END()

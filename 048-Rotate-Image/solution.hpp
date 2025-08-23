@@ -16,7 +16,7 @@ using namespace std;
 
 class Solution {
 public:
-	void rotate(vector<vector<int>>&);
+    void rotate(vector<vector<int>>&);
 };
 
 #endif

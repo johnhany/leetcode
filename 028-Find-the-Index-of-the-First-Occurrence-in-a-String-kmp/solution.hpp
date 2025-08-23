@@ -16,8 +16,8 @@ using namespace std;
 
 class Solution {
 public:
-	int strStr(string, string);
-	vector<int> partialMatchTable(string);
+    int strStr(string, string);
+    vector<int> partialMatchTable(string);
 };
 
 #endif

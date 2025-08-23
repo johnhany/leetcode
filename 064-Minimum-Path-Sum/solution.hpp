@@ -17,7 +17,7 @@ using namespace std;
 
 class Solution {
 public:
-	int minPathSum(vector<vector<int>>& grid);
+    int minPathSum(vector<vector<int>>& grid);
 };
 
 #endif

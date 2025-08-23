@@ -68,7 +68,7 @@ inline TreeNode* stringToTreeNode(string input) {
 class Solution {
 public:
     void subSearch(TreeNode* root, int k, int& rst, int& count);
-	int kthSmallest(TreeNode* root, int k);
+    int kthSmallest(TreeNode* root, int k);
 };
 
 #endif

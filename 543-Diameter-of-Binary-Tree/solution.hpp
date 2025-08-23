@@ -70,7 +70,7 @@ private:
     int maxDia;
 public:
     int subSearch(TreeNode* root);
-	int diameterOfBinaryTree(TreeNode* root);
+    int diameterOfBinaryTree(TreeNode* root);
 };
 
 #endif

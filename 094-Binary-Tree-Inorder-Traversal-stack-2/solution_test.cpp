@@ -1,22 +1,16 @@
-#define BOOST_TEST_MODULE SolutionTest
+#include <catch2/catch_test_macros.hpp>
+#include <catch2/matchers/catch_matchers_string.hpp>
+#include <catch2/matchers/catch_matchers_vector.hpp>
 
 #include "solution.hpp"
 
-//#define BOOST_TEST_DYN_LINK
-#include <boost/test/unit_test.hpp>
 
-BOOST_AUTO_TEST_SUITE(SolutionSuite)
-
-BOOST_AUTO_TEST_CASE(PlainTest1)
-{
+TEST_CASE( "Running solution test 1" ) {
     string line = "1,null,2,3";
     TreeNode* root = stringToTreeNode(line);
     vector<int> result = Solution().inorderTraversal(root);
 
     vector<int> expected={1,3,2};
 
-    BOOST_REQUIRE_EQUAL(result.size(), expected.size());
-    BOOST_CHECK_EQUAL_COLLECTIONS(result.begin(), result.end(), expected.begin(), expected.end());
+    REQUIRE_THAT( result, Catch::Matchers::Equals(expected) );
 }
-
-BOOST_AUTO_TEST_SUITE_END()

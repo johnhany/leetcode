@@ -47,7 +47,7 @@ inline string listNodeToString(ListNode* node) {
 
 class Solution {
 public:
-	ListNode* mergeKLists(vector<ListNode*>&);
+    ListNode* mergeKLists(vector<ListNode*>&);
 };
 
 #endif

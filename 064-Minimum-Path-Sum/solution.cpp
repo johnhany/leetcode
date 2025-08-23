@@ -3,7 +3,7 @@
 int Solution::minPathSum(vector<vector<int>>& grid) {
     if (grid.empty() || grid[0].empty()) return 0;
     int n = grid.size(), m = grid[0].size();
-	vector<vector<int>> table(n, vector<int>(m));
+    vector<vector<int>> table(n, vector<int>(m));
     table[0][0] = grid[0][0];
     for (int i = 1; i < n; i++)
         table[i][0] = grid[i][0] + table[i-1][0];

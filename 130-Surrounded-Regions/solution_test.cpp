@@ -1,14 +1,11 @@
-#define BOOST_TEST_MODULE SolutionTest
+#include <catch2/catch_test_macros.hpp>
+#include <catch2/matchers/catch_matchers_string.hpp>
+#include <catch2/matchers/catch_matchers_vector.hpp>
 
 #include "solution.hpp"
 
-//#define BOOST_TEST_DYN_LINK
-#include <boost/test/unit_test.hpp>
 
-BOOST_AUTO_TEST_SUITE(SolutionSuite)
-
-BOOST_AUTO_TEST_CASE(PlainTest1)
-{
+TEST_CASE( "Running solution test 1" ) {
     vector<vector<char>> board{
         {'X', 'X', 'X', 'X'},
         {'X', 'O', 'O', 'X'},
@@ -24,13 +21,12 @@ BOOST_AUTO_TEST_CASE(PlainTest1)
         {'X', 'O', 'X', 'X'}
     };
 
-    BOOST_CHECK_EQUAL(board.size(), expected.size());
+    REQUIRE( board.size() == expected.size() );
     for (int i = 0; i < board.size(); i++)
-        BOOST_CHECK_EQUAL_COLLECTIONS(board[i].begin(), board[i].end(), expected[i].begin(), expected[i].end());
+        REQUIRE_THAT( board[i], Catch::Matchers::Equals(expected[i]) );
 }
 
-BOOST_AUTO_TEST_CASE(PlainTest2)
-{
+TEST_CASE( "Running solution test 2" ) {
     vector<vector<char>> board{
         {'O','O','O','O','X','X'},
         {'O','O','O','O','O','O'},
@@ -50,10 +46,8 @@ BOOST_AUTO_TEST_CASE(PlainTest2)
         {'O','X','O','O','O','O'}
     };
 
-    BOOST_CHECK_EQUAL(board.size(), expected.size());
+    REQUIRE( board.size() == expected.size() );
     for (int i = 0; i < board.size(); i++)
-        BOOST_CHECK_EQUAL_COLLECTIONS(board[i].begin(), board[i].end(), expected[i].begin(), expected[i].end());
+        REQUIRE_THAT( board[i], Catch::Matchers::Equals(expected[i]) );
 }
 
-
-BOOST_AUTO_TEST_SUITE_END()

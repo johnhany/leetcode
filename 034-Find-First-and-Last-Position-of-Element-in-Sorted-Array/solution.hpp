@@ -16,8 +16,8 @@ using namespace std;
 
 class Solution {
 public:
-	vector<int> searchRange(vector<int>& nums, int target);
-	int subsearch(vector<int>&, float, int, int);
+    vector<int> searchRange(vector<int>& nums, int target);
+    int subsearch(vector<int>&, float, int, int);
 };
 
 #endif

@@ -68,7 +68,7 @@ inline TreeNode* stringToTreeNode(string input) {
 
 class Solution {
 public:
-	bool isSymmetric(TreeNode* root);
+    bool isSymmetric(TreeNode* root);
     bool subSymmetric(TreeNode* left, TreeNode* right);
 };
 

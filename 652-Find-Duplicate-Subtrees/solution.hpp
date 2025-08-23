@@ -95,7 +95,7 @@ private:
     vector<TreeNode*> rst;
 public:
     string subSearch(TreeNode* root);
-	vector<TreeNode*> findDuplicateSubtrees(TreeNode* root);
+    vector<TreeNode*> findDuplicateSubtrees(TreeNode* root);
 };
 
 #endif

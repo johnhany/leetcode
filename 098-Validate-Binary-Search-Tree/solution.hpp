@@ -69,7 +69,7 @@ inline TreeNode* stringToTreeNode(string input) {
 
 class Solution {
 public:
-	bool isValidBST(TreeNode* root);
+    bool isValidBST(TreeNode* root);
     bool isValid(TreeNode* root, long left, long right);
 };
 

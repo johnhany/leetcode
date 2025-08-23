@@ -51,8 +51,7 @@ foo get_foo() {
     return rst;
 }
 
-int main()
-{
+int main() {
     std::cout << "1" << std::endl;
     foo a;
 

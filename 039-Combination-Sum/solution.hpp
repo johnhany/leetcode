@@ -16,8 +16,8 @@ using namespace std;
 
 class Solution {
 public:
-	vector<vector<int>> combinationSum(vector<int>& candidates, int target);
-	void subCombination(vector<int>& candidates, vector<vector<int>>& rst, int target, int start, vector<int>& path);
+    vector<vector<int>> combinationSum(vector<int>& candidates, int target);
+    void subCombination(vector<int>& candidates, vector<vector<int>>& rst, int target, int start, vector<int>& path);
 };
 
 #endif

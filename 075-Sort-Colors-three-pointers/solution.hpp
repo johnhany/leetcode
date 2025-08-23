@@ -17,7 +17,7 @@ using namespace std;
 
 class Solution {
 public:
-	void sortColors(vector<int>& nums);
+    void sortColors(vector<int>& nums);
 };
 
 #endif

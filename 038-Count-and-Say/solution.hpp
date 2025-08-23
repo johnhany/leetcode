@@ -16,7 +16,7 @@ using namespace std;
 
 class Solution {
 public:
-	string countAndSay(int);
+    string countAndSay(int);
 };
 
 #endif

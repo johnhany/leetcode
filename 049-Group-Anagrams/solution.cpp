@@ -1,25 +1,25 @@
 #include "solution.hpp"
 
 vector<vector<string>> Solution::groupAnagrams(vector<string>& strs) {
-	unordered_map<string, vector<string>> table;
-	for (string& s : strs) {
-		table[countSort(s)].push_back(s);
-	}
-	vector<vector<string>> rst;
-	for (auto& itr : table) {
-		rst.push_back(itr.second);
-	}
-	return rst;
+    unordered_map<string, vector<string>> table;
+    for (string& s : strs) {
+        table[countSort(s)].push_back(s);
+    }
+    vector<vector<string>> rst;
+    for (auto& itr : table) {
+        rst.push_back(itr.second);
+    }
+    return rst;
 }
 
 string Solution::countSort(string s) {
-	vector<int> count(26, 0);
-	for (char c : s) {
-		count[c-'a']++;
-	}
-	string key;
-	for (int i=0; i<26; i++) {
-		key += string(count[i], 'a'+i);
-	}
-	return key;
+    vector<int> count(26, 0);
+    for (char c : s) {
+        count[c-'a']++;
+    }
+    string key;
+    for (int i=0; i<26; i++) {
+        key += string(count[i], 'a'+i);
+    }
+    return key;
 }

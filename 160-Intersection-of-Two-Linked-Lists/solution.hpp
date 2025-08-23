@@ -46,7 +46,7 @@ inline string listNodeToString(ListNode* node) {
 
 class Solution {
 public:
-	ListNode* getIntersectionNode(ListNode *headA, ListNode *headB);
+    ListNode* getIntersectionNode(ListNode *headA, ListNode *headB);
 };
 
 #endif

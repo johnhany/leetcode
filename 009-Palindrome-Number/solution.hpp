@@ -10,7 +10,7 @@ using namespace std;
 
 class Solution {
 public:
-	bool isPalindrome(int);
+    bool isPalindrome(int);
 };
 
 #endif

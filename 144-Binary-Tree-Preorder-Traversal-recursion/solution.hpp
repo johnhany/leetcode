@@ -70,7 +70,7 @@ class Solution {
 private:
     vector<int> rst;
 public:
-	vector<int> preorderTraversal(TreeNode* root);
+    vector<int> preorderTraversal(TreeNode* root);
 };
 
 #endif

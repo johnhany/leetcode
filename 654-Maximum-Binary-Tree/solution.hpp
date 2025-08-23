@@ -93,7 +93,7 @@ inline string treeNodeToString(TreeNode* root) {
 
 class Solution {
 public:
-	TreeNode* build(vector<int>& nums, int lo, int hi);
+    TreeNode* build(vector<int>& nums, int lo, int hi);
     TreeNode* constructMaximumBinaryTree(vector<int>& nums);
 };
 

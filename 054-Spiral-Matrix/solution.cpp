@@ -1,7 +1,7 @@
 #include "solution.hpp"
 
 vector<int> Solution::spiralOrder(vector<vector<int>>& matrix) {
-	int rows = matrix.size(), cols = matrix[0].size();
+    int rows = matrix.size(), cols = matrix[0].size();
     int n = (rows+1)/2, m = (cols+1)/2;
     int k = min(n, m);
     vector<int> rst;

@@ -2,7 +2,7 @@
 
 
 TreeNode* Solution::builder(vector<int>& inorder, vector<int>& postorder, int inStart, int inEnd, int postStart, int postEnd) {
-	if (inStart > inEnd) {
+    if (inStart > inEnd) {
         return nullptr;
     }
     int rootVal = postorder[postEnd];
@@ -22,5 +22,5 @@ TreeNode* Solution::builder(vector<int>& inorder, vector<int>& postorder, int in
 }
 
 TreeNode* Solution::buildTree(vector<int>& inorder, vector<int>& postorder) {
-	return builder(inorder, postorder, 0, inorder.size()-1, 0, inorder.size()-1);
+    return builder(inorder, postorder, 0, inorder.size()-1, 0, inorder.size()-1);
 }

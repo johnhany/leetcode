@@ -17,7 +17,7 @@ using namespace std;
 
 class Solution {
 public:
-	vector<int> findAnagrams(string s, string t);
+    vector<int> findAnagrams(string s, string p);
 };
 
 #endif

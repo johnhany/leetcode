@@ -94,7 +94,7 @@ private:
     int sum = 0;
 public:
     void traverse(TreeNode* root);
-	TreeNode* convertBST(TreeNode* root);
+    TreeNode* convertBST(TreeNode* root);
 };
 
 #endif

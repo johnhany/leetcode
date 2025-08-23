@@ -2,18 +2,18 @@
 
 
 void Solution::traverse(TreeNode* root) {
-	if (root == nullptr) {
-		return;
-	}
-	traverse(root->right);
+    if (root == nullptr) {
+        return;
+    }
+    traverse(root->right);
 
-	sum += root->val;
-	root->val = sum;
+    sum += root->val;
+    root->val = sum;
 
-	traverse(root->left);
+    traverse(root->left);
 }
 
 TreeNode* Solution::bstToGst(TreeNode* root) {
-	traverse(root);
+    traverse(root);
     return root;
 }

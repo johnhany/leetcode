@@ -70,7 +70,7 @@ class Solution {
 private:
     vector<int> rst;
 public:
-	vector<int> postorderTraversal(TreeNode* root);
+    vector<int> postorderTraversal(TreeNode* root);
 };
 
 #endif

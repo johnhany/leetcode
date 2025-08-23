@@ -91,7 +91,7 @@ inline string treeNodeToString(TreeNode* root) {
 
 class Solution {
 public:
-	TreeNode* deleteNode(TreeNode* root, int key);
+    TreeNode* deleteNode(TreeNode* root, int key);
 };
 
 #endif

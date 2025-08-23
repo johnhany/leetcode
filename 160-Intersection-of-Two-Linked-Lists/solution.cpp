@@ -1,15 +1,16 @@
 #include "solution.hpp"
 
 ListNode* Solution::getIntersectionNode(ListNode *headA, ListNode *headB) {
-	while (headA != headB) {
-		if (headA == nullptr)
-			headA = headB;
-		else
-			headA = headA->next;
-		if (headB == nullptr)
-			headB = headA;
-		else
-			headB = headB->next;
-	}
-	return headA;
+    ListNode *a = headA, *b = headB;
+    while (a != b) {
+        if (a == nullptr)
+            a = headB;
+        else
+            a = a->next;
+        if (b == nullptr)
+            b = headA;
+        else
+            b = b->next;
+    }
+    return a;
 }

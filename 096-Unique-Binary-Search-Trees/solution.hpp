@@ -17,7 +17,7 @@ using namespace std;
 
 class Solution {
 public:
-	int numTrees(int n);
+    int numTrees(int n);
 };
 
 #endif

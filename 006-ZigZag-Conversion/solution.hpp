@@ -10,7 +10,7 @@ using namespace std;
 
 class Solution {
 public:
-	string convert(string, int);
+    string convert(string, int);
 };
 
 #endif

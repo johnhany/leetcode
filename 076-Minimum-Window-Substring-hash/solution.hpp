@@ -17,7 +17,7 @@ using namespace std;
 
 class Solution {
 public:
-	string minWindow(string s, string t);
+    string minWindow(string s, string t);
 };
 
 #endif
