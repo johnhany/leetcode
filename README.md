@@ -46,6 +46,10 @@
   - VC 14.44.35207 (Visual Studio 2022)
   - CMake 4.1.0
   - Catch2 v3.9.1
+- Ubuntu 24.04
+  - Clang 21.1.0
+  - CMake 4.1.1
+  - Catch2 v3.9.1
 
 ------
 
